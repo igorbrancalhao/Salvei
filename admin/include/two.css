@@ -1,0 +1,70 @@
+body { font:small/122% arial,helvetica,clean,terminal,sans-serif; font:x-small; } 
+/* hide from old browsers \*/
+body * { line-height:122%; } 
+/* end hack */
+table { font-size:inherit; font:x-small; } html>body { font:83%/122% arial,helvetica,clean,sans-serif; } table, pre, code, select, input { font-size:100% } textarea { font-size:107%; } html>body textarea { font-size:auto } big { font-size:22% } small { font:177% verdana; } h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+
+/* END LSM FONT SECTION */
+
+/* Begin standard font section */
+/* Page Title */
+strong {
+  color: #175878;
+}
+
+/* Ad Title */
+em {
+  color: #175878;
+  font-style: normal;
+  font-weight: bold;
+}
+em.yperBaseConfirm {
+  color: #9b446d;
+}
+em.yperBaseErrMsg {
+  color: #a73735;
+}
+
+/* Body Text */
+/* Body Text Link */
+a {
+  color: #0b8aaa;
+}
+
+/* For Promo and Registration Pages */
+h1 {
+  font-size:167%;
+}
+h2 {
+  font-size:144%;
+}
+h3 {
+  font-size:122%;
+}
+
+/* Form Text */
+input {
+  font-family: verdana;
+  font-size: 10px;
+  padding: 0;
+}
+button {
+  font-family: verdana;
+  font-size: 10px;
+  padding: 0;
+}
+input.yperFontActionButton {
+  font-weight: bold;
+  cursor: hand;
+  color: #fff;
+  background: #a73735;
+  padding: 0;
+}
+input.yperFontButton {
+  font-weight: bold;
+  cursor: hand;
+  color: #4f4f4f;
+  background: #ddd;
+  padding: 0;
+}
+

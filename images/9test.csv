@@ -1,0 +1,3 @@
+"user_id","category_id","item_title","item_counter_style","Quantity","detailed_descrip","selling_method","min_bid_amount","bid_increment","shipping_cost","Currency","reserve_price","quick_buy_price","bid_starting_date","start_delay","Status","Picture1","picture2","picture3","payment_name","expire_date","payment_id","tax","no_of_repost","features"
+1,233,"New ItemCheck1",1,1,"Testing1","auction",156.05,10,14.2,"$",365,231.95,01/04/07,0,"Active","testimage1.gif",,,1,"24/04/2008",,12.8,5,"Yes"
+1,233,"New ItemCheck2",1,1,"Testing2","auction",156.05,10,14.2,"$",365,231.95,01/04/07,0,"Active","testimage1.gif",,,1,"24/04/2008",,12.8,5,"Yes"

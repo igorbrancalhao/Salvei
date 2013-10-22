@@ -1,0 +1,161 @@
+body {
+	background-color:#000000;
+	margin:0;
+}
+	
+td 
+{
+vertical-align:top;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+font
+ {
+  font-size:12px;
+ }	
+.tplcolor
+{
+background:#cecfc8;
+}
+
+.txt_header {
+	font-family:"Century Gothic";
+	font-size:12px;
+	font-weight:normal;
+	color:#f1e689;
+}
+
+.txt_welcomeadmin {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#171515;
+}
+
+.txt_sitedetails {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#333333;
+	text-decoration:none;
+}
+
+.txt_footer {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#eeeeeb;
+}
+
+.txt_details1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#8d8d8c;
+	text-decoration:none;
+}
+
+.txt_users {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#d23c10;
+	text-decoration:none;
+}
+
+.txt_newuser {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#0e5372;
+}
+
+.border1
+{
+	border: 1px solid #565656;
+}
+
+.border2 {
+	border: 1px solid #565656;
+	background-color:#FFFFFF;
+}
+
+.border3 {
+	border: 1px solid #bab6b6;
+}
+
+#tablink {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#d23c10;
+	text-decoration:none;
+}
+.txt_details {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#330000;
+}
+
+.txt_heading {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#2e53f3;
+	text-decoration:none;
+}
+
+.txt_quicklinks {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#333333;
+	text-decoration:none;
+}
+
+.txt_knowbase {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#4d5472;
+	text-decoration:none;
+}
+
+.txt_footer {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#eeeeeb;
+}
+
+.txt_heading1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#D34012;
+}
+
+.border1 {
+	border: 1px solid #BAB6B6;
+}
+.txt_bold {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;
+}
+
+.button {
+		background-image:url(images/buton.jpg);
+		font-family:arial;
+		font-size:8.5pt;
+		font-weight:bold;
+		color:black;
+		border-top:none;
+		border-right:none;
+		border-left:none;border-bottom:none; 
+		cursor:hand;
+		height:20;
+}

@@ -1,0 +1,16 @@
+[31-Dec-2007 13:29:27] PHP Warning:  unlink() failed (No such file or directory) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 106
+[31-Dec-2007 13:30:08] PHP Warning:  unlink() failed (Permission denied) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 107
+[31-Dec-2007 13:30:29] PHP Warning:  unlink() failed (Permission denied) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 108
+[31-Dec-2007 13:31:06] PHP Warning:  unlink() failed (No such file or directory) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 105
+[31-Dec-2007 13:31:42] PHP Warning:  unlink() failed (No such file or directory) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 105
+[31-Dec-2007 13:32:22] PHP Warning:  unlink() failed (No such file or directory) in f:\phpdev\www\pamela\ajauction\admin\custom_category.php on line 105
+[03-Jan-2008 12:45:12] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 280
+[03-Jan-2008 12:46:11] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 280
+[03-Jan-2008 12:46:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 280
+[03-Jan-2008 13:15:35] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 303
+[03-Jan-2008 13:17:05] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 305
+[03-Jan-2008 13:17:56] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 303
+[03-Jan-2008 13:18:59] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 304
+[03-Jan-2008 13:20:42] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 304
+[03-Jan-2008 13:21:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 304
+[03-Jan-2008 13:22:14] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in f:\phpdev\www\pamela\ajauction\admin\add.php on line 304

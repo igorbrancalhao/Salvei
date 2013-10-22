@@ -1,0 +1,153 @@
+.extrabigblack {
+	FONT-SIZE: 14px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none; TYPE: bold
+}
+
+.bigblack {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumblack {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.smallblack {
+	FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.smallblack1 {
+        FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica,
+sans-serif; TEXT-DECORATION: none
+}
+
+.bigwhite {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumwhite{
+	FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.smallwhite {
+	FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumpinkbd {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #EB7E73; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumpink {
+	 FONT-SIZE: 10px; COLOR: #EB7E73; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.smallred {
+	 FONT-SIZE: 9px; COLOR: red; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumgreen {
+	 FONT-SIZE: 11px; COLOR: #549458; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.mediumred{
+	 FONT-SIZE: 11px; COLOR: red; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.bigred{
+         FONT-SIZE: 12px; COLOR: red; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+h2{font-weight: bold;   font-size: 12px; color: #669900; font-style: normal; font-family: ms sans serif; text-decoration: none; margin: 0;}
+.TextBox {FONT-SIZE: 8pt; FONT-FAMILY: Arial;font-weight: normal}
+
+.testbox {FONT-SIZE: 10px; FONT-FAMILY: arial}
+
+.class1 A:link {text-decoration: none; color: #ffffff;}
+.class1 A:visited {text-decoration: none; color: #ffffff;}
+.class1 A:active {text-decoration: none; color: none;}
+.class1 A:hover {text-decoration: none; color: black;}
+
+.class2 A:link {text-decoration: none; color: green;}
+.class2 A:visited {text-decoration: none; color: green;}
+.class2 A:active {text-decoration: none color: none;}
+.class2 A:hover {text-decoration: none; color: black;}
+
+.class3 A:link {text-decoration: underline; color: #999999;}
+.class3 A:visited {text-decoration: underline; color: #999999;}
+.class3 A:active {text-decoration: underline color: none;}
+.class3 A:hover {text-decoration: underline; color: black;}
+
+.class4 A:link {text-decoration: none; color: black;}
+.class4 A:visited {text-decoration: none; color: black;}
+.class4 A:active {text-decoration: none color: none;}
+.class4 A:hover {text-decoration: underline; color: green;}
+
+.class5 A:link {text-decoration: underline; color: black;}
+.class5 A:visited {text-decoration: underline; color: black;}
+.class5 A:active {text-decoration: none color: none;}
+.class5 A:hover {text-decoration: underline; color: green;}
+
+.class6 A:link {text-decoration: underline; color: green;}
+.class6 A:visited {text-decoration: underline; color: green;}
+.class6 A:active {text-decoration: none color: none;}
+.class6 A:hover {text-decoration: underline; color: black;}
+
+.class7 A:link {text-decoration: underline; color: red;}
+.class7 A:visited {text-decoration: underline; color: red;}
+.class7 A:active {text-decoration: none color: none;}
+.class7 A:hover {text-decoration: underline; color: black;}
+
+.class8 A:link {text-decoration: none; color: blue;}
+.class8 A:visited {text-decoration: none; color: blue;}
+.class8 A:active {text-decoration: none color: none;}
+.class8 A:hover {text-decoration: underline; color: black;}
+
+.extralargepink {
+	 FONT-SIZE: 16px; FONT-WEIGHT: bold; COLOR: #EB7E73; FONT-FAMILY: Georgia, Times New Roman; TEXT-DECORATION: none
+}
+
+.class9 A:link {text-decoration: underline; color: blue;}
+.class9 A:visited {text-decoration: underline; color: blue;}
+.class9 A:active {text-decoration: none color: none;}
+.class9 A:hover {text-decoration: underline; color: black;}
+
+.style1 {color: #FF0000}
+
+h1{font-weight: bold;    font-size: 14px; color: #000000; font-style: normal; font-family: ms sans serif; text-decoration: none;    margin: 0;}
+
+.testbox1 {FONT-SIZE: 11px; FONT-FAMILY: arial; background-color: #ffffff; color:#3300FF; border-bottom-style:none; border-left-style:none; border-right-style:none; border-top-style:none}
+
+.bgred {background-color:#D80101}
+.bgyell {background-color:#FFF4B9}
+.bggrey {background-color:#e8e8e8}
+.bgwhi {background-color:#ffffff}
+.bgsgrey {background-color:#B0C4D6}
+.bglyell {background-color:#FFE57F}
+
+.mediumgrey {
+        FONT-SIZE: 12px; COLOR: #EBEBEB; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none; font-weight: bold
+}
+
+.class10 A:link {text-decoration: none; color: #ebebeb;}
+.class10 A:visited {text-decoration: none; color: #ebebeb;}
+.class10 A:active {text-decoration: none; color: none;}
+.class10 A:hover {text-decoration: none; color: #ffffff;}
+
+.class11 A:link {text-decoration: none; color: black;}
+.class11 A:visited {text-decoration: none; color: black;}
+.class11 A:active {text-decoration: none color: none;}
+.class11 A:hover {text-decoration: none; color: green;}
+
+.mediumgrey1 {FONT-SIZE: 12px; COLOR: #EBEBEB; FONT-FAMILY: Arial; TEXT-DECORATION: none; font-weight: bold
+}
+
+.headbigblack {
+   FONT-SIZE: 16px; COLOR: #7A7A7A; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none; font-weight: bold
+}
+                                                                                
+.bgsgrey1 {background-color:#D5DFE9}
+                                                                                
+.bglgrey {background-color:#f1f1f1}
+
+.class1_1 A:link {text-decoration: underline; color: #ffffff;}
+.class1_1 A:visited {text-decoration: underline; color: #ffffff;}
+.class1_1 A:active {text-decoration: underline; color: none;}
+.class1_1 A:hover {text-decoration: underline; color: #cccccc;}

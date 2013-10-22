@@ -1,0 +1,525 @@
+user_id,category_id,item_title,item_counter_style,Quantity,detailed_descrip,selling_method,min_bid_amount,bid_increment,shipping_cost,Currency,reserve_price,quick_buy_price,bid_starting_date,start_delay,Status,Picture1,picture2,picture3,payment_name,expire_date,payment_id,tax,no_of_repost,features
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,213,Nokia Ngauge,1,10,Nokia N Gauge,Dutch Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+15,224,Sony w310 i,2,1,Sonyw310i,Simple Auction,10000,50,10,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+18,455,HP Laptop,1,1,Hp Laptop,Simple Auction,40000,100,100,Rs,45000,50000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,873,Teddy Bear,2,1,Smart Teddy Bear,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,904,Rado Watch,2,1,Gold Rado Watch,Simple Auction,1000,10,50,Rs,11000,12000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,865,Harley,1,1,Harley Davidson,Simple Auction,80000,1000,1000,Rs,85000,100000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
+19,252,Microven,1,1,Microoven instant,Simple Auction,2000,50,50,Rs,2500,3000,19/01/2008,0,Active,,,,Paypal,19/02/2008,1,0.5,4,Yes
