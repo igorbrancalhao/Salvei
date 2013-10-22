@@ -661,16 +661,16 @@ $buy = mysql_query($buy_sql);
   <tr>
   <td> <table border="0" align="center" cellpadding="5" cellspacing="2" width="100%">
   <tr>
-  <td align="center"><a href="userdetails.php?id=<?php=$id?>&type=bon&mode=bonus">Bonus</a></td>
-  <td align="center"><a href="userdetails.php?id=<?php=$id?>&type=bon&mode=penalty">Penalty</a></td>
+  <td align="center"><a href="userdetails.php?id=<?php echo $id?>&type=bon&mode=bonus">Bonus</a></td>
+  <td align="center"><a href="userdetails.php?id=<?php echo $id?>&type=bon&mode=penalty">Penalty</a></td>
   </tr>
   </table></td>
   </tr>
   <tr>
   <td align="center" colspan="2"><b><font size="+2">
-  <?php=ucwords($mode)?>
+  <?php echo ucwords($mode)?>
   Details of
-  <?php=$username?>
+  <?php echo $username?>
   </font></b></td>
   </tr>
   <tr>
@@ -678,7 +678,7 @@ $buy = mysql_query($buy_sql);
   <tr>
   <td><b>Amount</b></td>
   <td><b>
-  <?php=ucwords($mode)?>
+  <?php echo ucwords($mode)?>
   Date</b></td>
   <td><b>Description</b></td>
   </tr>
@@ -691,13 +691,13 @@ $buy = mysql_query($buy_sql);
   ?>
   <tr>
   <td>
-  <?php=$amount?>
+  <?php echo $amount?>
   </td>
   <td>
-  <?php=$date?>
+  <?php echo $date?>
   </td>
   <td>
-  <?php=$description?>
+  <?php echo $description?>
   </td>
   </tr>
   <?php
@@ -707,7 +707,7 @@ $buy = mysql_query($buy_sql);
   ?>
   <tr>
   <td colspan="7" align="center">No
-  <?php=ucwords($mode)?>
+  <?php echo ucwords($mode)?>
   Found</td>
   </tr>
   <?php

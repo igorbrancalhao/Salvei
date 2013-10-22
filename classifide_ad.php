@@ -88,7 +88,7 @@ function cat_display($cat_displayid, $cat_string) {
     $cat_sql1 = "select * from category_master where category_id=" . $cat_displayid;
     $cat_sql_res1 = mysql_query($cat_sql1);
     $cat_sql_row1 = mysql_fetch_array($cat_sql_res1);
-    $cat_string.="<a href='category.php?cate_id=$cat_sql_row1[category_id]' class='header_text5'>$cat_sql_row1[category_name]</a>" . "|";
+    $cat_string.="<a href='category.php?cate_id=$cat_sql_row1['category_id']' class='header_text5'>$cat_sql_row1[category_name]</a>" . "|";
     if ($cat_sql_row1[category_head_id]) {
         cat_display($cat_sql_row1[category_head_id], $cat_string);
     } else {

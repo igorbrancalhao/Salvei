@@ -87,7 +87,7 @@
                                         <?php if(!empty($err_des))
                                         {?>
  <tr class="detail9txt"><td>&nbsp;&nbsp;&nbsp;&nbsp;
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_des ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_des ?></font>
  <br>
  <b><font size=2 color=red>&nbsp;&nbsp;&nbsp;&nbsp;Description
  *</font></b> </td>
@@ -141,7 +141,7 @@
                                                                 //	$content = rteSafe($_POST["rte1"]);	
                                                         }
                                                         ? >
-                                                                rte1.html = '<?php=$content;?>';
+                                                                rte1.html = '<?php echo $content;?>';
                                                         //rte1.toggleSrc = false;
                                                         rte1.build();
                                                         //-->
@@ -151,7 +151,7 @@
                                                         <!--<input type="submit" name="submit" value="Submit" />--></p>
                                                     <input type="hidden" name="flag" value="1">
                                                     <input type="hidden" name="content" value="">
-                                                    <input type="hidden" name="mode" value="<?php=$mode?>">
+                                                    <input type="hidden" name="mode" value="<?php echo $mode?>">
                                                 </td></tr>
                                         </form>
                                         <?php

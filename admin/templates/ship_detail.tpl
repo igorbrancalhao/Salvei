@@ -53,7 +53,7 @@
                                             {
                                             ?>
                                         <tr><td>&nbsp;</td>
-                                            <td><a href="ship_detail.php#world">Shipping Location</a> - <?php= $err_route; ?></td></tr>
+                                            <td><a href="ship_detail.php#world">Shipping Location</a> - <?php echo  $err_route; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -61,7 +61,7 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td><a href="ship_detail.php#txtship_amt">Shipping Amount</a> - <?php= $err_amt; ?></td></tr>
+                                            <td><a href="ship_detail.php#txtship_amt">Shipping Amount</a> - <?php echo  $err_amt; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -70,8 +70,8 @@
                                     }
                                     ?>
                                 </td></tr>
-                            <tr><td><font size=2><b>Title:</b></font>&nbsp;&nbsp;<?php= $_SESSION[item_name]; ?></td></tr>
-                            <tr><td><font size=2><b>Subtitle:</b></font>&nbsp;&nbsp;<?php= $_SESSION[subtitle]; ?></td></tr>
+                            <tr><td><font size=2><b>Title:</b></font>&nbsp;&nbsp;<?php echo  $_SESSION[item_name]; ?></td></tr>
+                            <tr><td><font size=2><b>Subtitle:</b></font>&nbsp;&nbsp;<?php echo  $_SESSION[subtitle]; ?></td></tr>
                             <tr><td>
                                     <form name="ship" method="post" action="ship_detail.php" onsubmit="return chk();">
                                         <table width="100%" cellpadding="5" cellspacing="2" border="0">
@@ -89,13 +89,13 @@
                                                         if($pay_row[gateway_id]==$payment)
                                                         {
                                                         ?>
-                                                        <option value="<?php=$pay_row['gateway_id'];?>" selected><?php=$pay_row[payment_gateway];?></option>
+                                                        <option value="<?php echo $pay_row['gateway_id'];?>" selected><?php echo $pay_row[payment_gateway];?></option>
                                                         <?php
                                                         }
                                                         else
                                                         {
                                                         ?>
-                                                        <option value="<?php=$pay_row['gateway_id'];?>"><?php=$pay_row[payment_gateway];?></option>
+                                                        <option value="<?php echo $pay_row['gateway_id'];?>"><?php echo $pay_row[payment_gateway];?></option>
                                                         <?php
                                                         }
                                                         }
@@ -107,7 +107,7 @@
                                             <tr ><td class="tr_bottomless_border">
                                                     <?php if(!empty($err_ship_loc))
                                                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_ship_loc ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_ship_loc ?></font>
  <br>
  <b><font size=2 color=red>Shipping Location</font></b>
  <?php
@@ -141,7 +141,7 @@
                                                                 if($ship_row['ship_id']==$shipping_route[$s])
                                                                 {
                                                                 ?>
-                                                                <input type="checkbox" name="ship<?php= $r ?>"  value="<?php=$ship_row['ship_id'];?>" checked><?php=$ship_row[location];?>
+                                                                <input type="checkbox" name="ship<?php echo  $r ?>"  value="<?php echo $ship_row['ship_id'];?>" checked><?php echo $ship_row[location];?>
                                                                 <?php
                                                                 break;
                                                                 }
@@ -152,7 +152,7 @@
                                                                 if($j==$total)
                                                                 {
                                                                 ?>
-                                                                <input type="checkbox" name="ship<?php=$r  ?>"  value="<?php=$ship_row['ship_id'];?>"><?php=$ship_row[location];?>
+                                                                <input type="checkbox" name="ship<?php echo $r  ?>"  value="<?php echo $ship_row['ship_id'];?>"><?php echo $ship_row[location];?>
                                                                 <?php
                                                                 }
                                                                 }
@@ -167,7 +167,7 @@
                                             <tr><td align="left">
                                                     <?php if(!empty($err_amt))
                                                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_amt ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_amt ?></font>
  <br>
  <b><font size=2 color=red>Shipping Amount</font></b>
  <?php
@@ -180,7 +180,7 @@
                                                     }
                                                     ?>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <input type="text" name=txtship_amt class="txtsmall" value=<?php= $shipping_amt;?>></td></tr>
+                                                    <input type="text" name=txtship_amt class="txtsmall" value=<?php echo  $shipping_amt;?>></td></tr>
                                             <tr >
                                                 <td class="tr_bottomless_border"><font size="2"><b>Sales Tax </b></font></td>
                                             </tr>
@@ -188,7 +188,7 @@
                                                     <font size="2">
                                                     <b>Tax Amount</b></font>
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-                                                    <input type="text" name=tax class="txtsmall" value="<?php=$tax;?>"> <b> % </b> 
+                                                    <input type="text" name=tax class="txtsmall" value="<?php echo $tax;?>"> <b> % </b> 
                                                 </td>
                                             </tr>
 
@@ -211,13 +211,13 @@
                                                         <?php if($refund_days==$row['duration'])
                                                         {
                                                         ?>
-                                                        <option value="<?php= $row['duration'] ?>" selected> <?php= $row['duration'] ?> Days</option>
+                                                        <option value="<?php echo  $row['duration'] ?>" selected> <?php echo  $row['duration'] ?> Days</option>
                                                         <?php
                                                         }
                                                         else
                                                         {
                                                         ?>
-                                                        <option value="<?php= $row['duration'] ?>" > <?php= $row['duration'] ?> Days</option>
+                                                        <option value="<?php echo  $row['duration'] ?>" > <?php echo  $row['duration'] ?> Days</option>
                                                         <?php
                                                         }
                                                         } // while($row=mysql_fetch_array($table))
@@ -272,12 +272,12 @@
 
                                             <tr><td><b>Return Policy Details</b></td></tr>
                                             <tr><td>
-                                                    <textarea name="txtploicy" cols="60" rows="6"><?php= $returnpolicy_instructions ?></textarea>
+                                                    <textarea name="txtploicy" cols="60" rows="6"><?php echo  $returnpolicy_instructions ?></textarea>
                                                 </td></tr>
                                             <tr><td class="tr_bottomless_border"><font size="2"><b>Payment Instructions</b></font></td></tr>
                                             <tr><td>Give clear instructions to assist your buyer with payment and shipping.</td></tr>
                                             <tr><td>
-                                                    <textarea name="txtpaymentins" cols="60" rows="6"><?php= $payment_instructions ?> </textarea>
+                                                    <textarea name="txtpaymentins" cols="60" rows="6"><?php echo  $payment_instructions ?> </textarea>
                                                 </td></tr>
                                             <!--<tr><td class="tr_bottomless_border">
                                             <table width="100%" >
@@ -288,7 +288,7 @@
                                             <input type="text" name="blockpreferencesoption" id=blockpreferencesoption style="border:#FFFFFF;width:500" />
                                             </td></tr>
                                             <tr><td>
-                                            <input type="text" name="blockbuyercountries" id=blockcountryid style="border:#FFFFFF;width:500"  value="<?php= $_SESSION[blockbuyercountries] ?>"/></td></tr>
+                                            <input type="text" name="blockbuyercountries" id=blockcountryid style="border:#FFFFFF;width:500"  value="<?php echo  $_SESSION[blockbuyercountries] ?>"/></td></tr>
                                             <tr><td>
                                             <input type="hidden" name="feedbackscore"  />
                                             <input type="text" name="blockbuyerfeedbakscore" id=blockbuyerfeedbakscore style="border:#FFFFFF;width:500" /></td></tr>

@@ -52,7 +52,7 @@
                                 {
                                 ?>
                             <tr class="detail6txt"><td>&nbsp;</td>
-                                <td><a href="wantitnow.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Category</a> - <?php= $err_cat; ?></td></tr>
+                                <td><a href="wantitnow.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Category</a> - <?php echo  $err_cat; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -60,21 +60,21 @@
                             {
                             ?>
                             <tr class="detail6txt"><td>&nbsp;</td>
-                                <td><a href="wantitnow.php#" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php= $err_title; ?></td></tr>
+                                <td><a href="wantitnow.php#" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php echo  $err_title; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_dur))
                             {
                             ?>
-                            <tr class="detail6txt"><td>&nbsp;</td><td><a href="wantitnow.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php= $err_dur; ?></td></tr>
+                            <tr class="detail6txt"><td>&nbsp;</td><td><a href="wantitnow.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php echo  $err_dur; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img1))
                             {
                             ?>
-                            <tr class="detail6txt"><td>&nbsp;</td><td><a href="wantitnow.php#img1" onclick="sel('img1')" class="header_text2">Image1</a> - <?php= $err_img1; ?></td></tr>
+                            <tr class="detail6txt"><td>&nbsp;</td><td><a href="wantitnow.php#img1" onclick="sel('img1')" class="header_text2">Image1</a> - <?php echo  $err_img1; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -94,7 +94,7 @@
                                             <tr><td  class="detail9txt">
                                                     <?php if(!empty($err_cat))
                                                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_cat ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_cat ?></font>
  <br>
  <b><font size=2 color=red>Category</font></b>
  <span class="style1">*</span> 
@@ -125,7 +125,7 @@
                                                                     while($rec=mysql_fetch_array($res123))
                                                                     { 
                                                                     ?>
-                                                                    <option value="<?php= $rec[category_id];?>">  <?php= $rec[category_name];?>  </option>
+                                                                    <option value="<?php echo  $rec['category_id'];?>">  <?php echo  $rec[category_name];?>  </option>
                                                                     <?php
                                                                     }
                                                                     ?>
@@ -176,7 +176,7 @@
                                             <?php if(!empty($err_title))
                                             {?>
  <tr class="detail9txt"><td>
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_title ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_title ?></font>
  <br>
  <b><font size=2 color=red>I am searching for</font></b>
  <span class="style1">*</span> </td>
@@ -195,7 +195,7 @@
                                             ?>
 
 
-                                            <tr><td width=965><input type="text" name="txttitle" class="txtbig" value="<?php= $item_title; ?>">
+                                            <tr><td width=965><input type="text" name="txttitle" class="txtbig" value="<?php echo  $item_title; ?>">
                                                 </td></tr>
 
                                             <tr class="detail9txt">
@@ -207,7 +207,7 @@
                                                     <?php if(!empty($err_dur))
                                                     { 
                                                     ?>
-                                                    <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_dur; ?></font>
+                                                    <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_dur; ?></font>
                                                     <br>
                                                     <b><font size=2 color=red>Duration</font></b>
                                                     <span class="style1">*</span>
@@ -240,13 +240,13 @@
                                                         <?php if($dur==$row['duration_id'])
                                                         {
                                                         ?>
-                                                        <option value="<?php= $row['duration'] ?>" selected><?php= $row['duration'] ?> Days</option>
+                                                        <option value="<?php echo  $row['duration'] ?>" selected><?php echo  $row['duration'] ?> Days</option>
                                                         <?php
                                                         }
                                                         else
                                                         {
                                                         ?>
-                                                        <option value="<?php= $row['duration'] ?>" ><?php= $row['duration'] ?> Days</option>
+                                                        <option value="<?php echo  $row['duration'] ?>" ><?php echo  $row['duration'] ?> Days</option>
                                                         <?php
                                                         }
                                                         } // while($row=mysql_fetch_array($table))
@@ -260,7 +260,7 @@
                                             <tr class="detail9txt"><td colspan="2">
                                                     <?php if(!empty($err_img1))
                                                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img1; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img1; ?></font>
  <br>
  <b><font size=2 color=red>Image1</font></b>
  <?php
@@ -272,20 +272,20 @@
                                                     <?php 
                                                     }
                                                     ?>
-                                                    <input type="file" name="img1" value="<?php= $img1; ?>" id="img1">
+                                                    <input type="file" name="img1" value="<?php echo  $img1; ?>" id="img1">
                                                     <?php if(!empty($_SESSION[image1]))
                                                     {
                                                     ?>
-                                                    <img src="images/<?php=$_SESSION[image1]?>" width="25" height="25">
+                                                    <img src="images/<?php echo $_SESSION[image1]?>" width="25" height="25">
                                                     <?php
                                                     }
                                                     ?></td></tr>
 
                                             <input type="hidden" name="flag" value="1">
-                                            <input type="hidden" name="cat_id" value="<?php= $cat_id; ?>">
-                                            <input type="hidden" name="mode" value="<?php= $mode; ?>">
-                                            <input type="hidden" name="sell_format" value="<?php= $sell_format; ?>">
-                                            <input type="hidden" name="item_id" value="<?php= $item_id; ?>">
+                                            <input type="hidden" name="cat_id" value="<?php echo  $cat_id; ?>">
+                                            <input type="hidden" name="mode" value="<?php echo  $mode; ?>">
+                                            <input type="hidden" name="sell_format" value="<?php echo  $sell_format; ?>">
+                                            <input type="hidden" name="item_id" value="<?php echo  $item_id; ?>">
 
                                             <input type="hidden" name="sub_cat1" id="sub_cat1" value="">
                                             <input type="hidden" name="sub_cat2" id="sub_cat2" value="">

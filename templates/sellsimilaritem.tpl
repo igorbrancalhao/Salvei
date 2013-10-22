@@ -29,14 +29,14 @@
                 $sqlfetch=mysql_fetch_array($sqlqry);
                 ?>
                 <tr><td class="categories_fonttype">
-                        <b><?php=$sqlfetch['category_name'];?>:<?php=$sqlfetchsub['category_name'];?></b>
+                        <b><?php echo $sqlfetch['category_name'];?>:<?php echo $sqlfetchsub['category_name'];?></b>
                         <form method="post" action="sell_item_detail.php" name="sellsimilar">
                             <!--<input type="button" value="<<Sell Format" name=sellformat onclick="refreshsell()"/>-->
 
                             <input type="image" src="images/sellformat.gif" name="Image96" width="112" height="19" border="0" id="Image96" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image96', '', 'images/sellformat1.gif', 1)" onclick="refreshsell()"/>
 
                             <input type="image" src="images/continue.gif" name="Image71" width="81" height="24" border="0" id="Image71" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71', '', 'images/continueo.gif', 1)" onclick="refreshsellsimilar( < ?php = $sellitemid? > )"/>
-                            <!--<input type="button" value="continue>>" name=continue onclick="refreshsellsimilar(<?php=$sellitemid?>)"/>-->
+                            <!--<input type="button" value="continue>>" name=continue onclick="refreshsellsimilar(<?php echo $sellitemid?>)"/>-->
                             <input type=hidden name=sellitemid />
                             <input type=hidden name=mode />
                             <input type=hidden name=check />

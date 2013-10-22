@@ -36,7 +36,7 @@ function easy_cat_display($ssid, $cat) {
     $sub_res = mysql_query($ss_sql);
     while ($cat_row = mysql_fetch_array($sub_res)) {
         if ($cat_row['category_id']) {
-            $cat.="category_id=" . $cat_row[category_id] . " or ";
+            $cat.="category_id=" . $cat_row['category_id'] . " or ";
             $ssid = $cat_row['category_id'];
             $_SESSION[catt] = $_SESSION[catt] . "$cat";
             easy_cat_display($ssid, $cat);
@@ -225,7 +225,7 @@ require 'include/top.php';
 
                                 <?php
                                 while ($cat_row = mysql_fetch_array($res)) {
-                                    $sub_sql = "select * from category_master where category_head_id=$cat_row[category_id] order by category_name";
+                                    $sub_sql = "select * from category_master where category_head_id=$cat_row['category_id'] order by category_name";
                                     $sub_res = mysql_query($sub_sql);
                                     ?>
                                     <tr bgcolor="eeeee1">

@@ -43,20 +43,20 @@
                     cat_display($cat_sql_row[category_head_id],$cat_string);
                     }
                     ?>
-                    <span class="header_text5"><a href="category.php?cate_id=<?php= $cat_sql_row[category_id] ?>" class="header_text5"><?php= $cat_sql_row[category_name] ?></a></span>
+                    <span class="header_text5"><a href="category.php?cate_id=<?php echo  $cat_sql_row['category_id'] ?>" class="header_text5"><?php echo  $cat_sql_row[category_name] ?></a></span>
                 </td>
             </tr>
             <tr>
-                <td height="1" colspan="4" align="right">&nbsp;<span><font color="#FF0000"><b><?phpif($row[status]=='Closed')
-                            echo "Item Closed";?></b></font></span></td>
+                <td height="1" colspan="4" align="right">&nbsp;<span><font color="#FF0000"><b><?php if ($row[status]=='Closed')
+                            echo  "Item Closed";?></b></font></span></td>
             </tr>
         </table>
     </div>
     <div id="detail"><table width="959" height="69" border="0" cellpadding="0" cellspacing="0" background="images/detailbgtop.jpg">
             <tr>
                 <td width="31">&nbsp;</td>
-                <td width="672" class="detail3txt"><?php=$row['item_title'];?></td>
-                <td width="256" class="detail4txt">N&uacute;mero do Produto:  <?php=$row['item_id'];?></td>
+                <td width="672" class="detail3txt"><?php echo $row['item_title'];?></td>
+                <td width="256" class="detail4txt">N&uacute;mero do Produto:  <?php echo $row['item_id'];?></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -72,7 +72,7 @@
                     {
                     ?>
                     <font size="2" color="red">
-                    <b> &nbsp;&nbsp;&nbsp;<?php= $warning?></b></font>
+                    <b> &nbsp;&nbsp;&nbsp;<?php echo  $warning?></b></font>
                     <?php
                     }
                     else if($watch_flag==1)
@@ -84,13 +84,13 @@
                     if($watch_flag_new==2)
                     {
                     ?>
-                    <span class="detail5txt">This item is being watched in My Auction</span> <span class="detail7txt" style="text-decoration:none; cursor:default">( <?php= $watch_tot?> items in watchlist )</span>
+                    <span class="detail5txt">This item is being watched in My Auction</span> <span class="detail7txt" style="text-decoration:none; cursor:default">( <?php echo  $watch_tot?> items in watchlist )</span>
                     <?php
                     }
                     else if($watch_flag_new==1)
                     {
                     ?>
-                    <span class="detail5txt">This item is Already watched in My Auction</span> <span class="detail7txt" style="text-decoration:none; cursor:default">( <?php= $watch_tot?> items in watchlist )</span>
+                    <span class="detail5txt">This item is Already watched in My Auction</span> <span class="detail7txt" style="text-decoration:none; cursor:default">( <?php echo  $watch_tot?> items in watchlist )</span>
                     <?php
                     }
                     else if($watch_flag_new==3)
@@ -108,7 +108,7 @@
                     }
                     ?>
                 </td>
-                <td><span class="detail7txt"><a href="detail.php?item_id=<?php= $row['item_id'] ?>&mode=watch" class="detail7txt">Seguir este produto </a></span>  <span class="detail6txt">|</span>  <span class="detail7txt"><a href="forward_to_friend.php?item_id=<?php= $row['item_id']; ?>" class="detail7txt">Enviar para um amigo </a></span></td>
+                <td><span class="detail7txt"><a href="detail.php?item_id=<?php echo  $row['item_id'] ?>&mode=watch" class="detail7txt">Seguir este produto </a></span>  <span class="detail6txt">|</span>  <span class="detail7txt"><a href="forward_to_friend.php?item_id=<?php echo  $row['item_id']; ?>" class="detail7txt">Enviar para um amigo </a></span></td>
             </tr>
         </table><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -147,14 +147,14 @@
                                                             // $videofile=html_entity_decode($row['videofile']);
                                                             // $videofile=html_entity_decode($row['videofile']);
                                                             ?>
-                                                            <div align="center"><?php=stripslashes($row['videofile']);?></div>
+                                                            <div align="center"><?php echo stripslashes($row['videofile']);?></div>
                                                             <?php
                                                             }
                                                             else if($row['videolink'])
                                                             {
                                                             ?>
                                                             <div align="center">
-                                                                <iframe src="<?php=$row['videolink'];?>" scrolling="yes" height="355" width="425">
+                                                                <iframe src="<?php echo $row['videolink'];?>" scrolling="yes" height="355" width="425">
                                                                 </iframe>
                                                             </div>
                                                             <?php
@@ -176,8 +176,8 @@
                                         <tr>
                                             <td width="38%" class="banner1">Lance Atual </td>
                                             <td width="3%" class="banner1">:</td>
-                                            <td width="58%" class="detail8txt"><?php echo $row['currency']." ".$current_price; ?><br />
-                                                <?phpif($row['reserve_price']!="0.00")
+                                            <td width="58%" class="detail8txt"><?php echo  $row['currency']." ".$current_price; ?><br />
+                                                <?php if ($row['reserve_price']!="0.00")
                                                 { 
                                                 if($row['reserve_price'] <= $current_price )
                                                 { 
@@ -197,7 +197,7 @@
                                         <tr>
                                             <td class="banner1">Inicio da Oferta </td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $row['currency']." ".$row['min_bid_amount'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['currency']." ".$row['min_bid_amount'];?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3"><div align="left"><img src="images/detailline.gif" alt="" width="269" height="1" /></div></td>
@@ -205,10 +205,10 @@
                                         <tr>
                                             <td class="banner1">Quantidade</td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $row['Quantity'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['Quantity'];?></td>
                                         </tr>
                                         <?php 
-                                        if(($row[privatelistings]=="No") or empty($row[privatelistings]))
+                                        if(($row[privatelistings]=="No") or empty($row['privatelistings']))
                                         {
                                         ?>
                                         <tr>
@@ -218,7 +218,7 @@
                                             if($tot[0]!=0)
                                             {
                                             ?>
-                                            <td><a href="bidhistory.php?item_id=<?php= $row['item_id']?>" class="header_text2"><?php echo $tot[0];?></a></td>
+                                            <td><a href="bidhistory.php?item_id=<?php echo  $row['item_id']?>" class="header_text2"><?php echo  $tot[0];?></a></td>
                                             <?php
                                             }
                                             else
@@ -239,8 +239,8 @@
                                             if($highest_bidder)
                                             {
                                             ?>
-                                            <td class="detail8txt"><a href="feedback.php?user_id=<?php=$max['user_id'];?>" class="header_text2">
-                                                    <?php echo $highest_bidder;?></a>&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$max['user_id'];?>" class="header_text2"><?php echo $high_feed_tot[feedbacktotal]; ?></a><?php if($feedback_highimg!='') { ?><img src="images/<?php= $feedback_highimg ?>" /><?php } ?> )</td>
+                                            <td class="detail8txt"><a href="feedback.php?user_id=<?php echo $max['user_id'];?>" class="header_text2">
+                                                    <?php echo  $highest_bidder;?></a>&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $max['user_id'];?>" class="header_text2"><?php echo  $high_feed_tot[feedbacktotal]; ?></a><?php if($feedback_highimg!='') { ?><img src="images/<?php echo  $feedback_highimg ?>" /><?php } ?> )</td>
                                             <?php
                                             }
                                             else
@@ -259,7 +259,7 @@
                                         <tr>
                                             <td width="38%" class="banner1">Pre&ccedil;o</td>
                                             <td width="3%" class="banner1">:</td>
-                                            <td width="58%" class="detail8txt"><?php echo $row['currency']." ".$row[quick_buy_price]; 
+                                            <td width="58%" class="detail8txt"><?php echo  $row['currency']." ".$row[quick_buy_price]; 
                                                 $current_price=$row[quick_buy_price]; ?></td>
                                         </tr>
                                         <!--<tr>
@@ -280,7 +280,7 @@
                                             $expire_date=$row['expire_date'];
                                             require 'ends.php';
                                             ?>
-                                            <td class="detail8txt"><?php echo "$string_difference" ;?></td>
+                                            <td class="detail8txt"><?php echo  "$string_difference" ;?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3"><div align="left"><img src="images/detailline.gif" alt="" width="269" height="1" /></div></td>
@@ -291,7 +291,7 @@
                                             <?php if(!empty($row['shipping_cost']))
                                             {
                                             ?>
-                                            <td class="detail8txt"><?php echo $row['currency']." ".$row['shipping_cost'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['currency']." ".$row['shipping_cost'];?></td>
                                             <?php 
                                             }
                                             else
@@ -308,7 +308,7 @@
                                             <?php if(!empty($row['tax']))
                                             {
                                             ?>
-                                            <td class="detail8txt"><?php echo $row['tax'];?> %</td>
+                                            <td class="detail8txt"><?php echo  $row['tax'];?> %</td>
                                             <?php
                                             }
                                             else
@@ -322,7 +322,7 @@
                                         <tr>
                                             <td class="banner1">Envio de </td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $country['country'];?></td>
+                                            <td class="detail8txt"><?php echo  $country['country'];?></td>
                                         </tr>
                                         <tr>
                                             <td class="banner1">para</td>
@@ -344,7 +344,7 @@
                                                 if($ship_row['ship_id']==$shipping[$i])
                                                 {
                                                 ?>
-                                                <?php=$ship_row[location];?>&nbsp;
+                                                <?php echo $ship_row['location'];?>&nbsp;
                                                 <?php
                                                 }
                                                 }
@@ -362,7 +362,7 @@
                                         </tr>
                                         <tr>
                                             <td class="banner1">Condi&ccedil;&otilde;es do produto  </td>
-                                            <td class="banner1">:</td><td style="font-size:small;color:#FF0000"><?php=$row['item_specify']?></td></tr>
+                                            <td class="banner1">:</td><td style="font-size:small;color:#FF0000"><?php echo $row['item_specify']?></td></tr>
                                         <?php
                                         $cat_sql="select * from cat_slave where category_id=".$row['category_id'];
                                         if($custom_res=mysql_query($cat_sql))
@@ -383,7 +383,7 @@
                                         $tablerow=mysql_fetch_array($table_res);
                                         ?>
                                         <tr>
-                                            <td class="banner1"><?php=  $tab_col->name; ?></td><td class="banner1">:</td><td class="detail8txt"><?php= $tablerow[$tab_col->name] ?>		</td>
+                                            <td class="banner1"><?php echo   $tab_col->name; ?></td><td class="banner1">:</td><td class="detail8txt"><?php echo  $tablerow[$tab_col->name] ?>		</td>
                                         </tr>
                                         <?php	  
                                         $i++;
@@ -409,13 +409,13 @@
                                             <td width="14">&nbsp;</td>
                                             <td width="73" class="banner1">Vendedor</td>
                                             <td width="16">:</td>
-                                            <td width="200" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="detail8txt"><?php echo $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="detail8txt"><?php echo $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php= $feedback_img ?>" /><?php } ?> )</td>
+                                            <td width="200" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php echo  $row['user_id'];?>" class="detail8txt"><?php echo  $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="detail8txt"><?php echo  $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php echo  $feedback_img ?>" /><?php } ?> )</td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="banner1">Coment&aacute;rios</td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $feed_tot[feedbacktotal]; ?></td>
+                                            <td class="detail8txt"><?php echo  $feed_tot[feedbacktotal]; ?></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
@@ -431,14 +431,14 @@
                                                 $custom_date1=$custom_date2[0];
                                                 $custom_date2=$custom_date2[1];
                                                 $custom_date4=$custom_date3."-"."$custom_date2"."-"."$custom_date1"." "."$custom_time";
-                                                echo $custom_date[0]; ?>. Pa&iacute;s: <?php= $country['country']; ?></td>
+                                                echo  $custom_date[0]; ?>. Pa&iacute;s: <?php echo  $country['country']; ?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                     <tr>
                                                         <td width="6%">&nbsp;</td>
                                                         <td width="9%"><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="header_text2">Veja Coment&aacute;rios Detalhados </a></td>
+                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php echo  $row['user_id'];?>" class="header_text2">Veja Coment&aacute;rios Detalhados </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -457,7 +457,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php= $row[item_id]; ?>" class="header_text2">Fa&ccedil;a uma pergunta ao vendedor </a></td>
+                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php echo  $row[item_id]; ?>" class="header_text2">Fa&ccedil;a uma pergunta ao vendedor </a></td>
                                                     </tr>
                                                     <?php
                                                     }
@@ -478,7 +478,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="search.php?seller_id=<?php=$row['user_id']; ?>&mode=sellers_item" class="header_text2">Veja outros produtos deste vendedor </a></td>
+                                                        <td class="header_text2"><a href="search.php?seller_id=<?php echo $row['user_id']; ?>&mode=sellers_item" class="header_text2">Veja outros produtos deste vendedor </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -486,7 +486,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="detail.php?item_id=<?php= $item_id ?>#view" class="header_text2">Veja perguntas e coment&aacute;rios </a></td>
+                                                        <td class="header_text2"><a href="detail.php?item_id=<?php echo  $item_id ?>#view" class="header_text2">Veja perguntas e coment&aacute;rios </a></td>
                                                     </tr>
                                                 </table></td>
                                         </tr>
@@ -549,9 +549,9 @@
                                                                 if($enlarge_flag==1)
                                                                 {
                                                                 ?>
-                                                                <!-- <img src="images/<?php=$row['picture1']?>" alt="" width="<?php=$w?>" height="<?php=$h?>" />-->
+                                                                <!-- <img src="images/<?php echo $row['picture1']?>" alt="" width="<?php echo $w?>" height="<?php echo $h?>" />-->
                                                                 <img  id="imgBamburgh" alt=""
-                                                                      src="images/<?php=$row['picture1']?>" width="<?php=$w?>" height="<?php=$h?>"
+                                                                      src="images/<?php echo $row['picture1']?>" width="<?php echo  $w?>" height="<?php echo  $h?>"
                                                                       pbshowcaption="true" class="PopBoxImageSmall" title="Click to magnify/shrink"
                                                                       onclick="Pop(this, 50, 'PopBoxImageLarge');" />
                                                                 <?php
@@ -559,7 +559,7 @@
                                                                 else
                                                                 {
                                                                 ?>
-                                                                <img src="images/<?php=$row['picture1']?>" width="<?php=$w?>" height="<?php=$h?>">
+                                                                <img src="images/<?php echo $row['picture1']?>" width="<?php echo  $w?>" height="<?php echo $h?>">
                                                                 <?php
                                                                 }
                                                                 }
@@ -597,8 +597,8 @@
                                         <tr>
                                             <td width="38%" class="banner1">Lance Atual </td>
                                             <td width="3%" class="banner1">:</td>
-                                            <td width="58%" class="detail8txt"><?php echo $row['currency']." ".$current_price; ?><br />
-                                                <?phpif($row['reserve_price']!="0.00")
+                                            <td width="58%" class="detail8txt"><?php echo  $row['currency']." ".$current_price; ?><br />
+                                                <?php if ($row['reserve_price']!="0.00")
                                                 { 
                                                 if($row['reserve_price'] <= $current_price )
                                                 { 
@@ -618,7 +618,7 @@
                                         <tr>
                                             <td class="banner1">Inicio da Oferta </td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $row['currency']." ".$row['min_bid_amount'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['currency']." ".$row['min_bid_amount'];?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3"><div align="left"><img src="images/detailline.gif" alt="" width="269" height="1" /></div></td>
@@ -626,7 +626,7 @@
                                         <tr>
                                             <td class="banner1">Quantitade</td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $row['Quantity'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['Quantity'];?></td>
                                         </tr>
                                         <?php 
                                         if(($row[privatelistings]=="No") or empty($row[privatelistings]))
@@ -639,7 +639,7 @@
                                             if($tot[0]!=0)
                                             {
                                             ?>
-                                            <td><a href="bidhistory.php?item_id=<?php= $row['item_id']?>" class="header_text2"><?php echo $tot[0];?></a></td>
+                                            <td><a href="bidhistory.php?item_id=<?php echo  $row['item_id']?>" class="header_text2"><?php echo  $tot[0];?></a></td>
                                             <?php
                                             }
                                             else
@@ -660,8 +660,8 @@
                                             if($highest_bidder)
                                             {
                                             ?>
-                                            <td class="detail8txt"><a href="feedback.php?user_id=<?php=$max['user_id'];?>" class="header_text2">
-                                                    <?php echo $highest_bidder;?></a>&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$max['user_id'];?>" class="header_text2"><?php echo $high_feed_tot[feedbacktotal]; ?></a><?php if($feedback_highimg!='') { ?><img src="images/<?php= $feedback_highimg ?>" /><?php } ?> )</td>
+                                            <td class="detail8txt"><a href="feedback.php?user_id=<?php echo $max['user_id'];?>" class="header_text2">
+                                                    <?php echo  $highest_bidder;?></a>&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $max['user_id'];?>" class="header_text2"><?php echo  $high_feed_tot[feedbacktotal]; ?></a><?php if($feedback_highimg!='') { ?><img src="images/<?php echo  $feedback_highimg ?>" /><?php } ?> )</td>
                                             <?php
                                             }
                                             else
@@ -680,7 +680,7 @@
                                         <tr>
                                             <td width="38%" class="banner1">Pre&ccedil;o</td>
                                             <td width="3%" class="banner1">:</td>
-                                            <td width="58%" class="detail8txt"><?php echo $row['currency']." ".$row[quick_buy_price]; 
+                                            <td width="58%" class="detail8txt"><?php echo  $row['currency']." ".$row[quick_buy_price]; 
                                                 $current_price=$row[quick_buy_price]; ?></td>
                                         </tr>
                                         <!--<tr>
@@ -701,7 +701,7 @@
                                             $expire_date=$row['expire_date'];
                                             require 'ends.php';
                                             ?>
-                                            <td class="detail8txt"><?php echo "$string_difference" ;?></td>
+                                            <td class="detail8txt"><?php echo  "$string_difference" ;?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="3"><div align="left"><img src="images/detailline.gif" alt="" width="269" height="1" /></div></td>
@@ -712,7 +712,7 @@
                                             <?php if(!empty($row['shipping_cost']))
                                             {
                                             ?>
-                                            <td class="detail8txt"><?php echo $row['currency']." ".$row['shipping_cost'];?></td>
+                                            <td class="detail8txt"><?php echo  $row['currency']." ".$row['shipping_cost'];?></td>
                                             <?php 
                                             }
                                             else
@@ -729,7 +729,7 @@
                                             <?php if(!empty($row['tax']))
                                             {
                                             ?>
-                                            <td class="detail8txt"><?php echo $row['tax'];?> %</td>
+                                            <td class="detail8txt"><?php echo  $row['tax'];?> %</td>
                                             <?php
                                             }
                                             else
@@ -743,7 +743,7 @@
                                         <tr>
                                             <td class="banner1">Envio de </td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $country['country'];?></td>
+                                            <td class="detail8txt"><?php echo  $country['country'];?></td>
                                         </tr>
                                         <tr>
                                             <td class="banner1">Para</td>
@@ -765,7 +765,7 @@
                                                 if($ship_row['ship_id']==$shipping[$i])
                                                 {
                                                 ?>
-                                                <?php=$ship_row[location];?>&nbsp;
+                                                <?php echo $ship_row[location];?>&nbsp;
                                                 <?php
                                                 }
                                                 }
@@ -783,7 +783,7 @@
                                         </tr>
                                         <tr>
                                             <td class="banner1">Condi&ccedil;&atilde;o do Produto </td>
-                                            <td class="banner1">:</td><td style="font-size:small;color:#FF0000"><?php=$row['item_specify']?></td></tr>
+                                            <td class="banner1">:</td><td style="font-size:small;color:#FF0000"><?php echo $row['item_specify']?></td></tr>
                                         <?php
                                         $cat_sql="select * from cat_slave where category_id=".$row['category_id'];
                                         if($custom_res=mysql_query($cat_sql))
@@ -804,7 +804,7 @@
                                         $tablerow=mysql_fetch_array($table_res);
                                         ?>
                                         <tr>
-                                            <td class="banner1"><?php=  $tab_col->name; ?></td><td class="banner1">:</td><td class="detail8txt"><?php= $tablerow[$tab_col->name] ?>		</td>
+                                            <td class="banner1"><?php echo   $tab_col->name; ?></td><td class="banner1">:</td><td class="detail8txt"><?php echo  $tablerow[$tab_col->name] ?>		</td>
                                         </tr>
                                         <?php	  
                                         $i++;
@@ -830,13 +830,13 @@
                                             <td width="14">&nbsp;</td>
                                             <td width="73" class="banner1">Vendedor</td>
                                             <td width="16">:</td>
-                                            <td width="209" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="detail8txt"><?php echo $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="detail8txt"><?php echo $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php= $feedback_img ?>" /><?php } ?> )</td>
+                                            <td width="209" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="detail8txt"><?php echo  $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="detail8txt"><?php echo  $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php echo  $feedback_img ?>" /><?php } ?> )</td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="banner1">Coment&aacute;rios</td>
                                             <td class="banner1">:</td>
-                                            <td class="detail8txt"><?php echo $feed_tot[feedbacktotal]; ?></td>
+                                            <td class="detail8txt"><?php echo  $feed_tot[feedbacktotal]; ?></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
@@ -851,14 +851,14 @@
                                                 $custom_date1=$custom_date2[0];
                                                 $custom_date2=$custom_date2[1];
                                                 $custom_date4=$custom_date3."-"."$custom_date2"."-"."$custom_date1"." "."$custom_time";
-                                                echo $custom_date[0]; ?>.Pa&iacute;s: <?php= $country['country']; ?></td>
+                                                echo  $custom_date[0]; ?>.Pa&iacute;s: <?php echo  $country['country']; ?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                     <tr>
                                                         <td width="6%">&nbsp;</td>
                                                         <td width="9%"><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="header_text2">Veja Coment&aacute;rios Detalhados </a></td>
+                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="header_text2">Veja Coment&aacute;rios Detalhados </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -877,7 +877,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php= $row[item_id]; ?>" class="header_text2">Fa&ccedil;a uma pergunta ao vendedor </a></td>
+                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php echo  $row[item_id]; ?>" class="header_text2">Fa&ccedil;a uma pergunta ao vendedor </a></td>
                                                     </tr>
                                                     <?php
                                                     }
@@ -898,7 +898,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="search.php?seller_id=<?php=$row['user_id']; ?>&mode=sellers_item" class="header_text2">Veja outros produtos deste vendedor </a></td>
+                                                        <td class="header_text2"><a href="search.php?seller_id=<?php echo $row['user_id']; ?>&mode=sellers_item" class="header_text2">Veja outros produtos deste vendedor </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -906,7 +906,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="detail.php?item_id=<?php= $item_id ?>#view" class="header_text2">Ver perguntas e coment&aacute;rios </a></td>
+                                                        <td class="header_text2"><a href="detail.php?item_id=<?php echo  $item_id ?>#view" class="header_text2">Ver perguntas e coment&aacute;rios </a></td>
                                                     </tr>
                                                 </table></td>
                                         </tr>
@@ -938,14 +938,14 @@
                         { 
                         ?>
                         <b><font size=+1 color="#009900">
-                            <?php= $row[clicks]+1; ?>
+                            <?php echo  $row[clicks]+1; ?>
                             </font>			</b>
                         <?php
                         }
                         else
                         { ?>
                         <b><I><font size=+1 color="#003399">
-                                <?php= $row[clicks]+1; ?>
+                                <?php echo  $row[clicks]+1; ?>
                                 </font>
                             </I></b>			
                         <?php
@@ -963,10 +963,10 @@
                         /*$img=$theme_top;
                         list($width, $height, $type, $attr) = getimagesize("images/$img");*/
                         ?>
-                        <table width="100%" cellpadding="3" cellspacing="0" align="center" <?phpif(!empty($row[themes_id])){?><?php}?>>
-                               <tr><td background="images/<?php= $theme_top ?>" style="background-repeat:no-repeat"  align="left" valign="top" height="60px">
+                        <table width="100%" cellpadding="3" cellspacing="0" align="center" <?php if (!empty($row[themes_id])){?><?php}?>>
+                               <tr><td background="images/<?php echo  $theme_top ?>" style="background-repeat:no-repeat"  align="left" valign="top" height="60px">
                                 </td></tr>
-                            <tr><td background="images/<?php= $theme_content ?>"  style="background-repeat:repeat-y" align="left" valign="top">
+                            <tr><td background="images/<?php echo  $theme_content ?>"  style="background-repeat:repeat-y" align="left" valign="top">
                                     <?php
                                     if($row[layout]=="layout_top.gif")
                                     {
@@ -995,10 +995,10 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
-                                        <tr><td style="padding:50px">  <?php= stripslashes($row[detailed_descrip]); ?>  </td></tr>
+                                        <tr><td style="padding:50px">  <?php echo  stripslashes($row[detailed_descrip]); ?>  </td></tr>
 
                                         <tr><td align="center">
                                                 <?php if($row[picture2])
@@ -1023,7 +1023,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
 
@@ -1050,7 +1050,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1076,7 +1076,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1102,7 +1102,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1128,7 +1128,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1154,7 +1154,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                     </table>
@@ -1166,7 +1166,7 @@
                                     {
                                     ?>
                                     <table width=100% cellpadding="5" >
-                                        <tr><td style="padding:50px" >  <?php= stripslashes($row[detailed_descrip]); ?>  </td></tr>
+                                        <tr><td style="padding:50px" >  <?php echo  stripslashes($row[detailed_descrip]); ?>  </td></tr>
                                         <tr><td align="center">
                                                 <?php if($row[picture1])
                                                 {  
@@ -1190,7 +1190,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
 
@@ -1218,7 +1218,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
 
@@ -1245,7 +1245,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1271,7 +1271,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1297,7 +1297,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1323,7 +1323,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1349,7 +1349,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                     </table>
@@ -1385,7 +1385,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -1413,7 +1413,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -1440,7 +1440,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1466,7 +1466,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1492,7 +1492,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1518,7 +1518,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1544,10 +1544,10 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
-                                                </table></td><td style="padding:50px" valign="top">  <?php= stripslashes($row[detailed_descrip]); ?>  </td></tr>
+                                                </table></td><td style="padding:50px" valign="top">  <?php echo  stripslashes($row[detailed_descrip]); ?>  </td></tr>
                                     </table>
                                     <?php
                                     } // end of left layout
@@ -1558,7 +1558,7 @@
                                     ?>
                                     <table width=100% cellpadding="5" >
                                         <tr>
-                                            <td style="padding:30px" valign="top" width=50%>  <?php= stripslashes($row[detailed_descrip]); ?>  </td>
+                                            <td style="padding:30px" valign="top" width=50%>  <?php echo  stripslashes($row[detailed_descrip]); ?>  </td>
                                             <td>
                                                 <table width=50%>
                                                     <tr><td align="left">
@@ -1584,7 +1584,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -1612,7 +1612,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -1639,7 +1639,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="left">
@@ -1665,7 +1665,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="left">
@@ -1691,7 +1691,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="left">
@@ -1717,7 +1717,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="left">
@@ -1743,7 +1743,7 @@
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $row[picture7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $row[picture7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                 </table></td></tr>
@@ -1754,7 +1754,7 @@
                                     {
                                     ?>
                                     <table width=100% cellpadding="5">
-                                        <tr><td align="center"><?php=$row['detailed_descrip']=stripslashes($row['detailed_descrip']);?></td></tr>
+                                        <tr><td align="center"><?php echo $row['detailed_descrip']=stripslashes($row['detailed_descrip']);?></td></tr>
                                         <tr><td align="center">
                                                 <?php if($row[picture1])
                                                 {  
@@ -1778,7 +1778,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1804,7 +1804,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1830,7 +1830,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1856,7 +1856,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1882,7 +1882,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1908,7 +1908,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1934,7 +1934,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture7]?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture7]?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                     </table>
@@ -1944,7 +1944,7 @@
                                     {
                                     ?>
                                     <table width=100% cellpadding="5">
-                                        <tr><td align="center"><?php=$row['detailed_descrip']=stripslashes($row['detailed_descrip']);?></td></tr>
+                                        <tr><td align="center"><?php echo $row['detailed_descrip']=stripslashes($row['detailed_descrip']);?></td></tr>
                                         <tr><td align="center">
                                                 <?php if($row[picture1])
                                                 {  
@@ -1968,7 +1968,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -1994,7 +1994,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -2020,7 +2020,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -2046,7 +2046,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -2072,7 +2072,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -2098,7 +2098,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                         <tr><td align="center">
@@ -2124,7 +2124,7 @@
                                                 }
 
                                                 ?>
-                                                <img src="thumbnail/<?php= $row[picture7]?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                <img src="thumbnail/<?php echo  $row[picture7]?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                             </td></tr>
                                     </table>
@@ -2136,7 +2136,7 @@
                             /*$img=$theme_bottom;
                             list($width, $height, $type, $attr) = getimagesize("images/$img");*/
                             ?>	
-                            <tr><td background="images/<?php= $theme_bottom ?>" style="background-repeat:no-repeat" width=100% align="left" height="60px">
+                            <tr><td background="images/<?php echo  $theme_bottom ?>" style="background-repeat:no-repeat" width=100% align="left" height="60px">
                                 </td></tr>
                         </table>
                         <?php
@@ -2145,7 +2145,7 @@
                         {
                         ?>
                 <tr align="center">
-                    <td><?php echo stripslashes($row['detailed_descrip']); ?></td>
+                    <td><?php echo  stripslashes($row['detailed_descrip']); ?></td>
                 </tr>
                 <?php
                 }
@@ -2184,7 +2184,7 @@
                                                             if($ship_row['ship_id']==$shipping[$i])
                                                                     {
                                                                     ?>
-                                                                            <?php=$ship_row[location];?>&nbsp;
+                                                                            <?php echo $ship_row[location];?>&nbsp;
                                                                     <?php
                                                                     }
                                                     }
@@ -2192,7 +2192,7 @@
                                     }
                                     else
                                     {
-                                    echo "-";
+                                    echo  "-";
                                     }
                                     ?> </td>
           </tr>
@@ -2223,7 +2223,7 @@
               </tr>
               <tr>
                 <td>&nbsp;</td>
-                <td class="detailblacktxt"><?php echo $row['currency']." ".$row['shipping_cost'];?> </td>
+                <td class="detailblacktxt"><?php echo  $row['currency']." ".$row['shipping_cost'];?> </td>
                 <td class="detailblacktxt">
                             <?php
                             if(!empty($row['shipping_route']))
@@ -2241,7 +2241,7 @@
                                                             if($ship_row['ship_id']==$shipping[$i])
                                                                     {
                                                                     ?>
-                                                                            <?php=$ship_row[location];?>&nbsp;
+                                                                            <?php echo $ship_row[location];?>&nbsp;
                                                                     <?php
                                                                     }
                                                     }
@@ -2289,7 +2289,7 @@
                                             <div id="productScrollerLeft" onmouseover="scroller = setInterval(myScrollLeft, 30);" onmouseout="clearInterval(scroller);">
                                                 <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image66', '', 'images/leftscrollero.gif', 1)">
                                                     <img src="images/leftscroller.gif" name="Image66" width="22" height="207" border="0" id="Image66" /></a></div>	</td>
-                                        <td valign="top" align="left"><iframe src="crosspromoteitems.php?item_id=<?php=$row['item_id']?>" name="scrollerFrame" id="scrollerFrame" frameborder="0" scrolling="no" allowtransparency="false" width="850" height="207"></iframe></td>
+                                        <td valign="top" align="left"><iframe src="crosspromoteitems.php?item_id=<?php echo $row['item_id']?>" name="scrollerFrame" id="scrollerFrame" frameborder="0" scrolling="no" allowtransparency="false" width="850" height="207"></iframe></td>
                                         <td width="38">
                                             <div id="productScrollerRight" onmouseover="scroller = setInterval(myScrollRight, 30);" onmouseout="clearInterval(scroller);">
                                                 <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image67', '', 'images/rightscrollero.gif', 1)"><img src="images/rightscroller.gif" name="Image67" width="22" height="207" border="0" id="Image67" /></a></div>
@@ -2318,7 +2318,7 @@
                    <td class="detail9txt">
                            <?php if(empty($row[crosspromote]))
            {
-           echo "<font size=2>No Items are Cross Promoted</font>";
+           echo  "<font size=2>No Items are Cross Promoted</font>";
            }
            else
            {
@@ -2355,12 +2355,12 @@
                                              $w=$nw;
                                              }
            ?>
-           <tr><td align="center"><img src=images/<?php=$sqlfetchpromoteitem[picture1]?> height=<?php=$h?> width=<?php=$w?>></td></tr>
+           <tr><td align="center"><img src=images/<?php echo $sqlfetchpromoteitem[picture1]?> height=<?php echo $h?> width=<?php echo $w?>></td></tr>
            <?php
            }
            ?>
            <tr><td  align="center">
-           <a href=detail.php?item_id=<?php=$sqlfetchpromoteitem[item_id]?>><?php=$sqlfetchpromoteitem[item_title]?></a></td></tr>
+           <a href=detail.php?item_id=<?php echo $sqlfetchpromoteitem[item_id]?>><?php echo $sqlfetchpromoteitem[item_title]?></a></td></tr>
            </table>
            <?php 
            }
@@ -2417,7 +2417,7 @@
                                         <tr>
                                             <td width="3%">&nbsp;</td>
                                             <td width="36%"><img src="images/paypal.gif" alt="" width="225" height="57" /></td>
-                                            <td width="21%" class="detailblacktxt"><?phpif($paymentgatewayid==1){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td width="21%" class="detailblacktxt"><?php if ($paymentgatewayid==1){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td width="40%"><img src="images/paypal1.gif" alt="" width="313" height="42" /></td>-->
                                         </tr>
                                         <?php
@@ -2431,7 +2431,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="detailblacktxt"><img src="images/intgold.gif" alt="" width="225" height="57"/></td>
-                                            <td class="detailblacktxt"><?phpif($paymentgatewayid==2){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td class="detailblacktxt"><?php if ($paymentgatewayid==2){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td class="detailblacktxt">Not Available </td>-->
                                         </tr>
                                         <?php
@@ -2445,7 +2445,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="detailblacktxt"><img src="images/egold.gif" alt="" width="225" height="57" /></td>
-                                            <td class="detailblacktxt"><?phpif($paymentgatewayid==3){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td class="detailblacktxt"><?php if ($paymentgatewayid==3){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td class="detailblacktxt">Not Available </td>-->
                                         </tr>
                                         <?php
@@ -2459,7 +2459,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="detailblacktxt"><img src="images/money.gif" alt="" width="225" height="57" /></td>
-                                            <td class="detailblacktxt"><?phpif($paymentgatewayid==4){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td class="detailblacktxt"><?php if ($paymentgatewayid==4){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td class="detailblacktxt">Not Available </td>-->
                                         </tr>
                                         <?php
@@ -2473,7 +2473,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="detailblacktxt"><img src="images/ebullion.gif" alt="" width="225" height="57" /></td>
-                                            <td class="detailblacktxt"><?phpif($paymentgatewayid==5){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td class="detailblacktxt"><?php if ($paymentgatewayid==5){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td class="detailblacktxt">Not Available </td>-->
                                         </tr>
                                         <?php
@@ -2487,7 +2487,7 @@
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td class="detailblacktxt"><img src="images/strompay.gif" alt="" width="225" height="57" /></td>
-                                            <td class="detailblacktxt"><?phpif($paymentgatewayid==6){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
+                                            <td class="detailblacktxt"><?php if ($paymentgatewayid==6){?>Aceito<?php}else{?>N&atilde;oAceito<?php}?></td>
                                             <!--<td class="detailblacktxt">Not Available </td>-->
                                         </tr>
                                         <?php
@@ -2519,14 +2519,14 @@
                 {
                 ?>
                 <tr><td class="detailblacktxt">
-                        <?php= $row[payment_instructions] ?>
+                        <?php echo  $row[payment_instructions] ?>
                     </td></tr>
                 <?php
                 }
                 if($row[refund_method])
                 {
                 ?>
-                <tr><td class="detailblacktxt">Refund will be given as <?php=$row[refund_method]?>
+                <tr><td class="detailblacktxt">Refund will be given as <?php echo $row[refund_method]?>
                     </td></tr>
                 <?php
                 }
@@ -2534,7 +2534,7 @@
                 {
                 ?>
                 <tr><td class="detailblacktxt">
-                        Refund will be given if returned within <?php=$row[refund_days]?> day[s].
+                        Refund will be given if returned within <?php echo $row[refund_days]?> day[s].
                     </td></tr>
                 <?php
                 }
@@ -2542,7 +2542,7 @@
                 {
                 ?>
                 <tr><td class="detailblacktxt">
-                        <?php= $row[returnpolicy_instructions] ?>
+                        <?php echo  $row[returnpolicy_instructions] ?>
                     </td></tr>
                 <?php
                 }
@@ -2564,11 +2564,11 @@
                 {
                 ?>
                 <tr><td class="detail9txt"><img src="images/question.gif">&nbsp;&nbsp;
-                        <?php= $ask_row[question];?>
+                        <?php echo  $ask_row[question];?>
                     </td></tr>
                 <tr><td style="border-bottom:1px solid gray"; class="detail9txt">
                         <img src="images/answer.gif">&nbsp;&nbsp;
-                        <?php= $ask_row[answer];?>
+                        <?php echo  $ask_row[answer];?>
                     </td></tr>
                 <?php
                 }
@@ -2596,9 +2596,9 @@
             $chkstartdate_fetch=mysql_fetch_array($chkstartdate_sqlqry);
             $today_date=$chkstartdate_fetch['days'];
             if(($row[selling_method]=="auction" or $row[selling_method]=="dutch_auction"))
-            echo "Ready to bid or buy?";
+            echo  "Ready to bid or buy?";
             else if($row[selling_method]=="fix")
-            echo "Ready to buy?";
+            echo  "Ready to buy?";
             ?>
         </div>
         <div class="detailtablebg">
@@ -2623,7 +2623,7 @@
                                                 <td width="9%">&nbsp;</td>
                                                 <td width="29%" class="banner1">Lan&ccedil;e Atual </td>
                                                 <td width="1%">:</td>
-                                                <td width="61%" class="detailblacktxt"><?php echo $row['currency']." ".$current_price;?></td>
+                                                <td width="61%" class="detailblacktxt"><?php echo  $row['currency']." ".$current_price;?></td>
                                             </tr>
                                             <tr>
                                                 <td height="7"></td>
@@ -2632,7 +2632,7 @@
                                                 <td>&nbsp;</td>
                                                 <td class="banner1">Taxa</td>
                                                 <td>:</td>
-                                                <td class="detailblacktxt"><?php echo $row['currency']." ".$row['bid_increment']; ?></td>
+                                                <td class="detailblacktxt"><?php echo  $row['currency']." ".$row['bid_increment']; ?></td>
                                             </tr>
                                             <tr>
                                                 <td>&nbsp;</td>
@@ -2644,11 +2644,11 @@
                                                         </tr>
                                                         <tr>
                                                             <td><label>
-                                                                    <input type="text" name="max_bid" <?php if(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo "disabled";}?>>
+                                                                    <input type="text" name="max_bid" <?php if(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo  "disabled";}?>>
                                                                 </label></td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="detailblacktxt">( Lan&ccedil;e Min&iacute;mo:<?php echo $row[currency]." ".($current_price+$row['bid_increment']) ?> ) </td>
+                                                            <td class="detailblacktxt">( Lan&ccedil;e Min&iacute;mo:<?php echo  $row[currency]." ".($current_price+$row['bid_increment']) ?> ) </td>
                                                         </tr>
 
                                                     </table></td>
@@ -2666,17 +2666,17 @@
                                             ?>
                                             <!--<td height="27" class="banner1">Quantity</td><td>:</td>
                                         <td align="left">
-                                            <select name=qty <?phpif($row[Quantity]==0 or $row[status]=='Closed'){echo "disabled";}?>>
+                                            <select name=qty <?php if ($row[Quantity]==0 or $row[status]=='Closed'){echo  "disabled";}?>>
                                              <option value="Quantity">Quantity</option>
                                             <?php for($i=1;$i<=$row[Quantity];$i++)
                                             {
                                             ?>
-                                             <option value="<?php= $i;?>"><?php= $i;?></option>
+                                             <option value="<?php echo  $i;?>"><?php echo  $i;?></option>
                                             <?php 
                                             }
                                             ?>
                                             </select>-->
-                                            <input type="hidden" name="qty" value="<?php=$row['Quantity']?>">
+                                            <input type="hidden" name="qty" value="<?php echo $row['Quantity']?>">
                                             <!--</td>-->
                                             <?php
                                             }
@@ -2696,15 +2696,15 @@
                                                 <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
                                                             <td width="12%"><label>
-                                                                    <input name="chk" type="checkbox" value="chk" <?phpif(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo "disabled";}?>>
+                                                                    <input name="chk" type="checkbox" value="chk" <?php if (($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo  "disabled";}?>>
                                                                 </label></td>
                                                             <td width="88%" class="banner1">Desejo ser lembrado por email </td>
                                                         </tr>
                                                     </table></td>
-                                                <td colspan="2"><input type="image" src="images/placeabid.gif" name="Image23" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23', '', 'images/placeabido.gif', 1)" width="97" height="25" border="0" id="Image23" <?phpif(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo "disabled";}?>/></td>
+                                                <td colspan="2"><input type="image" src="images/placeabid.gif" name="Image23" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23', '', 'images/placeabido.gif', 1)" width="97" height="25" border="0" id="Image23" <?php if (($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo  "disabled";}?>/></td>
                                             <input type="hidden" name=flag value=1>
-                                            <input type="hidden" name=err_flag value=<?php= $err_flag; ?>>
-                                                   <input type="hidden" name=item_id value=<?php= $item_id; ?> >
+                                            <input type="hidden" name=err_flag value=<?php echo  $err_flag; ?>>
+                                                   <input type="hidden" name=item_id value=<?php echo  $item_id; ?> >
                                                    </tr>
                                             <tr>
                                                 <!--<td>&nbsp;</td>-->
@@ -2735,18 +2735,18 @@
                                 <td height="122" colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr><td align="center" class="banner2"><br>
                                                 Valor:
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php= $row['currency']; ?> <?php= $row['quick_buy_price']; ?>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  $row['currency']; ?> <?php echo  $row['quick_buy_price']; ?>
                                                 <br>
                                                 <br></td></tr>
                                         <form name="fix_form" action="detail.php" method="post">
-                                            <input type="hidden" name="qty" value="<?php=$row[Quantity];?>">
+                                            <input type="hidden" name="qty" value="<?php echo $row[Quantity];?>">
                                             <input type="hidden" value=1 name=flag>
-                                            <input type="hidden" value="<?php= $err_flag; ?>" name="err_flag" >
+                                            <input type="hidden" value="<?php echo  $err_flag; ?>" name="err_flag" >
                                             <input type="hidden" value="fix" name="sell_method">
-                                            <input type="hidden" value="<?php= $item_id;?>" name=item_id>
-                                            <input type="hidden" value="<?php= $row[quick_buy_price];?>" name="fixed_price">
+                                            <input type="hidden" value="<?php echo  $item_id;?>" name=item_id>
+                                            <input type="hidden" value="<?php echo  $row[quick_buy_price];?>" name="fixed_price">
                                             <tr><td align="center">
-                                                    <input type="image" src="images/buyit.gif" name="Image70" value="buy" width="81" height="24" border="0" id="Image70" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image70', '', 'images/buyito.gif', 1)" onClick="return confirm_buynow( < ?php = $row[Quantity]? > )"; <?phpif(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo "disabled";}?>/>
+                                                    <input type="image" src="images/buyit.gif" name="Image70" value="buy" width="81" height="24" border="0" id="Image70" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image70', '', 'images/buyito.gif', 1)" onClick="return confirm_buynow( < ?php = $row[Quantity]? > )"; <?php if (($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo  "disabled";}?>/>
                                                 </td></tr>
                                         </form>
                                         <tr><td class="banner2" align="center"><br />
@@ -2754,7 +2754,7 @@
                                         </tr>
                                         <tr><td align="center" class="banner2">
                                                 <br>
-                                                O <?php= $_SESSION[site_name]  ?>
+                                                O <?php echo  $_SESSION[site_name]  ?>
                                                 <span title="" closure_uid_a9h9bi="99" xc="will inform the seller of your intent to purchase this item." yc="vai informar o vendedor da sua inten&ccedil;&atilde;o de compra deste item.    ">vai   informar o vendedor sobre a compra deste produto
                                                 </span><br>
                                                 <br>
@@ -2780,16 +2780,16 @@
                     <td class="detail5txt">Compre Agora 
                 <tr><td align="center" class="banner2"><br>
                         <font size="2">Valor:</font>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php= $row['currency']; ?> <?php= $row['quick_buy_price']; ?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo  $row['currency']; ?> <?php echo  $row['quick_buy_price']; ?>
                         <br></td></tr>
                 <form name="fix_form" action="detail.php" method="post">
-                    <input type="hidden" name="qty" value="<?php=$row[Quantity];?>">
+                    <input type="hidden" name="qty" value="<?php echo $row[Quantity];?>">
                     <input type="hidden" value="1" name="flag">
-                    <input type="hidden" value="<?php= $err_flag; ?>" name="err_flag">
+                    <input type="hidden" value="<?php echo  $err_flag; ?>" name="err_flag">
                     <input type="hidden" value="fix" name="sell_method">
-                    <input type="hidden" value="<?php= $item_id;?>" name="item_id">
-                    <input type="hidden" value="<?php= $row[quick_buy_price];?>" name="fixed_price">
-                    <tr><td align="center"><input type="image" src="images/buyit.gif" name="Image70" width="81" height="24" border="0" id="Image70" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image70', '', 'images/buyito.gif', 1)" onClick="return confirm_buynow( < ?php = $row[Quantity]? > )"; <?phpif(($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo "disabled";}?>/></td></tr>
+                    <input type="hidden" value="<?php echo  $item_id;?>" name="item_id">
+                    <input type="hidden" value="<?php echo  $row[quick_buy_price];?>" name="fixed_price">
+                    <tr><td align="center"><input type="image" src="images/buyit.gif" name="Image70" width="81" height="24" border="0" id="Image70" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image70', '', 'images/buyito.gif', 1)" onClick="return confirm_buynow( < ?php = $row[Quantity]? > )"; <?php if (($row[Quantity]==0) or ($row[status]=='Closed') or ($today_date<0)){echo  "disabled";}?>/></td></tr>
                 </form>
                 <tr><td class="banner2" align="center"><br />
                         <font color="#336633"><b>Aviso:</b></font> O valor apresentado &eacute; para a compra imediata de apenas 1 produto.</td>
@@ -2797,7 +2797,7 @@
                 <tr><td align="center" class="banner2">
                         <br>
                         O
-                        <?php= $_SESSION[site_name]  ?>
+                        <?php echo  $_SESSION[site_name]  ?>
                         <span title="" closure_uid_a9h9bi="99" xc="will inform the seller of your intent to purchase this item." yc="vai informar o vendedor da sua inten&ccedil;&atilde;o de compra deste item.    ">vai   informar o vendedor sobre a compra deste produto</span>.<br>
                         <br>
                         <span title="" closure_uid_a9h9bi="100" xc="Your purchase is a contract between you and the item seller." yc="Sua compra &eacute; um contrato entre voc&ecirc; eo vendedor item.  ">Sua compra   &eacute; um contrato entre voc&ecirc; e o vendedor deste produto.<br />

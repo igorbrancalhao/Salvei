@@ -35,7 +35,7 @@ function easy_cat_display($ssid, $cat) {
     $sub_res = mysql_query($ss_sql);
     while ($cat_row = mysql_fetch_array($sub_res)) {
         if ($cat_row['category_id']) {
-            $cat.="category_id=" . $cat_row[category_id] . " or ";
+            $cat.="category_id=" . $cat_row['category_id'] . " or ";
             $ssid = $cat_row['category_id'];
             $_SESSION[catt] = $_SESSION[catt] . "$cat";
             easy_cat_display($ssid, $cat);

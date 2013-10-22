@@ -215,7 +215,7 @@ if (isset($_POST['btn_release'])) {
                                     $cat = "category_id=";
                                     if ($tot_rec > 0) {
                                         while ($cat_row = mysql_fetch_array($cat_res)) {
-                                            $cat = $cat . $cat_row[category_id] . " or category_id=";
+                                            $cat = $cat . $cat_row['category_id'] . " or category_id=";
                                         }
                                         $cat = rtrim($cat, " or category_id=");
                                     } else {

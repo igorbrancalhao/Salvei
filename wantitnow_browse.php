@@ -54,8 +54,8 @@ function cat_display($ssid, $cat) {
     $ss_sql = "select * from category_master where category_head_id=$ssid order by category_name";
     $sub_res = mysql_query($ss_sql);
     while ($cat_row = mysql_fetch_array($sub_res)) {
-        $cat_row[category_id];
-        $cat = $cat_row[category_id] . " or category_id=";
+        $cat_row['category_id'];
+        $cat = $cat_row['category_id'] . " or category_id=";
         if ($cat_row['category_id']) {
             $ssid = $cat_row['category_id'];
             $_SESSION[catt] = $_SESSION[catt] . "$cat";
@@ -84,7 +84,7 @@ function ret($ssid) {
         $count_item_total = mysql_num_rows($count_item_res);
 
 
-        $count_sql = "select * from placing_item_bid where category_id=$cat_row[category_id] and selling_method='want_it_now' and status='Active' and bid_starting_date <= now() and expire_date>=now()";
+        $count_sql = "select * from placing_item_bid where category_id=$cat_row['category_id'] and selling_method='want_it_now' and status='Active' and bid_starting_date <= now() and expire_date>=now()";
         $count_sqlqry = mysql_query($count_sql);
         $count_num = mysql_num_rows($count_sqlqry);
         ?>

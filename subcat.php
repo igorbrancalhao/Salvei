@@ -49,8 +49,8 @@ if (is_numeric($_GET[cate_id])) {
         $ss_sql = "select * from category_master where category_head_id=$ssid order by category_name";
         $sub_res = mysql_query($ss_sql);
         while ($cat_row = mysql_fetch_array($sub_res)) {
-            $cat_row[category_id];
-            $cat = $cat_row[category_id] . " or category_id=";
+            $cat_row['category_id'];
+            $cat = $cat_row['category_id'] . " or category_id=";
             if ($cat_row['category_id']) {
                 $ssid = $cat_row['category_id'];
                 $_SESSION[catt] = $_SESSION[catt] . "$cat";
@@ -64,7 +64,7 @@ if (is_numeric($_GET[cate_id])) {
         $sub_res = mysql_query($ss_sql);
         while ($cat_row = mysql_fetch_array($sub_res)) {
 
-            $ssid = $cat_row[category_id];
+            $ssid = $cat_row['category_id'];
             $_SESSION[catt] = " ";
             if ($ssid) {
                 $cat = "category_id=$ssid or category_id= ";
@@ -79,15 +79,15 @@ if (is_numeric($_GET[cate_id])) {
             $count_item_total = mysql_num_rows($count_item_res);
 
 
-            $count_sql = "select * from placing_item_bid where category_id=$cat_row[category_id] and selling_method!='want_it_now' and status='Active' and bid_starting_date  and expire_date";
+            $count_sql = "select * from placing_item_bid where category_id=$cat_row['category_id'] and selling_method!='want_it_now' and status='Active' and bid_starting_date  and expire_date";
             $count_sqlqry = mysql_query($count_sql);
             $count_num = mysql_num_rows($count_sqlqry);
             ?>
 
 
 
-            <tr><td class="detail9txt"><a href="category.php?cate_id=<?php = $cat_row[category_id]; ?>&view=list" class="detail7txt"><font size="1"><b>
-                            <?php = $cat_row[category_name]; ?></b></font></a>&nbsp;( <?php = $count_num ?> )</td></tr>	
+            <tr><td class="detail9txt"><a href="category.php?cate_id=<?php echo $cat_row['category_id']; ?>&view=list" class="detail7txt"><font size="1"><b>
+                            <?php echo $cat_row[category_name]; ?></b></font></a>&nbsp;( <?php echo $count_num ?> )</td></tr>	
                             <?php
                             $ssid = $cat_row['category_id'];
                             ret($ssid);

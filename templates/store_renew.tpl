@@ -43,7 +43,7 @@
                     <td width=2>&nbsp;</td>
                     <td align="center">
                         <table cellpadding="2" cellspacing="2"><tr class="banner1"><td>
-                                    You are paying <?php=$default_cur_code_sym?>&nbsp;<b><?php= $amount ?></b> to enable Your Store&nbsp; .</td></tr>
+                                    You are paying <?php echo $default_cur_code_sym?>&nbsp;<b><?php echo  $amount ?></b> to enable Your Store&nbsp; .</td></tr>
                             <tr><td class="banner1">
                                     Send your payment to the Administrator.Click the any one of the payment gateway to start the payment process. 
                                 </td></tr>
@@ -70,13 +70,13 @@
                                         <input type=hidden name="PAYMENT_AMOUNT" value=<?php echo $amount; ?>>
                                                <input type=hidden name="SUGGESTED_MEMO" value = "Memo">
                                         <input type="hidden" name="PAYEE_ACCOUNT" value=<?php echo $egoldno; ?>>
-                                               <input type="hidden" name="PAYEE_NAME" value="<?php=$egoldname;?>">
+                                               <input type="hidden" name="PAYEE_NAME" value="<?php echo $egoldname;?>">
                                         <input type=hidden name="PAYMENT_UNITS" value=1>
                                         <input type=hidden name="PAYMENT_METAL_ID" value=1>
-                                        <input type="hidden" name="STATUS_URL" value="mailto:<?php=$adminmail;?>">
-                                        <input type="hidden" name="NOPAYMENT_URL" value="<?php=$yoursite;?>/failure.php">
+                                        <input type="hidden" name="STATUS_URL" value="mailto:<?php echo $adminmail;?>">
+                                        <input type="hidden" name="NOPAYMENT_URL" value="<?php echo $yoursite;?>/failure.php">
                                         <input type="hidden" name="NOPAYMENT_URL_METHOD" value="POST">
-                                        <input type="hidden" name="PAYMENT_URL" value="<?php=$yoursite;?>/storesuccess.php?payid=3&mode=rn">
+                                        <input type="hidden" name="PAYMENT_URL" value="<?php echo $yoursite;?>/storesuccess.php?payid=3&mode=rn">
                                         <input type="hidden" name="PAYMENT_URL_METHOD" value="POST">
                                         <input type="hidden" name="BAGGAGE_FIELDS" value="PROGL">
                                         <input type="hidden" name="PROGL" value="01">
@@ -95,12 +95,12 @@
                                     <form action="https://intgold.com/cgi-bin/webshoppingcart.cgi" target=_blank method="POST">
                                         <input type="hidden" name="cmd" value="_xclick">
                                         <input type="hidden" name="SELLERACCOUNTID" value="<?php echo $intgoldno; ?>">
-                                        <input type="hidden" name="RETURNURL" value="<?php=$yoursite;?>/storesuccess.php?payid=2&mode=rn">
-                                        <input type="hidden" name="CANCEL_RETURN" value="<?php=$yoursite;?>/failure.php">
+                                        <input type="hidden" name="RETURNURL" value="<?php echo $yoursite;?>/storesuccess.php?payid=2&mode=rn">
+                                        <input type="hidden" name="CANCEL_RETURN" value="<?php echo $yoursite;?>/failure.php">
                                         <input type="hidden" name="CUSTOM1" value="amount">
                                         <input type="hidden" name="CUSTOM2" value="status">
                                         <input type="hidden" name="ITEM_NUMBER" value="121">
-                                        <input type="hidden" name="ITEM_NAME" value="<?php=$intgoldname?>">
+                                        <input type="hidden" name="ITEM_NAME" value="<?php echo $intgoldname?>">
                                         <input type="hidden" name="METHOD" value="POST">
                                         <input type="hidden" name="RETURNPAGE" value="HTML">
                                         <input type="hidden" name="AMOUNT" value=<?php echo $amount; ?>>
@@ -124,10 +124,10 @@
                                         <input type="hidden" name="item_name" value="Store Renewable Fee">
                                         <input type="hidden" name="amount" value="<?php echo $amount;?>">
                                         <input type="hidden" name="no_note" value="1">
-                                        <input type="hidden" name="currency_code" value="<?php=$currencycode_admin?>">
+                                        <input type="hidden" name="currency_code" value="<?php echo $currencycode_admin?>">
                                         <input type="hidden" name="rm" value="2">
-                                        <input type="hidden" name="return" value="<?php=$yoursite?>/storesuccess.php?payid=1&mode=rn">
-                                        <input type="hidden" name="cancel_return" value="<?php=$yoursite?>/failure.php">
+                                        <input type="hidden" name="return" value="<?php echo $yoursite?>/storesuccess.php?payid=1&mode=rn">
+                                        <input type="hidden" name="cancel_return" value="<?php echo $yoursite?>/failure.php">
                                         <center><br><input type="image" src="images/x-click-but6.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"></center>
                                     </form>
                                 </td></tr>
@@ -144,14 +144,14 @@
                                     <form method="post" action="https://www.stormpay.com/stormpay/handle_gen.php">
                                         <input type="hidden" name="generic" value="1">
                                         <input type="hidden" name="payee_email" value=<?php echo $stormpayno;?> >
-                                               <input type="hidden" name="product_name" value="<?php= $strsite;?>-Deposit">
+                                               <input type="hidden" name="product_name" value="<?php echo  $strsite;?>-Deposit">
                                         <input type="hidden" name="user_id" value=1>
                                         <input type="hidden" name="amount" value=<?php echo $amount; ?>>
                                                <input type="hidden" name="quantity" value="1">
                                         <input type="hidden" name="require_IPN" value="1">
-                                        <input type="hidden" name="notify_URL" value="<?php=$yoursite;?>/index.php ?> ">
-                                        <input type="hidden" name="return_URL" value="<?php=$yoursite;?>/storesuccess.php?payid=6&mode=rn">
-                                        <input type="hidden" name="cancel_URL" value="<?php=$yoursite;?>/failure.php ?> ">
+                                        <input type="hidden" name="notify_URL" value="<?php echo $yoursite;?>/index.php ?> ">
+                                        <input type="hidden" name="return_URL" value="<?php echo $yoursite;?>/storesuccess.php?payid=6&mode=rn">
+                                        <input type="hidden" name="cancel_URL" value="<?php echo $yoursite;?>/failure.php ?> ">
                                         <input type="hidden" name="subject_matter" value="CashCocktail Payment">
                                         <input type=image src="images/BuyNowSP1.gif" value="Make payments with stormpay - it's fast, free and secure!">
                                     </form>
@@ -168,21 +168,21 @@
                             <tr><td align=center>
                                     <!-- e-Bullion<sup>&reg;</sup> ATIP Implementation -->
                                     <form name="atip" method="post" action="https://atip.e-bullion.com/process.php">
-                                        <input type="hidden" name="ATIP_STATUS_URL" value="<?php=$yoursite;?>">
+                                        <input type="hidden" name="ATIP_STATUS_URL" value="<?php echo $yoursite;?>">
                                         <input type="hidden" name="ATIP_STATUS_URL_METHOD" value="POST">
                                         <input type="hidden" name="ATIP_BAGGAGE_FIELDS" value="">
                                         <input type="hidden" name="ATIP_SUGGESTED_MEMO" value="">
                                         <input type="hidden" name="ATIP_FORCED_PAYER_ACCOUNT" value="">
                                         <input type="hidden" name="ATIP_PAYER_FEE_AMOUNT" value="">
-                                        <input type="hidden" name="ATIP_PAYMENT_URL" value="<?php=$yoursite;?>/storesuccess.php?payid=5&mode=rn">
+                                        <input type="hidden" name="ATIP_PAYMENT_URL" value="<?php echo $yoursite;?>/storesuccess.php?payid=5&mode=rn">
                                         <input type="hidden" name="ATIP_PAYMENT_URL_METHOD" value="POST">
-                                        <input type="hidden" name="ATIP_NOPAYMENT_URL" value="<?php=$yoursite;?>/failure.php">
+                                        <input type="hidden" name="ATIP_NOPAYMENT_URL" value="<?php echo $yoursite;?>/failure.php">
                                         <input type="hidden" name="ATIP_NOPAYMENT_URL_METHOD" value="POST">
                                         <input type="hidden" name="ATIP_PAYMENT_FIXED" value="1">
-                                        <input type="hidden" name="ATIP_PAYEE_ACCOUNT" value="<?php=$ebull_no?>">
-                                        <input type="hidden" name="ATIP_PAYEE_NAME" value="<?php=$ebull_name?>">
+                                        <input type="hidden" name="ATIP_PAYEE_ACCOUNT" value="<?php echo $ebull_no?>">
+                                        <input type="hidden" name="ATIP_PAYEE_NAME" value="<?php echo $ebull_name?>">
                                         <input type="hidden" name="ATIP_BUTTON" value="1">
-                                        <input type="hidden" name="ATIP_PAYMENT_AMOUNT" value="<?php=$amount?>" size="10"><br></font></span>
+                                        <input type="hidden" name="ATIP_PAYMENT_AMOUNT" value="<?php echo $amount?>" size="10"><br></font></span>
                                         <input type="hidden" name="ATIP_PAYMENT_UNIT" value="1">
                                         <input type="hidden" name="ATIP_PAYMENT_METAL" value="1">
                                         <tr><td align=center>
@@ -198,12 +198,12 @@
 
                             <tr><td align=center>
                                     <form action="https://www.moneybookers.com/app/payment.pl" target="_blank">
-                                        <input type="hidden" name="pay_to_email" value="<?php=$moneybooker?>">
-                                        <input type="hidden" name="return_url" value="<?php=$yoursite?>/storesuccess.php?payid=4&mode=rn">
-                                        <input type="hidden" name="cancel_url" value="<?php=$yoursite?>/failure.php ?>">
+                                        <input type="hidden" name="pay_to_email" value="<?php echo $moneybooker?>">
+                                        <input type="hidden" name="return_url" value="<?php echo $yoursite?>/storesuccess.php?payid=4&mode=rn">
+                                        <input type="hidden" name="cancel_url" value="<?php echo $yoursite?>/failure.php ?>">
                                         <input type="hidden" name="language" value="EN">
-                                        <input type="hidden" name="amount" value="<?php=$amount?>">
-                                        <input type="hidden" name="currency" value="<?php=$currencycode_admin?>">
+                                        <input type="hidden" name="amount" value="<?php echo $amount?>">
+                                        <input type="hidden" name="currency" value="<?php echo $currencycode_admin?>">
                                         <input type="image" src="images/money.jpg" value="Make payments with moneybookers - it's fast, free and secure!" name="Pay">
                                     </form>
                                 </td></tr>

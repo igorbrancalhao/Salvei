@@ -86,7 +86,7 @@
                             }
                             ?>
                             <tr>
-                                <td style="padding-left:10px" class="banner1">We're sorry that you're having difficulty with this transaction. We've developed the Item Not Received or Significantly Not as Described process to help buyers and sellers resolve their problems through direct communication on <?php= $_SESSION[site_name] ?> Web site.   
+                                <td style="padding-left:10px" class="banner1">We're sorry that you're having difficulty with this transaction. We've developed the Item Not Received or Significantly Not as Described process to help buyers and sellers resolve their problems through direct communication on <?php echo  $_SESSION[site_name] ?> Web site.   
                                 </td>
                             </tr>
                             <tr><td style="padding-left:10px" class="banner1"> 
@@ -94,18 +94,18 @@
                                 </td></tr>
 
                             <tr>
-                                <td style="padding-left:10px" class="banner1"> The best way to solve transaction problems on <?php= $_SESSION[site_name] ?> is direct and open communication between buyers and sellers. There are some instances, however, where a transaction may actually take longer than usual time. </td>
+                                <td style="padding-left:10px" class="banner1"> The best way to solve transaction problems on <?php echo  $_SESSION[site_name] ?> is direct and open communication between buyers and sellers. There are some instances, however, where a transaction may actually take longer than usual time. </td>
                             </tr>
                             <tr><td style="padding-left:10px" class="banner1"><font class="detail9txt"><b>International Transactions:</b></font> Shipping and customs for international transactions can take time. International bank transfers can also take up to 14 days to complete. Please make sure to ask the seller for an estimate of the shipping time.      </td></tr>
-                            <tr><td style="padding-left:10px" class="banner1"><font class="detail9txt"><b> Outdated Contact Information: </b></font> Please verify that your <?php= $_SESSION[site_name] ?> email account is updated and working. The seller may actually be trying to contact you but can't because they have the wrong information.  
+                            <tr><td style="padding-left:10px" class="banner1"><font class="detail9txt"><b> Outdated Contact Information: </b></font> Please verify that your <?php echo  $_SESSION[site_name] ?> email account is updated and working. The seller may actually be trying to contact you but can't because they have the wrong information.  
                                 </td></tr>
                             <tr>
                                 <td style="padding-left:10px" class="banner1">
-                                    If any of these instances apply to your transaction, you may wish to click "Cancel" below and wait for some more days. If you still want to file the dispute on <?php= $_SESSION[site_name] ?>, click Continue.  
+                                    If any of these instances apply to your transaction, you may wish to click "Cancel" below and wait for some more days. If you still want to file the dispute on <?php echo  $_SESSION[site_name] ?>, click Continue.  
                                 </td>
                             </tr>
 
-                            <tr><td style="padding-left:10px" > <font class="detail9txt"><b> Report an Item not received:</b></font><font class="banner1"> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user[user_name] ?> on
+                            <tr><td style="padding-left:10px" > <font class="detail9txt"><b> Report an Item not received:</b></font><font class="banner1"> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user[user_name] ?> on
                                     <?php
                                     $custom_date=explode(" ",$bid_date);
                                     $custom_date1=$custom_date[0];
@@ -197,13 +197,13 @@
                                             if($pay_row[gateway_id]==$payment)
                                             {
                                             ?>
-                                            <option value="<?php=$pay_row['gateway_id'];?>" selected><?php=$pay_row[payment_gateway];?> </option>
+                                            <option value="<?php echo $pay_row['gateway_id'];?>" selected><?php echo $pay_row[payment_gateway];?> </option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php=$pay_row['gateway_id'];?>"><?php=$pay_row[payment_gateway];?> </option>
+                                            <option value="<?php echo $pay_row['gateway_id'];?>"><?php echo $pay_row[payment_gateway];?> </option>
                                             <?php
                                             }
                                             }
@@ -216,7 +216,7 @@
                                         if(!empty($err_day) or !empty($err_month) or !empty($err_year) or !empty($err_dob))
                                         {
                                         ?>
-                                        <font size=2 color=red><?php= $err_email ; ?></font>
+                                        <font size=2 color=red><?php echo  $err_email ; ?></font>
                                         <br>
                                         <b><font size=2 color=red class="detail9txt">Payment Date</font></b>
                                         <?php
@@ -239,13 +239,13 @@
                                             if($month==$i)
                                             {
                                             ?>
-                                            <option value=<?php= $i ?> selected > <?php= $i ?> </option>
+                                            <option value=<?php echo  $i ?> selected > <?php echo  $i ?> </option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value=<?php= $i ?> > <?php= $i ?> </option>
+                                            <option value=<?php echo  $i ?> > <?php echo  $i ?> </option>
                                             <?php
                                             }
                                             }
@@ -257,23 +257,23 @@
                                             if($day==$i)
                                             {
                                             ?>
-                                            <option value=<?php= $i ?> selected> <?php= $i ?> </option>
+                                            <option value=<?php echo  $i ?> selected> <?php echo  $i ?> </option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value=<?php= $i ?> > <?php= $i ?> </option>
+                                            <option value=<?php echo  $i ?> > <?php echo  $i ?> </option>
                                             <?php
                                             }
                                             }
                                             ?>
                                         </select>  -
-                                        <input type="text" name="txtYear" style="font-size:12px;font-family:arial;width:40;height:20" maxlength=4 value="<?php= $year ?>">
+                                        <input type="text" name="txtYear" style="font-size:12px;font-family:arial;width:40;height:20" maxlength=4 value="<?php echo  $year ?>">
                                     </td>
                                 </tr>
 
-                                <input type="hidden" name="bid_id" value=<?php= $bid_id ?> />
+                                <input type="hidden" name="bid_id" value=<?php echo  $bid_id ?> />
                                        <input type="hidden" name="flag" value=1 />
                                 <tr><td><hr></td></tr>
                                 <tr><td style="padding-left:10px"><input type="image" src="images/continue.gif" name="Image71" width="81" height="24" border="0" id="Image71" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71', '', 'images/continueo.gif', 1)"/>

@@ -60,7 +60,7 @@ if ($cat_flag == 1) {
         if ($_SESSION['sell_format'] == 4 || $_REQUEST['title'] == 'Wanted Ads') {
             $_SESSION[categoryid] = $cat_id;
             echo '<meta http-equiv="refresh" content="0;url=post_ad.php?cat_id=' . $cat_id . '&title=' . $_REQUEST['title'] . '">';
-            echo "You have been Re-Directed, if not Please <a href=post_ad.phpcat_id=<?php= $cat_id ?>>Click here</a>";
+            echo "You have been Re-Directed, if not Please <a href=post_ad.phpcat_id=<?php echo  $cat_id ?>>Click here</a>";
             exit();
         }
         if ($mode == "") {
@@ -92,7 +92,7 @@ if (!empty($warning)) {
                 </th>
                 <tr>
                     <td>
-                        <font size=2 color="red"><?php = $warning; ?></font>
+                        <font size=2 color="red"><?php echo $warning; ?></font>
                     </td></tr> </table>
             <br>
             <br>

@@ -52,21 +52,21 @@ exit();
                 {
                 ?>
                 <tr><td>&nbsp;</td>
-                    <td><a href="edit_ad.php#txttitle" class="header_text2">Item Title</a> - <?php= $err_title; ?></td></tr>
+                    <td><a href="edit_ad.php#txttitle" class="header_text2">Item Title</a> - <?php echo  $err_title; ?></td></tr>
                 <?php 
                 }
                 ?>
                 <?php if(!empty($err_des))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#areades" class="header_text2">Item Description</a> - <?php= $err_des; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#areades" class="header_text2">Item Description</a> - <?php echo  $err_des; ?></td></tr>
                 <?php 
                 }
                 ?>
                 <?php if(!empty($err_qty))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#txt_qty" class="header_text2">Quantity</a> - <?php= $err_qty; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#txt_qty" class="header_text2">Quantity</a> - <?php echo  $err_qty; ?></td></tr>
                 <?php 
                 }
                 ?>
@@ -75,7 +75,7 @@ exit();
                 if(!empty($err1))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img1" class="header_text2">Image1</a> - <?php= $err1; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img1" class="header_text2">Image1</a> - <?php echo  $err1; ?></td></tr>
                 <?php
                 }
                 ?>
@@ -83,7 +83,7 @@ exit();
                 if(!empty($err2))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img2" class="header_text2">Image2</a> - <?php= $err2; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img2" class="header_text2">Image2</a> - <?php echo  $err2; ?></td></tr>
                 <?php
                 }
                 ?>
@@ -91,14 +91,14 @@ exit();
                 if(!empty($err3))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img3" class="header_text2">Image3</a> - <?php= $err3; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img3" class="header_text2">Image3</a> - <?php echo  $err3; ?></td></tr>
                 <?php
                 }
                 ?>
                 <?php if(!empty($err_img1))
                 {
                 ?>
-                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img1" class="header_text2">Image1</a> - <?php= $err_img1; ?></td></tr>
+                <tr><td>&nbsp;</td><td class="banner1"><a href="edit_ad.php#img1" class="header_text2">Image1</a> - <?php echo  $err_img1; ?></td></tr>
                 <?php 
                 }
                 ?>
@@ -117,7 +117,7 @@ exit();
                 <tr><td colspan="2" >
                         <?php if(!empty($err_title))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_title ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_title ?></font>
  <br>
  <b><font class="moretxt" >Property title </font></b><font color="red" size="-2">*</font>
  <?php
@@ -131,7 +131,7 @@ exit();
                         ?>
                     </td></tr>
 
-                <tr><td colspan="2"><input type="text" name="txttitle" class="txtbig" value="<?php= $item_title; ?>">
+                <tr><td colspan="2"><input type="text" name="txttitle" class="txtbig" value="<?php echo  $item_title; ?>">
                     </td></tr>
                 <tr><td>&nbsp;</td></tr>
                 <tr><td colspan="2" >
@@ -139,7 +139,7 @@ exit();
                         {
                         ?>
                         <img src="images/warning_9x10.gif">&nbsp;
-                        <font class="moretxt"><?php= $err_des; ?></font>
+                        <font class="moretxt"><?php echo  $err_des; ?></font>
                         <br>
                         <b><font class="moretxt">Item Description </font></b><font color="red" size="-2">*</font>
                         <?php
@@ -227,7 +227,7 @@ exit();
                         <?php if(!empty($err_qty))
                         {
                         ?>
-                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_qty?></font>
+                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_qty?></font>
                         <br>
                         <b><font class="moretxt">Quantity</font></b>
                         <?php
@@ -248,7 +248,7 @@ exit();
                 </tr>
                 <tr>
                     <td width=443>
-                        <input type="text" name="txt_qty" class="txtsmall" value=<?php= $qty; ?>>
+                        <input type="text" name="txt_qty" class="txtsmall" value=<?php echo  $qty; ?>>
                     </td>
                     <td width=487>
                     </td></tr>
@@ -262,7 +262,7 @@ exit();
             <tr><td>
                     <?php if(!empty($err_img1))
                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img1; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img1; ?></font>
  <br>
  <b><font class="moretxt">Image1(Free)</font></b>
  <?php
@@ -275,11 +275,11 @@ exit();
                     }
                     ?>
                     <br />
-                    <input type="file" name="img1" value="<?php= $img1; ?>">
+                    <input type="file" name="img1" value="<?php echo  $img1; ?>">
                     <?php if(!empty($_SESSION[image1]))
                     {
                     ?>
-                    <img src="images/<?php= $_SESSION[image1]?>" width=30 height=30>
+                    <img src="images/<?php echo  $_SESSION[image1]?>" width=30 height=30>
                     <?php
                     }
                     ?>
@@ -293,10 +293,10 @@ exit();
             </tr>
             <tr>
                 <td align="left">
-                    <textarea name="videofile" style="width:220px; height:70px"><?php=stripslashes($videofileup);?></textarea>
+                    <textarea name="videofile" style="width:220px; height:70px"><?php echo stripslashes($videofileup);?></textarea>
                 </td>
                 <td align="left" valign="bottom">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:320px"/><?php=$videolinkup?></textarea>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:320px"/><?php echo $videolinkup?></textarea>
                 </td>
             </tr>
         </table></td></tr>
@@ -433,11 +433,11 @@ exit();
                 </td></tr>
             <input type=hidden name="highlight" value="<?php  echo $highret; ?>">
             <input type="hidden" name=flag value="1">
-            <input type="hidden" name="cat_id" value=<?php= $cat_id; ?>>
-                   <input type="hidden" name=mode value="<?php= $mode; ?>">
-            <input type="hidden" name=sell_format value="<?php= $sell_format; ?>">
-            <input type="hidden" name=itemid value=<?php= $item_id; ?>>
-                   <input type="hidden" name=own_html_flag value=<?php= $ownhtml; ?>>
+            <input type="hidden" name="cat_id" value=<?php echo  $cat_id; ?>>
+                   <input type="hidden" name=mode value="<?php echo  $mode; ?>">
+            <input type="hidden" name=sell_format value="<?php echo  $sell_format; ?>">
+            <input type="hidden" name=itemid value=<?php echo  $item_id; ?>>
+                   <input type="hidden" name=own_html_flag value=<?php echo  $ownhtml; ?>>
                    <tr><td colspan="2" align="center">
                     <input type="image" src="images/continue.gif" name="Image71" width="81" height="24" border="0" id="Image71" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71', '', 'images/continueo.gif', 1)" onclick="return chk();"/>
                 </td></tr>

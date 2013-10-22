@@ -66,9 +66,9 @@
                                         <form name="mail_form" action="mail.php" method=post>
                                             <tr class="detail9txt">
                                                 <td width="36" class="tr_botborder" >
-                                                    <input type="hidden" name="len" value="<?php= $mail_total_records?>">
+                                                    <input type="hidden" name="len" value="<?php echo  $mail_total_records?>">
                                                     <input type="checkbox" name="chkMain" onClick="selectall()" id="chkMain">
-                                                    <input type="hidden" name="mode" value="<?php= $mode ?>">
+                                                    <input type="hidden" name="mode" value="<?php echo  $mode ?>">
 
                                                 </td>
                                                 <td width="49" class="tr_botborder"><b>From</b> </td>
@@ -108,8 +108,8 @@
                                                     <?php  if($user['user_name'])  echo $user['user_name']; else echo "Guest";?>
                                                 </td>
                                                 <td class="tr_botborder" colspan="2">
-                                                    <a href="view_mail.php?qst_id=<?php= $mail_row['qst_id']?>&mode=in&curpage=<?php=$i?>" class="header_text"> 
-                                                        <?phpif($mail_row['status']!="notification"){ ?>Message from <?php= $fromid ?> Regarding Item Id: <?php= $mail_row['item_id']; }else{?>Mail From <?phpif($mail_row['status']!="notification"){ ?><?php=$fromid; }else {?>Admin<?php}}?>
+                                                    <a href="view_mail.php?qst_id=<?php echo  $mail_row['qst_id']?>&mode=in&curpage=<?php echo $i?>" class="header_text"> 
+                                                        <?phpif($mail_row['status']!="notification"){ ?>Message from <?php echo  $fromid ?> Regarding Item Id: <?php echo  $mail_row['item_id']; }else{?>Mail From <?phpif($mail_row['status']!="notification"){ ?><?php echo $fromid; }else {?>Admin<?php}}?>
                                                     </a>
                                                 </td>
                                                 <td class="tr_botborder" colspan="2"  >
@@ -126,7 +126,7 @@
                                                     ?>
                                                 </td>
                                                 <td class="tr_botborder" >
-                                                    <img src="<?php= $flag ?>"></td>
+                                                    <img src="<?php echo  $flag ?>"></td>
                                             </tr>
 
                                             <?php
@@ -169,10 +169,10 @@
                                 </td>
                             </tr>
                             <tr class="detail9txt"><td class="table_border">
-                                    My Messages is a place for you to send and receive <?php= $_SESSION[site_name]  ?> -related communications. In My Messages, you'll find: 
-                                    Important alerts from <?php= $_SESSION[site_name]  ?>  about your account. 
-                                    Useful messages from <?php= $_SESSION[site_name]  ?>  about buying and selling activities and events. 
-                                    Questions and answers about items, as well as other communications from <?php= $_SESSION[site_name]  ?>  members. 
+                                    My Messages is a place for you to send and receive <?php echo  $_SESSION[site_name]  ?> -related communications. In My Messages, you'll find: 
+                                    Important alerts from <?php echo  $_SESSION[site_name]  ?>  about your account. 
+                                    Useful messages from <?php echo  $_SESSION[site_name]  ?>  about buying and selling activities and events. 
+                                    Questions and answers about items, as well as other communications from <?php echo  $_SESSION[site_name]  ?>  members. 
                                 </td></tr>
                         </table>
                     </td></tr>
@@ -208,9 +208,9 @@
                                         <form name="mail_form" action="mail.php" method=post>
                                             <tr class="detail9txt">
                                                 <td width="133" class="tr_botborder" >
-                                                    <input type="hidden" name="mode" value="<?php= $mode ?>">
+                                                    <input type="hidden" name="mode" value="<?php echo  $mode ?>">
 
-                                                    <input type="hidden" name="len" value="<?php= $mail_total_records?>">
+                                                    <input type="hidden" name="len" value="<?php echo  $mail_total_records?>">
                                                     <input type="checkbox" name="chkMain" onClick="selectall()" id="chkMain"> </td>
                                                 <td width="53" class="tr_botborder" ><b>To</b> </td>
                                                 <td class="tr_botborder" colspan="4" ><b>Subject</b> </td>
@@ -256,8 +256,8 @@
                                                     <?php  if($user['user_name']) echo $user['user_name']; else echo "Guest";?>
                                                 </td>
                                                 <td class="tr_botborder" colspan="4">
-                                                    <a href="view_mail.php?qst_id=<?php= $mail_row['qst_id']?>&mode=out&curpage=<?php=$i?>" class="header_text"> 
-                                                        <?phpif($mail_row['status']!="notification"){ ?>Message from <?php= $fromid ?> Regarding Item Id : <?php= $mail_row['item_id']; }else{?>Mail From <?php=$fromid; }?>
+                                                    <a href="view_mail.php?qst_id=<?php echo  $mail_row['qst_id']?>&mode=out&curpage=<?php echo $i?>" class="header_text"> 
+                                                        <?php if ($mail_row['status']!="notification"){ ?>Message from <?php echo  $fromid ?> Regarding Item Id : <?php echo  $mail_row['item_id']; }else{?>Mail From <?php echo $fromid; }?>
                                                     </a>
                                                 </td>
                                                 <td class="tr_botborder" >
@@ -318,10 +318,10 @@
                                 </td>
                             </tr>
                             <tr><td class="detail9txt">
-                                    My Messages is a place for you to send and receive <?php= $_SESSION[site_name]  ?> -related communications. In My Messages, you'll find: 
-                                    Important alerts from <?php= $_SESSION[site_name]  ?>  about your account. 
-                                    Useful messages from <?php= $_SESSION[site_name]  ?>  about buying and selling activities and events. 
-                                    Questions and answers about items, as well as other communications from <?php= $_SESSION[site_name]  ?>  members. 
+                                    My Messages is a place for you to send and receive <?php echo  $_SESSION[site_name]  ?> -related communications. In My Messages, you'll find: 
+                                    Important alerts from <?php echo  $_SESSION[site_name]  ?>  about your account. 
+                                    Useful messages from <?php echo  $_SESSION[site_name]  ?>  about buying and selling activities and events. 
+                                    Questions and answers about items, as well as other communications from <?php echo  $_SESSION[site_name]  ?>  members. 
                                 </td></tr>
                         </table>
                     </td></tr>

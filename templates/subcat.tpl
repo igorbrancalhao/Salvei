@@ -27,7 +27,7 @@
 ?>
 <table width="958" border="0" cellpadding="0" cellspacing="0" align="center">
     <tr><td background="images/contentbg1.jpg" height="25">
-            <font class="detail3txt"><div align="left">&nbsp;&nbsp;Categories Within <?php= $cat_tit[category_name]; ?></div></b></font>
+            <font class="detail3txt"><div align="left">&nbsp;&nbsp;Categories Within <?php echo $cat_tit[category_name]; ?></div></b></font>
         </td></tr> 
     <tr><td valign="top" > 
             <table width="958" cellpadding="5" cellspacing="2" background="images/contentgrad.jpg" align="center" border="0" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom">
@@ -46,9 +46,9 @@
 
 
                             ?>
-                            <tr><td class="detail9txt">&nbsp;<a href="category.php?cate_id=<?php=$cat_id; ?>&view=list" class="detail7txt">
-                                        <b><?php= $fetch_main[category_name]; ?></b>
-                                    </a>&nbsp;( <?php= $maincount ?> )</td>
+                            <tr><td class="detail9txt">&nbsp;<a href="category.php?cate_id=<?php echo $cat_id; ?>&view=list" class="detail7txt">
+                                        <b><?php echo $fetch_main[category_name]; ?></b>
+                                    </a>&nbsp;( <?php echo $maincount ?> )</td>
                             </tr>
 
                             <!--Display of the main category and the count of items-->
@@ -61,7 +61,7 @@
                                                 { 
 
                                                 $count=$count+1;
-                                                $ssid=$rec[category_id];
+                                                $ssid=$rec['category_id'];
                                                 $_SESSION[catt]=" ";
                                                 if($ssid)
                                                 {
@@ -80,9 +80,9 @@
 
 
                                                 ?>
-                                        <tr><td class="detail9txt"><a href="category.php?cate_id=<?php=$rec[category_id]; ?>&view=list" class="detail7txt">
-                                                    <b><?php= $rec[category_name]; ?></b>
-                                                </a>&nbsp;( <?php= $count_item_total ?> )</td>
+                                        <tr><td class="detail9txt"><a href="category.php?cate_id=<?php echo $rec['category_id']; ?>&view=list" class="detail7txt">
+                                                    <b><?php echo $rec[category_name]; ?></b>
+                                                </a>&nbsp;( <?php echo $count_item_total ?> )</td>
                                         </tr>
                                         <tr><td>
                                                 <table>

@@ -222,7 +222,7 @@
                                                 ?>
                                         </td>
                                         <td class=contentfont><INPUT  id=store_name 
-                                                                      maxLength=50 size=50 name=store_name value="<?php= stripslashes($store_name) ?>"></TD></TR>
+                                                                      maxLength=50 size=50 name=store_name value="<?php echo  stripslashes($store_name) ?>"></TD></TR>
                                     <tr>
                                         <td vAlign=top align=right class="detail9txt">
                                             <?php
@@ -301,7 +301,7 @@
                                         }
                                         $content = stripslashes($content);
                                                 ? >
-                                                rte1.html = '<?php=$content;?>';
+                                                rte1.html = '<?php echo $content;?>';
                                         //rte1.toggleSrc = false;
                                         rte1.build();
                                         //-->
@@ -330,7 +330,7 @@
                     ?>   
                     <TR class=c3>
                         <TD align=right class="detail9txt"><B>Current Logo</B></TD>
-                        <TD class=contentfont><img src="storefronts/<?php=$logo1?>" width="<?php=$w?>" height="<?php=$h?>"/></TD>
+                        <TD class=contentfont><img src="storefronts/<?php echo $logo1?>" width="<?php echo $w?>" height="<?php echo $h?>"/></TD>
                     </TR>
                     <?php
                     }

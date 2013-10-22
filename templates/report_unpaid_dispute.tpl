@@ -69,7 +69,7 @@
                             }
                             ?>
                             <tr><td style="padding-left:10px" class="banner1">Please answer the questions and Continue to report an Unpaid Item dispute. We also have tips to help you avoid Unpaid Items in the future. If the buyer returned the item, choose 'we have both agreed not to complete the transaction'. </td></tr>
-                            <tr><td style="padding-left:10px" > <font class="detail9txt"><b> UnpaidItem:</b></font><font class="banner1"> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold to <?php= $user[user_name] ?> on
+                            <tr><td style="padding-left:10px" > <font class="detail9txt"><b> UnpaidItem:</b></font><font class="banner1"> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold to <?php echo  $user[user_name] ?> on
                                     <?php
                                     $custom_date=explode(" ",$bid_date);
                                     $custom_date1=$custom_date[0];
@@ -121,7 +121,7 @@
                                 <tr><td style="padding-left:10px">
                                         <select name="cboDisputeExplanation"><option value="0">-- Select One --</option><option value="The buyer has not responded">The buyer has not responded</option><option value="The buyer's payment has not been received">The buyer's payment has not been received</option><option value="The buyer's payment has not cleared">The buyer's payment has not cleared</option><option value="The buyer requested shipment to an unconfirmed address">The buyer requested shipment to an unconfirmed address</option><option value="22">The buyer requested an unauthorized payment method</option><option value="The buyer is no longer registered">The buyer is no longer registered</option><option value="Other reason">Other reason</option>
                                         </select>
-                                        <input type="hidden" name="bid_id" value=<?php= $bid_id ?> />
+                                        <input type="hidden" name="bid_id" value=<?php echo  $bid_id ?> />
                                                <input type="hidden" name="flag" value=1 />
 
                                     </td></tr>

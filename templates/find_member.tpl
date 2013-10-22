@@ -114,25 +114,25 @@ $user_res=mysql_query($user_sql);
                                 }
                                 ?>
                                 <td>
-                                    <a href="feedback.php?user_id=<?php=$user['user_id'];?>" class="header_text">
+                                    <a href="feedback.php?user_id=<?php echo $user['user_id'];?>" class="header_text">
                                         <?php echo $user['user_name'];?></a>
                                     <?php 
                                     if($feed_tot[feedbacktotal]!=0)
                                     {
                                     ?>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$user['user_id'];?>" class="header_text"><?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php= $feedback_img ?>"/>)
+                                    &nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $user['user_id'];?>" class="header_text"><?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php echo  $feedback_img ?>"/>)
                                     <?php
                                     }
                                     ?>
                                 </td>
-                                <td class="detail9txt"><?php= $country[country]; ?></td>
+                                <td class="detail9txt"><?php echo  $country[country]; ?></td>
 
                                 <td>
                                     <?php
                                     if(!empty($store_tot))
                                     {
                                     ?>
-                                    <a href="store.php?id=<?php=$user['user_id']; ?>" class="header_text"><?php= $store_row[store_name] ?> </a>
+                                    <a href="store.php?id=<?php echo $user['user_id']; ?>" class="header_text"><?php echo  $store_row[store_name] ?> </a>
                                     <?php
                                     }
                                     else
@@ -147,7 +147,7 @@ $user_res=mysql_query($user_sql);
                                     if(!empty($rowcount[0]))
                                     {
                                     ?>
-                                    <a href="search.php?seller_id=<?php=$user['user_id']; ?>&mode=sellers_item" class="header_text">seller's items</a>
+                                    <a href="search.php?seller_id=<?php echo $user['user_id']; ?>&mode=sellers_item" class="header_text">seller's items</a>
                                     <?php
                                     }
                                     else

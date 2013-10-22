@@ -44,7 +44,7 @@
                                 {
                                 ?>
                                 <font class="errormsg">
-                                Additional details for <?php= $user[user_name] ?>  </font> 
+                                Additional details for <?php echo  $user[user_name] ?>  </font> 
                                 <?php
                                 }
                                 ?>
@@ -53,10 +53,10 @@
                 <?php
                 }
                 ?>
-                <tr><td style="padding-left:20px" class="banner1"> An item is "Significantly Not as Described" if the seller clearly misrepresents the item in a way that affects its value or usability. Please refer back to the original item listing and describe how the item you received is significantly different. This information will be shared with <?php= $user[user_name] ?>.   
+                <tr><td style="padding-left:20px" class="banner1"> An item is "Significantly Not as Described" if the seller clearly misrepresents the item in a way that affects its value or usability. Please refer back to the original item listing and describe how the item you received is significantly different. This information will be shared with <?php echo  $user[user_name] ?>.   
                     </td></tr>
 
-                <tr><td style="padding-left:20px" class="banner1"> <font class="detail9txt"><b> Report an Item not received:</b></font> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user[user_name] ?> on
+                <tr><td style="padding-left:20px" class="banner1"> <font class="detail9txt"><b> Report an Item not received:</b></font> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user[user_name] ?> on
                         <?php
                         $custom_date=explode(" ",$bid_date);
                         $custom_date1=$custom_date[0];
@@ -72,17 +72,17 @@
                         <table>
                             <form name="form1" action="disputedescription.php"  method=post>
                                 <tr><td style="padding-left:10px" class="detail9txt"> 
-                                        <b>Additional details for <?php= $user[user_name] ?> </b>
+                                        <b>Additional details for <?php echo  $user[user_name] ?> </b>
                                     </td></tr>
                                 <tr><td style="padding-left:10px"> 
                                         <textarea name="txtresponse" cols="40" rows="5">
-<?php= $_SESSION[Dispute_addttional_inf] ?>
+<?php echo  $_SESSION[Dispute_addttional_inf] ?>
                                         </textarea>
                                     </td></tr>
                                 <tr>
                                     <td style="padding-left:10px"> 
-                                        <input type="hidden" name="bid_id" value=<?php= $bid_id ?> />
-                                               <input type="hidden" name="dispute_id" value=<?php= $dispute_id ?> />
+                                        <input type="hidden" name="bid_id" value=<?php echo  $bid_id ?> />
+                                               <input type="hidden" name="dispute_id" value=<?php echo  $dispute_id ?> />
                                     </td></tr>
                                 <input type="hidden" name="flag" value=1 />
                                 <tr><td style="padding-left:10px">

@@ -27,7 +27,7 @@
 ?>
 <table width="958" border="0" cellpadding="0" cellspacing="0" align="center">
     <tr><td background="images/contentbg1.jpg" height="25">
-            <font class="detail3txt"><div align="left">&nbsp;&nbsp;Browse Categories <?php= $cat_tit[category_name]; ?></div></b></font>
+            <font class="detail3txt"><div align="left">&nbsp;&nbsp;Browse Categories <?php echo  $cat_tit[category_name]; ?></div></b></font>
         </td></tr> 
     <tr><td valign="top" > 
             <table width="958" cellpadding="5" cellspacing="2" align="center" background="images/contentgrad.jpg" border="0" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom">
@@ -45,9 +45,9 @@
                             $maincount=$maincount_fetch['maincount'];
 
                             ?>
-                            <tr><td class="detail9txt">&nbsp;<a href="category.php?cate_id=<?php=$mainid; ?>&view=list&mode=want" class="detail7txt">
-                                        <b><?php= $fetch_main[category_name]; ?></b>
-                                    </a>&nbsp;( <?php= $maincount ?> )</td>
+                            <tr><td class="detail9txt">&nbsp;<a href="category.php?cate_id=<?php echo $mainid; ?>&view=list&mode=want" class="detail7txt">
+                                        <b><?php echo  $fetch_main[category_name]; ?></b>
+                                    </a>&nbsp;( <?php echo  $maincount ?> )</td>
                             </tr>
                             <tr><td width="45%">
                                     <table><tr><td>
@@ -58,7 +58,7 @@
                                                 { 
 
                                                 $count=$count+1;
-                                                $ssid=$rec[category_id];
+                                                $ssid=$rec['category_id'];
                                                 $_SESSION[catt]=" ";
                                                 if($ssid)
                                                 {
@@ -69,7 +69,7 @@
                                                 }
                                                 $cat=rtrim($cat," or category_id=");
 
-                                                $count_item_sql="select * from placing_item_bid where category_id=$rec[category_id] and selling_method='want_it_now' and status='Active' and bid_starting_date <= now() and expire_date >= now()";
+                                                $count_item_sql="select * from placing_item_bid where category_id=$rec['category_id'] and selling_method='want_it_now' and status='Active' and bid_starting_date <= now() and expire_date >= now()";
                                                 $count_item_res=mysql_query($count_item_sql);
                                                 $count_item_total=mysql_num_rows($count_item_res);
 
@@ -77,9 +77,9 @@
 
 
                                                 ?>
-                                        <tr><td class="detail9txt"><a href="category.php?cate_id=<?php=$rec[category_id]; ?>&view=list&mode=want" class="detail7txt"><font size=2 face="Arial"><b>
-                                                        <?php= $rec[category_name]; ?>
-                                                    </b></font></a>&nbsp;( <?php= $count_item_total ?> )</td>
+                                        <tr><td class="detail9txt"><a href="category.php?cate_id=<?php echo $rec['category_id']; ?>&view=list&mode=want" class="detail7txt"><font size=2 face="Arial"><b>
+                                                        <?php echo  $rec[category_name]; ?>
+                                                    </b></font></a>&nbsp;( <?php echo  $count_item_total ?> )</td>
                                         </tr>
                                         <tr><td>
                                                 <table>

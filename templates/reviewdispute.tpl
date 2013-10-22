@@ -9,7 +9,7 @@
             ?>
         </td>
     </tr>
-    <link href="<?php= $ret1; ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $ret1; ?>" rel="stylesheet" type="text/css">
 
     <?php
     if($flag==1)
@@ -42,7 +42,7 @@
                                 <td  ><font size="3" color="#000000"><b>Dispute Opened: Notice Sent</b>
                                     </font> </td></tr>
                             <tr><td style="padding-left:5px" >
-                                    <b>Transaction:</b> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user[user_name] ?> on
+                                    <b>Transaction:</b> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user[user_name] ?> on
                                     <?php
                                     $custom_date=explode(" ",$bid_date);
                                     $custom_date1=$custom_date[0];
@@ -79,7 +79,7 @@
                 <tr height=30>
                     <td  ><font size="3" color="#000000"><b>Open Dispute : Review & Submit</b>
                         </font> </td></tr>
-                <tr><td style="padding-left:5px" > <b>Transaction:</b> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user[user_name] ?> on
+                <tr><td style="padding-left:5px" > <b>Transaction:</b> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user[user_name] ?> on
                         <?php
                         $custom_date=explode(" ",$bid_date);
                         $custom_date1=$custom_date[0];
@@ -97,13 +97,13 @@
                     </td></tr>
 
                 <tr><td style="padding-left:10px">  
-                        Once you click Submit Dispute, <?php=$_SESSION[site_name]?> will share this information with the appropriate party. They will be alerted to the problem and given 10 days to respond. Once they respond, you will be able to communicate further about how best to resolve this dispute.   
+                        Once you click Submit Dispute, <?php echo $_SESSION[site_name]?> will share this information with the appropriate party. They will be alerted to the problem and given 10 days to respond. Once they respond, you will be able to communicate further about how best to resolve this dispute.   
                     </td></tr>
                 <tr><td style="padding-left:10px">
                         <table cellpadding="0" cellspacing="0" border="0" width=100% class="table_border1">
 
                             <tr><td valign="top"  style="padding-left:10px" ><font size="2" color="#CC99FF"><b>
-                                        <?php= $_SESSION[username]  ?></b></font>
+                                        <?php echo  $_SESSION[username]  ?></b></font>
                                 </td></tr>
 
 
@@ -121,16 +121,16 @@
                                     Item Significantly Not As Described:
                                     <?php
                                     }
-                                    ?>  <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) </td></tr>
-                            <tr><td style="padding-left:10px">Payment Method:<?php= $paymentgateway  ?> </td></tr>
-                            <tr><td style="padding-left:10px">Payment Date:<?php= $_SESSION[dis_payment_date]  ?> </td></tr>
-                            <tr><td style="padding-left:10px">Additional Details:<?php= $_SESSION[Dispute_addttional_inf]  ?> </td></tr>
+                                    ?>  <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) </td></tr>
+                            <tr><td style="padding-left:10px">Payment Method:<?php echo  $paymentgateway  ?> </td></tr>
+                            <tr><td style="padding-left:10px">Payment Date:<?php echo  $_SESSION[dis_payment_date]  ?> </td></tr>
+                            <tr><td style="padding-left:10px">Additional Details:<?php echo  $_SESSION[Dispute_addttional_inf]  ?> </td></tr>
                         </table>
                     </td></tr>
                 <tr><td style="padding-left:10px">
                         <form name="form1" action="reviewdispute.php"  method=post>
                             <input type="hidden" name="flag" value="1">
-                            <input type="submit" value="Submit Dispute"> &nbsp;<a href="disputedescription.php?bid_id=<?php= $_SESSION[dispute_bid_id] ?>">Edit Message </a>
+                            <input type="submit" value="Submit Dispute"> &nbsp;<a href="disputedescription.php?bid_id=<?php echo  $_SESSION[dispute_bid_id] ?>">Edit Message </a>
                         </form>
                     </td></tr>
 

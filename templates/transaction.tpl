@@ -48,7 +48,7 @@
                                                     <tr>
                                                         <td align="left" class="detail9txt">
                                                             <div class="myauction_bg">
-                                                                <b>&nbsp;&nbsp;Viewing Transactions Details : &nbsp;&nbsp;</b>(<?php= $pay_total_records; ?>&nbsp; Records)</b></div></td>
+                                                                <b>&nbsp;&nbsp;Viewing Transactions Details : &nbsp;&nbsp;</b>(<?php echo  $pay_total_records; ?>&nbsp; Records)</b></div></td>
                                                         <!--<td align="right" width=10>
                                                         <a href="myauction.php?#paydetails">
                                                         <img src="images/leasing-arrows-up.gif" border=0></a></td>
@@ -91,14 +91,14 @@
                                                         // seller information
                                                         ?>
                                                         <tr class="detail9txt">
-                                                            <td class="tr_botborder" ><?php=$pay_row[trans_type]?></td>
+                                                            <td class="tr_botborder" ><?php echo $pay_row[trans_type]?></td>
                                                             <td class="tr_botborder" >
                                                                 <?php echo $pay_row['pay_id'];?>
                                                             </td>
                                                             <td class="tr_botborder"><?php  echo $pay_row['itemid']; ?> </td>
                                                             <td class="tr_botborder" colspan="2" ><?php  echo $pay_row[trans_date]; ?> </td>
                                                             <td class="tr_botborder" colspan="2" ><?php  echo $pay_row['trans_batchnumber']; ?> </td>
-                                                            <td class="tr_botborder"><?php=$currency?> <?php  echo $pay_row['trans_amount']; ?> </td>
+                                                            <td class="tr_botborder"><?php echo $currency?> <?php  echo $pay_row['trans_amount']; ?> </td>
                                                         </tr>
                                                         <?php
                                                         } // while

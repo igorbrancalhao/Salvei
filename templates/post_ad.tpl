@@ -105,7 +105,7 @@
                                 {
                                 ?>
                             <tr><td>&nbsp;</td>
-                                <td class="banner1"><a href="post_ad.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Sub Category</a> - <?php= $err_cat; ?>
+                                <td class="banner1"><a href="post_ad.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Sub Category</a> - <?php echo  $err_cat; ?>
                                 </td></tr>
                             <?php 
                             }
@@ -114,49 +114,49 @@
                             {
                             ?>
                             <tr><td>&nbsp;</td>
-                                <td class="banner1"><a href="post_ad.php#txttitle" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php= $err_title; ?></td></tr>
+                                <td class="banner1"><a href="post_ad.php#txttitle" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php echo  $err_title; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_des))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#areades" onclick="sel('areades')" class="header_text2">Item Description</a> - <?php= $err_des; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#areades" onclick="sel('areades')" class="header_text2">Item Description</a> - <?php echo  $err_des; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_min_amt))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_min_amt" class="header_text2">Minimum Bid Amount</a> - <?php= $err_min_amt; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_min_amt" class="header_text2">Minimum Bid Amount</a> - <?php echo  $err_min_amt; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_fix_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_quick" class="header_text2">Quick Buy Price</a> - <?php= $err_fix_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_quick" class="header_text2">Quick Buy Price</a> - <?php echo  $err_fix_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_rev_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_rev_price" class="header_text2">Reserve Price</a> - <?php= $err_rev_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_rev_price" class="header_text2">Reserve Price</a> - <?php echo  $err_rev_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_qty" onclick="sel('txt_qty')" class="header_text2">Quantity</a> - <?php= $err_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_qty" onclick="sel('txt_qty')" class="header_text2">Quantity</a> - <?php echo  $err_qty; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_dur))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php= $err_dur; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php echo  $err_dur; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -165,7 +165,7 @@
                             if(!empty($err_size_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#size_of_qty" class="header_text2">Size of Quantity</a> - <?php= $err_size_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#size_of_qty" class="header_text2">Size of Quantity</a> - <?php echo  $err_size_qty; ?></td></tr>
                             <?php 
                             } 
                             ?>
@@ -175,7 +175,7 @@
                             if(!empty($err_bid_inc))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_bid_inc" class="header_text2">Bid Increment</a> - <?php= $err_bid_inc; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#txt_bid_inc" class="header_text2">Bid Increment</a> - <?php echo  $err_bid_inc; ?></td></tr>
                             <?php 
                             } }
                             ?>
@@ -183,42 +183,42 @@
                             {
                             ?>
                             <tr><td>&nbsp;</td>
-                                <td class="banner1"><a href="post_ad.php#cbocurrency" class="header_text2">Currency</a> - <?php= $err_cur; ?></td></tr>
+                                <td class="banner1"><a href="post_ad.php#cbocurrency" class="header_text2">Currency</a> - <?php echo  $err_cur; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img1))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img1" class="header_text2">Image1</a> - <?php= $err_img1; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img1" class="header_text2">Image1</a> - <?php echo  $err_img1; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img2))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img2" class="header_text2">Image2</a> - <?php= $err_img2; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img2" class="header_text2">Image2</a> - <?php echo  $err_img2; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img3))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img3" class="header_text2">Image3</a> - <?php= $err_img3; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img3" class="header_text2">Image3</a> - <?php echo  $err_img3; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img4))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img4" class="header_text2">Image4</a> - <?php= $err_img4; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img4" class="header_text2">Image4</a> - <?php echo  $err_img4; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img5))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img5" class="header_text2">Image5</a> - <?php= $err_img5; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#img5" class="header_text2">Image5</a> - <?php echo  $err_img5; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -243,7 +243,7 @@
                             $select_tab=mysql_query($select_sql);
                             $select_row=mysql_fetch_array($select_tab);
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#<?php= $tab_col->name ?>" class="header_text2"><?php= $tab_col->name ?></a>-<?php= $select_row[err_msg] ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#<?php echo  $tab_col->name ?>" class="header_text2"><?php echo  $tab_col->name ?></a>-<?php echo  $select_row[err_msg] ?></td></tr>
                             <?php
                             }
                             else
@@ -254,7 +254,7 @@
                             if(!is_numeric($_SESSION[$tab_col->name]))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#<?php= $tab_col->name ?>" class="header_text2"><?php= $tab_col->name ?></a>-<?php= $select_row[err_msg] ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="post_ad.php#<?php echo  $tab_col->name ?>" class="header_text2"><?php echo  $tab_col->name ?></a>-<?php echo  $select_row[err_msg] ?></td></tr>
                             <?php
                             }
                             }
@@ -295,7 +295,7 @@
                                 <tr><td colspan="2" class="banner1">
                                         <?php if(!empty($err_title))
                                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_title ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_title ?></font>
  <br>
  <b><font class="moretxt">Item title </font></b><font color="red" size="-2">*</font>
  <?php
@@ -308,12 +308,12 @@
                                         }
                                         ?>
                                     </td></tr>
-                                <tr><td colspan="2"><input type="text" name="txttitle" class="txtbig" value="<?php= $item_title; ?>">
+                                <tr><td colspan="2"><input type="text" name="txttitle" class="txtbig" value="<?php echo  $item_title; ?>">
                                     </td></tr>
                                 <tr><td colspan="2" class="banner1"><b>Sub title </b><?php if($sret) 
                                         {
                                         ?>
-                                        <font color="#669966" ><b> (<?php=$cur_sell?> <?php= $sret ?>)</b></font>
+                                        <font color="#669966" ><b> (<?php echo $cur_sell?> <?php echo  $sret ?>)</b></font>
                                         <?php
                                         }
                                         else
@@ -324,14 +324,14 @@
                                         }
                                         ?></td></tr>
                                 <tr><td colspan="2">
-                                        <input type="text" name="txtsubtitle" id="txtsubtitle" class="txtbig" value="<?php= $sub_title; ?>" maxlength="55">
+                                        <input type="text" name="txtsubtitle" id="txtsubtitle" class="txtbig" value="<?php echo  $sub_title; ?>" maxlength="55">
                                     </td></tr>
                                 <tr><td colspan="2" class="banner1">
                                         <?php if(!empty($err_des))
                                         {
                                         ?>
                                         <img src="images/warning_9x10.gif">&nbsp;
-                                        <font class="moretxt"><?php= $err_des; ?></font>
+                                        <font class="moretxt"><?php echo  $err_des; ?></font>
                                         <br>
                                         <b><font class="moretxt">Item Description </font></b><font color="red" size="-2">*</font>
                                         <?php
@@ -380,7 +380,7 @@
                                                     $content = rteSafe($_POST["rte1"]);
                                             }
                                             ? >
-                                                    rte1.html = '<?php=$content;?>';
+                                                    rte1.html = '<?php echo $content;?>';
                                             //rte1.toggleSrc = false;
                                             rte1.build();
                                             //-->
@@ -534,7 +534,7 @@
                                         <?php if(!empty($err_qty))
                                         {
                                         ?>
-                                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_qty?></font>
+                                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_qty?></font>
                                         <br>
                                         <b><font class="moretxt">Quantity *</font></b>
                                         <?php
@@ -556,7 +556,7 @@
                                         <?php if(!empty($err_dur))
                                         { 
                                         ?>
-                                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_dur; ?></font>
+                                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_dur; ?></font>
                                         <br>
                                         <b><font class="moretxt">Duration </font></b><font color="red" size="-2">*</font>
                                         <?php
@@ -573,7 +573,7 @@
                                 </tr>
                                 <tr>
                                     <td width=443>
-                                        <input type="text" name="txt_qty" onBlur="numchk(this);" onKeyPress="numchk(this);" onKeyDown="numchk(this);" onKeyUp="numchk(this);" class="txtsmall" maxlength="5" value=<?php= $qty; ?>>
+                                        <input type="text" name="txt_qty" onBlur="numchk(this);" onKeyPress="numchk(this);" onKeyDown="numchk(this);" onKeyUp="numchk(this);" class="txtsmall" maxlength="5" value=<?php echo  $qty; ?>>
                                     </td>
                                     <td width=487>
                                         <?php  if($admin_end_row['set_value']=='yes')
@@ -594,13 +594,13 @@
                                             <?php if($dur==$row['duration'])
                                             {
                                             ?>
-                                            <option value="<?php= $row['duration'] ?>" selected><?php= $row['duration'] ?> Days</option>
+                                            <option value="<?php echo  $row['duration'] ?>" selected><?php echo  $row['duration'] ?> Days</option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php= $row['duration'] ?>" ><?php= $row['duration'] ?> Days</option>
+                                            <option value="<?php echo  $row['duration'] ?>" ><?php echo  $row['duration'] ?> Days</option>
                                             <?php
                                             }
                                             } // while($row=mysql_fetch_array($table))
@@ -619,7 +619,7 @@
                                 <tr><td colspan="2" class="banner1">
                                         <?php if(!empty($err_img1))
                                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img1; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img1; ?></font>
  <br>
  <b><font class="moretxt">Image1</font></b>
  <?php
@@ -631,11 +631,11 @@
                                         <?php 
                                         }
                                         ?>
-                                        <input type="file" name="img1" value="<?php= $img1; ?>">
+                                        <input type="file" name="img1" value="<?php echo  $img1; ?>">
                                         <?php if(!empty($_SESSION[img1]))
                                         {
                                         ?>
-                                        <img src="thumbnail/<?php=$_SESSION[image1]?>" width=30 height=30>
+                                        <img src="thumbnail/<?php echo $_SESSION[image1]?>" width=30 height=30>
                                         <?php
                                         }
                                         ?></td></tr>
@@ -646,10 +646,10 @@
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <textarea name="videofile" style="width:220px; height:70px"><?php=stripslashes($videofileup);?></textarea>
+                                        <textarea name="videofile" style="width:220px; height:70px"><?php echo stripslashes($videofileup);?></textarea>
                                     </td>
                                     <td align="left" valign="bottom">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:300px; height:20px"/><?php=$videolinkup?></textarea>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:300px; height:20px"/><?php echo $videolinkup?></textarea>
                                     </td>
                                 </tr>
                             </table>
@@ -818,11 +818,11 @@
                     // }
                     ?>
                     <input type="hidden" name=flag value="1">
-                    <input type="hidden" name="cat_id" value=<?php= $cat_id; ?>>
-                           <input type="hidden" name=mode value="<?php= $mode; ?>">
-                    <input type="hidden" name=sell_format value="<?php= $sell_format; ?>">
-                    <input type="hidden" name=item_id value=<?php= $item_id; ?>>
-                           <input type="hidden" name=own_html_flag value=<?php= $ownhtml; ?>>
+                    <input type="hidden" name="cat_id" value=<?php echo  $cat_id; ?>>
+                           <input type="hidden" name=mode value="<?php echo  $mode; ?>">
+                    <input type="hidden" name=sell_format value="<?php echo  $sell_format; ?>">
+                    <input type="hidden" name=item_id value=<?php echo  $item_id; ?>>
+                           <input type="hidden" name=own_html_flag value=<?php echo  $ownhtml; ?>>
                            <input type="hidden" name="content" value="">
                     <tr><td colspan="2" align="center">
                             <?php if($mode=="" or $mode=="relist" or $mode=="repost")

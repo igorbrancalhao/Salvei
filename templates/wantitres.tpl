@@ -36,11 +36,11 @@ if($in_res)
                             &nbsp;Sell Your Item: Congratulations</b></font></td></tr>
                 <tr><td valign="top">
                         <table cellpadding="5" cellspacing="2" align="center" width="900">
-                            <tr><td><font size="2" color=green><b>Congratulations, <?php= $_SESSION[username]; ?>! You have responded to a Want It Now post.</b></font></td></tr>
+                            <tr><td><font size="2" color=green><b>Congratulations, <?php echo  $_SESSION[username]; ?>! You have responded to a Want It Now post.</b></font></td></tr>
                             <tr><td class="detail9txt"><b> Where would you like to go next? </b>
                                 </td></tr>
-                            <tr><td>&nbsp;&nbsp;&nbsp;<a href="wantitnowdes.php?item_id=<?php= $item_id ?>" class="detail7txt">View the post you responded to </a></td></tr> 
-                            <tr><td>&nbsp;&nbsp;&nbsp;<a href="wantitnow_homepage.php?item_id=<?php= $item_id ?>" class="detail7txt">Want It Now Home Page</a></td></tr> 
+                            <tr><td>&nbsp;&nbsp;&nbsp;<a href="wantitnowdes.php?item_id=<?php echo  $item_id ?>" class="detail7txt">View the post you responded to </a></td></tr> 
+                            <tr><td>&nbsp;&nbsp;&nbsp;<a href="wantitnow_homepage.php?item_id=<?php echo  $item_id ?>" class="detail7txt">Want It Now Home Page</a></td></tr> 
                         </table></td></tr>
             </table></td></tr>
 </td></tr>
@@ -64,7 +64,7 @@ else
                             </div></font></b></td>
                     <td colspan="3" align="center" valign="bottom" height="23">&nbsp;</td>
                     <td width="546" height="23" nowrap><b><font class="detail9txt">
-                            <div align="left">Already an Item listed on <?php= $_SESSION[site_name]  ?>?</div></font></b></td>
+                            <div align="left">Already an Item listed on <?php echo  $_SESSION[site_name]  ?>?</div></font></b></td>
                 </tr>
                 <tr>
                     <td width="7">&nbsp;</td>
@@ -94,7 +94,7 @@ else
 
                                         <BR>
                                         <BR>
-                                        Enter the item number of an item that is already listed for sale on <?php= $_SESSION[site_name]  ?>. <br></td>
+                                        Enter the item number of an item that is already listed for sale on <?php echo  $_SESSION[site_name]  ?>. <br></td>
                                 </tr>
                             </table>
                             <?php if(!empty($msg))
@@ -102,7 +102,7 @@ else
                             ?>
                             <table>
                                 <tr>&nbsp;</tr>
-                                <tr><td><font size="2" color="red"><b><?php= $msg; ?></b></font></td></tr></table>
+                                <tr><td><font size="2" color="red"><b><?php echo  $msg; ?></b></font></td></tr></table>
                             <?php
                             }
                             ?>
@@ -170,7 +170,7 @@ else
                                 </tr>
                                 <tr>
                                 <input type="hidden" name=mode value="set">
-                                <input type="hidden" value="<?php= $item_id; ?>" name="item_id">
+                                <input type="hidden" value="<?php echo  $item_id; ?>" name="item_id">
                                 <td width="35%"><input type="submit"  value="Respond" tabindex="2"></td>
                                 </tr>
                             </table>

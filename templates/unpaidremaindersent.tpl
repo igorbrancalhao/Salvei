@@ -38,12 +38,12 @@
                             <tr height=30>
                                 <td><font size="3" class="detail9txt"><b>Unpaid Item Reminder Sent </b>
                                     </font> </td></tr>
-                            <tr><td style="padding-left:10px" class="banner1">An unpaid item reminder has been sent to <a href="feedback.php?user_id=<?php= $user[user_id] ?>" class="header_text"><?php= $user[user_name] ?></a> for the following item:<?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) 
+                            <tr><td style="padding-left:10px" class="banner1">An unpaid item reminder has been sent to <a href="feedback.php?user_id=<?php echo  $user[user_id] ?>" class="header_text"><?php echo  $user[user_name] ?></a> for the following item:<?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) 
                                 </td></tr>
                             <tr>
                                 <td style="padding-left:10px" class="detail9txt">Unpaid Item Policy </td>
                             </tr> 
-                            <tr><td style="padding-left:10px" class="banner1"> You will need to take additional action before your Final Value Fee is credited. If the buyer does not respond, you will be eligible to receive a Final Value Fee credit  <?php= $admin_row[set_value] ?> days after this reminder is sent. Learn about this process in <?php= $_SESSION[site_name]  ?>'s Unpaid Item Policy.</td></tr>
+                            <tr><td style="padding-left:10px" class="banner1"> You will need to take additional action before your Final Value Fee is credited. If the buyer does not respond, you will be eligible to receive a Final Value Fee credit  <?php echo  $admin_row[set_value] ?> days after this reminder is sent. Learn about this process in <?php echo  $_SESSION[site_name]  ?>'s Unpaid Item Policy.</td></tr>
                             <tr><td style="padding-left:10px"> </td></tr>
 
                             <tr><td><hr></td></tr>

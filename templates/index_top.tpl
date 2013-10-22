@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title><?php=$_SESSION['site_name']?></title>
-        <meta name="keywords" content="<?php=$meta_res['key_s']?>" />
-        <meta name="description" content="<?php=$meta_res['key_s']?>" /> 
+        <title><?php echo $_SESSION['site_name']?></title>
+        <meta name="keywords" content="<?php echo $meta_res['key_s']?>" />
+        <meta name="description" content="<?php echo $meta_res['key_s']?>" /> 
         <link href="style/newstyle.css" rel="stylesheet" type="text/css" />
         <script language="javascript">
             var ServerTime = new Date("<?php echo $JavascriptTime; ?>");
@@ -292,7 +292,7 @@
                                                                     <tr>
                                                                         <td><div align="center">
                                                                                 <a href="index.php">
-                                                                                    <img src="images/<?php=$sitelogo_fetch['set_value'];?>" width="252" height="111" border="0"/>
+                                                                                    <img src="images/<?php echo $sitelogo_fetch['set_value'];?>" width="252" height="111" border="0"/>
                                                                                 </a>
                                                                             </div></td>
                                                                     </tr>
@@ -372,8 +372,8 @@
                                                                                                     while($recordcat=mysql_fetch_array($recordsetcat))
                                                                                                     {
                                                                                                     ?>
-                                                                                                    <option value="<?php= $recordcat[category_id]?>">
-                                                                                                        <?php= $recordcat[category_name]?>
+                                                                                                    <option value="<?php echo  $recordcat['category_id']?>">
+                                                                                                        <?php echo  $recordcat[category_name]?>
                                                                                                     </option>
                                                                                                     <?php
                                                                                                     }
@@ -420,7 +420,7 @@
                                                 <td width="325"><?phpif(empty($_SESSION['userid'])){?>
             <div align="left"><span class="header_text1">Bem vindo visitante  ! Deseja</span> <span class="header_text"><a href="signin.php" class="header_text">Logar</a></span> <span class="header_text1">ou se </span><span class="header_text"><a href="user_reg.php" class="header_text">Cadastrar.</a></span></div>
             <?php}else{?>
-            <div align="left"><span class="header_text1">Bem vindo!</span> <span class="header_text"><a href="feedback.php?user_id=<?php=$_SESSION['userid']?>" class="header_text"><?php=$_SESSION['username'];?></a></span> <span class="header_text1">Deseja </span><span class="header_text"><a href="signout.php" class="header_text">Sair</a></span>.</div>
+            <div align="left"><span class="header_text1">Bem vindo!</span> <span class="header_text"><a href="feedback.php?user_id=<?php echo $_SESSION['userid']?>" class="header_text"><?php echo $_SESSION['username'];?></a></span> <span class="header_text1">Deseja </span><span class="header_text"><a href="signout.php" class="header_text">Sair</a></span>.</div>
             <?php}?></td>
                                                 <td width="371" class="header_text1"></td>
                                                 <td width="1"><!--<img src="images/livehelp.gif" alt="" width="19" height="20" />--></td>

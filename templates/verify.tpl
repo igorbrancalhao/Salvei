@@ -69,7 +69,7 @@
                                             {
                                             ?>
                                             <tr><td colspan="2">
-                                                    <?php= $status; ?>
+                                                    <?php echo  $status; ?>
                                                 </td></tr>
                                             <?php
                                             }
@@ -81,7 +81,7 @@
                                                 <td width="51%"  align="left"><input type="text" name="txtVcode"  class="txtmid"></td>
                                             </tr>
                                             <tr> 
-                                                <td colspan="2" align="center"><input type="hidden" name="userid" value="<?php=$userid?>"> 
+                                                <td colspan="2" align="center"><input type="hidden" name="userid" value="<?php echo $userid?>"> 
                                                     <input type="hidden" name="canValidate" value="0"> 
                                                     <input type="submit" name="btn_Vaildate" value="Validate" class="searchbutton">
                                                 </td>

@@ -110,7 +110,7 @@ exit();
                     {
                     ?>
                     <td>
-                        <a href="store_directory.php?currec=<?php=($currec - 1);?>&view=<?php=$view;?>&cate_id=<?php=$cate_id;?>" >
+                        <a href="store_directory.php?currec=<?php echo ($currec - 1);?>&view=<?php echo $view;?>&cate_id=<?php echo $cate_id;?>" >
                             <font size="2" color="red" face="Arial, Helvetica, sans-serif">Previous </font></a></td>
                     <?php
                     } 
@@ -120,7 +120,7 @@ exit();
                     if($total_records > ($start + $end)) 
                     {
                     ?>  
-                    <td><a href="store_directory.php?currec=<?php=($currec + 1);?>&view=<?php=$view;?>&cate_id=<?php=$cate_id;?>" >
+                    <td><a href="store_directory.php?currec=<?php echo ($currec + 1);?>&view=<?php echo $view;?>&cate_id=<?php echo $cate_id;?>" >
                             <font size=2 color="red" face="Arial, Helvetica, sans-serif"> Next </font> </a></td>
                     <?php
                     }
@@ -179,7 +179,7 @@ exit();
                         }
                         ?>
                         <a href="store.php?id=<?php  echo $record['user_id']; ?>">
-                            <img src="storefronts/<?php= $record[logo] ?>" border="0" title= "Click here to View Stores Details" height="<?php=$h?>" width="<?php=$w?>"></a>
+                            <img src="storefronts/<?php echo  $record[logo] ?>" border="0" title= "Click here to View Stores Details" height="<?php echo $h?>" width="<?php echo $w?>"></a>
                         <?php
                         }
                         else 
@@ -212,10 +212,10 @@ exit();
 
 
                         ?>
-                        <a href="feedback.php?user_id=<?php  echo $record['user_id']; ?>" class="header_text2"><?php  echo $member_res['user_name']; ?> </a>&nbsp;(<img src="images/<?php= $feedback_img ?>" style="position:relative;top:5px" /> )
+                        <a href="feedback.php?user_id=<?php  echo $record['user_id']; ?>" class="header_text2"><?php  echo $member_res['user_name']; ?> </a>&nbsp;(<img src="images/<?php echo  $feedback_img ?>" style="position:relative;top:5px" /> )
                     </td>
-                    <td width=300 class="detail9txt"><?php= $record[description]; ?></td>
-                    <td class="detail9txt"><?php= $tot_auction; ?></td>
+                    <td width=300 class="detail9txt"><?php echo  $record[description]; ?></td>
+                    <td class="detail9txt"><?php echo  $tot_auction; ?></td>
                 </tr>
                 <?php
                 } //while($record=mysql_fetch_array($recordset))

@@ -37,14 +37,14 @@
                     <td  ><font size="3" class="detail9txt"><b>Send the Unpaid Item Reminder </b>
                         </font> </td></tr>
                 <tr><td style="padding-left:10px" class="banner1">Clicking the button below will send 
-                        <a href="feedback.php?user_id=<?php= $user[user_id] ?>" class="header_text"><?php= $user[user_name] ?></a> an email reminder that an Unpaid Item dispute has been reported to <?php= $_SESSION[site_name]  ?> for item: <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) 
+                        <a href="feedback.php?user_id=<?php echo  $user[user_id] ?>" class="header_text"><?php echo  $user[user_name] ?></a> an email reminder that an Unpaid Item dispute has been reported to <?php echo  $_SESSION[site_name]  ?> for item: <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) 
 
 
                     </td></tr>
                 <tr><td style="padding-left:10px" class="banner1">
-                        Communication with your buyer is the best way to resolve this dispute. <?php= $_SESSION[site_name]  ?> encourages you to use the dispute message thread to work out an agreement so that you can complete your transaction.
+                        Communication with your buyer is the best way to resolve this dispute. <?php echo  $_SESSION[site_name]  ?> encourages you to use the dispute message thread to work out an agreement so that you can complete your transaction.
                     </td></tr> 
-                <tr><td style="padding-left:10px" class="banner1"> You will need to take additional action before your Final Value Fee is credited. If the buyer does not respond, you will be eligible to receive a Final Value Fee credit  <?php= $admin_row[set_value] ?> days after this reminder is sent. Learn about this process in <?php= $_SESSION[site_name]  ?>'s Unpaid Item Policy </td></tr>
+                <tr><td style="padding-left:10px" class="banner1"> You will need to take additional action before your Final Value Fee is credited. If the buyer does not respond, you will be eligible to receive a Final Value Fee credit  <?php echo  $admin_row[set_value] ?> days after this reminder is sent. Learn about this process in <?php echo  $_SESSION[site_name]  ?>'s Unpaid Item Policy </td></tr>
                 <tr><td style="padding-left:10px"> </td></tr>
                 <form name="form1" action="sendunpaiddispute.php"  method=post>
                     <tr><td><hr></td></tr>

@@ -63,7 +63,7 @@
                                                                 while($sqlfetch_ship=mysql_fetch_array($sqlqry_ship))
                                                                 {
                                                                 ?>
-                                                                <option value="<?php=$sqlfetch_ship[ship_id]?>"><?php=$sqlfetch_ship['location']?></option>
+                                                                <option value="<?php echo $sqlfetch_ship[ship_id]?>"><?php echo $sqlfetch_ship['location']?></option>
                                                                 <?php
                                                                 }
                                                                 ?>

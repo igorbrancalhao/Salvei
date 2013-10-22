@@ -295,7 +295,7 @@
                                                                                                                             if($record[selling_method]=="ads")
                                                                                                                             {
                                                                                                                             ?>
-                                                                                                                            <a href="classifide_ad.php?item_id=<?php echo$record['item_id']?>" <?php if($fea[bold]=='Yes'){?> class="searchresult3txt_bold" <?php }else {?>class="searchresult3txt"
+                                                                                                                            <a href="classifide_ad.php?item_id=<?php echo $record['item_id']?>" <?php if($fea[bold]=='Yes'){?> class="searchresult3txt_bold" <?php }else {?>class="searchresult3txt"
   <?php }?>>
                                                                                                                                <?php 
                                                                                                                                }

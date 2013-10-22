@@ -19,9 +19,9 @@ function ret($ssid) {
     $ss_sql = "select * from category_master where category_head_id=$ssid order by category_name";
     $sub_res = mysql_query($ss_sql);
     while ($cat_row = mysql_fetch_array($sub_res)) {
-        $ssid = $cat_row[category_id];
+        $ssid = $cat_row['category_id'];
         ?>
-        <tr><td><?php = $cat_row[category_id] ?></td><td><?php = $cat_row[category_name] ?></td></tr>
+        <tr><td><?php = $cat_row['category_id'] ?></td><td><?php = $cat_row[category_name] ?></td></tr>
         <?php
         $ssid = $cat_row['category_id'];
         ret($ssid);

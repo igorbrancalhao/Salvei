@@ -30,7 +30,7 @@
                 <?   while($rec=mysql_fetch_array($res))
                 { 
                 $count=$count+1;
-                $ssid=$rec[category_id];
+                $ssid=$rec['category_id'];
                 $_SESSION[catt]=" ";
                 if($ssid)
                 {
@@ -47,7 +47,7 @@
 
 
                 ?>
-                <li><a href="subcat.php?cate_id=<?=$rec[category_id]; ?>&view=list" class="detail7txt">
+                <li><a href="subcat.php?cate_id=<?=$rec['category_id']; ?>&view=list" class="detail7txt">
                         <font size=2 face="Arial"><b><?=$rec[category_name]; ?></b></font></a>&nbsp; ( <?= $count_item_total ?> ) </li>
                 <?
                 }

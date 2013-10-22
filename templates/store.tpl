@@ -32,7 +32,7 @@ if($total_records==0)
 <table width="100%" border="0" cellpadding="5" cellspacing="0" align="center">
     <tr><td valign="top">
             <table cellspacing=0 cellpadding="5" align="center" width="962">
-                <tr colspan="6"><td background="images/item_bg.gif"><font size="3"><b><div align="left">&nbsp;&nbsp;<?php= $store_row[store_name] ?></div></b></font></td></tr>
+                <tr colspan="6"><td background="images/item_bg.gif"><font size="3"><b><div align="left">&nbsp;&nbsp;<?php echo  $store_row[store_name] ?></div></b></font></td></tr>
                 <tr>
                     <td width="93%" align="center">
                         <br><br>
@@ -63,7 +63,7 @@ if($total_records==0)
             <table width="100%" cellpadding="5" cellspacing="0" align="center">
                 <tr><td>
                         <table cellspacing=0 cellpadding="5" align="center" width="962">
-                            <tr colspan="6"><td background="images/item_bg.gif"><font size="3"><b><div align="left">&nbsp;&nbsp;>> Stores - <?php= $store_row[store_name] ?></div></b></font></td></tr>
+                            <tr colspan="6"><td background="images/item_bg.gif"><font size="3"><b><div align="left">&nbsp;&nbsp;>> Stores - <?php echo  $store_row[store_name] ?></div></b></font></td></tr>
                             <tr><td width=100%>
                                     <table width="100%" cellpadding="5" cellspacing=2><tr><td align="center">
                                                 <?php
@@ -86,8 +86,8 @@ if($total_records==0)
                                                 $w=$nw;
                                                 }
                                                 ?>
-                                                <img src="storefronts/<?php= $store_row[logo] ?>" height="<?php=$h?>" width="<?php=$w?>"></td></tr>
-                                        <tr><td class="searchresult3txt" align="center" width=100%> <?php= $store_row[description];  ?>
+                                                <img src="storefronts/<?php echo  $store_row[logo] ?>" height="<?php echo $h?>" width="<?php echo $w?>"></td></tr>
+                                        <tr><td class="searchresult3txt" align="center" width=100%> <?php echo  $store_row[description];  ?>
                                             </td></tr>
                                     </table>
                                 </td></tr>
@@ -126,7 +126,7 @@ if($total_records==0)
                                                         if($total_records > ($start + $end)) 
                                                         {
                                                         ?>
-                                                        <td align="right" colspan="5"><a href="store.php?id=<?php=$id;?>&currec=<?php=$currec+1;?>" style="text-decoration:none"><font class="header_text2"><b> Next</b></font></a></td>
+                                                        <td align="right" colspan="5"><a href="store.php?id=<?php echo $id;?>&currec=<?php echo $currec+1;?>" style="text-decoration:none"><font class="header_text2"><b> Next</b></font></a></td>
                                                         <?php
                                                         }
                                                         ?>
@@ -212,16 +212,16 @@ if($total_records==0)
                                                 else if($item[selling_method]=='ads')
                                                 {
                                                 ?>
-                                                <!-- <a href="fixed_price_sale.php?item_id=<?php= $item['item_id'];?>&qty=1">
+                                                <!-- <a href="fixed_price_sale.php?item_id=<?php echo  $item['item_id'];?>&qty=1">
                                                               <img src="images/hands(11).gif" border="0" alt="Click here to Buy this Item"></a> -->
-                                                <a href="classifide_ad.php?item_id=<?php= $item['item_id'];?>&qty=1">
+                                                <a href="classifide_ad.php?item_id=<?php echo  $item['item_id'];?>&qty=1">
                                                     <img src="images/hands(11).gif" border="0" alt="Click here"></a>
                                                 <?php 
                                                 } 
                                                 else if($item[selling_method]=='fix')
                                                 {
                                                 ?>
-                                                <a href="detail.php?item_id=<?php= $item['item_id'];?>&qty=1">
+                                                <a href="detail.php?item_id=<?php echo  $item['item_id'];?>&qty=1">
                                                     <img src="images/buynow_icon.gif" border="0" alt="Click here to Buy this Item"></a>
                                                 <?php
                                                 }
@@ -280,14 +280,14 @@ if($total_records==0)
                                                 <?php
                                                 }
                                                 ?>
-                                                &nbsp;&nbsp;<?php if($fea[subtitle_feature]=="Yes") echo $fea['subtitle']; ?>
+                                                &nbsp;&nbsp;<?php if($fea['subtitle_feature']=="Yes") echo $fea['subtitle']; ?>
                                             </td>
-                                            <?php if($item[selling_method]=="auction" or $item[selling_method]=="dutch_auction")
+                                            <?php if($item['selling_method']=="auction" or $item['selling_method']=="dutch_auction")
                                             {
                                             ?>
 
                                             <td class="searchresult3txt_bold"><?php echo $no_of_bid; ?> </td>
-                                            <td class="searchresult3txt_bold"><?php  echo  $item[currency]." ".$curprice; ?></td>
+                                            <td class="searchresult3txt_bold"><?php  ech $item['currency']." ".$curprice; ?></td>
                                             <td class="searchresult3txt_bold"><?php echo "$string_difference" ;?></td>
                                             <?php 
                                             }

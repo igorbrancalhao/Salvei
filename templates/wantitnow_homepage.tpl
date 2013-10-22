@@ -81,7 +81,7 @@
                                                             { 
                                                             $count=$count+1;
 
-                                                            $ssid=$rec[category_id];
+                                                            $ssid=$rec['category_id'];
                                                             $_SESSION[catt]=" ";
                                                             if($ssid)
                                                             {
@@ -100,7 +100,7 @@
 
                                                             ?>
 
-                                                    <tr><td class="detail9txt"><a href="wantitnow_browse.php?cate_id=<?php=$rec[category_id]; ?>&view=list" class="header_text"><?php=$rec[category_name]; ?></a>&nbsp; ( <?php= $count_item_total ?> ) </td></tr>
+                                                    <tr><td class="detail9txt"><a href="wantitnow_browse.php?cate_id=<?php echo $rec['category_id']; ?>&view=list" class="header_text"><?php echo $rec[category_name]; ?></a>&nbsp; ( <?php echo  $count_item_total ?> ) </td></tr>
 
                                                     <?php if($count == $first_part)
                                                     {

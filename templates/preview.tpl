@@ -35,11 +35,11 @@ if($sucess==1)
                 <tr><td valign="top">
                         <table cellpadding="5" cellspacing="2" align="center" width="100%">
                             <tr><td><font class="banner1"><b>You have successfully listed your item.</b></font></td></tr>
-                            <tr><td class="banner1"><b>View your listing:</b>&nbsp;<a href="detail.php?item_id=<?php= $item_id ?>" class="header_text"><?php= $_SESSION[item_name]; ?></a></td></tr>
+                            <tr><td class="banner1"><b>View your listing:</b>&nbsp;<a href="detail.php?item_id=<?php echo  $item_id ?>" class="header_text"><?php echo  $_SESSION[item_name]; ?></a></td></tr>
                             <tr>
                                 <td class="banner1">
                                     <form name="relist" action="sellsimilaritem.php" method="get">
-                                        <input type="hidden" name="sellitemid" value="<?php= $item_id ?>">
+                                        <input type="hidden" name="sellitemid" value="<?php echo  $item_id ?>">
                                         <input type="hidden" name="mode" value="sellsimilar">
                                         <input type="image" src="images/sellsimilar.gif" name="Image84"  border="0" id="Image84" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image84', '', 'images/sellsimilaro.gif', 1)" value="Sell Similar Item"/>
 
@@ -80,7 +80,7 @@ else
                                         <b>Item Title </b></div></td>
                                 <td bgcolor="#B8DEEE"><div align="right"><a href="sell_item_detail.php?mode=change" class="header_text">Edit Item Title</a></div>
                                 </td></tr>
-                            <tr><td class="banner1"><?php= $_SESSION[item_name]=stripslashes($_SESSION[item_name]); ?> </td></tr>
+                            <tr><td class="banner1"><?php echo  $_SESSION[item_name]=stripslashes($_SESSION[item_name]); ?> </td></tr>
                         </table></td></tr>
                 <?php 
                 if($_SESSION['subtitle'])
@@ -95,7 +95,7 @@ else
                                 <td bgcolor="#B8DEEE"><div align="right"><a href="sell_item_detail.php?mode=change" class="header_text">Edit 
                                             Subtitle</a></div>
                                 </td></tr>
-                            <tr><td class="banner1"> <?php= $_SESSION[subtitle]=stripslashes($_SESSION[subtitle]); ?> </td></tr>
+                            <tr><td class="banner1"> <?php echo  $_SESSION[subtitle]=stripslashes($_SESSION[subtitle]); ?> </td></tr>
                         </table></td></tr>
                 <?php
                 }
@@ -117,8 +117,8 @@ else
                                     list($width, $height, $type, $attr) = getimagesize("images/$img");
                                     ?>
                                     <table width="100%" cellpadding="5" cellspacing="0" align="left">
-                                        <tr><td background="images/<?php= $theme_top ?>" style="background-repeat:no-repeat"  height=<?php= $height ?> align="left"></td></tr>
-                                        <tr><td background="images/<?php= $theme_content ?>"  style="background-repeat:repeat-y" align="left" >
+                                        <tr><td background="images/<?php echo  $theme_top ?>" style="background-repeat:no-repeat"  height=<?php echo  $height ?> align="left"></td></tr>
+                                        <tr><td background="images/<?php echo  $theme_content ?>"  style="background-repeat:repeat-y" align="left" >
                                                 <?php
 
                                                 if($_SESSION[layout]=="layout_top.gif")
@@ -148,10 +148,10 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
-                                                    <tr><td style="padding:50px" class="banner1"><?php= $_SESSION[des]=stripslashes($_SESSION[des]); ?>  </td></tr>
+                                                    <tr><td style="padding:50px" class="banner1"><?php echo  $_SESSION[des]=stripslashes($_SESSION[des]); ?>  </td></tr>
 
                                                     <tr><td align="center" >
                                                             <?php if($_SESSION[image2])
@@ -176,7 +176,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -203,7 +203,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -229,7 +229,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -255,7 +255,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -281,7 +281,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -307,7 +307,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                 </table>
@@ -317,7 +317,7 @@ else
                                                 {
                                                 ?>
                                                 <table width=100% cellpadding="5" >
-                                                    <tr><td style="padding:50px" class="banner1"><?php= $_SESSION[des]=stripslashes($_SESSION[des]);?></td></tr>
+                                                    <tr><td style="padding:50px" class="banner1"><?php echo  $_SESSION[des]=stripslashes($_SESSION[des]);?></td></tr>
                                                     <tr><td align="center">
                                                             <?php if($_SESSION[image1])
                                                             {  
@@ -341,7 +341,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -369,7 +369,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
 
@@ -396,7 +396,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -422,7 +422,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -448,7 +448,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -474,7 +474,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -500,7 +500,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                 </table>
@@ -534,7 +534,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
 
@@ -562,7 +562,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
 
@@ -589,7 +589,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="center">
@@ -615,7 +615,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="center">
@@ -641,7 +641,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="center">
@@ -667,7 +667,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="center">
@@ -693,11 +693,11 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                             </table></td><td style="padding:50px" valign="top" class="banner1">
-                                                            <?php= $_SESSION[des]=stripslashes($_SESSION[des]); ?>
+                                                            <?php echo  $_SESSION[des]=stripslashes($_SESSION[des]); ?>
                                                         </td></tr>
                                                 </table>
                                                 <?php
@@ -708,7 +708,7 @@ else
                                                 <table width=100% cellpadding="5" >
                                                     <tr>
                                                         <td style="padding:50px" valign="top" class="banner1">
-                                                            <?php= $_SESSION[des]=stripslashes($_SESSION[des]); ?>  </td>
+                                                            <?php echo  $_SESSION[des]=stripslashes($_SESSION[des]); ?>  </td>
                                                         <td style="padding-right:50px">
                                                             <table>
                                                                 <tr><td align="left">
@@ -734,7 +734,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
 
@@ -762,7 +762,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
 
@@ -789,7 +789,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="left">
@@ -815,7 +815,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="left">
@@ -841,7 +841,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="left">
@@ -867,7 +867,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                                 <tr><td align="left">
@@ -893,7 +893,7 @@ else
                                                                         }
 
                                                                         ?>
-                                                                        <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                        <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                     </td></tr>
                                                             </table></td></tr>
@@ -904,7 +904,7 @@ else
                                                 {
                                                 ?>
                                                 <table width=100% cellpadding="5">
-                                                    <tr><td align="center" class="banner1"><?php=$_SESSION[des]=stripslashes($_SESSION[des]);?></td></tr>
+                                                    <tr><td align="center" class="banner1"><?php echo $_SESSION[des]=stripslashes($_SESSION[des]);?></td></tr>
                                                     <tr><td align="center">
                                                             <?php if($_SESSION[image1])
                                                             {  
@@ -928,7 +928,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -954,7 +954,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -980,7 +980,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1006,7 +1006,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?>>  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?>>  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1032,7 +1032,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?>>  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?>>  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1058,7 +1058,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                     <tr><td align="center">
@@ -1084,7 +1084,7 @@ else
                                                             }
 
                                                             ?>
-                                                            <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                            <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                         </td></tr>
                                                 </table>
@@ -1095,7 +1095,7 @@ else
                                                 ?>
                                                 <table width=100% cellpadding="5" style="padding:50px">
                                                     <tr><td colspan="2" align="left" class="banner1">
-                                                            <?php= $_SESSION[des]=stripslashes($_SESSION[des]); ?>
+                                                            <?php echo  $_SESSION[des]=stripslashes($_SESSION[des]); ?>
                                                         </td></tr>
                                                 </table>
                                                 <?php
@@ -1114,7 +1114,7 @@ else
                                         ?>	
 
                                         <tr>
-                                            <td background="images/<?php=$theme_bottom?>" style="background-repeat:no-repeat" width=100% height="<?php= $height ?>" align="left">
+                                            <td background="images/<?php echo $theme_bottom?>" style="background-repeat:no-repeat" width=100% height="<?php echo  $height ?>" align="left">
                                             </td></tr></table>
                                     <?php
                                     } // end of  
@@ -1122,7 +1122,7 @@ else
                                     {
                                     ?>
                             <tr><td colspan="2" align="left" class="banner1">
-                                    <?php= $_SESSION['des']=stripslashes($_SESSION['des']); ?>
+                                    <?php echo  $_SESSION['des']=stripslashes($_SESSION['des']); ?>
                                 </td></tr>
                             <?php
                             }
@@ -1143,7 +1143,7 @@ else
                 <?php if($_SESSION[min_amt])
                 { 
                 ?>
-                <tr><td class="detail9txt"><b>Minimum Bid Amount</b></td><td align="left" class="banner1"><?php=$_SESSION[currency]?>&nbsp;<?php= $_SESSION[min_amt]?></td></tr>
+                <tr><td class="detail9txt"><b>Minimum Bid Amount</b></td><td align="left" class="banner1"><?php echo $_SESSION[currency]?>&nbsp;<?php echo  $_SESSION[min_amt]?></td></tr>
                 <?php
                 }
                 ?>
@@ -1175,33 +1175,33 @@ else
                 <?php if($_SESSION[rev_price])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Reserve Price</b></td><td class="banner1"><?php=$_SESSION[currency]?>&nbsp;<?php= $_SESSION[rev_price] ?></td></tr>
+                <tr><td class="detail9txt"><b>Reserve Price</b></td><td class="banner1"><?php echo $_SESSION[currency]?>&nbsp;<?php echo  $_SESSION[rev_price] ?></td></tr>
                 <?php
                 }
                 ?>
                 <?php if($_SESSION[start_delay])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Start Delay</b></td><td class="banner1"><?php= $_SESSION[start_delay]." Days" ?></td></tr>
+                <tr><td class="detail9txt"><b>Start Delay</b></td><td class="banner1"><?php echo  $_SESSION[start_delay]." Days" ?></td></tr>
                 <?php
                 }
                 ?>
                 <?php if($_SESSION[quick_price])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Quick Buy Price</b></td><td class="banner1"><?php=$_SESSION[currency]?>&nbsp;<?php= $_SESSION[quick_price] ?></td></tr>
+                <tr><td class="detail9txt"><b>Quick Buy Price</b></td><td class="banner1"><?php echo $_SESSION[currency]?>&nbsp;<?php echo  $_SESSION[quick_price] ?></td></tr>
                 <?php
                 }
                 ?>
-                <tr><td class="detail9txt"><b>Duration</b></td><td class="banner1"><?php= $_SESSION[dur] ?> <?php if($_SESSION[dur]==1) { echo "day"; } else if($_SESSION[dur] > 1) { echo "days"; } ?></td></tr>
+                <tr><td class="detail9txt"><b>Duration</b></td><td class="banner1"><?php echo  $_SESSION[dur] ?> <?php if($_SESSION[dur]==1) { echo "day"; } else if($_SESSION[dur] > 1) { echo "days"; } ?></td></tr>
 
-                <tr><td class="detail9txt"><b>Quantity </b></td><td class="banner1"> <?php= $_SESSION[qty]; ?> </td></tr>
+                <tr><td class="detail9txt"><b>Quantity </b></td><td class="banner1"> <?php echo  $_SESSION[qty]; ?> </td></tr>
 
                 <?php 
                 if($_SESSION[theme_id])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Listing Designer </b></td><td class="banner1">Theme:  <?php= $_SESSION[theme]; ?> 
+                <tr><td class="detail9txt"><b>Listing Designer </b></td><td class="banner1">Theme:  <?php echo  $_SESSION[theme]; ?> 
                         <br />
                         <?php if($_SESSION[layout])
                         {
@@ -1217,7 +1217,7 @@ else
                         $layout_dis="Standard";
                         ?>
                         Layout:
-                        <?php= $layout_dis; ?> 
+                        <?php echo  $layout_dis; ?> 
                         <?php
                         }
                         ?>
@@ -1261,7 +1261,7 @@ else
                 $w=$nw;
                 }
                 ?>
-                <tr align="center"><td><img src="thumbnail/<?php= $_SESSION[image1] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                <tr align="center"><td><img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1286,7 +1286,7 @@ else
                     $w=$nw;
                     }
                     ?>
-                    <td><img src="thumbnail/<?php= $_SESSION[image2] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                    <td><img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1311,7 +1311,7 @@ else
                     $w=$nw;
                     }
                     ?>
-                    <td><img src="thumbnail/<?php= $_SESSION[image3] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                    <td><img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1337,7 +1337,7 @@ else
                 $w=$nw;
                 }
                 ?>
-                <tr align="center"><td><img src="thumbnail/<?php= $_SESSION[image4] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                <tr align="center"><td><img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1362,7 +1362,7 @@ else
                     $w=$nw;
                     }
                     ?>
-                    <td><img src="thumbnail/<?php= $_SESSION[image5] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                    <td><img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1387,7 +1387,7 @@ else
                     $w=$nw;
                     }
                     ?>
-                    <td><img src="thumbnail/<?php= $_SESSION[image6] ?>" width="<?php=$w?>" height="<?php=$h?>"></td>
+                    <td><img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td>
                     <?php
                     }
                     ?>
@@ -1413,7 +1413,7 @@ else
                 $w=$nw;
                 }
                 ?>
-                <tr align="center"><td><img src="thumbnail/<?php= $_SESSION[image7] ?>" width="<?php=$w?>" height="<?php=$h?>"></td></tr>
+                <tr align="center"><td><img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width="<?php echo $w?>" height="<?php echo $h?>"></td></tr>
                 <?php
                 }
                 ?>
@@ -1476,7 +1476,7 @@ else
                         if($ship_row['ship_id']==$shipping[$i])
                         {
                         ?>
-                        <?php=$ship_row[location];?>&nbsp;
+                        <?php echo $ship_row[location];?>&nbsp;
                         <?php
                         }
                         }
@@ -1497,7 +1497,7 @@ else
                         else
                         {
                         ?>
-                        <?php=$_SESSION[currency]?><?php= number_format(($_SESSION['shipping_amt']),2,'.',''); ?>
+                        <?php echo $_SESSION[currency]?><?php echo  number_format(($_SESSION['shipping_amt']),2,'.',''); ?>
                         <?php
                         }
                         ?>
@@ -1508,7 +1508,7 @@ else
                 if($_SESSION[refund_days])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Item must be returned within:</b></td><td class="banner1"> <?php= $_SESSION[refund_days]; ?> <?php if($_SESSION[refund_days]==1) echo "day"; else echo "days";?> </td></tr>
+                <tr><td class="detail9txt"><b>Item must be returned within:</b></td><td class="banner1"> <?php echo  $_SESSION[refund_days]; ?> <?php if($_SESSION[refund_days]==1) echo "day"; else echo "days";?> </td></tr>
                 <?php
                 }
                 ?>
@@ -1519,7 +1519,7 @@ else
                 if($_SESSION[tax])
                 {
                 ?>
-                <tr><td class="detail9txt"><b>Sales Tax</b></td><td align="left" class="banner1"><?php=$_SESSION[tax]?> %</td></tr>
+                <tr><td class="detail9txt"><b>Sales Tax</b></td><td align="left" class="banner1"><?php echo $_SESSION[tax]?> %</td></tr>
                 <?php
                 }
                 $total_shipping=$_SESSION['shipping_amt'];
@@ -1591,7 +1591,7 @@ else
                         <?php if($insertionfee)
                         {
                         ?>
-                        <?php= $insertionfee ?>&nbsp;<?php= $default_cur_code ?>
+                        <?php echo  $insertionfee ?>&nbsp;<?php echo  $default_cur_code ?>
                         <?php
                         }
                         else
@@ -1611,7 +1611,7 @@ else
                 <tr bgclor=#eeeeee><td align="right" class="detail9txt"><b>Reserve Price Fee:</b></td><td align="left" class="banner1">
                         <?php if(!empty($reserve_fee))
                         {
-                        ?> <?php= $reserve_fee ?>&nbsp;<?php= $default_cur_code ?>
+                        ?> <?php echo  $reserve_fee ?>&nbsp;<?php echo  $default_cur_code ?>
                         <?php
                         }
                         else
@@ -1631,7 +1631,7 @@ else
                         <?php if($gallery_price)
                         {
                         ?>
-                        <?php= $gallery_price ?>&nbsp;<?php= $default_cur_code ?>
+                        <?php echo  $gallery_price ?>&nbsp;<?php echo  $default_cur_code ?>
                         <?php
                         }
                         else
@@ -1651,7 +1651,7 @@ else
                         <?php if($bold_price)
                         {
                         ?>
-                        <?php= $bold_price ?>&nbsp;<?php= $default_cur_code ?><?php
+                        <?php echo  $bold_price ?>&nbsp;<?php echo  $default_cur_code ?><?php
                         }
                         else
                         {
@@ -1670,7 +1670,7 @@ else
                         <?php if($highlight_price)
                         {
                         ?>
-                        <?php= $highlight_price ?>&nbsp;<?php= $default_cur_code ?><?php
+                        <?php echo  $highlight_price ?>&nbsp;<?php echo  $default_cur_code ?><?php
                         }
                         else
                         {
@@ -1690,7 +1690,7 @@ else
                         <?php if(!empty($listing_desinger_fee))
                         {
                         ?>
-                        <?php=$listing_desinger_fee ?>&nbsp;<?php= $default_cur_code ?>
+                        <?php echo $listing_desinger_fee ?>&nbsp;<?php echo  $default_cur_code ?>
                         <?php
                         }
                         else
@@ -1711,7 +1711,7 @@ else
                 <tr bgclor=white><td align="right" class="detail9txt"><b>Subtitle Items Fees:</b></td>
                     <td align="left" class="banner1"><?php if($subtitle_price)
                         {
-                        ?><?php= $subtitle_price ?>&nbsp;<?php= $default_cur_code ?><?php
+                        ?><?php echo  $subtitle_price ?>&nbsp;<?php echo  $default_cur_code ?><?php
                         }
                         else
                         {
@@ -1763,7 +1763,7 @@ else
                         <?php if($addtional_pic_fee)
                         {
                         ?>
-                        <?php= $addtional_pic_fee ?>&nbsp;<?php= $default_cur_code ?>
+                        <?php echo  $addtional_pic_fee ?>&nbsp;<?php echo  $default_cur_code ?>
                         <?php
                         }
                         else
@@ -1784,7 +1784,7 @@ else
                         <?php if($homepage_price)
                         {
                         ?>
-                        <?php= $homepage_price ?>&nbsp;<?php= $default_cur_code ?> 
+                        <?php echo  $homepage_price ?>&nbsp;<?php echo  $default_cur_code ?> 
                         <?php
                         }
                         else
@@ -1804,7 +1804,7 @@ else
                         <?php if($total_setup_fee)
                         {
                         ?>
-                        <?php= $total_setup_fee ?>&nbsp;<?php= $default_cur_code ?><?php
+                        <?php echo  $total_setup_fee ?>&nbsp;<?php echo  $default_cur_code ?><?php
                         }
                         else
                         {

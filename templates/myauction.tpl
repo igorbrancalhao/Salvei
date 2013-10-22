@@ -43,9 +43,9 @@
                     <table width="100%" height="30" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                             <td width="3%">&nbsp;</td>
-                            <td width="19%" class="detail9txt">Bidding on:<?php= $bid_total_records; ?> </td>
-                            <td width="11%" class="detail9txt">Won:<?php= $won_total_records ?></td>
-                            <td width="67%" class="detail9txt">Amount:<?php if($won_items_amt > 0) { ?><?php= $default_cur ?> <?php= $won_items_amt ?><?php }else{echo " - ";} ?> </td>
+                            <td width="19%" class="detail9txt">Bidding on:<?php echo $bid_total_records; ?> </td>
+                            <td width="11%" class="detail9txt">Won:<?php echo $won_total_records ?></td>
+                            <td width="67%" class="detail9txt">Amount:<?php if($won_items_amt > 0) { ?><?php echo $default_cur ?> <?php echo $won_items_amt ?><?php }else{echo " - ";} ?> </td>
                         </tr>
                     </table>
                 </div>
@@ -79,7 +79,7 @@
                         <tr>
                             <td width="3%">&nbsp;</td>
                             <td width="5%"><img src="images/dollar.gif" alt="" width="17" height="25" /></td>
-                            <td width="92%"> <span class="myauction3txt">I need to pay for</span> <span class="myauction4txt"><a href="myauction.php?mode=won&#wondetails" class="header_text"><?php= $paid_records; ?> item </a></span></td>
+                            <td width="92%"> <span class="myauction3txt">I need to pay for</span> <span class="myauction4txt"><a href="myauction.php?mode=won&#wondetails" class="header_text"><?php echo  $paid_records; ?> item </a></span></td>
                         </tr>
                         <tr>
                             <td height="5"></td>
@@ -87,7 +87,7 @@
                         <tr>
                             <td>&nbsp;</td>
                             <td><img src="images/feedback.gif" alt="" width="19" height="19" /></td>
-                            <td> <span class="myauction3txt">I need to leave feedback for</span> <span class="header_text"><!--<a href="#" class="header_text">--><?php= $total_feedback; ?> item<!--</a>--> </span></td>
+                            <td> <span class="myauction3txt">I need to leave feedback for</span> <span class="header_text"><!--<a href="#" class="header_text">--><?php echo  $total_feedback; ?> item<!--</a>--> </span></td>
                         </tr>
                         <tr>
                             <td height="5"></td>
@@ -138,7 +138,7 @@
                         <form name="sell_form" action="myauction.php" method="post">
                             <tr bgcolor="#B8DEEE">
                                 <td width=3%>
-                                    <input type="hidden" name="len" value="<?php= $sell_total_records?>">
+                                    <input type="hidden" name="len" value="<?php echo  $sell_total_records?>">
                                 </td>
                                 <td width=10% class="detail9txt"><b>Picture</b> </td>
                                 <td width=10% class="detail9txt"><b>Current bid</b> </td>
@@ -149,7 +149,7 @@
                                 <td width="23%" colspan="3" class="detail9txt"><b>Action </b> </td>
                             </tr>
                             <tr><td colspan="8" align="right">
-                                    <a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=1', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download selling details in Excel Format"> Download selling Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=1', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
+                                    <a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=1', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download selling details in Excel Format"> Download selling Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=1', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
                             <?php
                             if($sell_total_records > 0)
                             {
@@ -178,7 +178,7 @@
                                 {
                                 ?>
                                 <td class="tr_botborder">
-                                    <a href="myauction.php?mode=sell&status=Active&currec=<?php=($currec - 1);?>" style="text-decoration:none">
+                                    <a href="myauction.php?mode=sell&status=Active&currec=<?php echo ($currec - 1);?>" style="text-decoration:none">
                                         <font size="2" color="red" face="Arial, Helvetica, sans-serif" >Previous </font></a></td>
                                 <?php
                                 } 
@@ -188,7 +188,7 @@
                                 if($sell_total_records > ($start + $end)) 
                                 {
                                 ?>  
-                                <td class="tr_botborder"><a href="myauction.php?mode=sell&status=Active&currec=<?php=($currec + 1);?>" style="text-decoration:none">
+                                <td class="tr_botborder"><a href="myauction.php?mode=sell&status=Active&currec=<?php echo ($currec + 1);?>" style="text-decoration:none">
                                         <font size=2 color="red" face="Arial, Helvetica, sans-serif"> Next </font> </a></td>
                                 <?php
                                 }
@@ -282,7 +282,7 @@
                                     $w=$nw;
                                     }
                                     ?>
-                                    <img name="runimg" src="thumbnail/<?php echo $sell_row['picture1']; ?>" border=1 width=<?php= $w; ?> height=<?php=$h?> >
+                                    <img name="runimg" src="thumbnail/<?php echo $sell_row['picture1']; ?>" border=1 width=<?php echo $w; ?> height=<?php echo $h?> >
                                          <?php 
                                          }
                                          else
@@ -294,11 +294,11 @@
                                     ?>
                                 </td>
                                 <td class="tr_botborder">
-                                    <?php=$sell_row[currency];?>
+                                    <?php echo $sell_row[currency];?>
                                     <?php if($sell_row['selling_method']=="auction" or $sell_row['selling_method']=="dutch_auction")
                                     {
                                     ?>
-                                    <?php= number_format(($max_item_bid),2,'.',''); ?>
+                                    <?php echo number_format(($max_item_bid),2,'.',''); ?>
                                     <?php
                                     }
                                     else if($sell_row['selling_method']=="fix")
@@ -347,7 +347,7 @@
                                     if($tot_bids[0]!=0)
                                     {
                                     ?>
-                                    <a href="bidhistory.php?item_id=<?php= $sell_row['item_id']?> " class="header_text"><?php echo $tot_bids[0];?></a>
+                                    <a href="bidhistory.php?item_id=<?php echo  $sell_row['item_id']?> " class="header_text"><?php echo $tot_bids[0];?></a>
                                     <?php
                                     }
                                     else
@@ -431,7 +431,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=9 align="left">
-                                    <a href="<?php if($sell_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $sell_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($sell_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $sell_row['item_id']?>" class="header_text">
                                         <?php  echo $sell_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $sell_row['item_id']; ?> )</font></td>
                             </tr>
                             <?php
@@ -501,7 +501,7 @@
                         <form name="close_form" action="myauction.php" method="post">
                             <tr bgcolor="#B8DEEE">
                                 <td width=5%>
-                                    <input type="hidden" name="len" value="<?php= $close_total_records?>">
+                                    <input type="hidden" name="len" value="<?php echo  $close_total_records?>">
                                 </td>
                                 <td width=14% class="detail9txt"><b>Picture</b> </td>
                                 <td width="14%" class="detail9txt"><b>Current bid</b> </td>
@@ -511,7 +511,7 @@
                                 <td colspan="2" class="detail9txt"><b>Action </b> </td>
                             </tr>
                             <tr><td colspan="8" align="right">
-                                    <a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=3', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download Closed Auction details in Excel Format"> Download Closed Auction Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=3', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
+                                    <a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=3', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download Closed Auction details in Excel Format"> Download Closed Auction Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=3', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
                             <?php
                             $close_res=mysql_query($close_sql);
                             while($close_row=mysql_fetch_array($close_res))
@@ -580,7 +580,7 @@
                                     $w=$nw;
                                     }
                                     ?>
-                                    <img name="runimg" src="thumbnail/<?php echo $close_row['picture1']; ?>" border=1 width=<?php= $w; ?> height=<?php=$h?> >
+                                    <img name="runimg" src="thumbnail/<?php echo $close_row['picture1']; ?>" border=1 width=<?php echo  $w; ?> height=<?php echo $h?> >
                                          <?php 
                                          }
                                          else
@@ -594,7 +594,7 @@
 
                                 </td>
                                 <td class="tr_botborder">
-                                    <?php  echo $close_row[currency]; ?> <?php= number_format(($max_item_bid),2,'.',''); ?> 
+                                    <?php  echo $close_row[currency]; ?> <?php echo  number_format(($max_item_bid),2,'.',''); ?> 
                                 </td>
                                 <td class="tr_botborder">&nbsp;
                                 </td>
@@ -638,7 +638,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=5 align="left">
-                                    <a href="<?php if($close_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $close_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($close_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $close_row['item_id']?>" class="header_text">
                                         <?php  echo $close_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $close_row['item_id']; ?> )</font></td>
                                 <td class="tr_botborder_1">&nbsp;  </td></tr>
                             <?php
@@ -683,7 +683,7 @@
                 if($mode=="sell" and  $status=="sold")
                 {
                 ?>
-                <div class="myauction_bg">Item's I've Sold: (<?php= $sold_total_records; ?> Items)</div>
+                <div class="myauction_bg">Item's I've Sold: (<?php echo  $sold_total_records; ?> Items)</div>
                 <?php
                 if($sold_total_records > 0)
                 { 
@@ -695,7 +695,7 @@
                         <form name="won_frm" action="myauction.php" method=post>
                             <tr bgcolor="#B8DEEE">
                                 <td width=5%>
-                                    <input type="hidden" name="len" value="<?php=mysql_num_rows($won_res)?>">
+                                    <input type="hidden" name="len" value="<?php echo mysql_num_rows($won_res)?>">
                                 </td>
                                 <td width=12% class="detail9txt"><b>Picture</b> </td>
                                 <td width="7%" class="detail9txt"><b>Qty </b> </td>
@@ -707,7 +707,7 @@
                                 <td width="26%" class="detail9txt"><b>Action </b> </td>
                             </tr>
                             <tr><td colspan="8" align="right">
-                                    <a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=2', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download Sold Auction details in Excel Format"> Download Sold Auction Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php=$_SESSION['userid']?>&md=2', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
+                                    <a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=2', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px; font-weight:bold" title="Download Sold Auction details in Excel Format"> Download Sold Auction Details</a><a href="#" onclick="window.open('downloads.php?idu=<?php echo $_SESSION['userid']?>&md=2', 'pop_up', 'toolbar=no, top=0,location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, height=500, width=500')" style="text-decoration:none; color:#CC6600; size:2px"><img src="images/download.gif" border="0"/></a></td></tr>
                             <?php
                             $sold_res=mysql_query($sold_sql);
                             while($sold_row=mysql_fetch_array($sold_res))
@@ -771,7 +771,7 @@
                                     $w=$nw;
                                     }
                                     ?>
-                                    <img name="runimg" src="thumbnail/<?php echo $sold_row['picture1']; ?>" border=1 width=<?php= $w; ?> height=<?php=$h?> >
+                                    <img name="runimg" src="thumbnail/<?php echo $sold_row['picture1']; ?>" border=1 width=<?php echo  $w; ?> height=<?php echo $h?> >
                                          <?php 
                                          }
                                          else
@@ -802,20 +802,20 @@
                                     ?>
                                 </td>
                                 <td class="tr_botborder">&nbsp;
-                                    <a href="feedback.php?user_id=<?php=$buyerid;?>" class="header_text">
+                                    <a href="feedback.php?user_id=<?php echo $buyerid;?>" class="header_text">
                                         <?php echo $user['user_name']; ?></a>
                                     <?php 
                                     if($feed_tot[feedbacktotal]!=0)
                                     {
                                     ?>
-                                    <!--&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$buyerid;?>" class="header_text"><?php echo $feed_tot[feedbacktotal];?></a><img src="images/<?php= $feedback_img ?>"/>)-->
+                                    <!--&nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $buyerid;?>" class="header_text"><?php echo $feed_tot[feedbacktotal];?></a><img src="images/<?php echo  $feedback_img ?>"/>)-->
                                     <?php
                                     }
                                     ?>
                                 </td>
 
                                 <td class="tr_botborder">
-                                    <select name=select style="width:100px;" onchange="go_page_link1(this.value, '<?php= $sold_row[item_id]; ?>', < ?php = $buyerid ? > , < ?php = $bid['bid_id']; ? > )">
+                                    <select name=select style="width:100px;" onchange="go_page_link1(this.value, '<?php echo  $sold_row[item_id]; ?>', < ?php = $buyerid ? > , < ?php = $bid['bid_id']; ? > )">
                                         <option value="0">Action</option>
                                         <?php 
                                         $leave="select * from feedback where seller_id=$user_id and item_id=".$sold_row[item_id];
@@ -841,7 +841,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=6 align="left">
-                                    <a href="<?php if($sold_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $sold_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($sold_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $sold_row['item_id']?>" class="header_text">
                                         <?php  echo $sold_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $sold_row['item_id']; ?> )</font></td>
                                 <td class="tr_botborder_1"><font color="#FF0000" size="2px"><b><?phpif($sold_row['payment_status']=='paid'){echo "Payment Done";}?></b></font>&nbsp;  </td></tr>
                             <?php
@@ -912,8 +912,8 @@
                     <tr>
                     <td align="left"  height=30 width =560>
                     <font class="searchresult3txt"><b>Buying Remainders</b></font></td></tr>
-                    <tr class="searchresult3txt"><td>&nbsp;<img src="images/ico-dollar.gif" border=0/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I need to pay for <a href="myauction.php?mode=won&#wondetails" class="header_text"><?php= $paid_records; ?> item</a></td></tr>
-                    <tr class="searchresult3txt"><td><img src="images/folders(37).gif" border=0/>&nbsp;&nbsp;&nbsp;I need to leave feedback for <a href="myauction.php?mode=won&#wondetails" class="header_text"><?php= $total_feedback; ?> item</a></td></tr>
+                    <tr class="searchresult3txt"><td>&nbsp;<img src="images/ico-dollar.gif" border=0/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I need to pay for <a href="myauction.php?mode=won&#wondetails" class="header_text"><?php echo  $paid_records; ?> item</a></td></tr>
+                    <tr class="searchresult3txt"><td><img src="images/folders(37).gif" border=0/>&nbsp;&nbsp;&nbsp;I need to leave feedback for <a href="myauction.php?mode=won&#wondetails" class="header_text"><?php echo  $total_feedback; ?> item</a></td></tr>
                     </table>
                     
                     <table cellpadding="0" cellspacing="0" width=100%>
@@ -942,7 +942,7 @@
                         <form name="won_frm" action="myauction.php" method=post>
                             <tr bgcolor="#B8DEEE">
                                 <td width=5% class="detail9txt">
-                                    <input type="hidden" name="len" value="<?php=mysql_num_rows($won_res)?>">
+                                    <input type="hidden" name="len" value="<?php echo mysql_num_rows($won_res)?>">
                                     <input type="checkbox" name="chkMain" onClick="won_selectall()" id="chkMain"> </td>
                                 <td width=22% class="detail9txt"><b>Seller Id</b> </td>
                                 <td width="5%" class="detail9txt"><b>Qty </b> </td>
@@ -979,22 +979,22 @@
                                 <td class="tr_botborder" width=5%>
                                     <input type="checkbox" name=chkbox[] id="chkbox" value="<?php  echo $won_row['item_id']; ?>"></td>
                                 <td class="tr_botborder" width=22%>
-                                    <a href="feedback.php?user_id=<?php=$won_row['user_id'];?>" class="header_text">
+                                    <a href="feedback.php?user_id=<?php echo $won_row['user_id'];?>" class="header_text">
                                         <?php echo $user['user_name'];?></a>
                                     <?php 
                                     if($feed_tot[feedbacktotal]!=0)
                                     {
                                     ?>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$won_row['user_id'];?>" class="header_text"><?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php= $feedback_img ?>"/>)
+                                    &nbsp;&nbsp;&nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $won_row['user_id'];?>" class="header_text"><?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php echo  $feedback_img ?>"/>)
                                     <?php
                                     }
                                     ?></td>
                                 <td class="tr_botborder"><?php  echo $won_row['quantity']; ?></td>
                                 <td class="tr_botborder"><?php  echo $won_row['currency']; ?>&nbsp;
-                                    <?php= number_format(($won_row['sale_price']),2,'.',''); ?>
+                                    <?php echo  number_format(($won_row['sale_price']),2,'.',''); ?>
                                 </td>
                                 <td class="tr_botborder"><?php  echo $won_row['currency']; ?>&nbsp;
-                                    <?php= number_format(($won_row['quantity'] * $won_row['sale_price']),2,'.',''); ?> </td>
+                                    <?php echo  number_format(($won_row['quantity'] * $won_row['sale_price']),2,'.',''); ?> </td>
                                 <td class="tr_botborder">
 
 
@@ -1016,7 +1016,7 @@
                                     ?></td>
                                 <td class="tr_botborder">
                                     <?php $var=$won_row[user_id]."-".$won_row[item_id]; ?>
-                                    <select name=select style="width:100px; font-size:10px;" onchange="go_page_link2(this.value, '<?php= $won_row[item_id]; ?>', < ?php = $won_row[user_id] ? > , < ?php = $won_row[bid_id] ? > )">
+                                    <select name=select style="width:100px; font-size:10px;" onchange="go_page_link2(this.value, '<?php echo  $won_row[item_id]; ?>', < ?php = $won_row[user_id] ? > , < ?php = $won_row[bid_id] ? > )">
                                         <option value="0">Action</option>
                                         <?php
                                         if($won_row['payment_status']=='unpaid')
@@ -1053,7 +1053,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=4 align="left">
-                                    <a href="<?php if($won_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $won_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($won_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $won_row['item_id']?>" class="header_text">
                                         <?php  echo $won_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $won_row['item_id']; ?> )</font></td>
                                 <td colspan="2" align="right"><font color="#FF0000" size="2px"><b><?phpif($won_row['payment_status']=='paid'){echo "Payment Done";}?></b></font>&nbsp;</td>
                             </tr>
@@ -1165,18 +1165,18 @@
 
                             ?>
                             <tr class="detail9txt">
-                                <td class="tr_botborder"><?php  echo $didntwin_row['currency']; ?>&nbsp;<?php= number_format(($didntwin_row['sale_price']),2,'.',''); ?> </td>
-                                <td class="tr_botborder"><?php  echo $didntwin_row['currency']; ?>&nbsp;<?php= number_format($max_item_bid,2,'.',''); ?> </td>
+                                <td class="tr_botborder"><?php  echo $didntwin_row['currency']; ?>&nbsp;<?php echo  number_format(($didntwin_row['sale_price']),2,'.',''); ?> </td>
+                                <td class="tr_botborder"><?php  echo $didntwin_row['currency']; ?>&nbsp;<?php echo  number_format($max_item_bid,2,'.',''); ?> </td>
                                 <td class="tr_botborder">
-                                    <a href="bidhistory.php?item_id=<?php= $didntwin_row['item_id']?>" class="header_text"><?php echo $tot_bids[0];?></a>
+                                    <a href="bidhistory.php?item_id=<?php echo  $didntwin_row['item_id']?>" class="header_text"><?php echo $tot_bids[0];?></a>
                                 </td>
                                 <td width="9%" class="tr_botborder"><?php$saledate_didwin=explode(" ",$didntwin_row['sale_date']); echo $saledate_didwin[0];?></td>
                                 <td class="tr_botborder" colspan="3">
-                                    <a href="search.php?seller_id=<?php=$didntwin_row['user_id']; ?>&mode=sellers_item" class="header_text">Seller's other items</a>  </td>
+                                    <a href="search.php?seller_id=<?php echo $didntwin_row['user_id']; ?>&mode=sellers_item" class="header_text">Seller's other items</a>  </td>
                             </tr>
                             <tr>
                                 <td class="tr_botborder_1" colspan=5 align="left">
-                                    <a href="<?php if($didntwin_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $didntwin_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($didntwin_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $didntwin_row['item_id']?>" class="header_text">
                                         <?php  echo $didntwin_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $didntwin_row['item_id']; ?> )</font></td>
                                 <td width="17%" class="tr_botborder_1">&nbsp;  </td>
                             </tr>
@@ -1226,7 +1226,7 @@
                         <form name="bid_frm" action="myauction.php" method=post>
                             <tr bgcolor="#B8DEEE">
                                 <td width=5% class="detail9txt">
-                                    <input type="hidden" name="len" value="<?php=mysql_num_rows($won_res)?>">
+                                    <input type="hidden" name="len" value="<?php echo mysql_num_rows($won_res)?>">
                                 <td width="9%" class="detail9txt"><b>My Maxbid</b> </td>
                                 <td  width=4% class="detail9txt"><b>Qty</b> </td>
                                 <td width="30%" class="detail9txt"><b>Tot. Bidding Amount</b>  </td>
@@ -1262,10 +1262,10 @@
                                 </td>
 
                                 <td class="tr_botborder"><?php  echo $bid_row['currency']; ?>
-                                    <?php= number_format(($max_bid_row[0]),2,'.',''); ?> </td>
+                                    <?php echo  number_format(($max_bid_row[0]),2,'.',''); ?> </td>
                                 <td class="tr_botborder"><?php  echo $bid_row['quantity']; ?> </td>
                                 <td class="tr_botborder"><?php  echo $bid_row['currency']; ?>
-                                    <?php= number_format(($max_bid_row[0] * $bid_row['quantity']),2,'.',''); ?></a> </td>
+                                    <?php echo  number_format(($max_bid_row[0] * $bid_row['quantity']),2,'.',''); ?></a> </td>
                                 <td width="14%" class="tr_botborder">
                                     <?php
                                     $custom_date=explode(" ",$bid_row[bidding_date]);
@@ -1280,7 +1280,7 @@
                                     ?></td>
                                 <td width="18%" class="tr_botborder"><?php  echo $string_difference; ?></td>
                                 <td width="20%" class="tr_botborder">
-                                    <select name=cbowonaction style="width:100px; font-size:10px;" onchange="go_page_link(this.value, '<?php= $bid_row['item_id']; ?>', '<?php= $bid_row['user_id']; ?>')">
+                                    <select name=cbowonaction style="width:100px; font-size:10px;" onchange="go_page_link(this.value, '<?php echo  $bid_row['item_id']; ?>', '<?php echo  $bid_row['user_id']; ?>')">
                                         <option value="0">Action</option>
                                         <option value="1">Sellers' Other Items</option>
                                         <option value="2">Contact Sellers</option>
@@ -1292,7 +1292,7 @@
                             <tr>
                                 <td class="tr_botborder">&nbsp;  </td>
                                 <td class="tr_botborder" colspan=5 align="left">
-                                    <a href="<?php if($bid_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $bid_row['item_id']?>" class="header_text">
+                                    <a href="<?php if($bid_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $bid_row['item_id']?>" class="header_text">
                                         <?php  echo $bid_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $bid_row['item_id']; ?> )</font></td>
                                 <td class="tr_botborder">&nbsp;  </td></tr>
                             <?php
@@ -1345,7 +1345,7 @@
                         <form name="watch_form" action="myauction.php" method=post>
                             <tr bgcolor="#B8DEEE">
                                 <td width=4%>
-                                    <input type="hidden" name="len" value="<?php= $watch_total_records?>">
+                                    <input type="hidden" name="len" value="<?php echo  $watch_total_records?>">
                                     <input type="checkbox" name="chkMain" onClick="selectall()" id="chkMain"> </td>
                                 <td  width=13% class="detail9txt"><b>Picture</b> </td>
                                 <td width="19%" class="detail9txt"><b>Current bid</b> </td>
@@ -1435,7 +1435,7 @@
                                     $w=$nw;
                                     }
                                     ?>
-                                    <img name="runimg" src="thumbnail/<?php echo $row['picture1']; ?>" border=1 width=<?php= $w; ?> height=<?php=$h?> >
+                                    <img name="runimg" src="thumbnail/<?php echo $row['picture1']; ?>" border=1 width=<?php echo  $w; ?> height=<?php echo $h?> >
                                          <?php 
                                          }
                                          else
@@ -1449,14 +1449,14 @@
 
                                 </td>
                                 <td class="tr_botborder">
-                                    <?php  echo $row[currency]; ?> <?php= number_format(($max_item_bid),2,'.',''); ?> 
+                                    <?php  echo $row[currency]; ?> <?php echo  number_format(($max_item_bid),2,'.',''); ?> 
                                 </td>
                                 <td class="tr_botborder">
                                     <?php
                                     if($tot_bids[0]!=0)
                                     {
                                     ?>
-                                    <a href="bidhistory.php?item_id=<?php= $row['item_id']?> " alt="Click here to view Bid details"><?php echo $tot_bids[0];?></a>
+                                    <a href="bidhistory.php?item_id=<?php echo  $row['item_id']?> " alt="Click here to view Bid details"><?php echo $tot_bids[0];?></a>
                                     <?php
                                     }
                                     else
@@ -1466,14 +1466,14 @@
                                     ?>
                                 </td>
                                 <td class="tr_botborder" width=22%>
-                                    <a href="feedback.php?user_id=<?php=$watch_row['user_id'];?>" class="header_text">
+                                    <a href="feedback.php?user_id=<?php echo $watch_row['user_id'];?>" class="header_text">
                                         <?php echo $user['user_name'];?> </a>
                                     <?php 
                                     if($feed_tot[feedbacktotal]!=0)
                                     {
                                     ?>
-                                    &nbsp;&nbsp;( <a href="feedback.php?user_id=<?php=$watch_row['user_id'];?>" class="header_text">
-                                        <?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php= $feedback_img ?>"/>)
+                                    &nbsp;&nbsp;( <a href="feedback.php?user_id=<?php echo $watch_row['user_id'];?>" class="header_text">
+                                        <?php echo $feed_tot[feedbacktotal]; ?></a><img src="images/<?php echo  $feedback_img ?>"/>)
                                     <?php
                                     }
                                     ?></td>
@@ -1489,7 +1489,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=7 align="left">
-                                    <a href="<?php if($row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $row['item_id']?>" class="header_text">
+                                    <a href="<?php if($row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $row['item_id']?>" class="header_text">
                                         <?php  echo $row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $row['item_id']; ?> )</font></td>
                                 <!--<td width="4%" class="tr_botborder_1">&nbsp;  </td>
                                 <td width="16%" class="tr_botborder_1">&nbsp;  </td>-->
@@ -1512,7 +1512,7 @@
 
                                     <input type="image" src="images/watchall.gif" name="Image73" width="81" height="24" border="0" id="Image73" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image73', '', 'images/watchallo.gif', 1)" onClick="watch_all()"/> 
 
-                                    <input type="hidden" name="watch" value=<?php= $user_id; ?>>
+                                    <input type="hidden" name="watch" value=<?php echo  $user_id; ?>>
                                            <input type="hidden" name="item_id" />
                                     <input type="hidden" name="delete1" value=0>	
                                 </td>
@@ -1558,7 +1558,7 @@
                         <form name="want_form" action="myauction.php" method=post>
                             <tr bgcolor="#B8DEEE" class="detail9txt">
                                 <td width=3%>
-                                    <input type="hidden" name="len" value="<?php= $want_total_records?>">
+                                    <input type="hidden" name="len" value="<?php echo  $want_total_records?>">
                                 </td>
                                 <td width=12%><b>Picture</b> </td>
                                 <td width="13%"><b>Responses</b>  </td>
@@ -1629,7 +1629,7 @@
                                     $w=$nw;
                                     }
                                     ?>
-                                    <img name="runimg" src="images/<?php echo $want_row['picture1']; ?>" border=1 width=<?php= $w; ?> height=<?php=$h?> >
+                                    <img name="runimg" src="images/<?php echo $want_row['picture1']; ?>" border=1 width=<?php echo  $w; ?> height=<?php echo $h?> >
                                          <?php 
                                          }
                                          else
@@ -1645,7 +1645,7 @@
                                     if($tot_bids[0]!=0)
                                     {
                                     ?>
-                                    <a href="wantitnowdes.php?item_id=<?php= $want_row['item_id']?> " class="header_text"><?php echo $tot_bids[0];?></a>
+                                    <a href="wantitnowdes.php?item_id=<?php echo  $want_row['item_id']?> " class="header_text"><?php echo $tot_bids[0];?></a>
                                     <?php
                                     }
                                     else
@@ -1673,7 +1673,7 @@
                             <tr>
                                 <td class="tr_botborder_1">&nbsp;  </td>
                                 <td class="tr_botborder_1" colspan=5 align="left">
-                                    <a href="wantitnowdes.php?item_id=<?php= $want_row['item_id']?>" class="header_text">
+                                    <a href="wantitnowdes.php?item_id=<?php echo  $want_row['item_id']?>" class="header_text">
                                         <?php  echo $want_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $want_row['item_id']; ?> )</font></td>
                                 <td class="tr_botborder_1">&nbsp;  </td></tr>
                             <?php

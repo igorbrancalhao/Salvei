@@ -36,7 +36,7 @@ while ($cat_row = mysql_fetch_array($sub_res)) {
 /*  if($ssid==$cat_row['category_head_id'])
   {
   ?>
-  <option value="<?php=$cat_row['category_id'];?>" selected ><?php=$cat_row['category_name'];?></option>
+  <option value="<?php echo $cat_row['category_id'];?>" selected ><?php echo $cat_row['category_name'];?></option>
   <?php
   }
   else

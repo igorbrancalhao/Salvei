@@ -27,7 +27,7 @@
 ?>
 <?php require 'include/top.php'; ?>
 <table width="780" border="0" cellpadding="0" cellspacing="0"  class="border2" >
-    <link href="<?php= $ret1; ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo  $ret1; ?>" rel="stylesheet" type="text/css">
     <tr bgcolor="#eeeee1"><td valign="top" style="padding-left:10px">
             <table border="0"  cellpadding="5" cellspacing="0" width="100%"  bgcolor="#eeeee1">
                 <tr height=40>
@@ -47,49 +47,49 @@
                             <?php if(!empty($err_min_amt))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_min_amt">Minimum Bid Amount</a> - <?php= $err_min_amt; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_min_amt">Minimum Bid Amount</a> - <?php echo  $err_min_amt; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_fix_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_quick">Quick Buy Price</a> - <?php= $err_fix_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_quick">Quick Buy Price</a> - <?php echo  $err_fix_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_rev_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_rev_price">Reserve Price</a> - <?php= $err_rev_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_rev_price">Reserve Price</a> - <?php echo  $err_rev_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_revprice))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_rev_price">Reserve Price</a> - <?php= $err_revprice; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_rev_price">Reserve Price</a> - <?php echo  $err_revprice; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_quickprice))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_quick">Quick buy Price</a> - <?php= $err_quickprice; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_quick">Quick buy Price</a> - <?php echo  $err_quickprice; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_qty">Quantity</a> - <?php= $err_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_qty">Quantity</a> - <?php echo  $err_qty; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_dur))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#cbodur">Duration</a> - <?php= $err_dur; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#cbodur">Duration</a> - <?php echo  $err_dur; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -98,7 +98,7 @@
                             if(!empty($err_size_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#size_of_qty">Size of Quantity</a> - <?php= $err_size_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#size_of_qty">Size of Quantity</a> - <?php echo  $err_size_qty; ?></td></tr>
                             <?php 
                             } 
                             ?>
@@ -109,7 +109,7 @@
                             if(!empty($err_bid_inc))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_bid_inc">Bid Increment</a> - <?php= $err_bid_inc; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#txt_bid_inc">Bid Increment</a> - <?php echo  $err_bid_inc; ?></td></tr>
                             <?php 
                             } 
                             }
@@ -118,49 +118,49 @@
                             <?php if(!empty($err_img1))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img1">Image1</a> - <?php= $err_img1; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img1">Image1</a> - <?php echo  $err_img1; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img2))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img2">Image2</a> - <?php= $err_img2; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img2">Image2</a> - <?php echo  $err_img2; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img3))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img3">Image3</a> - <?php= $err_img3; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img3">Image3</a> - <?php echo  $err_img3; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img4))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img4">Image4</a> - <?php= $err_img4; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img4">Image4</a> - <?php echo  $err_img4; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img5))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img5">Image5</a> - <?php= $err_img5; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img5">Image5</a> - <?php echo  $err_img5; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img6))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img6">Image5</a> - <?php= $err_img6; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img6">Image5</a> - <?php echo  $err_img6; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img7))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img7">Image5</a> - <?php= $err_img7; ?></td></tr>
+                            <tr><td>&nbsp;</td><td><a href="promotelistings.php#img7">Image5</a> - <?php echo  $err_img7; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -170,14 +170,14 @@
                 <?php
                 }
                 ?>
-                <tr><td><font size=2><b>Title:</b></font>&nbsp;&nbsp;<?php= $_SESSION[item_name]; ?></td></tr>
-                <tr><td><font size=2><b>Subtitle:</b></font>&nbsp;&nbsp;<?php= $_SESSION[subtitle]; ?></td></tr>
+                <tr><td><font size=2><b>Title:</b></font>&nbsp;&nbsp;<?php echo  $_SESSION[item_name]; ?></td></tr>
+                <tr><td><font size=2><b>Subtitle:</b></font>&nbsp;&nbsp;<?php echo  $_SESSION[subtitle]; ?></td></tr>
                 <tr  ><td colspan="2" class="tr_bottomless_border"><font size="2"><b> Pricing & Duration </b></font></td></tr>
                 <?php /* if(!empty($err_cur))
                 {
                 ?>
                 <tr><td>
-                        <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_cur; ?></font>
+                        <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_cur; ?></font>
                         <br><font size=2 color=red><b>Currency</b></font></td></tr>
                 <?php
                 }
@@ -201,13 +201,13 @@
                      if(trim($currency_row['currency'])==trim($currency))
                      {
                      ?>
-                     <option value="<?php= $currency_row['currency'] ?>" selected><?php= $currency_row['currency']?></option>
+                     <option value="<?php echo  $currency_row['currency'] ?>" selected><?php echo  $currency_row['currency']?></option>
                      <?php 
                      }
                      else
                      {
                      ?>
-                     <option value="<?php= $currency_row['currency'] ?>"><?php= $currency_row['currency']?></option>
+                     <option value="<?php echo  $currency_row['currency'] ?>"><?php echo  $currency_row['currency']?></option>
                      <?php
                      }
                      }
@@ -328,7 +328,7 @@
                             <?php if(!empty($err_qty))
                             {
                             ?>
-                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_qty?></font>
+                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_qty?></font>
                             <br>
                             <b><font size=2 color=red>Quantity</font></b>
                             <?php
@@ -353,7 +353,7 @@
                             <?php if(!empty($err_dur))
                             { 
                             ?>
-                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_dur; ?></font>
+                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_dur; ?></font>
                             <br>
                             <b><font size=2 color=red>Duration</font><font color="red">*</font></b>
                             <?php
@@ -373,7 +373,7 @@
                     ?>
                     <tr>
                         <td width=250>
-                            <input type="text" name="txt_qty" class="txtsmall" value=<?php= $qty; ?>>
+                            <input type="text" name="txt_qty" class="txtsmall" value=<?php echo  $qty; ?>>
                         </td>
                         <?php
                         }
@@ -393,13 +393,13 @@
                                 <?php if($dur==$row['duration'])
                                 {
                                 ?>
-                                <option value="<?php= $row['duration'] ?>" selected><?php= $row['duration'] ?> Days</option>
+                                <option value="<?php echo  $row['duration'] ?>" selected><?php echo  $row['duration'] ?> Days</option>
                                 <?php
                                 }
                                 else
                                 {
                                 ?>
-                                <option value="<?php= $row['duration'] ?>" ><?php= $row['duration'] ?> Days</option>
+                                <option value="<?php echo  $row['duration'] ?>" ><?php echo  $row['duration'] ?> Days</option>
                                 <?php
                                 }
                                 } // while($row=mysql_fetch_array($table))
@@ -436,7 +436,7 @@
                             {
                             ?>
                             <img src="../images/warning_9x10.gif">
-                            &nbsp;<font size=2 color=red><?php= $err_min_amt?></font>
+                            &nbsp;<font size=2 color=red><?php echo  $err_min_amt?></font>
                             <br>
                             <b><font size=2 color=red>Minimum Bid Amount</font><font color="red">*</font></b>
                             <?php
@@ -453,7 +453,7 @@
                             <?php if(!empty($err_rev_price))
                             {
                             ?>
-                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_rev_price?></font>
+                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_rev_price?></font>
                             <br>
                             <b><font size=2 color=red>Reserve Price</font></b>
                             <?php
@@ -466,8 +466,8 @@
                             }
                             ?>
                         </td></tr>
-                    <tr><td width=250><input type="text" name="txt_min_amt" class="txtsmall" value=<?php= $min_amt; ?>></td>
-                        <td width=250><input type="text" name="txt_rev_price" class="txtsmall" value=<?php= $rev_price; ?>></td></tr>
+                    <tr><td width=250><input type="text" name="txt_min_amt" class="txtsmall" value=<?php echo  $min_amt; ?>></td>
+                        <td width=250><input type="text" name="txt_rev_price" class="txtsmall" value=<?php echo  $rev_price; ?>></td></tr>
                     <tr>
                         <td><b><font size=2>Private Listings</font></b></td>
                         <?php
@@ -478,7 +478,7 @@
                             <?php if(!empty($err_bid_inc))
                             {
                             ?>
-                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_bid_inc?></font>
+                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_bid_inc?></font>
                             <br>
                             <b><font size=2 color=red>Bid Increment</font></b>
                             <?php
@@ -499,7 +499,7 @@
                         <td><input type="checkbox"  name=chkprivatelisting  value="yes" <?php if($_SESSION[privatelistings]) { ?> checked="checked" <?php  } ?> >Private Listings</td>
                         <?php if($bid_permission=='yes'){ ?>
                         <td width=250>
-                            <input type="text" name="txt_bid_inc" class="txtsmall" value=<?php= $bid_inc; ?>></td>
+                            <input type="text" name="txt_bid_inc" class="txtsmall" value=<?php echo  $bid_inc; ?>></td>
                         <?php
                         }
                         ?> 
@@ -520,7 +520,7 @@
                     <tr><td>
                             <?php if(!empty($err_fix_price) )
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_fix_price; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_fix_price; ?></font>
  <br>
  <b><font size=2 color=red>Quick Buy Price</font></b>
  <?php
@@ -536,7 +536,7 @@
 
                     <tr>
                         <td width=250>
-                            <input type="text" name="txt_quick" class="txtsmall" value=<?php= $quick; ?>></td></tr>
+                            <input type="text" name="txt_quick" class="txtsmall" value=<?php echo  $quick; ?>></td></tr>
                     <tr width=758>
                         <td colspan="2" class="tr_bottomless_border"><font size="2"><b>Add Images</b></font></td></tr>
                     <tr><td>
@@ -544,7 +544,7 @@
                                 <tr><td>
                                         <?php if(!empty($err_img1))
                                         {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img1; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img1; ?></font>
  <br>
  <b><font size=2 color=red>Image1</font></b>
  <?php
@@ -557,11 +557,11 @@
                                         }
                                         ?>
                                         <br />
-                                        <input type="file" name="img1" value="<?php= $img1; ?>">
+                                        <input type="file" name="img1" value="<?php echo  $img1; ?>">
                                         <?php if(!empty($_SESSION[image1]))
                                         {
                                         ?>
-                                        <img src="../images/<?php= $_SESSION[image1] ?>" width=30 height=30>
+                                        <img src="../images/<?php echo  $_SESSION[image1] ?>" width=30 height=30>
                                         <?php
                                         }
                                         ?>
@@ -577,7 +577,7 @@
                             <?php if(!empty($err_img2))
                             {
                             ?>
-                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img2; ?></font>
+                            <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img2; ?></font>
                             <br>
                             <b><font size=2 color=red>Image2</font></b>
                             <?php
@@ -589,18 +589,18 @@
                             <?php }
                             ?>
                             <br />
-                            <input type="file" name="img2" value=<?php= $img2; ?>>
+                            <input type="file" name="img2" value=<?php echo  $img2; ?>>
                                    <?php if(!empty($_SESSION[image2]))
                                    {
                                    ?>
-                                   <img src="../images/<?php= $_SESSION[image2] ?>" width=30 height=30>
+                                   <img src="../images/<?php echo  $_SESSION[image2] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
                     <tr><td colspan="2">
                             <?php if(!empty($err_img3))
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img3; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img3; ?></font>
  <br>
  <b><font size=2 color=red>Image3</font></b>
  <?php
@@ -613,18 +613,18 @@
                             }
                             ?>
                             <br />
-                            <input type="file" name="img3" value=<?php= $img3; ?>>
+                            <input type="file" name="img3" value=<?php echo  $img3; ?>>
                                    <?php if(!empty($_SESSION[image3]))
                                    {
                                    ?>
-                                   <img src="../images/<?php= $_SESSION[image3] ?>" width=30 height=30>
+                                   <img src="../images/<?php echo  $_SESSION[image3] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
                     <tr><td colspan="2" >
                             <?php if(!empty($err_img1))
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img1; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img1; ?></font>
  <br>
  <b><font size=2 color=red>Image4</font></b>
  <?php
@@ -637,18 +637,18 @@
                             }
                             ?>
                             <br />
-                            <input type="file" name="img4" value="<?php= $img4; ?>">
+                            <input type="file" name="img4" value="<?php echo  $img4; ?>">
                             <?php if(!empty($_SESSION[image4]))
                             {
                             ?>
-                            <img src="../images/<?php= $_SESSION[image4] ?>" width=30 height=30>
+                            <img src="../images/<?php echo  $_SESSION[image4] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
                     <tr><td colspan="2" >
                             <?php if(!empty($err_img5))
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img5; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img5; ?></font>
  <br>
  <b><font size=2 color=red>Image5</font></b>
  <?php
@@ -661,18 +661,18 @@
                             }
                             ?>
                             <br />
-                            <input type="file" name="img5" value="<?php= $img5; ?>">
+                            <input type="file" name="img5" value="<?php echo  $img5; ?>">
                             <?php if(!empty($_SESSION[image5]))
                             {
                             ?>
-                            <img src="../images/<?php= $_SESSION[image5] ?>" width=30 height=30>
+                            <img src="../images/<?php echo  $_SESSION[image5] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
                     <tr><td colspan="2" >
                             <?php if(!empty($err_img6))
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img6; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img6; ?></font>
  <br>
  <b><font size=2 color=red>Image6</font></b>
  <?php
@@ -685,18 +685,18 @@
                             }
                             ?>
                             <br />
-                            <input type="file" name="img6" value="<?php= $img6; ?>">
+                            <input type="file" name="img6" value="<?php echo  $img6; ?>">
                             <?php if(!empty($_SESSION[image6]))
                             {
                             ?>
-                            <img src="../images/<?php= $_SESSION[image6] ?>" width=30 height=30>
+                            <img src="../images/<?php echo  $_SESSION[image6] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
                     <tr><td colspan="2">
                             <?php if(!empty($err_img7))
                             {?>
- <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php= $err_img7; ?></font>
+ <img src="../images/warning_9x10.gif">&nbsp;<font size=2 color=red><?php echo  $err_img7; ?></font>
  <br>
  <b><font size=2 color=red>Image7</font></b>
  <?php
@@ -709,11 +709,11 @@
                             }
                             ?>
                             <br />
-                            <input type="file" name="img7" value="<?php= $img7; ?>">
+                            <input type="file" name="img7" value="<?php echo  $img7; ?>">
                             <?php if(!empty($_SESSION[image7]))
                             {
                             ?>
-                            <img src="../images/<?php= $_SESSION[image7] ?>" width=30 height=30>
+                            <img src="../images/<?php echo  $_SESSION[image7] ?>" width=30 height=30>
                             <?php
                             }
                             ?></td></tr>
@@ -742,13 +742,13 @@
                                             {
                                             $theme_img=$theme_row[themes];
                                             ?>
-                                            <option value="<?php= $theme_row[themes] ?>" selected="selected"> <?php= $theme_row[theme_name] ?> </option>
+                                            <option value="<?php echo  $theme_row[themes] ?>" selected="selected"> <?php echo  $theme_row[theme_name] ?> </option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php= $theme_row[themes] ?>" > <?php= $theme_row[theme_name] ?> </option>
+                                            <option value="<?php echo  $theme_row[themes] ?>" > <?php echo  $theme_row[theme_name] ?> </option>
                                             <?php
                                             }
                                             }
@@ -758,7 +758,7 @@
                                         <?php if($theme)
                                         {
                                         ?>
-                                        <img name="themeimg" src="../images/<?php=$theme_img; ?>"  id="themeimg" width="100" > 
+                                        <img name="themeimg" src="../images/<?php echo $theme_img; ?>"  id="themeimg" width="100" > 
                                         <?php
                                         }
                                         else
@@ -942,7 +942,7 @@
         </font>
             </td></tr>
             <tr><td width=250 >
-            <input type="text" name="txtSubtitle" class="txtbig" value=<?php= $Subtitle_name; ?>></td></tr> -->
+            <input type="text" name="txtSubtitle" class="txtbig" value=<?php echo  $Subtitle_name; ?>></td></tr> -->
     <tr><td>
             <?php if(!empty($Bold))
             {
@@ -1024,9 +1024,9 @@
             }
             ?></td></tr>
 
-    <input type="hidden" name=mode value="<?php=$mode;?>">
+    <input type="hidden" name=mode value="<?php echo $mode;?>">
     <input type="hidden" name=flag value="1">
-    <input type="hidden" name=item_id value="<?php=$sellitemid?>"/>
+    <input type="hidden" name=item_id value="<?php echo $sellitemid?>"/>
     <tr><td colspan="2" align="center">
             <?php if($mode=="" or $mode=="sellsimilar")
             {

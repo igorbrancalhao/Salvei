@@ -35,7 +35,7 @@ if($sucess==1)
                 <tr><td colspan="2"> 
                         <table cellpadding="5" cellspacing="2"  width=100%> 
                             <tr><td><font size="2" color=green><b>You have successfully listed your item.</b></font></td></tr>
-                            <tr><td class="banner1"><b>View your listing:</b>&nbsp;<a href="classifide_ad.php?item_id=<?php= $item_id ?>" class="header_text"><?php= $_SESSION['item_name']; ?></a></td></tr>
+                            <tr><td class="banner1"><b>View your listing:</b>&nbsp;<a href="classifide_ad.php?item_id=<?php echo  $item_id ?>" class="header_text"><?php echo  $_SESSION['item_name']; ?></a></td></tr>
                             <tr>
                                 <td><a href="choose_sell_format.php" class="header_text">Sell a Different Item </a>
                                     </form></td></tr>
@@ -73,18 +73,18 @@ else
                                 <td bgcolor="#B8DEEE"><div align="right"><a href="post_ad.php?mode=change" class="header_text">Edit 
                                             Title &amp; Description</a></div>
                                 </td></tr>
-                            <tr><td class="detail9txt"><b>Item Title</b></td><td class="banner1"> <?php= $_SESSION['item_name']; ?> </td></tr>
+                            <tr><td class="detail9txt"><b>Item Title</b></td><td class="banner1"> <?php echo  $_SESSION['item_name']; ?> </td></tr>
                             <tr><td class="detail9txt"><b>Item Description</b></td><td>&nbsp;</td></tr>
-                            <tr><td colspan="2" class="banner1"><?php= stripslashes($_SESSION['des']); ?></td></tr>
+                            <tr><td colspan="2" class="banner1"><?php echo  stripslashes($_SESSION['des']); ?></td></tr>
                             <?php if($_SESSION[start_delay])
                             {
                             ?>
-                            <tr><td class="detail9txt"><b>Start Delay</b></td><td class="banner1"><?php= $_SESSION['start_delay']." Days" ?></td></tr>
+                            <tr><td class="detail9txt"><b>Start Delay</b></td><td class="banner1"><?php echo  $_SESSION['start_delay']." Days" ?></td></tr>
                             <?php
                             }
                             ?>
-                            <tr><td class="detail9txt"><b>Duration</b></td><td class="banner1"><?php= $_SESSION['dur']." Days" ?></td></tr>
-                            <tr><td class="detail9txt"><b>Quantity </b></td><td class="banner1"> <?php= $_SESSION['qty']; ?> </td></tr>
+                            <tr><td class="detail9txt"><b>Duration</b></td><td class="banner1"><?php echo  $_SESSION['dur']." Days" ?></td></tr>
+                            <tr><td class="detail9txt"><b>Quantity </b></td><td class="banner1"> <?php echo  $_SESSION['qty']; ?> </td></tr>
                             <tr><td></td><td></td></tr>
                         </table>
                     </td></tr>
@@ -117,7 +117,7 @@ else
                             $w=$nw;
                             }
                             ?>
-                            <tr align="center"><td><img src="thumbnail/<?php= $_SESSION['image1'] ?>" height="<?php=$h?>" width="<?php=$w?>"></td>
+                            <tr align="center"><td><img src="thumbnail/<?php echo  $_SESSION['image1'] ?>" height="<?php echo $h?>" width="<?php echo $w?>"></td>
                                 <?php
                                 }
                                 ?>
@@ -142,14 +142,14 @@ else
                                 $w=$nw;
                                 }
                                 ?>
-                                <td><img src="images/<?php= $_SESSION['image2'] ?>" height="<?php=$h?>" width="<?php=$w?>"></td>
+                                <td><img src="images/<?php echo  $_SESSION['image2'] ?>" height="<?php echo $h?>" width="<?php echo $w?>"></td>
                                 <?php
                                 }
                                 ?>
                                 <?php 	if($_SESSION[image3])
                                 {
                                 ?>
-                                <td><img src="images/<?php= $_SESSION['image3'] ?>" height="<?php=$h?>" width="<?php=$w?>"></td>
+                                <td><img src="images/<?php echo  $_SESSION['image3'] ?>" height="<?php echo $h?>" width="<?php echo $w?>"></td>
                                 <?php
                                 }
                                 ?>
@@ -201,7 +201,7 @@ else
                             $total_setup_fee=$total_setup_fee+$insertionfee;
                             ?>
                             <tr bgclor=#eeeeee><td width="41%" align="left" class="detail9txt"><b>Insertion Fee:</b></td>
-                                <td width="59%" align="left" class="banner1"><?php= $insertionfee ?><?php=$cur_sellcode?></td>
+                                <td width="59%" align="left" class="banner1"><?php echo  $insertionfee ?><?php echo $cur_sellcode?></td>
                             </tr>
                             <?php
                             }
@@ -209,21 +209,21 @@ else
                             {
                             $total_setup_fee=$total_setup_fee+$gallery_price;
                             ?>
-                            <tr bgclor=#eeeeee><td align="left" class="detail9txt"><b>Gallery Items Fees:</b></td><td align="left" class="banner1"><?php= $gallery_price ?>&nbsp;<?php=$cur_sellcode?></td></tr>
+                            <tr bgclor=#eeeeee><td align="left" class="detail9txt"><b>Gallery Items Fees:</b></td><td align="left" class="banner1"><?php echo  $gallery_price ?>&nbsp;<?php echo $cur_sellcode?></td></tr>
                             <?php
                             }
                             if(($bold_price) && ($bold_price!='0.00'))
                             {
                             $total_setup_fee=$total_setup_fee+$bold_price;
                             ?>
-                            <tr bgclor=white><td align="left" class="detail9txt"><b>Bold Items Fees:</b></td><td align="left" class="banner1"><?php= $bold_price ?><?php=$cur_sellcode?></td></tr>
+                            <tr bgclor=white><td align="left" class="detail9txt"><b>Bold Items Fees:</b></td><td align="left" class="banner1"><?php echo  $bold_price ?><?php echo $cur_sellcode?></td></tr>
                             <?php
                             }
                             if(($highlight_price) && ($highlight_price!='0.00'))
                             {
                             $total_setup_fee=$total_setup_fee+$highlight_price;
                             ?>
-                            <tr bgclor=#eeeeee><td align="left" class="detail9txt"><b>Highlight Items Fees:</b></td><td align="left" class="banner1"><?php= $highlight_price ?><?php=$cur_sellcode?></td></tr>
+                            <tr bgclor=#eeeeee><td align="left" class="detail9txt"><b>Highlight Items Fees:</b></td><td align="left" class="banner1"><?php echo  $highlight_price ?><?php echo $cur_sellcode?></td></tr>
                             <?php
                             }
                             if(($subtitle_price) && ($subtitle_price!='0.00'))
@@ -232,7 +232,7 @@ else
                             $total_setup_fee=$total_setup_fee+$subtitle_price;
                             ?>
                             <tr bgclor=white><td align="left" class="detail9txt"><b>Subtitle Items Fees:</b></td>
-                                <td align="left" class="banner1"><?php= $subtitle_price ?><?php=$cur_sellcode?></td></tr>
+                                <td align="left" class="banner1"><?php echo  $subtitle_price ?><?php echo $cur_sellcode?></td></tr>
                             <?php
                             }
                             if(($homepage_price) && ($homepage_price!='0.00'))
@@ -240,7 +240,7 @@ else
                             $total_setup_fee=$total_setup_fee+$homepage_price;
                             ?>
                             <tr bgclor=#eeeeee><td align="left" class="detail9txt"><b>Homepage Featured Items Fees:</b></td>
-                                <td align="left" class="banner1"><?php= $homepage_price ?><?php=$cur_sellcode?></td></tr>
+                                <td align="left" class="banner1"><?php echo  $homepage_price ?><?php echo $cur_sellcode?></td></tr>
                             <?php
                             }
                             $_SESSION[total_setup_fee]=$total_setup_fee;
@@ -253,7 +253,7 @@ else
                             {
                             ?>
                             <tr bgclor=white><td align="left" class="detail9txt"><b>Total Setup Fees:</b></td>
-                                <td align="left" class="banner1"><?phpif($total_setup_fee=='0' or $total_setup_fee=='0.00'){?>No Fee<?php}else {?><?php= $total_setup_fee ?><?php=$cur_sellcode?><?php}?></td></tr>
+                                <td align="left" class="banner1"><?phpif($total_setup_fee=='0' or $total_setup_fee=='0.00'){?>No Fee<?php}else {?><?php echo  $total_setup_fee ?><?php echo $cur_sellcode?><?php}?></td></tr>
                             <!--<tr><td colspan="2"><hr /></td></tr>-->
                             <?php
                             }

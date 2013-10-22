@@ -18,13 +18,13 @@
     <div id="detail"><table width="959" height="69" border="0" cellpadding="0" cellspacing="0" background="images/detailbgtop.jpg">
             <tr>
                 <td width="31">&nbsp;</td>
-                <td width="672" class="detail3txt"><?php=$row['item_title']?> </td>
-                <td width="256" class="detail4txt">Item Number: <?php=$row['item_id']?></td>
+                <td width="672" class="detail3txt"><?php echo $row['item_title']?> </td>
+                <td width="256" class="detail4txt">Item Number: <?php echo $row['item_id']?></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td><span class="detail7txt"><a href="forward_to_friend.php?item_id=<?php= $row['item_id']; ?>" class="detail7txt">Forward to friend</a></span></td>
+                <td><span class="detail7txt"><a href="forward_to_friend.php?item_id=<?php echo  $row['item_id']; ?>" class="detail7txt">Forward to friend</a></span></td>
             </tr>
         </table><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
@@ -72,7 +72,7 @@
                                                                 {
                                                                 ?>
                                                                 <img id="imgBamburgh" alt=""
-                                                                     src="images/<?php=$row['picture1']?>" width="<?php=$w?>" height="<?php=$h?>"
+                                                                     src="images/<?php echo $row['picture1']?>" width="<?php echo $w?>" height="<?php echo $h?>"
                                                                      pbshowcaption="true" class="PopBoxImageSmall" title="Click to magnify/shrink"
                                                                      onclick="Pop(this, 50, 'PopBoxImageLarge');" />
                                                                 <?php
@@ -80,7 +80,7 @@
                                                                 else
                                                                 {
                                                                 ?>
-                                                                <img src="images/<?php=$row['picture1']?>" height="<?php=$h?>" width="<?php=$w?>" />
+                                                                <img src="images/<?php echo $row['picture1']?>" height="<?php echo $h?>" width="<?php echo $w?>" />
                                                                 <?php
                                                                 }
 
@@ -145,7 +145,7 @@
                                         </tr>
                                         <tr><td colspan="2" align="center">
                                                 <form method="post" action="wantitres.php">
-                                                    <input type="hidden" name="item_id" value="<?php= $row[item_id]; ?>" />
+                                                    <input type="hidden" name="item_id" value="<?php echo  $row[item_id]; ?>" />
                                                     <?php
                                                     if($_SESSION[userid]!=$row[user_id])
                                                     {
@@ -174,7 +174,7 @@
                                             <td width="14">&nbsp;</td>
                                             <td width="73" class="banner1">&nbsp; </td>
                                             <td width="16"></td>
-                                            <td width="209" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="detail8txt"><?php echo $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php=$row['user_id'];?>" detail8txt><?php echo $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php= $feedback_img ?>" /><?php } ?> )</td>
+                                            <td width="209" class="detail8txt"><span class="detail8txt"><a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="detail8txt"><?php echo $user['user_name'];?></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>( <a href="feedback.php?user_id=<?php echo $row['user_id'];?>" detail8txt><?php echo $feed_tot[feedbacktotal]; ?></a><?php if($feedback_img!='') { ?><img src="images/<?php echo  $feedback_img ?>" /><?php } ?> )</td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;</td>
@@ -195,14 +195,14 @@
                                                 $custom_date1=$custom_date2[0];
                                                 $custom_date2=$custom_date2[1];
                                                 $custom_date4=$custom_date3."-"."$custom_date2"."-"."$custom_date1"." "."$custom_time";
-                                                echo $custom_date[0]; ?> in <?php= $country; ?></td>
+                                                echo $custom_date[0]; ?> in <?php echo  $country; ?></td>
                                         </tr>
                                         <tr>
                                             <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                     <tr>
                                                         <td width="6%">&nbsp;</td>
                                                         <td width="9%"><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php=$row['user_id'];?>" class="header_text2">See detailed feedback </a></td>
+                                                        <td width="85%" class="header_text2"><a href="feedback.php?user_id=<?php echo $row['user_id'];?>" class="header_text2">See detailed feedback </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -219,7 +219,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php= $row[item_id]; ?>&type=w" class="header_text2">Ask a question</a></td>
+                                                        <td class="header_text2"><a href="ask_seller_qus.php?item_id=<?php echo  $row[item_id]; ?>&type=w" class="header_text2">Ask a question</a></td>
                                                     </tr>
                                                     <?php
                                                     }
@@ -239,7 +239,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="wantitnowdes.php?item_id=<?php= $item_id ?>#view" class="header_text2">View Questions and Comments</a></td>
+                                                        <td class="header_text2"><a href="wantitnowdes.php?item_id=<?php echo  $item_id ?>#view" class="header_text2">View Questions and Comments</a></td>
                                                     </tr>
                                                     <tr>
                                                         <td height="4"></td>
@@ -247,7 +247,7 @@
                                                     <tr>
                                                         <td>&nbsp;</td>
                                                         <td><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-                                                        <td class="header_text2"><a href="wantitnowdes.php?item_id=<?php= $item_id ?>#response" class="header_text2">View Responses</a></td>
+                                                        <td class="header_text2"><a href="wantitnowdes.php?item_id=<?php echo  $item_id ?>#response" class="header_text2">View Responses</a></td>
                                                     </tr>
                                                 </table></td>
                                         </tr>
@@ -280,7 +280,7 @@
                     { 
                     ?>
                     <b><font class="detail9txt">
-                        <?php= $row[clicks]; ?>
+                        <?php echo  $row[clicks]; ?>
                         </font>
                     </b>
                     <?php
@@ -288,7 +288,7 @@
                     else
                     { ?>
                     <b><I><font class="detail9txt">
-                            <?php= $row[clicks]; ?>
+                            <?php echo  $row[clicks]; ?>
                             </font>
                         </I></b>			
                     <?php
@@ -321,11 +321,11 @@
                 {
                 ?>
                 <tr><td class="detail9txt"><img src="images/question.gif">&nbsp;&nbsp;
-                        <?php= $ask_row[question];?>
+                        <?php echo  $ask_row[question];?>
                     </td></tr>
                 <tr><td style="border-bottom:1px solid gray"; class="detail9txt">
                         <img src="images/answer.gif">&nbsp;&nbsp;
-                        <?php= $ask_row[answer];?>
+                        <?php echo  $ask_row[answer];?>
                     </td></tr>
                 <?php
                 }
@@ -468,7 +468,7 @@
                                 <?php
                                 }
                                 ?>
-                                <img  src="images/<?php echo $record['picture1']; ?>" border=0  width=<?php= $w; ?> height=<?php=$h?> ></a> </td>
+                                <img  src="images/<?php echo $record['picture1']; ?>" border=0  width=<?php echo  $w; ?> height=<?php echo $h?> ></a> </td>
                     <?php
                     }
                     else
@@ -510,24 +510,24 @@
                         if($record['selling_method']=='ads')
                         {
                         ?>
-                        <a href="classifide_ad.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php=$record['item_title']; ?></a>
+                        <a href="classifide_ad.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php echo $record['item_title']; ?></a>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <a href="detail.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php=$record['item_title']; ?></a>
+                        <a href="detail.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php echo $record['item_title']; ?></a>
                         <?php
                         }
                         ?>
                     </td>
-                    <td class="banner1"><?php= $record['currency']; ?><?php= $current_price; ?></td>
-                    <td class="banner1"><?php= $no_bids ?></td>
+                    <td class="banner1"><?php echo  $record['currency']; ?><?php echo  $current_price; ?></td>
+                    <td class="banner1"><?php echo  $no_bids ?></td>
                     <?php
                     $expire_date=$record[34];
                     require 'ends.php';
                     ?>
-                    <td class="banner1"><?php= $string_difference; ?></td> </tr>
+                    <td class="banner1"><?php echo  $string_difference; ?></td> </tr>
                 <?php 
                 } //while
 

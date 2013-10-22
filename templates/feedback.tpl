@@ -29,8 +29,8 @@
     <tr width=100>
         <td colspan=2 background="images/contentbg1.jpg" height="25">
             <font class="detail3txt"><div align="left">
-                &nbsp;&nbsp;Member Profile ::&nbsp;<?php= $user[user_name];  ?> &nbsp; ( &nbsp;<?php= $feed_pos_tot[feedbacktotal]; ?>&nbsp;
-                <img src="images/<?php= $feedback_img ?>"  align="top"> ) </div></b></font></td></tr>
+                &nbsp;&nbsp;Member Profile ::&nbsp;<?php echo  $user[user_name];  ?> &nbsp; ( &nbsp;<?php echo  $feed_pos_tot[feedbacktotal]; ?>&nbsp;
+                <img src="images/<?php echo  $feedback_img ?>"  align="top"> ) </div></b></font></td></tr>
     <tr><td colspan="2" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom"  background="images/contentgrad.jpg"> 
             <table cellpadding="5" cellspacing="2"  width=100%> 
                 <tr height=40 >   
@@ -38,24 +38,24 @@
                         <table border=0 width="70%" align="center">
                             <tr><td class="detail9txt">
                                     <b> Total Feedback Received:</b>
-                                </td><td align="left" class="detail8txt"><?php= $feed_tot[feedbacktotal]; ?></td>
+                                </td><td align="left" class="detail8txt"><?php echo  $feed_tot[feedbacktotal]; ?></td>
                             </tr>
                             <tr><td class="detail9txt">
                                     <b> FeedBack Score:</b>
-                                </td><td align="left" class="detail8txt"><?php= $feed_pos_tot[feedbacktotal]; ?></td>
+                                </td><td align="left" class="detail8txt"><?php echo  $feed_pos_tot[feedbacktotal]; ?></td>
                             </tr>
                             <tr><td class="detail9txt"><b>Positive Feedback %:</b></td><td align="left" class="detail8txt">
-                                    <?php= round($positive_percentage); ?>%</td></tr>
-                            <tr><td class="detail9txt">No. of positive feedback received:</td><td align="left" class="detail8txt"><?phpif(!empty($positive_tot[positive_total])){?><?php= $positive_tot[positive_total]; ?><?php}else { echo "-";}?></td></tr></table>
+                                    <?php echo  round($positive_percentage); ?>%</td></tr>
+                            <tr><td class="detail9txt">No. of positive feedback received:</td><td align="left" class="detail8txt"><?phpif(!empty($positive_tot[positive_total])){?><?php echo  $positive_tot[positive_total]; ?><?php}else { echo "-";}?></td></tr></table>
                     </td><td>
                         <table align="center"><tr height="30px"><td bgcolor="#d8ecff" class="detail9txt" align="center"><b>Recent Ratings</b></td></tr>
                             <tr><td>
                                     <table cellpadding="5" cellspacing="0">
                                         <tr class="tr_botborder"><td>&nbsp;</td><td class="detail9txt">Past <br>Month</td><td class="detail9txt"> Past <br> 6 months</td><td class="detail9txt">Past <br> 12 months</td></tr>
-                                        <tr class="tr_botborder"><td><img src="images/iconPos_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($pos_lastmon_record[pos_mon])){?><?php= $pos_lastmon_record[pos_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($pos_last6_record[pos_6mon])){?><?php= $pos_last6_record[pos_6mon];?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($pos_last12mon_record[pos_last12mon])){?><?php= $pos_last12mon_record[pos_last12mon]; ?><?php}else echo "-";?></td></tr>
-                                        <tr class="tr_botborder"><td><img src="images/iconNeu_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($neu_lastmon_record[neu_mon])){?><?php= $neu_lastmon_record[neu_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neu_last6_record[neu_6mon])){?><?php= $neu_last6_record[neu_6mon];?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neu_last12mon_record[neu_last12mon])){?><?php= $neu_last12mon_record[neu_last12mon]; ?><?php}else echo "-";?></td></tr>
-                                        <tr><td><img src="images/iconNeg_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($neg_lastmon_record[neg_mon])){?><?php= $neg_lastmon_record[neg_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neg_last6_record[neg_6mon])){?><?php= $neg_last6_record[neg_6mon];?><?php}else echo "-";?></td class="detail9txt">
-                                            <td class="detail9txt"><?phpif(!empty($neg_last12mon_record[neg_last12mon])){?><?php= $neg_last12mon_record[neg_last12mon]; ?><?php}else echo "-";?></td></tr>
+                                        <tr class="tr_botborder"><td><img src="images/iconPos_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($pos_lastmon_record[pos_mon])){?><?php echo  $pos_lastmon_record[pos_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($pos_last6_record[pos_6mon])){?><?php echo  $pos_last6_record[pos_6mon];?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($pos_last12mon_record[pos_last12mon])){?><?php echo  $pos_last12mon_record[pos_last12mon]; ?><?php}else echo "-";?></td></tr>
+                                        <tr class="tr_botborder"><td><img src="images/iconNeu_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($neu_lastmon_record[neu_mon])){?><?php echo  $neu_lastmon_record[neu_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neu_last6_record[neu_6mon])){?><?php echo  $neu_last6_record[neu_6mon];?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neu_last12mon_record[neu_last12mon])){?><?php echo  $neu_last12mon_record[neu_last12mon]; ?><?php}else echo "-";?></td></tr>
+                                        <tr><td><img src="images/iconNeg_16x16.gif"></td><td class="detail9txt"><?phpif(!empty($neg_lastmon_record[neg_mon])){?><?php echo  $neg_lastmon_record[neg_mon]; ?><?php}else echo "-";?></td><td class="detail9txt"><?phpif(!empty($neg_last6_record[neg_6mon])){?><?php echo  $neg_last6_record[neg_6mon];?><?php}else echo "-";?></td class="detail9txt">
+                                            <td class="detail9txt"><?phpif(!empty($neg_last12mon_record[neg_last12mon])){?><?php echo  $neg_last12mon_record[neg_last12mon]; ?><?php}else echo "-";?></td></tr>
                                     </table>
                                 </td></tr></table> 
 
@@ -121,16 +121,16 @@ exit();
                 $item_rows=mysql_num_rows($item_sqlqry);
                 ?>
 
-                <td>  <img src="images/<?php= $imgtype ?>"> </td>
-                <td width=36%> <?php= nl2br($com_record['feedback']);?></td>
-                <td width=26%><?php= $user_record['user_name'];?></td>
-                <td width=15%><?php= $com_record['date'];?></td>
+                <td>  <img src="images/<?php echo  $imgtype ?>"> </td>
+                <td width=36%> <?php echo  nl2br($com_record['feedback']);?></td>
+                <td width=26%><?php echo  $user_record['user_name'];?></td>
+                <td width=15%><?php echo  $com_record['date'];?></td>
                 <?php
                 if($item_rows!=0)
                 {
                 ?>
-                <td width=23%><a href="detail.php?item_id=<?php= $com_record['item_id'];?>" class="header_text2">
-                        <?php= $com_record['item_id'];?></a></td>
+                <td width=23%><a href="detail.php?item_id=<?php echo  $com_record['item_id'];?>" class="header_text2">
+                        <?php echo  $com_record['item_id'];?></a></td>
                 <?php
                 }
                 ?>
@@ -139,7 +139,7 @@ exit();
                 {
                 ?>
                 <td width=23%>
-                    <?php= $com_record['item_id'];?></td>
+                    <?php echo  $com_record['item_id'];?></td>
                 <?php
                 }
                 ?>

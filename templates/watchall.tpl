@@ -181,7 +181,7 @@ echo $watid=trim(",",$watid);*/
 
                         <tr>
                             <td colspan="2" valign="top">
-                                <a href="watchall.php?item_id=<?php= $row['item_id']; ?>&mode=del&currec=1" class="header_text">Remove From Watchlist</a><br>
+                                <a href="watchall.php?item_id=<?php echo  $row['item_id']; ?>&mode=del&currec=1" class="header_text">Remove From Watchlist</a><br>
                                 <br>
                                 <?php if(!empty($row['picture1']) and file_exists('thumbnail/'.$row['picture1']))
                                 {
@@ -258,19 +258,19 @@ echo $watid=trim(",",$watid);*/
                                 <?php
                                 if($row['selling_method']=="fix")
                                 { ?>
-                                <a href="detail.php?item_id=<?php=$row['item_id']?>"><img src="images/buynow_icon.gif" border="0"></a>
+                                <a href="detail.php?item_id=<?php echo $row['item_id']?>"><img src="images/buynow_icon.gif" border="0"></a>
                                 <?php 
                                 }
                                 if($row['selling_method']=="ads")
                                 {
                                 ?>
-                                <a href="detail.php?item_id=<?php=$row['item_id'] ?>"><img src="images/hands(11).gif" border="0"></a>
+                                <a href="detail.php?item_id=<?php echo $row['item_id'] ?>"><img src="images/hands(11).gif" border="0"></a>
                                 <?php 
                                 }
                                 else if($row['selling_method']=="auction" || $row['selling_method']=="dutch_auction")
                                 {
                                 ?>
-                                <a href="detail.php?item_id=<?php=$row['item_id'] ?>"><img src="images/Auction(12).gif" border="0"></a>
+                                <a href="detail.php?item_id=<?php echo $row['item_id'] ?>"><img src="images/Auction(12).gif" border="0"></a>
                                 <?php
                                 }
                                 ?>

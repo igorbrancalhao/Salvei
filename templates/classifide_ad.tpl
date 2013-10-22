@@ -41,7 +41,7 @@
                     cat_display($cat_sql_row[category_head_id],$cat_string);
                     }
                     ?>
-                    <span class="header_text5"><a href="category.php?cate_id=<?= $cat_sql_row[category_id] ?>" class="header_text5"><?= $cat_sql_row[category_name] ?></a></span></td>
+                    <span class="header_text5"><a href="category.php?cate_id=<?= $cat_sql_row['category_id'] ?>" class="header_text5"><?= $cat_sql_row[category_name] ?></a></span></td>
             </tr>
             <tr>
                 <td height="7"></td>

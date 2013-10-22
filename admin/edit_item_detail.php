@@ -249,7 +249,7 @@ $update = "Item Updated Successfully.";
                                 /*   if(empty($_SESSION[$tab_col->name]))
                                   {
                                   ?>
-                                  <tr><td>&nbsp;</td><td><a href="sell_item_detail.php#<?php= $dummy ?>"><?php= $dummy ?></a>-Please Enter this Information </td></tr>
+                                  <tr><td>&nbsp;</td><td><a href="sell_item_detail.php#<?php echo  $dummy ?>"><?php echo  $dummy ?></a>-Please Enter this Information </td></tr>
                                   <?php
                                   } */
                                 $i++;

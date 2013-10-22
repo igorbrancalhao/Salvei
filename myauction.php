@@ -35,5 +35,4 @@ require 'templates/myauction.tpl';
 require 'include/footer.php';
 ?>
 
-</body>
-</html>
+ 

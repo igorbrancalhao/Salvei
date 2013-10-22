@@ -88,10 +88,10 @@ $i++) {
 if ($ftype[$i] == "textarea") {
 /*  fwrite($f,"tr><td><b><font size=2> $field[$i]</font></b></td></tr><tr><td><input type=$ftype[$i] name=$field[$i]></td></tr>\n"); */
 $val = '$_SESSION[' . $field[$i] . ']';
-fwrite($f, "<tr><td><b><font size=2 class='banner1'>$field[$i]</font></b></td></tr><tr><td><textarea name=$field[$i] cols=15 rows=5><?php=$val?></textarea></td></tr>\n");
+fwrite($f, "<tr><td><b><font size=2 class='banner1'>$field[$i]</font></b></td></tr><tr><td><textarea name=$field[$i] cols=15 rows=5><?php echo $val?></textarea></td></tr>\n");
 } else {
 $val = '$_SESSION[' . $field[$i] . ']';
-fwrite($f, "<tr><td><b><font size=2 class='banner1'>$field[$i]</font></b></td></tr><tr><td><input type=$ftype[$i] name=$field[$i] value=<?php= $val ?> ></td></tr>\n");
+fwrite($f, "<tr><td><b><font size=2 class='banner1'>$field[$i]</font></b></td></tr><tr><td><input type=$ftype[$i] name=$field[$i] value=<?php echo  $val ?> ></td></tr>\n");
 }
 }
 

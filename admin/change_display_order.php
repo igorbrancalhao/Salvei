@@ -47,7 +47,7 @@ require 'include/top.php';
     while ($category_row = mysql_fetch_array($category_result)) {
         ?>
         <tr><td bgcolor="#CCCCCC">&nbsp;</td>
-            <td> <a href="change_cat_display.php?cat_id=<?php = $category_row[category_id]; ?>"><b><?php = $category_row[category_name]; ?></b></a></td>
+            <td> <a href="change_cat_display.php?cat_id=<?php = $category_row['category_id']; ?>"><b><?php = $category_row[category_name]; ?></b></a></td>
             <td> <?php = $category_row[priority]; ?></td>
         </tr>
         <?php
@@ -60,7 +60,7 @@ require 'include/top.php';
                 <td bgcolor="#CCCCCC" align="right">&nbsp;&nbsp;&nbsp;&nbsp;
                     <?php = $categoryname ?>  &nbsp; > &nbsp; </td>
 
-                <td> <a href="change_cat_display.php?cat_id=<?php = $subcategory_row[category_id]; ?>"><?php = $subcategory_row[category_name]; ?></a></td>
+                <td> <a href="change_cat_display.php?cat_id=<?php = $subcategory_row['category_id']; ?>"><?php = $subcategory_row[category_name]; ?></a></td>
                 <td> <?php = $subcategory_row[priority]; ?></td>
             </tr>
             <?php

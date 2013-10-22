@@ -34,7 +34,7 @@
                     <td><font size="3" class="detail9txt"><b>Item not Received </b>
                         </font> </td></tr>
                 <tr><td><table border=0 align="center" cellpadding="0" cellspacing="3" width="100%">
-                            <tr><td style="padding-left:5px"> <font class="detail9txt"><b>Transaction:</b></font><font class="banner1"> <?php= $sell[item_title] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user[user_name] ?> on
+                            <tr><td style="padding-left:5px"> <font class="detail9txt"><b>Transaction:</b></font><font class="banner1"> <?php echo  $sell[item_title] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user[user_name] ?> on
                                     <?php
                                     $custom_date=explode(" ",$bid_date);
                                     $custom_date1=$custom_date[0];
@@ -53,7 +53,7 @@
                             <tr><td style="padding-left:5px" class="banner1"><ul type="disc" style="line-height:normal">
                                         <li > Review the item listing carefully. </li> 
                                         <li>Email and call your seller. </li>
-                                        <li>Ensure <?php= $_SESSION[site_name] ?> has your correct contact information. </li>
+                                        <li>Ensure <?php echo  $_SESSION[site_name] ?> has your correct contact information. </li>
                                         <li>Check your spam filter for missed emails.  </li>
                                     </ul>   </td></tr>
                             <tr><td style="padding-left:5px" class="banner1">  If you meet these conditions, Click <b> Continue </b> to to get started. </td></tr>
@@ -63,8 +63,8 @@
                             <form name="form1" action="open_dispute.php"  method=post>
                                 <tr>
                                     <td style="padding-left:10px"> 
-                                        <input type="text" name="txtitemnumber" value=<?php= $bid[item_id] ?> disabled="disabled">
-                                               <input type="hidden" name="bid_id" value=<?php= $bid_id ?> />
+                                        <input type="text" name="txtitemnumber" value=<?php echo  $bid[item_id] ?> disabled="disabled">
+                                               <input type="hidden" name="bid_id" value=<?php echo  $bid_id ?> />
                                     </td></tr>
                                 <tr><td style="padding-left:10px">
                                         <input type="image" src="images/continue.gif" name="Image71" width="81" height="24" border="0" id="Image71" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image71', '', 'images/continueo.gif', 1)"/>

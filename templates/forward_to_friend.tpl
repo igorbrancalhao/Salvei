@@ -43,14 +43,14 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2">&nbsp;</td>
-                                    <td width="911" class="banner1">Your friend will receive an email containing this <?php=$_SESSION['site_name']?> item. Please send   this email only to people you know who would be interested in this information.   You can also Refer a Friend to <?php=$_SESSION['site_name']?> through this forward a friend option. </td>
+                                    <td width="911" class="banner1">Your friend will receive an email containing this <?php echo $_SESSION['site_name']?> item. Please send   this email only to people you know who would be interested in this information.   You can also Refer a Friend to <?php echo $_SESSION['site_name']?> through this forward a friend option. </td>
                                 </tr>
                                 <tr>
                                     <td height="7"></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">&nbsp;</td>
-                                    <td class="banner1">Sellers: If you use this service to advertise an item you are selling and the   recipient complains to <?php=$_SESSION['site_name']?> admin, your <?php=$_SESSION['site_name']?> registration may be   suspended. </td>
+                                    <td class="banner1">Sellers: If you use this service to advertise an item you are selling and the   recipient complains to <?php echo $_SESSION['site_name']?> admin, your <?php echo $_SESSION['site_name']?> registration may be   suspended. </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">&nbsp;</td>
@@ -62,7 +62,7 @@
                                                     <td width="7%">&nbsp;</td>
                                                     <td width="16%"><strong class="categories_fonttype">From</strong></td>
                                                     <td width="6%" class="categories_fonttype">:</td>
-                                                    <td width="71%"><input type="text" name="mailfrom" size="50" maxlength="50" value="<?php= $user_record[email]; ?>" /></td>
+                                                    <td width="71%"><input type="text" name="mailfrom" size="50" maxlength="50" value="<?php echo  $user_record[email]; ?>" /></td>
                                                 </tr>
                                                 <tr>
                                                     <td height="6"></td>
@@ -77,7 +77,7 @@
                                                     <td>&nbsp;</td>
                                                     <td>&nbsp;</td>
                                                     <td>&nbsp;</td>
-                                                    <td><strong class="categories_fonttype">Enter an email address.</strong> <span class="banner1"><?php=$_SESSION['site_name']?> won't use this address for promotional   purposes, <br />
+                                                    <td><strong class="categories_fonttype">Enter an email address.</strong> <span class="banner1"><?php echo $_SESSION['site_name']?> won't use this address for promotional   purposes, <br />
                                                             or disclose it to a third party. </span></td>
                                                 </tr>
                                                 <tr>
@@ -87,7 +87,7 @@
                                                     <td>&nbsp;</td>
                                                     <td><strong class="categories_fonttype">Subject</strong></td>
                                                     <td class="categories_fonttype">:</td>
-                                                    <td class="banner1"><?php= $_SESSION[username];?>sent you this <?php=$_SESSION['site_name']?> item : <?php= $item_record[item_title];?>(#<?php=$item_id;?>)</td>
+                                                    <td class="banner1"><?php echo  $_SESSION[username];?>sent you this <?php echo $_SESSION['site_name']?> item : <?php echo  $item_record[item_title];?>(#<?php echo $item_id;?>)</td>
                                                 </tr>
                                                 <tr>
                                                     <td height="6"></td>
@@ -97,7 +97,7 @@
                                                     <td><strong class="categories_fonttype">Personal Message</strong></td>
                                                     <td class="categories_fonttype">:</td>
                                                     <td><label>
-                                                            <textarea name="message">I saw this page on <?php=$_SESSION['site_name']?></textarea>
+                                                            <textarea name="message">I saw this page on <?php echo $_SESSION['site_name']?></textarea>
                                                         </label></td>
                                                 </tr>
                                                 <tr>
@@ -112,8 +112,8 @@
                                                 </tr>
                                             </table></td>
                                     </tr>
-                                    <input type="hidden" name="subject" value="<?php= $subject; ?>">
-                                    <input type="hidden" name="item_id" value="<?php= $item_id; ?>">
+                                    <input type="hidden" name="subject" value="<?php echo  $subject; ?>">
+                                    <input type="hidden" name="item_id" value="<?php echo  $item_id; ?>">
                                     <input type="hidden" name="canSend" value="1">
                                 </form>
                                 <tr>

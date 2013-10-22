@@ -110,7 +110,7 @@ if($total_records > 0)
     {
     ?>
     <td>
-        <a href="hotitems_list.php?currec=<?php=($currec - 1);?>" >
+        <a href="hotitems_list.php?currec=<?php echo ($currec - 1);?>" >
             <font size="2" class="moretxt">Previous </font></a></td>
     <?php
     } 
@@ -120,7 +120,7 @@ if($total_records > 0)
     if($total_records > ($start + $end)) 
     {
     ?>  
-    <td><a href="hotitems_list.php?currec=<?php=($currec + 1);?>" >
+    <td><a href="hotitems_list.php?currec=<?php echo ($currec + 1);?>" >
             <font size=2 class="moretxt"> Next </font> </a></td>
     <?php
     }
@@ -224,7 +224,7 @@ if($both=="Yes")
     }
     } ?>
     <td width=30 align=center>
-        <a href="detail.php?item_id=<?php= $record['item_id'];?>&qty=1">
+        <a href="detail.php?item_id=<?php echo  $record['item_id'];?>&qty=1">
             <?php
             if($record['selling_method']=='fix')
             {
@@ -266,20 +266,20 @@ if($both=="Yes")
         }
         ?>
         <a href="detail.php?item_id=<?php echo $record['item_id']; ?>">
-            <img src="images/<?php echo $record['picture1']; ?>" border=0  width=<?php= $w; ?> height=<?php=$h?>></a> 
+            <img src="images/<?php echo $record['picture1']; ?>" border=0  width=<?php echo  $w; ?> height=<?php echo $h?>></a> 
         <?php
         }
         else
         {
         ?>
         <a href="detail.php?item_id=<?php echo $record['item_id']; ?>">
-            <img src="images/no-image.gif" border=0  width=<?php= $w; ?> height=<?php=$h?> ></a> 
+            <img src="images/no-image.gif" border=0  width=<?php echo  $w; ?> height=<?php echo $h?> ></a> 
         <?php 
         }
         ?> 		 
     </td>
     <td colspan="2" class="detail9txt">
-        <a href="detail.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php=$record['item_title']; ?></a></td>
+        <a href="detail.php?item_id=<?php echo $record['item_id']; ?>" class="header_text"><?php echo $record['item_title']; ?></a></td>
     <td class="detail9txt"><br />
         <?php 
         if($fea['subtitle_feature']=="Yes") 
@@ -287,7 +287,7 @@ if($both=="Yes")
         echo $record['sub_title'];
         }
         ?></td>
-    <td class="detail9txt"><?php= $string_difference; ?></td></tr>
+    <td class="detail9txt"><?php echo  $string_difference; ?></td></tr>
 <?php
 } //while($record=mysql_fetch_array($recordset))
 ?>

@@ -42,7 +42,7 @@
                     <tr><td align="center" colspan="2">
                             <table cellpadding="0" cellspacing="0" width="100%" height=50>
                                 <tr>
-                                    <td width="100%" align="center"><b><font class="errormsg"><?php= $err; ?></font></b></td></tr>
+                                    <td width="100%" align="center"><b><font class="errormsg"><?php echo  $err; ?></font></b></td></tr>
                             </table></td></tr>
                     <?php
                     }
@@ -75,7 +75,7 @@
                     if($row_user['Quantity'] > 1)
                     { 
                     ?>
-                    <input type="hidden" name="qty" value="<?php=$row_user['Quantity']?>">
+                    <input type="hidden" name="qty" value="<?php echo $row_user['Quantity']?>">
                     <!--<tr class="detail6txt">
                 <td height="27">Quantity:</td>
                 <td align="left"><select name=qty>
@@ -83,7 +83,7 @@
                     <?php for($i=1;$i<=$row_user[Quantity];$i++)
                      {
                      ?>
-                     <option value="<?php= $i;?>"><?php= $i;?></option>
+                     <option value="<?php echo  $i;?>"><?php echo  $i;?></option>
                      <?php 
                      }
                      ?></select></td>
@@ -106,9 +106,9 @@
                     <td colspan="2" align=center>
                         <input type="image" src="images/placeabid.gif" name="Image23" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image23', '', 'images/placeabido.gif', 1)" width="97" height="25" border="0" id="Image23"/>
                         <input type="hidden" name=flag value=1>
-                        <input type="hidden" name=quick_id value=<?php= $item_id; ?> >
-                               <input type="hidden" name=item_id value=<?php= $item_id; ?> >
-                               <input type="hidden" name=quick_qty value=<?php= $qty; ?>>
+                        <input type="hidden" name=quick_id value=<?php echo  $item_id; ?> >
+                               <input type="hidden" name=item_id value=<?php echo  $item_id; ?> >
+                               <input type="hidden" name=quick_qty value=<?php echo  $qty; ?>>
                     </td></tr>
 
 </table>

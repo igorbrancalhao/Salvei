@@ -39,7 +39,6 @@
                     <tr>
                         <td width="670"> </td>
                     </tr>
-
                     <tr>
                         <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
@@ -96,9 +95,10 @@
                                                                                 ?>
                                                                                 <tr>
                                                                                     <td width="20%"><div align="center"><img src="images/site1.jpg" alt="" width="6" height="7" /></div></td>
-                                                                                    <td width="80%" class="sitemaptxt"><a href="subcat.php?cate_id=<?php= $cat_row[category_id];?>" class="sitemaptxt"><?php echo $cat_row[category_name]; ?></a></td>
+                                                                                    <td width="80%" class="sitemaptxt"><a href="subcat.php?cate_id= <?php echo $cat_row['category_id'];?>" class="sitemaptxt"><?php echo $cat_row['category_name']; ?></a></td>
                                                                                 </tr>
                                                                                 <?php
+                                                                                
                                                                                 }
                                                                                 ?>
 
@@ -155,7 +155,7 @@
                                                                     <tr>
                                                                         <td><table width="100%" height="50" border="0" cellpadding="0" cellspacing="0" background="images/contentgrad.jpg" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom">
                                                                                 <?php
-                                                                                if(empty($_SESSION[userid]))
+                                                                                if(empty($_SESSION['userid']))
                                                                                 {
                                                                                 ?>
                                                                                 <tr>

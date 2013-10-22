@@ -51,21 +51,21 @@
                                             {
                                             ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#payment" class="header_text2">Payment Method</a> - <?php= $err_payment; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#payment" class="header_text2">Payment Method</a> - <?php echo  $err_payment; ?></td></tr>
                                         <?php
                                         }
                                         if(!empty($err_payid))
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#payid" class="header_text2">Payment Id</a> - <?php= $err_payid; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#payid" class="header_text2">Payment Id</a> - <?php echo  $err_payid; ?></td></tr>
                                         <?php
                                         }
                                         if(!empty($err_route))
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#world" class="header_text2">Shipping Location</a> - <?php= $err_route; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#world" class="header_text2">Shipping Location</a> - <?php echo  $err_route; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -73,7 +73,7 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#txtship_amt" class="header_text2">Shipping Amount</a> - <?php= $err_amt; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#txtship_amt" class="header_text2">Shipping Amount</a> - <?php echo  $err_amt; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -81,7 +81,7 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#txtship_amt" onclick="sel('txtship_amt')" class="header_text2">Shipping Amount</a> - <?php= $err_ship; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#txtship_amt" onclick="sel('txtship_amt')" class="header_text2">Shipping Amount</a> - <?php echo  $err_ship; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -89,13 +89,13 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="ship_detail.php#tax" onclick="sel('tax')" class="header_text2">Sales Tax</a> - <?php= $err_tax; ?></td></tr>
+                                            <td class="banner1"><a href="ship_detail.php#tax" onclick="sel('tax')" class="header_text2">Sales Tax</a> - <?php echo  $err_tax; ?></td></tr>
                                         <?php 
                                         }
                                         if(!empty($err_ref))
                                         {
                                         ?>
-                                        <tr><td>&nbsp;</td><td class="banner1"><a href="ship_detail.php#ref" onclick="sel('cboreturndays')" class="header_text2">Refund Days</a> - <?php=$err_ref?></td></tr>
+                                        <tr><td>&nbsp;</td><td class="banner1"><a href="ship_detail.php#ref" onclick="sel('cboreturndays')" class="header_text2">Refund Days</a> - <?php echo $err_ref?></td></tr>
                                         <?php
                                         }
                                         ?>
@@ -107,9 +107,9 @@
 
 
                             <tr><td><table width="948" background="images/contentgrad.jpg" style="border:1px solid #c4dbe7; background-repeat:repeat-x; background-position:bottom" align="center">
-                                        <tr><td><font class="categories_fonttype"><b>Title:</b></font>&nbsp;&nbsp;<font class="banner1"><?php= $_SESSION[item_name]; ?></font></td></tr>
+                                        <tr><td><font class="categories_fonttype"><b>Title:</b></font>&nbsp;&nbsp;<font class="banner1"><?php echo  $_SESSION[item_name]; ?></font></td></tr>
                                         <tr><td><font class="categories_fonttype"><b>Subtitle:</b></font>&nbsp;&nbsp;
-                                                <font class="banner1"><?php= $_SESSION[subtitle]; ?></font>
+                                                <font class="banner1"><?php echo  $_SESSION[subtitle]; ?></font>
                                             </td></tr>
                                     </table></td></tr>
                             <tr><td>
@@ -137,13 +137,13 @@
                                                                     if($pay_row[gateway_id]==$payment)
                                                                     {
                                                                     ?>
-                                                                    <option value="<?php=$pay_row['gateway_id'];?>" selected><?php=$pay_row[payment_gateway];?></option>
+                                                                    <option value="<?php echo $pay_row['gateway_id'];?>" selected><?php echo $pay_row[payment_gateway];?></option>
                                                                     <?php
                                                                     }
                                                                     else
                                                                     {
                                                                     ?>
-                                                                    <option value="<?php=$pay_row['gateway_id'];?>"><?php=$pay_row[payment_gateway];?></option>
+                                                                    <option value="<?php echo $pay_row['gateway_id'];?>"><?php echo $pay_row[payment_gateway];?></option>
                                                                     <?php
                                                                     }
                                                                     }
@@ -165,7 +165,7 @@
                                                         <tr><td class="banner1">
                                                                 <?php if(!empty($err_ship_loc))
                                                                 {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_ship_loc ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_ship_loc ?></font>
  <br>
  <b><font class="moretxt">Shipping Location</font></b>
  <?php
@@ -200,7 +200,7 @@
                                                                             if($ship_row['ship_id']==$shipping_route[$s])
                                                                             {
                                                                             ?>
-                                                                            <input type="checkbox" name="ship<?php= $r ?>"  value="<?php=$ship_row['ship_id'];?>" checked <?php if($ship_row['ship_id']==1){?> onclick="return selectall();" <?php } ?>><?php=$ship_row[location];?>
+                                                                            <input type="checkbox" name="ship<?php echo  $r ?>"  value="<?php echo $ship_row['ship_id'];?>" checked <?php if($ship_row['ship_id']==1){?> onclick="return selectall();" <?php } ?>><?php echo $ship_row[location];?>
                                                                                    <?php
                                                                                    break;
                                                                                    }
@@ -211,7 +211,7 @@
                                                                                    if($j==$total)
                                                                                    {
                                                                                    ?>
-                                                                                   <input type="checkbox" name="ship<?php=$r  ?>"  value="<?php=$ship_row['ship_id'];?>" onclick="return selectall();"><?php=$ship_row[location];?>
+                                                                                   <input type="checkbox" name="ship<?php echo $r  ?>"  value="<?php echo $ship_row['ship_id'];?>" onclick="return selectall();"><?php echo $ship_row[location];?>
                                                                             <?php
                                                                             }
                                                                             }
@@ -227,7 +227,7 @@
                                                         <tr><td align="left" class="banner1">
                                                                 <?php if((!empty($err_amt))||(!empty($err_ship)))
                                                                 {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_ship ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_ship ?></font>
  <br>
  <b><font class="moretxt">Shipping Amount</font></b>
  <?php
@@ -240,11 +240,11 @@
                                                                 }
                                                                 ?>
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <input type="text" name=txtship_amt class="txtsmall" value="<?php=$shipping_amt;?>"></td></tr>
+                                                                <input type="text" name=txtship_amt class="txtsmall" value="<?php echo $shipping_amt;?>"></td></tr>
                                                         <tr><td align="left" class="banner1"> 
                                                                 <?php if(!empty($err_tax))
                                                                 {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_tax ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_tax ?></font>
  <br>
  <b><font class="moretxt">Tax Amount</font></b>
  <?php
@@ -258,7 +258,7 @@
                                                                 ?>
 
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-                                                                <input type="text" name=tax class="txtsmall" value="<?php=$tax;?>"> <b> % </b> 
+                                                                <input type="text" name=tax class="txtsmall" value="<?php echo $tax;?>"> <b> % </b> 
                                                             </td>
                                                         </tr>
                                                     </table></td></tr>
@@ -294,13 +294,13 @@
                                                                     <?php if($refund_days==$row['duration'])
                                                                     {
                                                                     ?>
-                                                                    <option value="<?php= $row['duration'] ?>" selected> <?php= $row['duration'] ?> Days</option>
+                                                                    <option value="<?php echo  $row['duration'] ?>" selected> <?php echo  $row['duration'] ?> Days</option>
                                                                     <?php
                                                                     }
                                                                     else
                                                                     {
                                                                     ?>
-                                                                    <option value="<?php= $row['duration'] ?>" > <?php= $row['duration'] ?> Days</option>
+                                                                    <option value="<?php echo  $row['duration'] ?>" > <?php echo  $row['duration'] ?> Days</option>
                                                                     <?php
                                                                     }
                                                                     } // while($row=mysql_fetch_array($table))
@@ -366,7 +366,7 @@
                                                         <tr><td class="banner1"><b>Return Policy Details</b></td></tr>
 
                                                         <tr><td>
-                                                                <textarea name="txtploicy" cols="60" rows="6"><?php= $returnpolicy_instructions ?></textarea></td></tr>
+                                                                <textarea name="txtploicy" cols="60" rows="6"><?php echo  $returnpolicy_instructions ?></textarea></td></tr>
                                                     </table></td></tr>
                                             <tr><td><table background="images/abtusbg.jpg" width="948" height="32" border="0" align="center" cellpadding="0" cellspacing="0">
                                                         <tr><td class="banner1"><font class="categories_fonttype"><b>&nbsp;&nbsp;Payment Instructions</b></font></td></tr>
@@ -374,7 +374,7 @@
                                             <tr><td><table width="948" background="images/contentgrad.jpg" style="border:1px solid #c4dbe7; background-repeat:repeat-x; background-position:bottom" cellpadding="0" cellspacing="5">
                                                         <tr><td><font color="#999999">Give clear instructions to assist your buyer with payment and shipping.</font></td></tr>
                                                         <tr><td>
-                                                                <textarea name="txtpaymentins" cols="60" rows="6" ><?php= $payment_instructions ?> </textarea>
+                                                                <textarea name="txtpaymentins" cols="60" rows="6" ><?php echo  $payment_instructions ?> </textarea>
                                                             </td></tr>
                                                         <tr><td align="center">
 

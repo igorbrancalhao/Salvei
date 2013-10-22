@@ -203,14 +203,14 @@ if ($cat_flag == 1) {
                                                             <tr bgcolor="#eeeee1">
                                                                 <?php
                                                             }
-                                                            if ($rec[category_id] == $_SESSION[categoryid]) {
+                                                            if ($rec['category_id'] == $_SESSION[categoryid]) {
                                                                 ?>
-                                                                <td><input type="radio" name="radio_cat" value="<?php = $rec[category_id]; ?>" checked></td><td>
+                                                                <td><input type="radio" name="radio_cat" value="<?php = $rec['category_id']; ?>" checked></td><td>
                                                                     <?php = $rec[category_name]; ?> </td>
                                                                 <?php
                                                             } else {
                                                                 ?>
-                                                                <td><input type="radio" name="radio_cat" value=<?php = $rec[category_id]; ?>></td><td>
+                                                                <td><input type="radio" name="radio_cat" value=<?php = $rec['category_id']; ?>></td><td>
                                                                     <?php = $rec[category_name]; ?> </td>
                                                                 <?php
                                                             }

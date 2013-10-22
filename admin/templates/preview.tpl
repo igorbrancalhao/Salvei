@@ -32,7 +32,7 @@ require 'include/top.php';
 <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#cecfc8">
     <tr><td>
             <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="border2">
-                <link href="<?php= $ret1; ?>" rel="stylesheet" type="text/css">
+                <link href="<?php echo  $ret1; ?>" rel="stylesheet" type="text/css">
                 <?php
                 if($sucess==1)
                 {
@@ -43,7 +43,7 @@ require 'include/top.php';
                 <tr bgcolor="#eeeee1"><td valign="top">
                         <table cellpadding="5" cellspacing="2" align="center" class="table_topless_border" width="100%">
                             <tr bgcolor="#eeeee1"><td><font size="2" color=green><b>You have successfully listed your item.</b></font></td></tr>
-                            <tr bgcolor="#eeeee1"><td><b>View your listing:</b>&nbsp;<a href="item_details.php?id=<?php=$_SESSION['itemidd']; ?> "><?php= $_SESSION[item_name]; ?></a></td></tr>
+                            <tr bgcolor="#eeeee1"><td><b>View your listing:</b>&nbsp;<a href="item_details.php?id=<?php echo $_SESSION['itemidd']; ?> "><?php echo  $_SESSION[item_name]; ?></a></td></tr>
                             <tr>
                                 <td>
 
@@ -113,7 +113,7 @@ else
                             <td bgcolor="#CCCCCC"><div align="right"><a href="sell_item_detail.php?mode=change">Edit 
                                         Item Title</a></div>
                             </td></tr>
-                        <tr bgcolor="#eeeee1"><td ><?php= $_SESSION[item_name]; ?> </td></tr>
+                        <tr bgcolor="#eeeee1"><td ><?php echo  $_SESSION[item_name]; ?> </td></tr>
                     </table></td></tr>
             <?php 
             if($_SESSION[subtitle])
@@ -128,7 +128,7 @@ else
                             <td bgcolor="#CCCCCC"><div align="right"><a href="sell_item_detail.php?mode=change">Edit 
                                         Subtitle</a></div>
                             </td></tr>
-                        <tr><td> <?php= $_SESSION[subtitle]; ?> </td></tr>
+                        <tr><td> <?php echo  $_SESSION[subtitle]; ?> </td></tr>
                     </table></td></tr>
             <?php
             }
@@ -150,8 +150,8 @@ else
                                 list($width, $height, $type, $attr) = getimagesize("../images/$img");
                                 ?>
                                 <table width="100%" cellpadding="5" cellspacing="0" align="left">
-                                    <tr><td background="../images/<?php= $theme_top ?>" style="background-repeat:no-repeat"  height=<?php= $height ?> align="left"  ></td></tr>
-                                    <tr><td background="../images/<?php= $theme_content ?>"  style="background-repeat:repeat-y" align="left" >
+                                    <tr><td background="../images/<?php echo  $theme_top ?>" style="background-repeat:no-repeat"  height=<?php echo  $height ?> align="left"  ></td></tr>
+                                    <tr><td background="../images/<?php echo  $theme_content ?>"  style="background-repeat:repeat-y" align="left" >
                                             <?php
                                             if($_SESSION[layout]=="layout_top.gif")
                                             {
@@ -180,11 +180,11 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
-                                                <tr><td style="padding:50px" >  <?php= $_SESSION[des]; ?>  </td></tr>
-                                                <tr><td style="padding:50px" >  <?php= $_SESSION[des1]; ?>  </td></tr>
+                                                <tr><td style="padding:50px" >  <?php echo  $_SESSION[des]; ?>  </td></tr>
+                                                <tr><td style="padding:50px" >  <?php echo  $_SESSION[des1]; ?>  </td></tr>
 
                                                 <tr><td align="center" >
                                                         <?php if($_SESSION[image2])
@@ -209,7 +209,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
 
@@ -236,7 +236,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -262,7 +262,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -288,7 +288,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -314,7 +314,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -340,7 +340,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                             </table>
@@ -352,8 +352,8 @@ else
                                             {
                                             ?>
                                             <table width=100% cellpadding="5" >
-                                                <tr><td style="padding:50px" >  <?php= $_SESSION[des]; ?>  </td></tr>
-                                                <tr><td style="padding:50px" >  <?php= $_SESSION[des1]; ?>  </td></tr>	
+                                                <tr><td style="padding:50px" >  <?php echo  $_SESSION[des]; ?>  </td></tr>
+                                                <tr><td style="padding:50px" >  <?php echo  $_SESSION[des1]; ?>  </td></tr>	
                                                 <tr><td align="center">
                                                         <?php if($_SESSION[image1])
                                                         {  
@@ -377,7 +377,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
 
@@ -405,7 +405,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
 
@@ -432,7 +432,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -458,7 +458,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -484,7 +484,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -510,7 +510,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                                 <tr><td align="center">
@@ -536,7 +536,7 @@ else
                                                         }
 
                                                         ?>
-                                                        <img src="../images/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                        <img src="../images/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                     </td></tr>
                                             </table>
@@ -572,7 +572,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
 
@@ -600,7 +600,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
 
@@ -627,7 +627,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr><td align="center">
@@ -653,7 +653,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr><td align="center">
@@ -679,7 +679,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr><td align="center">
@@ -705,7 +705,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr><td align="center">
@@ -731,10 +731,10 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
-                                                        </table></td><td style="padding:50px" valign="top">  <?php= $_SESSION[des]; ?> <br /><?php= $_SESSION['des1']; ?>  </td></tr>
+                                                        </table></td><td style="padding:50px" valign="top">  <?php echo  $_SESSION[des]; ?> <br /><?php echo  $_SESSION['des1']; ?>  </td></tr>
                                             </table>
                                             <?php
                                             } // end of left layout
@@ -746,7 +746,7 @@ else
                                             ?>
                                             <table width=100% cellpadding="5" >
                                                 <tr>
-                                                    <td style="padding:50px" valign="top">  <?php= $_SESSION[des]; ?> <br /><?php=$_SESSION['des1']; ?> </td>
+                                                    <td style="padding:50px" valign="top">  <?php echo  $_SESSION[des]; ?> <br /><?php echo $_SESSION['des1']; ?> </td>
                                                     <td style="padding-right:50px">
                                                         <table bgcolor="#eeeee1">
                                                             <tr bgcolor="#eeeee1"><td align="left">
@@ -772,7 +772,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
 
@@ -800,7 +800,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
 
@@ -827,7 +827,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr bgcolor="#eeeee1"><td align="left">
@@ -853,7 +853,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr bgcolor="#eeeee1"><td align="left">
@@ -879,7 +879,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr bgcolor="#eeeee1"><td align="left">
@@ -905,7 +905,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                 </td></tr>
                                                             <tr bgcolor="#eeeee1"><td align="left">
@@ -931,7 +931,7 @@ else
                                                                     }
 
                                                                     ?>
-                                                                    <img src="../images/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                    <img src="../images/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
                                                                 </td></tr>
                                                         </table></td></tr>
                                             </table>
@@ -941,8 +941,8 @@ else
                                             {
                                             ?> 
                                             <table width=100% cellpadding="5" bgcolor="#eeeee1">
-                                                <tr><td style="padding:50px" align="center" >  <?php= $_SESSION[des]; ?>  </td></tr>
-                                                <tr><td style="padding:50px" align="center" >  <?php= $_SESSION[des1]; ?>  </td></tr>
+                                                <tr><td style="padding:50px" align="center" >  <?php echo  $_SESSION[des]; ?>  </td></tr>
+                                                <tr><td style="padding:50px" align="center" >  <?php echo  $_SESSION[des1]; ?>  </td></tr>
                                                 <tr><td align="center">
                                                         <table><tr><td><table><tr><td>
                                                                                 <?php if($_SESSION[image1])
@@ -967,7 +967,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image1] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image1] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr></table>
                                                                 </td>
@@ -996,7 +996,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image2] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image2] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr>
 
@@ -1023,7 +1023,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image3] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image3] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr>
                                                                         <tr bgcolor="#eeeee1"><td align="center">
@@ -1049,7 +1049,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image4] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image4] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr>
                                                                         <tr bgcolor="#eeeee1"><td align="center">
@@ -1075,7 +1075,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image5] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image5] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr>
                                                                         <tr bgcolor="#eeeee1"><td align="center">
@@ -1101,7 +1101,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image6] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image6] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr>
                                                                         <tr bgcolor="#eeeee1"><td align="center">
@@ -1127,7 +1127,7 @@ else
                                                                                 }
 
                                                                                 ?>
-                                                                                <img src="../images/<?php= $_SESSION[image7] ?>" width=<?php= $w ?> height=<?php= $h ?> >  <?php } ?>
+                                                                                <img src="../images/<?php echo  $_SESSION[image7] ?>" width=<?php echo  $w ?> height=<?php echo  $h ?> >  <?php } ?>
 
                                                                             </td></tr></table></td></tr></table></td></tr></table>
 
@@ -1146,7 +1146,7 @@ else
 
                                     ?>	
 
-                                    <tr bgcolor="#eeeee1"><td background="../images/<?php= $theme_bottom ?>" style="background-repeat:no-repeat" width=100% height=<?php= $height ?> align="left" >
+                                    <tr bgcolor="#eeeee1"><td background="../images/<?php echo  $theme_bottom ?>" style="background-repeat:no-repeat" width=100% height=<?php echo  $height ?> align="left" >
                                     </td></tr></table>
 
 
@@ -1158,7 +1158,7 @@ else
                             {
                             ?>
                     <tr bgcolor="#eeeee1"><td colspan="2" align="left">
-                            <?php= $_SESSION[des]; ?>
+                            <?php echo  $_SESSION[des]; ?>
                         </td></tr>
                     <?php
                     }
@@ -1185,11 +1185,11 @@ else
             $def_cur=mysql_fetch_array($cur);
             $curr=$def_cur['set_value'];
             ?>
-            <!--  <tr><td><b>Currency</b></td><td align="left"><?php=$_SESSION[currency]?></td></tr> -->
+            <!--  <tr><td><b>Currency</b></td><td align="left"><?php echo $_SESSION[currency]?></td></tr> -->
             <?php if($_SESSION[min_amt])
             { 
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Minimum Bid Amount</b></td><td align="left"><?php=$curr.$_SESSION[min_amt]?></td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Minimum Bid Amount</b></td><td align="left"><?php echo $curr.$_SESSION[min_amt]?></td></tr>
             <?php
             }
             ?>
@@ -1221,33 +1221,33 @@ else
             <?php if($_SESSION[rev_price])
             {
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Reserve Price</b></td><td><?php= $curr.$_SESSION[rev_price] ?></td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Reserve Price</b></td><td><?php echo  $curr.$_SESSION[rev_price] ?></td></tr>
             <?php
             }
             ?>
             <?php if($_SESSION[start_delay])
             {
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Start Delay</b></td><td><?php= $_SESSION[start_delay]." Days" ?></td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Start Delay</b></td><td><?php echo  $_SESSION[start_delay]." Days" ?></td></tr>
             <?php
             }
             ?>
             <?php if($_SESSION[quick_price])
             {
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Quick Buy Price</b></td><td><?php=$curr.$_SESSION[quick_price] ?></td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Quick Buy Price</b></td><td><?php echo $curr.$_SESSION[quick_price] ?></td></tr>
             <?php
             }
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Duration  </b></td><td><?php= $_SESSION[dur]."Days" ?></td></tr>
-            <!-- <tr><td><b>Size of Quantity</b></td><td><?php= $_SESSION[size_of_qty] ?></td></tr> -->
+            <tr bgcolor="#eeeee1"><td><b>Duration  </b></td><td><?php echo  $_SESSION[dur]."Days" ?></td></tr>
+            <!-- <tr><td><b>Size of Quantity</b></td><td><?php echo  $_SESSION[size_of_qty] ?></td></tr> -->
 
-            <tr bgcolor="#eeeee1"><td><b>Quantity </b></td><td> <?php= $_SESSION[qty]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Quantity </b></td><td> <?php echo  $_SESSION[qty]; ?> </td></tr>
 
             <?php if($_SESSION[theme_id])
             {
             ?>
-            <tr bgcolor="#eeeee1"><td><b>Listing Designer </b></td><td>Theme:  <?php= $_SESSION[theme]; ?> 
+            <tr bgcolor="#eeeee1"><td><b>Listing Designer </b></td><td>Theme:  <?php echo  $_SESSION[theme]; ?> 
                     <br />
                     <?php if($_SESSION[layout])
                     {
@@ -1263,7 +1263,7 @@ else
                     $layout_dis="Standard";
                     ?>
                     Layout:
-                    <?php= $layout_dis; ?> 
+                    <?php echo  $layout_dis; ?> 
                     <?php
                     }
                     ?>
@@ -1289,21 +1289,21 @@ else
             <?php 	if($_SESSION[image1])
             {
             ?>
-            <tr align="center" bgcolor="#eeeee1"><td><img src="../images/<?php= $_SESSION[image1] ?>"></td>
+            <tr align="center" bgcolor="#eeeee1"><td><img src="../images/<?php echo  $_SESSION[image1] ?>"></td>
                 <?php
                 }
                 ?>
                 <?php 	if($_SESSION[image2])
                 {
                 ?>
-                <td><img src="../images/<?php= $_SESSION[image2] ?>"></td>
+                <td><img src="../images/<?php echo  $_SESSION[image2] ?>"></td>
                 <?php
                 }
                 ?>
                 <?php 	if($_SESSION[image3])
                 {
                 ?>
-                <td><img src="../images/<?php= $_SESSION[image3] ?>"></td>
+                <td><img src="../images/<?php echo  $_SESSION[image3] ?>"></td>
                 <?php
                 }
                 ?>
@@ -1311,21 +1311,21 @@ else
             <?php 	if($_SESSION[image4])
             {
             ?>
-            <tr align="center"><td><img src="../images/<?php= $_SESSION[image4] ?>"></td>
+            <tr align="center"><td><img src="../images/<?php echo  $_SESSION[image4] ?>"></td>
                 <?php
                 }
                 ?>
                 <?php 	if($_SESSION[image5])
                 {
                 ?>
-                <td><img src="../images/<?php= $_SESSION[image5] ?>"></td>
+                <td><img src="../images/<?php echo  $_SESSION[image5] ?>"></td>
                 <?php
                 }
                 ?>
                 <?php 	if($_SESSION[image6])
                 {
                 ?>
-                <td><img src="../images/<?php= $_SESSION[image6] ?>"></td>
+                <td><img src="../images/<?php echo  $_SESSION[image6] ?>"></td>
                 <?php
                 }
                 ?>
@@ -1333,7 +1333,7 @@ else
             <?php 	if($_SESSION[image7])
             {
             ?>
-            <tr align="center"><td><img src="../images/<?php= $_SESSION[image7] ?>"></td></tr>
+            <tr align="center"><td><img src="../images/<?php echo  $_SESSION[image7] ?>"></td></tr>
             <?php
             }
             ?>
@@ -1396,7 +1396,7 @@ else
                     if($ship_row['ship_id']==$shipping[$i])
                     {
                     ?>
-                    <?php=$ship_row[location];?>&nbsp;
+                    <?php echo $ship_row[location];?>&nbsp;
                     <?php
                     }
                     }
@@ -1404,7 +1404,7 @@ else
                     } 
                     ?>
                 </td></tr>
-            <tr bgcolor="#eeeee1"><td><b>Shipping Amount</b></td><td> <?php= $curr.$_SESSION[shipping_amt]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Shipping Amount</b></td><td> <?php echo  $curr.$_SESSION[shipping_amt]; ?> </td></tr>
             <!--	<tr bgcolor="#eeeee1"><td><b>Buyer Requirements</b></td><td>
                 
             <?php
@@ -1423,7 +1423,7 @@ else
              <?php IF($_SESSION[blockbuyerfeedbakscore]) 
              {
              ?>
-             <div>Have a feedback score of <?php= $_SESSION[feedbackscore] ?> or lower</div>
+             <div>Have a feedback score of <?php echo  $_SESSION[feedbackscore] ?> or lower</div>
              <?php
              }
              ?>
@@ -1437,7 +1437,7 @@ else
              <?php IF($_SESSION[ItemLimitoption]) 
              {
              ?>
-             Are currently winning or have bought  <?php= $_SESSION[ItemLimitoption] ?> of your items in 10 the last  days  
+             Are currently winning or have bought  <?php echo  $_SESSION[ItemLimitoption] ?> of your items in 10 the last  days  
              <?php
              }
              ?>
@@ -1457,11 +1457,11 @@ else
                         <p>Are currently winning or have bought 7 of your items in the last 10 days</p> -->
             <!--	</td>
                     </tr>-->
-            <tr bgcolor="#eeeee1"><td><b>Item must be returned within:</b></td><td> <?php= $_SESSION[refund_days]; ?> </td></tr>
-            <tr bgcolor="#eeeee1"><td><b>Refund will be given as: </b></td><td> <?php= $_SESSION[refund_method]; ?> </td></tr>
-            <tr bgcolor="#eeeee1"><td><strong>Return Policy Details:</strong></td><td> <?php= $_SESSION[returnpolicy_instructions]; ?> </td></tr>
-            <tr bgcolor="#eeeee1"><td><strong>Payment instructions:</strong></td> <td> <?php= $_SESSION[payment_instructions]; ?> </td></tr>
-            <tr bgcolor="#eeeee1"><td><b>Tax</b></td><td align="left"><?php=$_SESSION[tax]."%"?></td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Item must be returned within:</b></td><td> <?php echo  $_SESSION[refund_days]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Refund will be given as: </b></td><td> <?php echo  $_SESSION[refund_method]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><strong>Return Policy Details:</strong></td><td> <?php echo  $_SESSION[returnpolicy_instructions]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><strong>Payment instructions:</strong></td> <td> <?php echo  $_SESSION[payment_instructions]; ?> </td></tr>
+            <tr bgcolor="#eeeee1"><td><b>Tax</b></td><td align="left"><?php echo $_SESSION[tax]."%"?></td></tr>
         </table>
     </td></tr>
 

@@ -8,7 +8,7 @@ if(empty($_SESSION['userid']))
     </tr>
     <tr>
         <td height="5" colspan="3" style="padding-left:50px; color:#4C639A; font-size:24px">
-            Bem vindo ao <?php=$sitename_fetch['set_value']?>
+            Bem vindo ao <?php echo $sitename_fetch['set_value']?>
         </td>
     </tr>
     <!-- <tr>
@@ -16,14 +16,14 @@ if(empty($_SESSION['userid']))
      </tr>-->
     <tr>
         <td width="26">&nbsp;</td>
-        <td width="396" class="banner1"><?php=$site_announcement?></td>
+        <td width="396" class="banner1"><?php echo $site_announcement?></td>
         <td width="24">&nbsp;</td>
     </tr>
     <tr>
         <td colspan="3"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td width="5%">&nbsp;</td>
-                    <td colspan="2"><div align="left"><a href="signin.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61', '', 'images/signino.gif', 1)"><img src="images/signin.gif" name="Image61" width="83" height="27" border="0" id="Image61" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<font style="color:#F96403; font-size:16px"><b>Novo no <?php=$sitename_fetch['set_value']?>?</b></font></div> </td>
+                    <td colspan="2"><div align="left"><a href="signin.php" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61', '', 'images/signino.gif', 1)"><img src="images/signin.gif" name="Image61" width="83" height="27" border="0" id="Image61" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<font style="color:#F96403; font-size:16px"><b>Novo no <?php echo $sitename_fetch['set_value']?>?</b></font></div> </td>
                     <td width="31%">&nbsp;</td>
                 </tr>
             </table></td>
@@ -51,7 +51,7 @@ else
     </tr>
     <tr>
         <td height="5" colspan="3" style="padding-left:50px; color:#4C639A; font-size:24px">
-            Bem vindo ao <?php=$sitename_fetch['set_value']?>
+            Bem vindo ao <?php echo $sitename_fetch['set_value']?>
         </td>
     </tr>
     <!--<tr>
@@ -59,7 +59,7 @@ else
     </tr>-->
     <tr>
         <td width="26">&nbsp;</td>
-        <td width="396" class="banner1"><?php=$site_announcement?></td>
+        <td width="396" class="banner1"><?php echo $site_announcement?></td>
         <td width="24">&nbsp;</td>
     </tr>
     <tr>

@@ -8,7 +8,7 @@ while($cat_row1=mysql_fetch_array($sub_res1))
 {
 if($cat_row1['category_id'])
 {
-$cat1.="category_id=".$cat_row1[category_id]." or ";
+$cat1.="category_id=".$cat_row1['category_id']." or ";
 $ssid1=$cat_row1['category_id'];
 $_SESSION[catt1]=$_SESSION[catt1]."$cat1";
 easy_cat_display124($ssid1,$cat1);
@@ -69,7 +69,7 @@ easy_cat_display124($ssid1,$cat1);
     <tr>
         <td width="7%">&nbsp;</td>
         <td width="10%"><img src="images/categbullet.gif" alt="" width="8" height="7" /></td>
-        <td width="83%" class="searchresult2txt"><a href="search.php?mode=linkmode&category_id=<?php=$recordcatlist['category_id'];?>" class="searchresult2txt"><?php=$displaycategoryname;?>... (<?php=$sqlnumcatcount;?>)</a></td>
+        <td width="83%" class="searchresult2txt"><a href="search.php?mode=linkmode&category_id=<?php echo $recordcatlist['category_id'];?>" class="searchresult2txt"><?php echo $displaycategoryname;?>... (<?php echo $sqlnumcatcount;?>)</a></td>
     </tr>
     <?php
     $_SESSION['catt1']="";

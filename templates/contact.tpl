@@ -236,7 +236,7 @@
                                     <tr>
                                         <td>&nbsp;</td>
                                         <td class="banner1">Priority</td>
-                                        <td><select name="cboPriority" style="width:75;height:20;font-size=12;font-family:arial">
+                                        <td><select name="cboPriority" style="width:75;height:20;font-size:12;font-family:arial">
                                                 <option value="">Select</option>
                                                 <option value="High">High</option>
                                                 <option value="Normal">Normal</option>
@@ -250,7 +250,7 @@
                                     <tr>
                                         <td>&nbsp;</td>
                                         <td class="banner1">Contact Purpose </td>
-                                        <td> <select name="cboPurpose" style="width:170;height:20;font-size=12;font-family:arial">
+                                        <td> <select name="cboPurpose" style="width:170;height:20;font-size:12;font-family:arial">
                                                 <option value="">Select</option>
                                                 <option value="Login">Login</option>
                                                 <option value="Registration">Registration</option>

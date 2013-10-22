@@ -66,7 +66,7 @@
                             <?php if(!empty($err_cur))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#cbocurrency" onclick="sel('cbocurrency')" class="header_text2">Currency</a> - <?php= $err_cur; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#cbocurrency" onclick="sel('cbocurrency')" class="header_text2">Currency</a> - <?php echo  $err_cur; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -74,28 +74,28 @@
                             <?php if(!empty($err_dur))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php= $err_dur; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#cbodur" onclick="sel('cbodur')" class="header_text2">Duration</a> - <?php echo  $err_dur; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_min_amt))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_min_amt" onclick="sel('txt_min_amt')" class="header_text2">Minimum Bid Amount</a> - <?php= $err_min_amt; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_min_amt" onclick="sel('txt_min_amt')" class="header_text2">Minimum Bid Amount</a> - <?php echo  $err_min_amt; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_rev_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_rev_price" onclick="sel('txt_rev_price')" class="header_text2">Reserve Price</a> - <?php= $err_rev_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_rev_price" onclick="sel('txt_rev_price')" class="header_text2">Reserve Price</a> - <?php echo  $err_rev_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_revprice))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_rev_price" onclick="sel('txt_rev_price')" class="header_text2">Reserve Price</a> - <?php= $err_revprice; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_rev_price" onclick="sel('txt_rev_price')" class="header_text2">Reserve Price</a> - <?php echo  $err_revprice; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -105,7 +105,7 @@
                             if(!empty($err_bid_inc))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_bid_inc" onclick="sel('txt_bid_inc')" class="header_text2">Bid Increment</a> - <?php= $err_bid_inc; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_bid_inc" onclick="sel('txt_bid_inc')" class="header_text2">Bid Increment</a> - <?php echo  $err_bid_inc; ?></td></tr>
                             <?php 
                             } 
                             }
@@ -114,21 +114,21 @@
                             <?php if(!empty($err_quickprice))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_quick" onclick="sel('txt_quick')" class="header_text2">Quick Buy Price</a> - <?php= $err_quickprice; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_quick" onclick="sel('txt_quick')" class="header_text2">Quick Buy Price</a> - <?php echo  $err_quickprice; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_fix_price))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_quick" onclick="sel('txt_quick')" class="header_text2">Quick Buy Price</a> - <?php= $err_fix_price; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_quick" onclick="sel('txt_quick')" class="header_text2">Quick Buy Price</a> - <?php echo  $err_fix_price; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_qty" onclick="sel('txt_qty')" class="header_text2">Quantity</a> - <?php= $err_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#txt_qty" onclick="sel('txt_qty')" class="header_text2">Quantity</a> - <?php echo  $err_qty; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -138,7 +138,7 @@
                             if(!empty($err_size_qty))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#size_of_qty" onclick="sel('size_of_qty')" class="header_text2">Size of Quantity</a> - <?php= $err_size_qty; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#size_of_qty" onclick="sel('size_of_qty')" class="header_text2">Size of Quantity</a> - <?php echo  $err_size_qty; ?></td></tr>
                             <?php 
                             } 
                             ?>
@@ -148,56 +148,56 @@
                             <?php if(!empty($err_img1))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img1" onclick="sel('img1')" class="header_text2">Image1</a> - <?php= $err_img1; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img1" onclick="sel('img1')" class="header_text2">Image1</a> - <?php echo  $err_img1; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img2))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img2" onclick="sel('img2')" class="header_text2">Image2</a> - <?php= $err_img2; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img2" onclick="sel('img2')" class="header_text2">Image2</a> - <?php echo  $err_img2; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img3))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img3" onclick="sel('img3')" class="header_text2">Image3</a> - <?php= $err_img3; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img3" onclick="sel('img3')" class="header_text2">Image3</a> - <?php echo  $err_img3; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img4))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img4" onclick="sel('img4')" class="header_text2">Image4</a> - <?php= $err_img4; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img4" onclick="sel('img4')" class="header_text2">Image4</a> - <?php echo  $err_img4; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img5))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img5" onclick="sel('img5')" class="header_text2">Image5</a> - <?php= $err_img5; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img5" onclick="sel('img5')" class="header_text2">Image5</a> - <?php echo  $err_img5; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img6))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img6" onclick="sel('img6')" class="header_text2">Image5</a> - <?php= $err_img6; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img6" onclick="sel('img6')" class="header_text2">Image5</a> - <?php echo  $err_img6; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_img7))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img7" onclick="sel('img7')" class="header_text2">Image5</a> - <?php= $err_img7; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#img7" onclick="sel('img7')" class="header_text2">Image5</a> - <?php echo  $err_img7; ?></td></tr>
                             <?php 
                             }
                             ?>
                             <?php if(!empty($err_video))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#videofile" onclick="sel('videofile')" class="header_text2">Video</a> - <?php= $err_video; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="promotelistings.php#videofile" onclick="sel('videofile')" class="header_text2">Video</a> - <?php echo  $err_video; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -207,9 +207,9 @@
     <?php
     }
     ?>
-    <!--<tr><td><font class="categories_fonttype"><b>Title:</b></font>&nbsp;&nbsp;<font class="banner1"><?php= $_SESSION[item_name]; ?></font></td></tr>
+    <!--<tr><td><font class="categories_fonttype"><b>Title:</b></font>&nbsp;&nbsp;<font class="banner1"><?php echo  $_SESSION[item_name]; ?></font></td></tr>
     <tr><td><font class="categories_fonttype"><b>Subtitle:</b></font>
-    &nbsp;&nbsp;<font class="banner1"><?php= $_SESSION[subtitle]; ?></font></td></tr>-->
+    &nbsp;&nbsp;<font class="banner1"><?php echo  $_SESSION[subtitle]; ?></font></td></tr>-->
     <tr>
         <td colspan="2" height="32" border="0" align="left" cellpadding="0" cellspacing="0">
             <table background="images/abtusbg.jpg" width="948" height="32" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -224,7 +224,7 @@
                     {
                     ?>
                     <tr><td class="categories_fonttype">
-                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_cur; ?></font>
+                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_cur; ?></font>
                             <br>
                             <font class="moretxt"><b>Currency <font color="#FF0000">*</font></b></font></td>
                     </tr>
@@ -251,13 +251,13 @@
                                 if(trim($currency_row['currency'])==trim($currency))
                                 {
                                 ?>
-                                <option value="<?php= $currency_row['currency'] ?>" selected><?php= $currency_row['currency']?></option>
+                                <option value="<?php echo  $currency_row['currency'] ?>" selected><?php echo  $currency_row['currency']?></option>
                                 <?php 
                                 }
                                 else
                                 {
                                 ?>
-                                <option value="<?php= $currency_row['currency'] ?>"><?php= $currency_row['currency']?></option>
+                                <option value="<?php echo  $currency_row['currency'] ?>"><?php echo  $currency_row['currency']?></option>
                                 <?php
                                 }
                                 }
@@ -380,7 +380,7 @@
                             <?php if(!empty($err_qty))
                             {
                             ?>
-                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_qty?></font>
+                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_qty?></font>
                             <br>
                             <b><font class="moretxt">Quantity</font></b>
                             <b><font color="#FF0000">*</font></b> 
@@ -407,7 +407,7 @@
                             <?php if(!empty($err_dur))
                             { 
                             ?>
-                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_dur; ?></font>
+                            <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_dur; ?></font>
                             <br>
                             <b><font class="moretxt">Duration</font></b>
                             <b><font color="#FF0000">*</font></b>
@@ -427,7 +427,7 @@
                         {
                         ?>
                         <td width=621>
-                            <input type="text" name="txt_qty" onBlur="numchk(this);" onKeyPress="numchk(this);" onKeyDown="numchk(this);" onKeyUp="numchk(this);"  class="txtsmall" maxlength="5" value=<?php= $qty; ?>>
+                            <input type="text" name="txt_qty" onBlur="numchk(this);" onKeyPress="numchk(this);" onKeyDown="numchk(this);" onKeyUp="numchk(this);"  class="txtsmall" maxlength="5" value=<?php echo  $qty; ?>>
                         </td>
                         <?php
                         }
@@ -447,13 +447,13 @@
                                 <?php if($dur==$row['duration'])
                                 {
                                 ?>
-                                <option value="<?php= $row['duration'] ?>" selected><?php= $row['duration'] ?> Days</option>
+                                <option value="<?php echo  $row['duration'] ?>" selected><?php echo  $row['duration'] ?> Days</option>
                                 <?php
                                 }
                                 else
                                 {
                                 ?>
-                                <option value="<?php= $row['duration'] ?>" ><?php= $row['duration'] ?> Days</option>
+                                <option value="<?php echo  $row['duration'] ?>" ><?php echo  $row['duration'] ?> Days</option>
                                 <?php
                                 }
                                 } // while($row=mysql_fetch_array($table))
@@ -492,7 +492,7 @@
                         {
                         ?>
                         <img src="images/warning_9x10.gif">
-                        &nbsp;<font class="moretxt"><?php= $err_min_amt?></font>
+                        &nbsp;<font class="moretxt"><?php echo  $err_min_amt?></font>
                         <br>
                         <b><font class="moretxt">Minimum Bid Amount</font></b>
                         <b><font color="#FF0000">*</font></b>
@@ -526,7 +526,7 @@
                         if($reserve_fee)
                         {
                         ?>
-                        <font  color="#669966" size="2"><b>  ( <?php=$cur_sell?> <?php= $reserve_fee ?> )</b></font>
+                        <font  color="#669966" size="2"><b>  ( <?php echo $cur_sell?> <?php echo  $reserve_fee ?> )</b></font>
                         <?php
                         }
                         else
@@ -537,8 +537,8 @@
                         }
                         ?>
                     </td></tr>
-                <tr><td width=494><input type="text" name="txt_min_amt" onKeyPress="return numbersonly(event);" maxlength="8" class="txtsmall" value=<?php= $min_amt; ?>></td>
-                    <td width=442><input type="text" name="txt_rev_price" onKeyPress="return numbersonly(event);" class="txtsmall" maxlength="8" value=<?php= $rev_price; ?>></td></tr>
+                <tr><td width=494><input type="text" name="txt_min_amt" onKeyPress="return numbersonly(event);" maxlength="8" class="txtsmall" value=<?php echo  $min_amt; ?>></td>
+                    <td width=442><input type="text" name="txt_rev_price" onKeyPress="return numbersonly(event);" class="txtsmall" maxlength="8" value=<?php echo  $rev_price; ?>></td></tr>
                 <tr>
                     <td><b><font size="2" color="green">Private Listings</font></b></td>
                     <?php
@@ -549,7 +549,7 @@
                         <?php if(!empty($err_bid_inc))
                         {
                         ?>
-                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_bid_inc?></font>
+                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_bid_inc?></font>
                         <br>
                         <b><font class="moretxt">Bid Increment</font></b>
                         <?php
@@ -571,7 +571,7 @@
                         <input type="checkbox"  name=chkprivatelisting  value="yes" <?php if($_SESSION[privatelistings]) { ?> checked="checked" <?php  } ?> >Private Listings</td>
                     <?php if($bid_permission=='yes'){ ?>
                     <td width=442>
-                        <input type="text" name="txt_bid_inc" onKeyPress="return numbersonly(event);" class="txtsmall" maxlength="5" value=<?php= $bid_inc; ?>></td>
+                        <input type="text" name="txt_bid_inc" onKeyPress="return numbersonly(event);" class="txtsmall" maxlength="5" value=<?php echo  $bid_inc; ?>></td>
                     <?php
                     }
                     ?> 
@@ -609,7 +609,7 @@
                 </tr>
 
                 <tr>
-                    <td width=790><input type="text" name="txt_quick" onKeyPress="return numbersonly(event);" class="txtsmall" value="<?php= $quick; ?>" maxlength="8" /></td>
+                    <td width=790><input type="text" name="txt_quick" onKeyPress="return numbersonly(event);" class="txtsmall" value="<?php echo  $quick; ?>" maxlength="8" /></td>
                 </tr>
             </table></td></tr>
 
@@ -623,7 +623,7 @@
                 <tr><td class="categories_fonttype">
                         <?php if(!empty($err_img1))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img1; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img1; ?></font>
  <br>
  <b><font class="moretxt">Image1(Free)</font></b>
  <?php
@@ -636,11 +636,11 @@
                         }
                         ?>
                         <br />
-                        <input type="file" name="img1" value="<?php= $img1; ?>">
+                        <input type="file" name="img1" value="<?php echo  $img1; ?>">
                         <?php if(!empty($_SESSION[image1]))
                         {
                         ?>
-                        <img src="thumbnail/<?php= $_SESSION[image1] ?>" width=30 height=30>
+                        <img src="thumbnail/<?php echo  $_SESSION[image1] ?>" width=30 height=30>
                         <?php
                         }
                         ?>
@@ -650,143 +650,143 @@
                         <?php if(!empty($err_img2))
                         {
                         ?>
-                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img2; ?></font>
+                        <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img2; ?></font>
                         <br>
-                        <b><font class="moretxt">Image2  <?php if($img_listing_fee) { ?> (<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php } ?></font></b>
+                        <b><font class="moretxt">Image2  <?php if($img_listing_fee) { ?> (<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php } ?></font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image2 <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>( <?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
+                        <b><font size=2 >Image2 <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>( <?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
                         <?php }
                         ?>
                         <br />
-                        <input type="file" name="img2" value=<?php= $img2; ?>>
+                        <input type="file" name="img2" value=<?php echo  $img2; ?>>
                                <?php if(!empty($_SESSION[image2]))
                                {
                                ?>
-                               <img src="thumbnail/<?php= $_SESSION[image2] ?>" width=30 height=30>
+                               <img src="thumbnail/<?php echo  $_SESSION[image2] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
                 <tr><td colspan="2" class="categories_fonttype">
                         <?php if(!empty($err_img3))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img3; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img3; ?></font>
  <br>
- <b><font class="moretxt">Image3  <?php if($img_listing_fee) { ?> (<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php } ?> </font></b>
+ <b><font class="moretxt">Image3  <?php if($img_listing_fee) { ?> (<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php } ?> </font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image3  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
+                        <b><font size=2 >Image3  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
                         <?php 
                         }
                         ?>
                         <br />
-                        <input type="file" name="img3" value=<?php= $img3; ?>>
+                        <input type="file" name="img3" value=<?php echo  $img3; ?>>
                                <?php if(!empty($_SESSION[image3]))
                                {
                                ?>
-                               <img src="thumbnail/<?php= $_SESSION[image3] ?>" width=30 height=30>
+                               <img src="thumbnail/<?php echo  $_SESSION[image3] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
                 <tr><td colspan="2" class="categories_fonttype">
                         <?php if(!empty($err_img4))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img1; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img1; ?></font>
  <br>
- <b><font class="moretxt">Image4  <?php if($img_listing_fee) { ?> (<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php } ?></font></b>
+ <b><font class="moretxt">Image4  <?php if($img_listing_fee) { ?> (<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php } ?></font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image4  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
+                        <b><font size=2 >Image4  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
                         <?php 
                         }
                         ?>
                         <br />
-                        <input type="file" name="img4" value="<?php= $img4; ?>">
+                        <input type="file" name="img4" value="<?php echo  $img4; ?>">
                         <?php if(!empty($_SESSION[image4]))
                         {
                         ?>
-                        <img src="thumbnail/<?php= $_SESSION[image4] ?>" width=30 height=30>
+                        <img src="thumbnail/<?php echo  $_SESSION[image4] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
                 <tr><td colspan="2" class="categories_fonttype">
                         <?php if(!empty($err_img5))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img5; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img5; ?></font>
  <br>
- <b><font class="moretxt">Image5  <?php if($img_listing_fee) { ?> (<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php} ?> </font></b>
+ <b><font class="moretxt">Image5  <?php if($img_listing_fee) { ?> (<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php} ?> </font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image5  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
+                        <b><font size=2 >Image5  <?php if($img_listing_fee) { ?>  <font color="#669966" size="2"><b>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font> <?php } ?> </font></b>
                         <?php 
                         }
                         ?>
                         <br />
-                        <input type="file" name="img5" value="<?php= $img5; ?>">
+                        <input type="file" name="img5" value="<?php echo  $img5; ?>">
                         <?php if(!empty($_SESSION[image5]))
                         {
                         ?>
-                        <img src="thumbnail/<?php= $_SESSION[image5] ?>" width=30 height=30>
+                        <img src="thumbnail/<?php echo  $_SESSION[image5] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
                 <tr><td colspan="2" class="categories_fonttype">
                         <?php if(!empty($err_img6))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img6; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img6; ?></font>
  <br>
- <b><font class="moretxt">Image6 <?php if($img_listing_fee) { ?>(<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php } ?></font></b>
+ <b><font class="moretxt">Image6 <?php if($img_listing_fee) { ?>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php } ?></font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image6 <?php if($img_listing_fee) { ?> <font color="#669966" size="2"><b>(<?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font><?php}?></font></b>
+                        <b><font size=2 >Image6 <?php if($img_listing_fee) { ?> <font color="#669966" size="2"><b>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font><?php}?></font></b>
                         <?php 
                         }
                         ?>
                         <br />
-                        <input type="file" name="img6" value="<?php= $img6; ?>">
+                        <input type="file" name="img6" value="<?php echo  $img6; ?>">
                         <?php if(!empty($_SESSION[image6]))
                         {
                         ?>
-                        <img src="thumbnail/<?php= $_SESSION[image6] ?>" width=30 height=30>
+                        <img src="thumbnail/<?php echo  $_SESSION[image6] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
                 <tr><td colspan="2" class="categories_fonttype">
                         <?php if(!empty($err_img7))
                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_img7; ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_img7; ?></font>
  <br>
- <b><font class="moretxt">Image7 <?php if($img_listing_fee) { ?> (<?php= $default_cur ?> <?php= $img_listing_fee ?>) <?php } ?> </font></b>
+ <b><font class="moretxt">Image7 <?php if($img_listing_fee) { ?> (<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>) <?php } ?> </font></b>
                         <?php
                         }
                         else
                         {
                         ?>
-                        <b><font size=2 >Image7 <?php if($img_listing_fee) { ?> <font color="#669966" size="2"><b>(<?php= $default_cur ?> <?php= $img_listing_fee ?>)</b></font><?php} ?></font></b>
+                        <b><font size=2 >Image7 <?php if($img_listing_fee) { ?> <font color="#669966" size="2"><b>(<?php echo  $default_cur ?> <?php echo  $img_listing_fee ?>)</b></font><?php} ?></font></b>
                         <?php 
                         }
                         ?>
                         <br />
-                        <input type="file" name="img7" value="<?php= $img7; ?>">
+                        <input type="file" name="img7" value="<?php echo  $img7; ?>">
                         <?php if(!empty($_SESSION[image7]))
                         {
                         ?>
-                        <img src="thumbnail/<?php= $_SESSION[image7] ?>" width=30 height=30>
+                        <img src="thumbnail/<?php echo  $_SESSION[image7] ?>" width=30 height=30>
                         <?php
                         }
                         ?></td></tr>
@@ -797,10 +797,10 @@
                 </tr>
                 <tr>
                     <td width="200" align="left">
-                        <textarea name="videofile" style="width:220px; height:70px"><?php=stripslashes($videofileup);?></textarea>
+                        <textarea name="videofile" style="width:220px; height:70px"><?php echo stripslashes($videofileup);?></textarea>
                     </td>
                     <td width="700" align="left" valign="bottom">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:300px; height:20px"/><?php=$videolinkup?></textarea>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea name="videolink" rows="1" style="width:300px; height:20px"/><?php echo $videolinkup?></textarea>
                     </td>
                 </tr>
 
@@ -827,7 +827,7 @@
                             <tr><td width="339" class="categories_fonttype">
                                     <input type="checkbox" onclick="return val();" name="chklisting" value="yes" <?php if($listingdesinger) { echo "checked"; }?>>
                                            Listing designer&nbsp;
-                                           <?php if($listing_designer_fee) { ?> <font color="#669966" size="2"><b> (<?php= $default_cur ?> <?php= $listing_designer_fee ?>) <?php } ?>
+                                           <?php if($listing_designer_fee) { ?> <font color="#669966" size="2"><b> (<?php echo  $default_cur ?> <?php echo  $listing_designer_fee ?>) <?php } ?>
                                     </b></font> <br>
                                     <font color="#999999"> Get both a theme and layout to complement your listing. </font> </td></tr>
                             <tr class="categories_fonttype"><td><b>Select a theme</b></td><td width="321"><b>Select a layout</b></td> 
@@ -843,13 +843,13 @@
                                         if($theme_row[themes]=="$theme")
                                         {
                                         ?>
-                                        <option value="<?php= $theme_row[themes] ?>" selected="selected"> <?php= $theme_row[theme_name] ?> </option>
+                                        <option value="<?php echo  $theme_row[themes] ?>" selected="selected"> <?php echo  $theme_row[theme_name] ?> </option>
                                         <?php
                                         }
                                         else
                                         {
                                         ?>
-                                        <option value="<?php= $theme_row[themes] ?>" > <?php= $theme_row[theme_name] ?> </option>
+                                        <option value="<?php echo  $theme_row[themes] ?>" > <?php echo  $theme_row[theme_name] ?> </option>
                                         <?php
                                         }
                                         }
@@ -859,7 +859,7 @@
                                     <?php if($theme)
                                     {
                                     ?>
-                                    <img name="themeimg" src="images/<?php= $theme ?>"  id="themeimg" width="100" > 
+                                    <img name="themeimg" src="images/<?php echo  $theme ?>"  id="themeimg" width="100" > 
                                     <?php
                                     }
                                     else
@@ -945,7 +945,7 @@
                                     if(!empty($layout))
                                     {
                                     ?>
-                                    <img name="layoutimg" src="images/<?php=$layout?>"  id="layoutimg" width="100" height="100"> 
+                                    <img name="layoutimg" src="images/<?php echo $layout?>"  id="layoutimg" width="100" height="100"> 
                                     <?php
                                     }
                                     else
@@ -1137,9 +1137,9 @@
                         <?php
                         }
                         ?></td></tr>
-                <input type="hidden" name=mode value="<?php=$mode;?>">
+                <input type="hidden" name=mode value="<?php echo $mode;?>">
                 <input type="hidden" name=flag value="1">
-                <input type="hidden" name=item_id value="<?php=$sellitemid?>"/>
+                <input type="hidden" name=item_id value="<?php echo $sellitemid?>"/>
                 <tr><td colspan="2" align="center">
                         <?php if($mode=="" or $mode=="sellsimilar")
                         {

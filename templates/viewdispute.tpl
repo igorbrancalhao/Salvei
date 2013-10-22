@@ -91,8 +91,8 @@ $fromid=$site_admin_row[set_value];
                                                     ?>
                                                     <form name="dispute_form" action="viewdispute.php" method=post>
                                                         <tr bgcolor="#B8DEEE" class="detail9txt">
-                                                        <input type="hidden" name="len" value="<?php= $dispute_total_records?>">
-                                                        <input type="hidden" name="type" value="<?php= $type ?>">
+                                                        <input type="hidden" name="len" value="<?php echo  $dispute_total_records?>">
+                                                        <input type="hidden" name="type" value="<?php echo  $type ?>">
                                                         <td width="27%" ><font class="detail9txt"><b>Dispute opened on</b></font> </td>
                                                         <td colspan="4"><font class="detail9txt"><b>Other's party Ids</b></font> </td>
                                                         <td width="21%"   ><font class="detail9txt"><b>Credit Eligibility</b></font>  </td>
@@ -165,7 +165,7 @@ $fromid=$site_admin_row[set_value];
                                                             </td>
                                                             <td width="14%" class="tr_botborder">
 
-                                                                <a href="feedback.php?user_id=<?php=$user['user_id'];?>" class="header_text" >
+                                                                <a href="feedback.php?user_id=<?php echo $user['user_id'];?>" class="header_text" >
                                                                     <?php  if($user['user_name'])  echo $user['user_name']; ?>
                                                                 </a></td>
                                                             <td class="tr_botborder" colspan="4" style="padding-left:50px">
@@ -190,7 +190,7 @@ $fromid=$site_admin_row[set_value];
                                                                 if(!empty($imag_flag))
                                                                 {
                                                                 ?>
-                                                                <img src="images/<?php= $imag_flag ?>" >
+                                                                <img src="images/<?php echo  $imag_flag ?>" >
                                                                 <?php
                                                                 }
                                                                 }
@@ -221,7 +221,7 @@ $fromid=$site_admin_row[set_value];
 
                                                         <tr class="detail9txt">
                                                             <td colspan=5 align="left"  class="tr_botborder">
-                                                                <a href="<?php if($det_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $bid['item_id']?>" class="header_text">
+                                                                <a href="<?php if($det_row[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $bid['item_id']?>" class="header_text">
                                                                     <?php  echo $det_row['item_title']; ?></a>&nbsp;(<?php  echo $bid['item_id']; ?> )</td>
                                                             <td class="tr_botborder">&nbsp;</td> <td class="tr_botborder">
                                                                 <?php
@@ -230,13 +230,13 @@ $fromid=$site_admin_row[set_value];
                                                                 if($disputed_by=="buyer")
                                                                 {
                                                                 ?>
-                                                                <a href="enterresponsetobuyer.php?bid_id=<?php= $dispute_row[distute_bid_id] ?>&dispute_id=<?php= $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
+                                                                <a href="enterresponsetobuyer.php?bid_id=<?php echo  $dispute_row[distute_bid_id] ?>&dispute_id=<?php echo  $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
                                                                 <?php
                                                                 }
                                                                 else
                                                                 {
                                                                 ?>
-                                                                <a href="enterresponse.php?bid_id=<?php= $dispute_row[distute_bid_id] ?>&dispute_id=<?php= $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
+                                                                <a href="enterresponse.php?bid_id=<?php echo  $dispute_row[distute_bid_id] ?>&dispute_id=<?php echo  $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
                                                                 <?php
                                                                 }
                                                                 }
@@ -322,8 +322,8 @@ $fromid=$site_admin_row[set_value];
                                                                 ?>
                                                                 <form name="dispute_form" action="viewdispute.php" method=post>
                                                                     <tr>
-                                                                    <input type="hidden" name="len" value="<?php= $dispute_total_records?>">
-                                                                    <input type="hidden" name="type" value="<?php= $type ?>">
+                                                                    <input type="hidden" name="len" value="<?php echo  $dispute_total_records?>">
+                                                                    <input type="hidden" name="type" value="<?php echo  $type ?>">
                                                                     <td class="header_text" ><b>Dispute opened on</b> </td>
                                                                     <td class="header_text" colspan="4"><b>Other's party Ids</b> </td>
                                                                     <!-- <td  class="tr_botborder" ><b>Credit Eligibility</b>  </td> -->
@@ -385,7 +385,7 @@ $fromid=$site_admin_row[set_value];
                                                                         </td>
                                                                         <td class="tr_botborder" colspan="4">
 
-                                                                            <a href="feedback.php?user_id=<?php=$user['user_id'];?>" class="header_text" >
+                                                                            <a href="feedback.php?user_id=<?php echo $user['user_id'];?>" class="header_text" >
                                                                                 <?php  if($user['user_name'])  echo $user['user_name']; ?>
                                                                             </a>
 
@@ -407,7 +407,7 @@ $fromid=$site_admin_row[set_value];
 
                                                                     <tr class="detail9txt">
                                                                         <td colspan=5 align="left"  class="tr_botborder">&nbsp;
-                                                                            <a href="<?php if($bid[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $bid['item_id']?>" class="header_text">
+                                                                            <a href="<?php if($bid[selling_method]!=ads) {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $bid['item_id']?>" class="header_text">
                                                                                 <?php  echo $bid['item_title']; ?></a>&nbsp;(<?php  echo $bid['item_id']; ?> )</td>
                                                                         <td class="tr_botborder">&nbsp;</td> <td class="tr_botborder">&nbsp;
                                                                             <?php
@@ -417,13 +417,13 @@ $fromid=$site_admin_row[set_value];
                                                                             if($disputed_by=="seller")
                                                                             {
                                                                             ?>
-                                                                            <a href="enterresponsetoseller.php?bid_id=<?php= $dispute_row[distute_bid_id] ?>&dispute_id=<?php= $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
+                                                                            <a href="enterresponsetoseller.php?bid_id=<?php echo  $dispute_row[distute_bid_id] ?>&dispute_id=<?php echo  $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
                                                                             <?php
                                                                             }
                                                                             else
                                                                             {
                                                                             ?>
-                                                                            <a href="enterresnotreceived.php?bid_id=<?php= $dispute_row[distute_bid_id] ?>&dispute_id=<?php= $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
+                                                                            <a href="enterresnotreceived.php?bid_id=<?php echo  $dispute_row[distute_bid_id] ?>&dispute_id=<?php echo  $dispute_row[dispute_id] ?>" class="header_text">View dispute</a>
                                                                             <?php
                                                                             }
                                                                             }

@@ -33,29 +33,29 @@
             pay.innerHTML = "";
         }
         else if (payment == 1) {
-            txt = "<input type=text name=payid value=<?php=$payment_id;?>>";
+            txt = "<input type=text name=payid value=<?php echo $payment_id;?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>Paypal Id</b></font>" + txt;
         }
         else if (payment == 2) {
-            txt = "<input type=text name=payid value=<?php=$payid;?>>";
+            txt = "<input type=text name=payid value=<?php echo $payid;?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>INT-Gold Id</b></font> " + txt;
         }
         else if (payment == 3) {
-            txt = "<input type=text name=payid value=<?php=$payid;?>>";
-            txtname = "<input type=text name=payname value=<?php= $payname; ?>>";
+            txt = "<input type=text name=payid value=<?php echo $payid;?>>";
+            txtname = "<input type=text name=payname value=<?php echo  $payname; ?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>E-Gold Id</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " + txt + "<br><b>E-Gold name</b></font>" + txtname;
         }
         else if (payment == 4) {
-            txt = "<input type=text name=payid value=<?php=$payid;?>>";
+            txt = "<input type=text name=payid value=<?php echo $payid;?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>Money Bookers Id</b></font>" + txt;
         }
         else if (payment == 5) {
-            txt = "<input type=text name=payid value=<?php=$payid;?>>";
-            txtname = "<input type=text name=payname value=<?php= $payname; ?>>";
+            txt = "<input type=text name=payid value=<?php echo $payid;?>>";
+            txtname = "<input type=text name=payname value=<?php echo  $payname; ?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>E-Bullion Id</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " + txt + "<br><b>E-Bullion name</b></font>  " + txtname;
         }
         else if (payment == 6) {
-            txt = "<input type=text name=payid value=<?php=$payid;?>>";
+            txt = "<input type=text name=payid value=<?php echo $payid;?>>";
             document.getElementById("pay").innerHTML = "<font class=banner1 size=2><b>Stormpay Id</b></font>" + txt;
         }
     }
@@ -192,7 +192,7 @@
                             {
                             ?>
                             <tr><td>&nbsp;</td>
-                                <td class="banner1"><a href="edit_auction.php#txttitle" class="header_text2">Item Title</a> - <?php= $err_title; ?></td></tr>
+                                <td class="banner1"><a href="edit_auction.php#txttitle" class="header_text2">Item Title</a> - <?php echo  $err_title; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -200,7 +200,7 @@
                             if(!empty($err_des))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="banner1"><a href="edit_auction.php#areades" class="header_text2">Item Description</a> - <?php= $err_des; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="banner1"><a href="edit_auction.php#areades" class="header_text2">Item Description</a> - <?php echo  $err_des; ?></td></tr>
                             <?php 
                             }
                             ?>
@@ -273,7 +273,7 @@
                                 <tr><td>
                                         <?php if(!empty($err_title))
                                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_title ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_title ?></font>
  <br>
  <b><font class="moretxt">Item title</font></b>
  <?php
@@ -287,7 +287,7 @@
                                         ?>
                                     </td></tr>
                                 <tr>
-                                    <td width=270><input type="text" name="txttitle" class="txtbig" value="<?php= $item_title; ?>">
+                                    <td width=270><input type="text" name="txttitle" class="txtbig" value="<?php echo  $item_title; ?>">
                                         <font color="#666666">Ensure your title has specific details about your item. </font></td>
                                 </tr>
                                 <tr><td>
@@ -295,7 +295,7 @@
                                         {
                                         ?>
                                         <img src="images/warning_9x10.gif">&nbsp;
-                                        <font class="moretxt"><?php= $err_des; ?></font>
+                                        <font class="moretxt"><?php echo  $err_des; ?></font>
                                         <br>
                                         <b><font class="moretxt">Item Description</font></b>
                                         <?php
@@ -349,7 +349,7 @@
                                                     $content = rteSafe($_POST["rte1"]);
                                             }
                                             ? >
-                                                    rte1.html = '<?php=$content;?>';
+                                                    rte1.html = '<?php echo $content;?>';
                                             //rte1.toggleSrc = false;
                                             rte1.build();
                                             //-->
@@ -375,7 +375,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image1"><img src="thumbnail/<?php= $image1 ?>" width=30 height=30>
+                                        <input type="file" name="image1"><img src="thumbnail/<?php echo  $image1 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -397,7 +397,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image2"><img src="thumbnail/<?php= $image2 ?>" width=30 height=30>
+                                        <input type="file" name="image2"><img src="thumbnail/<?php echo  $image2 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -419,7 +419,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image3"><img src="thumbnail/<?php= $image3 ?>" width=30 height=30>
+                                        <input type="file" name="image3"><img src="thumbnail/<?php echo  $image3 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -441,7 +441,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image4"><img src="thumbnail/<?php= $image4 ?>" width=30 height=30>
+                                        <input type="file" name="image4"><img src="thumbnail/<?php echo  $image4 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -463,7 +463,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image5"><img src="thumbnail/<?php= $image5 ?>" width=30 height=30>
+                                        <input type="file" name="image5"><img src="thumbnail/<?php echo  $image5 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -485,7 +485,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image6"><img src="thumbnail/<?php= $image6 ?>" width=30 height=30>
+                                        <input type="file" name="image6"><img src="thumbnail/<?php echo  $image6 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -507,7 +507,7 @@
                                         <?php
                                         }
                                         ?>
-                                        <input type="file" name="image7"><img src="thumbnail/<?php= $image7 ?>" width=30 height=30>
+                                        <input type="file" name="image7"><img src="thumbnail/<?php echo  $image7 ?>" width=30 height=30>
                                     </td></tr>
                                 <?php
                                 }
@@ -542,13 +542,13 @@
                                             if($pay_row[gateway_id]==$payment)
                                             {
                                             ?>
-                                            <option value="<?php=$pay_row['gateway_id'];?>" selected><?php=$pay_row[payment_gateway];?></option>
+                                            <option value="<?php echo $pay_row['gateway_id'];?>" selected><?php echo $pay_row[payment_gateway];?></option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php=$pay_row['gateway_id'];?>"><?php=$pay_row[payment_gateway];?></option>
+                                            <option value="<?php echo $pay_row['gateway_id'];?>"><?php echo $pay_row[payment_gateway];?></option>
                                             <?php
                                             }
                                             }
@@ -574,7 +574,7 @@
                                 <tr><td align="left" class="banner1">
                                         <?php if((!empty($err_amt))||(!empty($err_ship)))
                                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_ship ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_ship ?></font>
  <br>
  <b><font class="moretxt">Shipping Amount</font></b>
  <?php
@@ -587,11 +587,11 @@
                                         }
                                         ?>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <input type="text" name=txtship_amt class="txtsmall" value="<?php=$shipping_amt;?>"></td></tr>
+                                        <input type="text" name=txtship_amt class="txtsmall" value="<?php echo $shipping_amt;?>"></td></tr>
                                 <tr><td align="left" class="banner1"> 
                                         <?php if(!empty($err_tax))
                                         {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_tax ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_tax ?></font>
  <br>
  <b><font class="moretxt">Tax Amount</font></b>
  <?php
@@ -605,7 +605,7 @@
                                         ?>
 
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
-                                        <input type="text" name=tax class="txtsmall" value="<?php=$tax;?>"> <b> % </b> 
+                                        <input type="text" name=tax class="txtsmall" value="<?php echo $tax;?>"> <b> % </b> 
                                     </td>
                                 </tr>
                                 <tr><td class="banner1">
@@ -635,13 +635,13 @@
                                             <?php if($refund_days==$row['duration'])
                                             {
                                             ?>
-                                            <option value="<?php= $row['duration'] ?>" selected> <?php= $row['duration'] ?> Days</option>
+                                            <option value="<?php echo  $row['duration'] ?>" selected> <?php echo  $row['duration'] ?> Days</option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php= $row['duration'] ?>" > <?php= $row['duration'] ?> Days</option>
+                                            <option value="<?php echo  $row['duration'] ?>" > <?php echo  $row['duration'] ?> Days</option>
                                             <?php
                                             }
                                             } // while($row=mysql_fetch_array($table))
@@ -705,19 +705,19 @@
                                         </select></td></tr>
                                 <tr><td class="banner1"><b>Return Policy Details</b></td></tr>
                                 <tr><td>
-                                        <textarea name="txtploicy" cols="60" rows="6"><?php= $returnpolicy_instructions ?></textarea></td></tr>
+                                        <textarea name="txtploicy" cols="60" rows="6"><?php echo  $returnpolicy_instructions ?></textarea></td></tr>
                                 <tr><td class="banner1"><font class="categories_fonttype"><b>&nbsp;&nbsp;Payment Instructions</b></font></td></tr>
                                 <tr><td><font color="#999999">Give clear instructions to assist your buyer with payment and shipping.</font></td></tr>
                                 <tr><td>
-                                        <textarea name="txtpaymentins" cols="60" rows="6" ><?php= $payment_instructions ?> </textarea>
+                                        <textarea name="txtpaymentins" cols="60" rows="6" ><?php echo  $payment_instructions ?> </textarea>
                                     </td></tr>
                                 <input type="hidden" name=flag value="1">
-                                <input type="hidden" name="cat_id" value=<?php= $cat_id; ?>>
-                                       <input type="hidden" name=mode value="<?php= $mode; ?>">
-                                <input type="hidden" name=sell_format value="<?php= $sell_format; ?>">
-                                <input type="hidden" name=item_id value=<?php= $item_id; ?>>
-                                       <input type="hidden" name=own_html_flag value=<?php= $ownhtml; ?>>
-                                       <input type="hidden" name=sellitemid value=<?php=$sellitemid?>>
+                                <input type="hidden" name="cat_id" value=<?php echo  $cat_id; ?>>
+                                       <input type="hidden" name=mode value="<?php echo  $mode; ?>">
+                                <input type="hidden" name=sell_format value="<?php echo  $sell_format; ?>">
+                                <input type="hidden" name=item_id value=<?php echo  $item_id; ?>>
+                                       <input type="hidden" name=own_html_flag value=<?php echo  $ownhtml; ?>>
+                                       <input type="hidden" name=sellitemid value=<?php echo $sellitemid?>>
                                        <input type="hidden" name="content" value="">
                                 <tr><td colspan="2" align="center">
 

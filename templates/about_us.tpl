@@ -80,27 +80,27 @@
                                                 <td width="23">&nbsp;</td>
                                                 <td width="894" class="abtustxt"><table cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td colspan="2" class="categories_fonttype"><?php= $name; ?></td>
+                                                            <td colspan="2" class="categories_fonttype"><?php echo  $name; ?></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="23" height="6"></td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="2" class="banner1"><?php= $address; ?></td>
+                                                            <td colspan="2" class="banner1"><?php echo  $address; ?></td>
                                                         </tr>
                                                         <tr>
                                                             <td height="6"></td>
                                                         </tr>
                                                         <tr>
                                                             <td><img height="8" alt="" src="images/phone1.gif" width="11" /></td>
-                                                            <td width="184" class="sitemaptxt">Phone: <?php= $phone; ?></td>
+                                                            <td width="184" class="sitemaptxt">Phone: <?php echo  $phone; ?></td>
                                                         </tr>
                                                         <tr>
                                                             <td height="6"></td>
                                                         </tr>
                                                         <tr>
                                                             <td><img height="9" alt="" src="images/fax.gif" width="7" /></td>
-                                                            <td class="sitemaptxt">Fax:  <?php= $fax; ?></td>
+                                                            <td class="sitemaptxt">Fax:  <?php echo  $fax; ?></td>
                                                         </tr>
                                                         <tr>
                                                             <td height="8"></td>

@@ -42,7 +42,7 @@
                             <br>
                             <br>
                             <br>
-                            <font size="2" color="red"><?php= $msg; ?></font>
+                            <font size="2" color="red"><?php echo  $msg; ?></font>
                             <br>
                             <br>
                             <br>
@@ -65,7 +65,7 @@
                                             <?php if(!empty($err_response))
                                             {
                                             ?>
-                                            <tr><td>&nbsp;</td><td class="detail9txt"><a href="response.php#message" class="header_text">Enter Your Response</a> - <?php= $err_response; ?></td></tr>
+                                            <tr><td>&nbsp;</td><td class="detail9txt"><a href="response.php#message" class="header_text">Enter Your Response</a> - <?php echo  $err_response; ?></td></tr>
                                             <?php 
                                             }
                                             ?>
@@ -77,20 +77,20 @@
 
                                 <tr>
                                     <td width="12%" nowrap class="detail9txt"><b>To:&nbsp;&nbsp;&nbsp;</b></td>
-                                    <td width="88%" align="left" class="banner1"><?php= $user_from;?></td>
+                                    <td width="88%" align="left" class="banner1"><?php echo  $user_from;?></td>
                                 </tr>
                                 <tr>
                                     <td nowrap width="12%" class="detail9txt"><b> Item:&nbsp;&nbsp;&nbsp;</b></td>
-                                    <td align="left" class="banner1"><?php= $rec[item_title];?> </td>
+                                    <td align="left" class="banner1"><?php echo  $rec[item_title];?> </td>
                                 </tr>
                                 <tr>
                                     <td nowrap  valign="top" width="12%" class="detail9txt"><b>Subject:</b></td>
-                                    <td class="banner1">Message From <?php= $_SESSION[username] ?> 
+                                    <td class="banner1">Message From <?php echo  $_SESSION[username] ?> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td nowrap  valign="top" width="12%" class="detail9txt"><b>Question:</b></td>
-                                    <td class="banner1"><?php= $message ?> 
+                                    <td class="banner1"><?php echo  $message ?> 
                                     </td>
                                 </tr>
                                 <tr>
@@ -104,9 +104,9 @@
                     <tr><td>
                             <table align="center"><tr><td align="center">
                                         <input type=hidden name=canSend value=1>
-                                        <input type="hidden" name="item_id" value=<?php= $item_id; ?> >
-                                               <input type="hidden" name="to_id" value=<?php= $ask_row[from_id]; ?> >
-                                               <input type="hidden" name="qst_id" value=<?php= $qst_id ?> >
+                                        <input type="hidden" name="item_id" value=<?php echo  $item_id; ?> >
+                                               <input type="hidden" name="to_id" value=<?php echo  $ask_row[from_id]; ?> >
+                                               <input type="hidden" name="qst_id" value=<?php echo  $qst_id ?> >
                                                <input type="image" src="images/send.gif" name="Image77" width="62" height="22" border="0" id="Image77" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image77', '', 'images/sendo.gif', 1)"/></td></tr>
                             </table>
                 </form>

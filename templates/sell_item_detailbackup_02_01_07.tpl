@@ -100,7 +100,7 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="sell_item_detail.php#txttitle" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php= $err_title; ?></td></tr>
+                                            <td class="banner1"><a href="sell_item_detail.php#txttitle" onclick="sel('txttitle')" class="header_text2">Item Title</a> - <?php echo  $err_title; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -108,7 +108,7 @@
                                         if(!empty($err_specify))
                                         {
                                         ?>
-                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#cboitemcondition" onclick="sel('cboitemcondition')" class="header_text2">Condition</a> - <?php= $err_specify; ?></td></tr>
+                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#cboitemcondition" onclick="sel('cboitemcondition')" class="header_text2">Condition</a> - <?php echo  $err_specify; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -116,7 +116,7 @@
                                         if(!empty($err_des))
                                         {
                                         ?>
-                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#itemdes" class="header_text2">Item Description</a> - <?php= $err_des; ?></td></tr>
+                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#itemdes" class="header_text2">Item Description</a> - <?php echo  $err_des; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -125,7 +125,7 @@
                                         if(!empty($err_subtitle))
                                         {
                                         ?>
-                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Sub Category</a> - <?php= $err_subtitle; ?></td></tr>
+                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#cbosubcat" onclick="sel('cbosubcat')" class="header_text2">Sub Category</a> - <?php echo  $err_subtitle; ?></td></tr>
                                         <?php 
                                         }
                                         ?>
@@ -146,7 +146,7 @@
                                         $select_row=mysql_fetch_array($select_tab);
 
                                         ?>
-                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#<?php= $tab_col->name ?>" class="header_text2"><?php= $tab_col->name ?></a>-<?php= $select_row[err_msg] ?></td></tr>
+                                        <tr><td>&nbsp;</td><td class="banner1"><a href="sell_item_detail.php#<?php echo  $tab_col->name ?>" class="header_text2"><?php echo  $tab_col->name ?></a>-<?php echo  $select_row[err_msg] ?></td></tr>
                                         <?php
                                         }
                                         else
@@ -158,7 +158,7 @@
                                         {
                                         ?>
                                         <tr><td>&nbsp;</td>
-                                            <td class="banner1"><a href="sell_item_detail.php#<?php= $tab_col->name ?>" class="header_text2"><?php= $tab_col->name ?></a>-<?php= $select_row[err_msg] ?></td>
+                                            <td class="banner1"><a href="sell_item_detail.php#<?php echo  $tab_col->name ?>" class="header_text2"><?php echo  $tab_col->name ?></a>-<?php echo  $select_row[err_msg] ?></td>
                                         </tr>
                                         <?php
                                         }
@@ -191,13 +191,13 @@
                                             if(trim($sub1_row['category_id'])==trim($sub_cat))
                                             {
                                             ?>
-                                            <option value="<?php= $sub1_row['category_id'] ?>" selected> &nbsp;&nbsp;&nbsp; <?php= $sub1_row['category_name'] ?></option>
+                                            <option value="<?php echo  $sub1_row['category_id'] ?>" selected> &nbsp;&nbsp;&nbsp; <?php echo  $sub1_row['category_name'] ?></option>
                                             <?php 
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php= $sub1_row['category_id'] ?>"> &nbsp;&nbsp;&nbsp;<?php= $sub1_row['category_name'] ?></option>
+                                            <option value="<?php echo  $sub1_row['category_id'] ?>"> &nbsp;&nbsp;&nbsp;<?php echo  $sub1_row['category_name'] ?></option>
                                             <?php
                                             }
                                             ?>
@@ -225,13 +225,13 @@
                                             if($subsub_id==$cat_row['category_id'])
                                             {
                                             ?>
-                                            <option value="<?php=$cat_row['category_id'];?>" selected ><?php=$cat_row['category_name'];?></option>
+                                            <option value="<?php echo $cat_row['category_id'];?>" selected ><?php echo $cat_row['category_name'];?></option>
                                             <?php
                                             }
                                             else
                                             {
                                             ?>
-                                            <option value="<?php=$cat_row['category_id'];?>">&nbsp;&nbsp;&nbsp;<?php=$cat_row['category_name'];?></option>
+                                            <option value="<?php echo $cat_row['category_id'];?>">&nbsp;&nbsp;&nbsp;<?php echo $cat_row['category_name'];?></option>
                                             <?php
                                             }
                                             $ssid=$cat_row['category_id'];
@@ -279,13 +279,13 @@
                                                         if(trim($sub_row['category_id'])==trim($sub_cat))
                                                         {
                                                         ?>
-                                                        <option value="<?php= $sub_row['category_id'] ?>" selected><?php= $sub_row['category_name']?></option>
+                                                        <option value="<?php echo  $sub_row['category_id'] ?>" selected><?php echo  $sub_row['category_name']?></option>
                                                         <?php 
                                                         }
                                                         else
                                                         {
                                                         ?>
-                                                        <option value="<?php= $sub_row['category_id'] ?>"><?php= $sub_row['category_name'] ?></option>
+                                                        <option value="<?php echo  $sub_row['category_id'] ?>"><?php echo  $sub_row['category_name'] ?></option>
                                                         <?php
                                                         }
                                                         $sub_cat_id=$sub_row['category_id'];
@@ -302,7 +302,7 @@
                                                     <?php if(!empty($err_title))
                                                     {
                                                     ?>
-                                                    <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_title ?></font>
+                                                    <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_title ?></font>
                                                     <br>
                                                     <b><font class="moretxt">Item title</font></b><b><font class="moretxt"> *</font></b>
                                                     <?php
@@ -317,7 +317,7 @@
                                                 </td>
                                             </tr>
                                             <tr><td width=270 class="banner1">
-                                                    <input type="text" name="txttitle" class="txtbig" value="<?php= $item_title; ?>" maxlength="55" onkeypress="dectext(55);">
+                                                    <input type="text" name="txttitle" class="txtbig" value="<?php echo  $item_title; ?>" maxlength="55" onkeypress="dectext(55);">
                                                     <font color="#666666">Ensure your title has specific details about your item. </font>
                                                 </td></tr>
                                             <?php
@@ -333,7 +333,7 @@
                                                     <?php if($subtitlefee) 
                                                     {
                                                     ?>
-                                                    <font class="moretxt"><b> (<?php=$cur_sell?> <?php= $subtitlefee ?>)</b></font>
+                                                    <font class="moretxt"><b> (<?php echo $cur_sell?> <?php echo  $subtitlefee ?>)</b></font>
                                                     <?php
                                                     }
                                                     else
@@ -346,7 +346,7 @@
 
                                                 </td></tr>
 
-                                            <tr><td width=260 class="banner1"><input type="text" name="txtsubtitle" class="txtbig" value="<?php= $subtitle; ?>" maxlength="55">
+                                            <tr><td width=260 class="banner1"><input type="text" name="txtsubtitle" class="txtbig" value="<?php echo  $subtitle; ?>" maxlength="55">
                                                     <font color="#666666">Add a Subtitle (searchable by item description only) to give buyers more information.  </font>
                                                 </td></tr>
 
@@ -355,7 +355,7 @@
                                             <tr><td class="banner1">
                                                     <?php if(!empty($err_specify))
                                                     {?>
- <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php= $err_specify ?></font>
+ <img src="images/warning_9x10.gif">&nbsp;<font class="moretxt"><?php echo  $err_specify ?></font>
  <br>
  <b><font class="moretxt">Condition</font></b><b><font class="moretxt"> *</font></b>
  <?php
@@ -410,7 +410,7 @@
                                                     {
                                                     ?>
                                                     <img src="images/warning_9x10.gif">&nbsp;
-                                                    <font class="moretxt"><?php= $err_des; ?></font>
+                                                    <font class="moretxt"><?php echo  $err_des; ?></font>
                                                     <br>
                                                     <b><font class="moretxt">Item Description</font></b>
                                                     <b><font class="moretxt">*</font></b> 
@@ -461,7 +461,7 @@
                                                                 $content = rteSafe($_POST["rte1"]);
                                                         }
                                                         ? >
-                                                                rte1.html = '<?php=$content;?>';
+                                                                rte1.html = '<?php echo $content;?>';
                                                         //rte1.toggleSrc = false;
                                                         rte1.build();
                                                         //-->
@@ -469,12 +469,12 @@
                                                 </td></tr> 
 
                                             <input type="hidden" name=flag value="1">
-                                            <input type="hidden" name="cat_id" value=<?php= $cat_id; ?>>
-                                                   <input type="hidden" name=mode value="<?php= $mode; ?>">
-                                            <input type="hidden" name=sell_format value="<?php= $sell_format; ?>">
-                                            <input type="hidden" name=item_id value=<?php= $item_id; ?>>
-                                                   <input type="hidden" name=own_html_flag value=<?php= $ownhtml; ?>>
-                                                   <input type="hidden" name=sellitemid value=<?php=$sellitemid?>>
+                                            <input type="hidden" name="cat_id" value=<?php echo  $cat_id; ?>>
+                                                   <input type="hidden" name=mode value="<?php echo  $mode; ?>">
+                                            <input type="hidden" name=sell_format value="<?php echo  $sell_format; ?>">
+                                            <input type="hidden" name=item_id value=<?php echo  $item_id; ?>>
+                                                   <input type="hidden" name=own_html_flag value=<?php echo  $ownhtml; ?>>
+                                                   <input type="hidden" name=sellitemid value=<?php echo $sellitemid?>>
                                                    <input type="hidden" name="content" value="">
                                             <tr><td colspan="2" align="center">
 

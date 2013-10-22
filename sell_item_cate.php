@@ -106,8 +106,8 @@ require'templates/sell_item_cate.tpl';
 
 <input type="hidden" name="cat_flag" value="1">
 <input type="hidden" name="con_save" value="1">
-<input type="hidden" name="mode" value="<?php = $mode ?>">
-<input type="hidden" name="sell_format" value="<?php = $sell_format; ?>">
+<input type="hidden" name="mode" value="<?php echo $mode ?>">
+<input type="hidden" name="sell_format" value="<?php echo $sell_format; ?>">
 <input type="hidden" name="sub_cat1" id="sub_cat1" value="">
 <input type="hidden" name="sub_cat2" id="sub_cat2" value="">
 <input type="hidden" name="sub_cat3" id="sub_cat3" value="">

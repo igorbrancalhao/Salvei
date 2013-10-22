@@ -61,7 +61,7 @@
                                                             <table cellpadding="0" cellspacing="3" width=100% background="images/item_bg.gif">
                                                                 <tr>
                                                                     <td align="left"><font class="detail9txt">
-                                                                        <b>&nbsp;&nbsp;Pay for Selling Item's:&nbsp;&nbsp;&nbsp;</b>(<?php= $pay_total_records; ?>&nbsp;Items)</b></font></td>
+                                                                        <b>&nbsp;&nbsp;Pay for Selling Item's:&nbsp;&nbsp;&nbsp;</b>(<?php echo $pay_total_records; ?>&nbsp;Items)</b></font></td>
                                                                     <td align="right" width=10>
                                                                         <!--<a href="myauction.php?#paydetails">
                                                                         <img src="images/leasing-arrows-up.gif" border=0></a>--></td>
@@ -81,7 +81,7 @@
                                                                 <form name="pay_frm" action="pay.php" method=post>
                                                                     <tr class="detail9txt">
                                                                         <td class="tr_botborder" width=5%>&nbsp;
-                                                                            <!-- <input type="hidden" name="len" value="<?php=mysql_num_rows($pay_res)?>">
+                                                                            <!-- <input type="hidden" name="len" value="<?php echo mysql_num_rows($pay_res)?>">
                                                                             <input type="checkbox" name="chkMain" onClick="pay_selectall()" id="chkMain"> --> </td> 
                                                                         <td class="tr_botborder" width=30%><b>Item Id</b> </td>
                                                                         <td width="7%" class="tr_botborder"><b>Qty </b> </td>
@@ -119,11 +119,11 @@
                                                                         <td class="tr_botborder" width=5%>&nbsp; 
                                                                         </td>
                                                                         <td class="tr_botborder" width=30%>
-                                                                            <a href="feedback.php?user_id=<?php=$pay_row['user_id'];?>" class="header_text">
+                                                                            <a href="feedback.php?user_id=<?php echo $pay_row['user_id'];?>" class="header_text">
                                                                                 <?php echo $pay_row['item_id'];?></a>
                                                                         </td>
-                                                                        <td class="tr_botborder"><?php  echo $pay_row['Quantity']; ?> </td>
-                                                                        <td class="tr_botborder"><?php=$cur_sell?>&nbsp;<?php  echo $total_setup_fee; ?> </td>
+                                                                        <td class="tr_botborder"><?php echo $pay_row['Quantity']; ?> </td>
+                                                                        <td class="tr_botborder"><?php echo $cur_sell?>&nbsp;<?php  echo $total_setup_fee; ?> </td>
                                                                         <td class="tr_botborder">
                                                                             <?php
                                                                             $custom_date=explode(" ",$pay_row[bid_starting_date]);
@@ -139,7 +139,7 @@
                                                                         </td>
                                                                         <td class="tr_botborder" colspan="2">
                                                                             <?php $var=$pay_row[user_id]."-".$pay_row[item_id]; ?>
-                                                                            <select name=cbopayaction style="width:100px;" onchange="go_page_link(this.value, '<?php= $pay_row[item_id]; ?>', < ?php = $pay_row[user_id] ? > )">
+                                                                            <select name=cbopayaction style="width:100px;" onchange="go_page_link(this.value, '<?php echo $pay_row[item_id]; ?>', <?php echo $pay_row[user_id] ?> )">
                                                                                 <option value="0">Action</option>
                                                                                 <option value="4">Pay Now</option>
                                                                                 <option value="5">Delete</option>
@@ -148,7 +148,7 @@
                                                                     <tr>
                                                                         <td class="tr_botborder_1">&nbsp;  </td>
                                                                         <td class="tr_botborder_1" colspan=5 align="left">
-                                                                            <a href="<?php if($pay_row[selling_method]!="ads") {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $pay_row['item_id']?>" class="header_text">
+                                                                            <a href= <?php if($pay_row[selling_method]!="ads") {  ?>detail.php<?php }else{?> classifide_ad.php<?php}?>?item_id=<?php echo $pay_row['item_id']?>" class="header_text">
                                                                                <?php  echo $pay_row['item_title']; ?></a>&nbsp;<font class="header_text">(<?php  echo $pay_row['item_id']; ?> )</font></td>
                                                                         <td class="tr_botborder_1">&nbsp;  </td></tr>
                                                                     <?php
@@ -202,13 +202,8 @@
                                                                 <tr>
                                                                     <td align="left"><font class="detail9txt">
                                                                         <b>&nbsp;&nbsp;Pay  Final Sale Value fees:&nbsp;&nbsp;&nbsp;</b></font></td>
-                                                                    <td align="right" width=10>
-                                                                        <!--<a href="myauction.php?#paydetails">
-                                                                        <img src="images/leasing-arrows-up.gif" border=0></a>--></td>
-                                                                    <td align="right" width=10>
-                                                                        <!--<a href="myauction.php?#didntwindetails">
-                                                                        <img src="images/leasing-arrows-dn.gif" border=0>
-                                                                        </a>--></td>
+                                                                    <td align="right" width=10></td>
+                                                                    <td align="right" width=10></td>
                                                                 </tr></table>
                                                         </td></tr>
                                                     <?php
@@ -221,9 +216,7 @@
 
                                                                 <form name="final_frm" action="pay.php" method="post">
                                                                     <tr class="detail9txt">
-                                                                        <td class="tr_botborder" width=5%>&nbsp;
-                                                                            <!-- <input type="hidden" name="len" value="<?php=mysql_num_rows($pay_res)?>">
-                                                                            <input type="checkbox" name="chkMain" onClick="pay_selectall()" id="chkMain"> --> </td> 
+                                                                        <td class="tr_botborder" width=5%>&nbsp;</td> 
                                                                         <td class="tr_botborder" width=12%><b>Item Id</b> </td>
                                                                         <td width="7%" class="tr_botborder"><b>Qty </b> </td>
                                                                         <td width="29%" class="tr_botborder"><b>Final Sale Value Fee </b>  </td>
@@ -254,11 +247,11 @@
                                                                             <!-- <input type="checkbox" name=chkbox[] id="chkbox" value="<?php  echo $pay_row['item_id']; ?>"> -->
                                                                         </td>
                                                                         <td class="tr_botborder" width=12%>
-                                                                            <a href="feedback.php?user_id=<?php=$pay_row['user_id'];?>" class="header_text">
+                                                                            <a href="feedback.php?user_id=<?php echo $pay_row['user_id'];?>" class="header_text">
                                                                                 <?php echo $pay_row['item_id'];?></a></td>
                                                                         <td class="tr_botborder">1<?php  //echo $bid_row['quantity']; ?> </td>
-                                                                        <td class="tr_botborder"><?php=$cur_sell?>&nbsp;<?php  echo $total_setup_fee; ?> </td>
-                                                                        <td class="tr_botborder"><?php=$cur_sell?><?php  echo ($total_setup_fee ); ?> </td>
+                                                                        <td class="tr_botborder"><?php echo $cur_sell?>&nbsp;<?php  echo $total_setup_fee; ?> </td>
+                                                                        <td class="tr_botborder"><?php echo $cur_sell?><?php  echo ($total_setup_fee ); ?> </td>
                                                                         <td class="tr_botborder">
                                                                             <?php
                                                                             $custom_date=explode(" ",$bid_row[bidding_date]);
@@ -274,7 +267,7 @@
                                                                         </td>
                                                                         <td class="tr_botborder">
                                                                             <?php $var=$pay_row[user_id]."-".$pay_row[item_id]; ?>
-                                                                            <select name=cbopayaction style="width:100px;" onchange="go_page_link(this.value, '<?php= $pay_row[item_id]; ?>', < ?php = $pay_row[fee_id] ? > )">
+                                                                            <select name=cbopayaction style="width:100px;" onchange="go_page_link(this.value, '<?php echo  $pay_row[item_id]; ?>', < ?php = $pay_row[fee_id] ? > )">
                                                                                 <option value="0">Action</option>
                                                                                 <option value="6">Pay Now</option>
                                                                             </select>
@@ -282,7 +275,7 @@
                                                                     <tr>
                                                                         <td class="tr_botborder_1">&nbsp;  </td>
                                                                         <td class="tr_botborder_1" colspan=5 align="left">
-                                                                            <a href="<?php if($pay_row[selling_method]!="ads") {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php= $pay_row['item_id']?>" class="detail9txt">
+                                                                            <a href="<?php if($pay_row[selling_method]!="ads") {  ?>detail.php<?php }else{?>classifide_ad.php<?php}?>?item_id=<?php echo  $pay_row['item_id']?>" class="detail9txt">
                                                                                <?php  echo $pay_row['item_title']; ?></a>&nbsp;<font class="detail9txt">(<?php  echo $pay_row['item_id']; ?> )</font></td>
                                                                         <td class="tr_botborder_1">&nbsp;  </td></tr>
                                                                     <?php

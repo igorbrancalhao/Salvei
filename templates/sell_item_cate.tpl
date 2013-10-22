@@ -28,7 +28,7 @@
 <script src="js/sell.js">
 </script>
 <table width="958" border="0" cellpadding="0" cellspacing="0" align="center">
-    <form name="cat_form" action="sell_item_cate.php?title=<?php=$title?>" method="post">
+    <form name="cat_form" action="sell_item_cate.php?title=<?php echo $title?>" method="post">
         <tr><td valign="top" > 
                 <table width="958" cellpadding="5" cellspacing="2">
                     <tr>
@@ -91,7 +91,7 @@
                                                         while($rec=mysql_fetch_array($res))
                                                         { 
                                                         ?>
-                                                        <option value="<?php= $rec[category_id];?>"><?php= $rec[category_name];?></option>
+                                                        <option value="<?php echo  $rec['category_id'];?>"><?php echo  $rec[category_name];?></option>
                                                         <?php
                                                         }
                                                         ?>

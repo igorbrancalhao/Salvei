@@ -34,7 +34,7 @@ if($res_success==1)
     <tr><td colspan="2" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom"  background="images/contentgrad.jpg"> 
             <table cellpadding="5" cellspacing="2"  width=100%> 
                 <tr><td style="padding-left:5px" >
-                        <font class="detail9txt"><b>Transaction:</b></font><font class="banner1"> <?php= $sell['item_title'] ?> (#<?php= $bid[item_id] ?>) sold by <?php= $user['user_name'] ?> on
+                        <font class="detail9txt"><b>Transaction:</b></font><font class="banner1"> <?php echo  $sell['item_title'] ?> (#<?php echo  $bid[item_id] ?>) sold by <?php echo  $user['user_name'] ?> on
                         <?php
                         $custom_date=explode(" ",$bid_date);
                         $custom_date1=$custom_date[0];
@@ -73,7 +73,7 @@ else if($upsucess==1)
     <tr><td colspan="2" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom"  background="images/contentgrad.jpg"> 
             <table cellpadding="5" cellspacing="2"  width=100%> 
                 <tr><td style="padding-left:5px"><font class="detail9txt">
-                        <b>Transaction:</b></font><font class="banner1"> <?php= $sell['item_title'] ?> (#<?php= $bid['item_id'] ?>) sold  by <?php= $sell['user_name'] ?> on
+                        <b>Transaction:</b></font><font class="banner1"> <?php echo  $sell['item_title'] ?> (#<?php echo  $bid['item_id'] ?>) sold  by <?php echo  $sell['user_name'] ?> on
                         <?php
                         $custom_date=explode(" ",$bid_date);
                         $custom_date1=$custom_date[0];
@@ -111,7 +111,7 @@ exit();
                 &nbsp;&nbsp;Enter Response </div></font> </td></tr>
     <tr><td colspan="2" style="border-left:1px solid #CCCCCC; border-right:1px solid #cccccc; border-bottom:1px solid #cccccc; background-repeat:repeat-x; background-position:bottom"  background="images/contentgrad.jpg"> 
             <table cellpadding="5" cellspacing="2"  width=100%> 
-                <tr><td style="padding-left:5px"><font class="detail9txt"><b>Transaction: </b></font><font class="banner1"><?php= $sell['item_title'] ?> (#<?php= $bid['item_id'] ?>) sold to <?php= $user['user_name'] ?> on
+                <tr><td style="padding-left:5px"><font class="detail9txt"><b>Transaction: </b></font><font class="banner1"><?php echo  $sell['item_title'] ?> (#<?php echo  $bid['item_id'] ?>) sold to <?php echo  $user['user_name'] ?> on
                         <?php
                         $custom_date=explode(" ",$bid_date);
                         $custom_date1=$custom_date[0];
@@ -124,7 +124,7 @@ exit();
                         echo  $custom_date4;
                         ?> .</font></td></tr>
 
-                <tr><td style="padding-left:5px"><font class="banner1"> <?php= $_SESSION['site_name']  ?>  user <?php= $sell['user_name'] ?> has notified us of an Unpaid Item dispute regarding this item. </font></td></tr>
+                <tr><td style="padding-left:5px"><font class="banner1"> <?php echo  $_SESSION['site_name']  ?>  user <?php echo  $sell['user_name'] ?> has notified us of an Unpaid Item dispute regarding this item. </font></td></tr>
 
 
 
@@ -153,8 +153,8 @@ exit();
                                                 </td></tr>
                                             <tr>
                                                 <td style="padding-left:10px"> 
-                                                    <input type="hidden" name="bid_id" value="<?php= $bid_id ?>" />
-                                                    <input type="hidden" name="dispute_id" value="<?php= $dispute_id ?>" />
+                                                    <input type="hidden" name="bid_id" value="<?php echo  $bid_id ?>" />
+                                                    <input type="hidden" name="dispute_id" value="<?php echo  $dispute_id ?>" />
                                                 </td></tr>
                                             <input type="hidden" name="flag" value="1" />
                                             <tr><td style="padding-left:10px">
@@ -176,9 +176,9 @@ exit();
                                                 </td></tr>
                                             <tr><td>
                                                     <input type="hidden" name=closeflag value="close">
-                                                    <input type="hidden" name="bid_id" value="<?php= $bid_id ?>" />
-                                                    <input type="hidden" name="dispute_id" value="<?php= $dispute_id ?>" />
-                                                    <input type="hidden" name="item_id"  value="<?php= $bid[item_id] ?>" />
+                                                    <input type="hidden" name="bid_id" value="<?php echo  $bid_id ?>" />
+                                                    <input type="hidden" name="dispute_id" value="<?php echo  $dispute_id ?>" />
+                                                    <input type="hidden" name="item_id"  value="<?php echo  $bid[item_id] ?>" />
 
                                                     <input type="image" src="images/closedispute.gif" name="Image94" width="114" height="22" border="0" id="Image94" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image94', '', 'images/closedisputeo.gif', 1)" value="Close Dispute"/>
 
@@ -214,12 +214,12 @@ exit();
 
                                         ?>
                                         <tr><td valign="top" style="padding-left:10px" colspan="2"><font size="2" color="#CC99FF"><b>
-                                                    <?php= $user['user_name'] ?></b></font>
+                                                    <?php echo  $user['user_name'] ?></b></font>
                                             </td></tr>
 
                                         <tr><td valign="top" style="padding-left:10px" width="80%" class="banner1">
-                                                <?php= $dispute_row_1['dispute_explanations'] ?>
-                                            </td><td align="right" style="padding-right:5px" class="banner1"><?php= $dispute_row_1['dispute_date']  ?></td></tr>
+                                                <?php echo  $dispute_row_1['dispute_explanations'] ?>
+                                            </td><td align="right" style="padding-right:5px" class="banner1"><?php echo  $dispute_row_1['dispute_date']  ?></td></tr>
                                         <tr><td style="border-bottom:#999999" colspan="2">&nbsp;</td></tr>
 
                                         <?php
@@ -232,12 +232,12 @@ exit();
                             ?>
 
                             <tr><td valign="top"  style="padding-left:10px" class="detail9txt"><b>
-                                        <?php= $_SESSION['site_name']  ?></b>
+                                        <?php echo  $_SESSION['site_name']  ?></b>
                                 </td></tr>
                             <tr><td style="padding-left:10px" class="banner1">An Unpaid Item dispute has been opened for the following item:  
-                                    <?php= $sell['item_title'] ?> (#<?php= $bid['item_id'] ?>) </td></tr>
-                            <tr><td style="padding-left:10px" class="banner1">Reason given for Unpaid Item:<?php= $dispute_row['dispute_reason']  ?> </td></tr>
-                            <tr><td style="padding-left:10px" class="banner1">Buyer actions reported by seller:<?php= $dispute_row['dispute_explanation']  ?> </td></tr>
+                                    <?php echo  $sell['item_title'] ?> (#<?php echo  $bid['item_id'] ?>) </td></tr>
+                            <tr><td style="padding-left:10px" class="banner1">Reason given for Unpaid Item:<?php echo  $dispute_row['dispute_reason']  ?> </td></tr>
+                            <tr><td style="padding-left:10px" class="banner1">Buyer actions reported by seller:<?php echo  $dispute_row['dispute_explanation']  ?> </td></tr>
                         </table>
                     </td></tr>
             </table>

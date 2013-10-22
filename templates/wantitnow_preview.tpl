@@ -40,7 +40,7 @@
                                 <td><font size="2" color=green><b>You have successfully created a Want it Now Post.</b></font></td>
                             </tr>
                             <tr>
-                                <td class="detail9txt"><b>View your Posting:</b>&nbsp;<a href="wantitnowdes.php?item_id=<?php= $item_id ?>" class="header_text"><?php= $item_title; ?></a></td></tr> 
+                                <td class="detail9txt"><b>View your Posting:</b>&nbsp;<a href="wantitnowdes.php?item_id=<?php echo  $item_id ?>" class="header_text"><?php echo  $item_title; ?></a></td></tr> 
                             <tr>
                             </tr> 
                         </table></td></tr>

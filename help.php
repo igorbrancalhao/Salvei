@@ -23,7 +23,7 @@
  *     any later version is applicable for the same.
 
  * *************************************************************************** */
-session_start();
+ 
 require 'include/connect.php';
 $title = "Help";
 $click = "help";

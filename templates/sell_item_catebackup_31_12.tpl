@@ -67,7 +67,7 @@
                             <?php if(!empty($err_cat))
                             {
                             ?>
-                            <tr><td>&nbsp;</td><td class="detail6txt"><a href="sell_item_cate.php#cat_form" class="header_text2">Category</a> - <?php= $err_cat; ?></td></tr>
+                            <tr><td>&nbsp;</td><td class="detail6txt"><a href="sell_item_cate.php#cat_form" class="header_text2">Category</a> - <?php echo  $err_cat; ?></td></tr>
 
                             <?php 
                             }
@@ -111,7 +111,7 @@
                 <tr><td>
                         <table width="948" height="80" border="0" align="center" cellpadding="0" cellspacing="0" background="images/contentgrad.jpg" style="border:1px solid #c4dbe7; background-repeat:repeat-x; background-position:bottom">
                             <tr><td>
-                                    <form name="cat_form" action="sell_item_cate.php?title=<?php=$title?>" method="post">
+                                    <form name="cat_form" action="sell_item_cate.php?title=<?php echo $title?>" method="post">
                                         <table cellpadding="5" cellspacing="0" width=100% border="0">
                                             <?php  
                                             $color=1;
@@ -134,16 +134,16 @@
                                                 if( $rec['category_id'] == $_SESSION['categoryid'])
                                                 {
                                                 ?>
-                                                <td width="5px"><input type="radio" name="radio_cat" value="<?php=$rec['category_id'];?>" checked></td>
+                                                <td width="5px"><input type="radio" name="radio_cat" value="<?php echo $rec['category_id'];?>" checked></td>
                                                 <td class="detail9txt">
-                                                    <?php=$rec[category_name]; ?> </td>
+                                                    <?php echo $rec[category_name]; ?> </td>
                                                 <?php
                                                 }
                                                 else
                                                 {
                                                 ?>
-                                                <td><input type="radio" name="radio_cat" value=<?php=$rec['category_id']; ?>></td><td class="detail9txt">
-                                                    <?php=$rec['category_name']; ?> </td>
+                                                <td><input type="radio" name="radio_cat" value=<?php echo $rec['category_id']; ?>></td><td class="detail9txt">
+                                                    <?php echo $rec['category_name']; ?> </td>
                                                 <?php
                                                 }
                                                 ?>
@@ -168,8 +168,8 @@
                                             ?>
                                             <input type="hidden" name="cat_flag" value="1">
                                             <input type="hidden" name="con_save" value="1">
-                                            <input type="hidden" name="mode" value="<?php= $mode ?>">
-                                            <input type="hidden" name="sell_format" value="<?php= $sell_format; ?>">
+                                            <input type="hidden" name="mode" value="<?php echo  $mode ?>">
+                                            <input type="hidden" name="sell_format" value="<?php echo  $sell_format; ?>">
                                             <tr><td align="center" colspan="3">
                                                     <?php if($mode=="")
                                                     { ?>

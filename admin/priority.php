@@ -33,21 +33,21 @@ $category_sql = "select * from category_master where category_head_id=0";
 $category_result = mysql_query($category_sql);
 $count = 1;
 while ($category_row = mysql_fetch_array($category_result)) {
-    $up = "update category_master set priority=$count where category_id=" . $category_row[category_id];
+    $up = "update category_master set priority=$count where category_id=" . $category_row['category_id'];
     $up_res = mysql_query($up);
     $count = $count + 1;
     $subcategory_sql = "select * from category_master where category_head_id=" . $category_row['category_id'];
     $subcategory_result = mysql_query($subcategory_sql);
     while ($subcategory_row = mysql_fetch_array($subcategory_result)) {
 
-        $up = "update category_master set priority=$count where category_id=" . $subcategory_row[category_id];
+        $up = "update category_master set priority=$count where category_id=" . $subcategory_row['category_id'];
         $up_res = mysql_query($up);
         $count = $count + 1;
         $subcategory_sql1 = "select * from category_master where category_head_id=" . $subcategory_row['category_id'];
         $subcategory_result1 = mysql_query($subcategory_sql1);
         while ($subcategory_row1 = mysql_fetch_array($subcategory_result1)) {
 
-            $up = "update category_master set priority=$count where category_id=" . $subcategory_row1[category_id];
+            $up = "update category_master set priority=$count where category_id=" . $subcategory_row1['category_id'];
             $up_res = mysql_query($up);
             $count = $count + 1;
         }

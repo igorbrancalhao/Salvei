@@ -48,7 +48,7 @@
                                         {
 
                                         ?>
-                                        <tr><td><a href="#answer<?php=$i?>" class="detail7txt"><b><?php=$row['question'];?></b></a></td></tr>
+                                        <tr><td><a href="#answer<?php echo $i?>" class="detail7txt"><b><?php echo $row['question'];?></b></a></td></tr>
                                         <?php
                                         $i+=1;
                                         }
@@ -61,7 +61,7 @@
                                         while($row=mysql_fetch_array($result))
                                         {
                                         ?>
-                                        <tr><td class="detail7txt"><div id="top"><a name="answer<?php=$i?>" id="answer<?php=$i?>" class="detail7txt"><?php=$row['answer'];?></a></td></tr>
+                                        <tr><td class="detail7txt"><div id="top"><a name="answer<?php echo $i?>" id="answer<?php echo $i?>" class="detail7txt"><?php echo $row['answer'];?></a></td></tr>
                                         <tr><td align="right"><a href="#top"><img src="images/up.gif" border="0" height="20" width="20"></a></td></td></tr>
                                         <?php
                                         $i+=1;

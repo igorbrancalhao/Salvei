@@ -6,7 +6,7 @@
         <td colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td width="13%">&nbsp;</td>
-                    <td width="87%"><span class="dealtxt">Hello <?php=$_SESSION['username'];?> ! </span></td>
+                    <td width="87%"><span class="dealtxt">Hello <?php echo $_SESSION['username'];?> ! </span></td>
                 </tr>
             </table></td>
     </tr>
@@ -34,7 +34,7 @@
                     <td><table width="100%" height="110" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="10%">&nbsp;</td>
-                                <td width="90%" class="myauction2txt"><a href="myauction.php?mode=watch" class="myauction2txt">Watching (<?php= $watch_total_records?>)</a></td>
+                                <td width="90%" class="myauction2txt"><a href="myauction.php?mode=watch" class="myauction2txt">Watching (<?php echo  $watch_total_records?>)</a></td>
                             </tr>
 
                             <tr>
@@ -42,21 +42,21 @@
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="myauction.php?mode=bid" class="myauction2txt">Bidding(<?php= $bid_total_records?>)</a></td>
+                                <td class="myauction2txt"><a href="myauction.php?mode=bid" class="myauction2txt">Bidding(<?php echo  $bid_total_records?>)</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="myauction.php?mode=won" class="myauction2txt">Won(<?php= $won_total_records?>)</a></td>
+                                <td class="myauction2txt"><a href="myauction.php?mode=won" class="myauction2txt">Won(<?php echo  $won_total_records?>)</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="myauction.php?mode=didntwin" class="myauction2txt">Didn&rsquo;t Win (<?php= $didntwin_total_records?>)</a></td>
+                                <td class="myauction2txt"><a href="myauction.php?mode=didntwin" class="myauction2txt">Didn&rsquo;t Win (<?php echo  $didntwin_total_records?>)</a></td>
                             </tr>
                         </table></td>
                 </tr>
@@ -91,21 +91,21 @@
                             ?>
                             <tr>
                                 <td width="10%">&nbsp;</td>
-                                <td width="90%" class="myauction2txt"><a href="myauction.php?mode=sell&status=Active" class="myauction2txt">Opened Auctions (<?php= $sell_total_records?>)</a></td>
+                                <td width="90%" class="myauction2txt"><a href="myauction.php?mode=sell&status=Active" class="myauction2txt">Opened Auctions (<?php echo  $sell_total_records?>)</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="myauction.php?mode=sell&status=Closed" class="myauction2txt">Closed Auctions (<?php= $close_total_records?>)</a></td>
+                                <td class="myauction2txt"><a href="myauction.php?mode=sell&status=Closed" class="myauction2txt">Closed Auctions (<?php echo  $close_total_records?>)</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="myauction.php?mode=sell&status=sold" class="myauction2txt">Sold Items (<?php= $sold_total_records?>)</a></td>
+                                <td class="myauction2txt"><a href="myauction.php?mode=sell&status=sold" class="myauction2txt">Sold Items (<?php echo  $sold_total_records?>)</a></td>
                             </tr>
 
                             <?php
@@ -147,14 +147,14 @@
                     <td><table width="100%" height="60" border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="10%">&nbsp;</td>
-                                <td width="90%" class="myauction2txt"><a href="mail.php?mode=in" class="myauction2txt">Inbox (<?php= $inbox_mail_total_records ?>)</a></td>
+                                <td width="90%" class="myauction2txt"><a href="mail.php?mode=in" class="myauction2txt">Inbox (<?php echo  $inbox_mail_total_records ?>)</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="mail.php?mode=out" class="myauction2txt">Outbox (<?php= $outbox_mail_total_records ?>)</a></td>
+                                <td class="myauction2txt"><a href="mail.php?mode=out" class="myauction2txt">Outbox (<?php echo  $outbox_mail_total_records ?>)</a></td>
                             </tr>
 
 
@@ -278,7 +278,7 @@
 
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="feedback.php?user_id=<?php= $_SESSION[userid] ?>" class="myauction2txt">Feedback</a></td>
+                                <td class="myauction2txt"><a href="feedback.php?user_id=<?php echo  $_SESSION[userid] ?>" class="myauction2txt">Feedback</a></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><div align="center"><img src="images/myaucline.gif" alt="" width="198" height="1" /></div></td>
@@ -299,7 +299,7 @@
                             ?>
                             <tr>
                                 <td>&nbsp;</td>
-                                <td class="myauction2txt"><a href="alert.php" class="myauction2txt">Alerts(<?php=$alert_tot?>)</a></td>
+                                <td class="myauction2txt"><a href="alert.php" class="myauction2txt">Alerts(<?php echo $alert_tot?>)</a></td>
                             </tr>
                         </table></td>
                 </tr>

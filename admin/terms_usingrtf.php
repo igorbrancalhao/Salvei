@@ -111,7 +111,7 @@ if (isset($_REQUEST['update3'])) {
           $selling=$row['term_body'];
           }
           ?>
-          <form method=post action="<?php=$_SERVER['PHP_SELF'];?>" name=form1>
+          <form method=post action="<?php echo $_SERVER['PHP_SELF'];?>" name=form1>
           <table width="80%"  border="0" cellpadding="5" cellspacing="1" class="tablebox" align="center">
           <tr bgcolor="#CCCCCC" class="style1">
           <td colspan="4">Selling Terms</td>
@@ -121,7 +121,7 @@ if (isset($_REQUEST['update3'])) {
           else require 'include/content.php';
           ?>
           <!-- <textarea name="selling" cols=50 rows=10>
-          <?php= $selling; ?></textarea> --> </td></tr>
+          <?php echo  $selling; ?></textarea> --> </td></tr>
           <input type="hidden" name="term_id" value="2">
           <tr><td>&nbsp;</td><td>
           <input type="submit" name="update2" value="Update" class="button" > </td></tr>
@@ -140,13 +140,13 @@ if (isset($_REQUEST['update3'])) {
           $buying=$row['term_body'];
           }
           ?>
-          <form method=post action="<?php=$_SERVER['PHP_SELF'];?>" name=form1>
+          <form method=post action="<?php echo $_SERVER['PHP_SELF'];?>" name=form1>
           <table width="80%"  border="0" cellpadding="5" cellspacing="1" class="tablebox" align="center">
           <tr bgcolor="#CCCCCC" class="style1">
           <td colspan="4">Buying Terms</td>
           <tr ><td><Strong>Buying Terms </strong></td>
           <td>
-          <!-- <textarea name="buying" cols=50 rows=10><?php= $buying; ?></textarea> -->
+          <!-- <textarea name="buying" cols=50 rows=10><?php echo  $buying; ?></textarea> -->
           <?php
           if($brow_name=='netscape' || $brow_name=='opera' || $brow_name=='firefox') echo '<textarea name="buying" cols="60" rows="15"> $buying;  </textarea>';
           else require 'include/content.php';
@@ -155,7 +155,7 @@ if (isset($_REQUEST['update3'])) {
           <input type="hidden" name="term_id" value="3">
           </form>
           <tr ><td></td><td>
-          <input type="submit" name="update3" value="Update" class="button" value="<?php= $submit; ?>"> </td></tr>
+          <input type="submit" name="update3" value="Update" class="button" value="<?php echo  $submit; ?>"> </td></tr>
           </table>
           <?php
           } */
