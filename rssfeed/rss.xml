@@ -1,4 +1,19 @@
-<?phpxml version='1.0' encoding='ISO-8859-1'?><rss version='2.0'><channel><title>Welcome to www.ajauctionpro.com</title><link>http://www.ajauctionpro.com/index.php</link><description>Search Items</description><language>en-us</language><pubDate>Thu, 16 Oct 2008 23:41:18</pubDate><lastBuildDate>Thu, 16 Oct 2008 23:41:18</lastBuildDate><item><item_title>nikon camara </item_title><item_link>http://www.ajauctionpro.com/detail.php?item_id=11317</item_link><image_link>http://www.ajauctionpro.com/images/2008-09-16_b137f_images.jpg</image_link><item_description>new camara 7.2 MP for sale
+<?phpxml version='1.0' encoding='ISO-8859-1'?><rss version='2.0'>
+    <channel>
+        <title>Welcome to www.ajauctionpro.com</title>
+        <link>http://www.ajauctionpro.com/index.php</link>
+        <description>Search Items</description>
+        <language>en-us</language>
+        <pubDate>Thu, 16 Oct 2008 23:41:18</pubDate>
+        <lastBuildDate>Thu, 16 Oct 2008 23:41:18</lastBuildDate>
+        <item>
+            <item_title>nikon camara </item_title>
+            <item_link>http://www.ajauctionpro.com/detail.php?item_id=11317</item_link>
+            <image_link>http://www.ajauctionpro.com/images/2008-09-16_b137f_images.jpg</image_link>
+            <item_description>new camara 7.2 MP for sale
 
 
-</item_description></item></channel></rss>
+            </item_description>
+        </item>
+    </channel>
+</rss>

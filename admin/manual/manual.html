@@ -1,14 +1,14 @@
 <html>
-<title>AJAuction Manual</title>
+    <title>AJAuction Manual</title>
 
-<style type="text/css">
-<!--
-.style3 {font-family: Arial, Helvetica, sans-serif}
--->
-</style>
-<!<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
-<! <p class=MsoTitle align=left style='text-align:left'><img width=200 height=106
-<! src="ajsquare.jpg" align=right hspace=12 v:shapes="_x0000_s1048"><br clear=all><b><h1>AJAuction User's Manual</h1></b><o:p></o:p>
+    <style type="text/css">
+        <!--
+        .style3 {font-family: Arial, Helvetica, sans-serif}
+        -->
+    </style>
+    <!<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+        <! <p class=MsoTitle align=left style='text-align:left'><img width=200 height=106
+                                                                     <! src="ajsquare.jpg" align=right hspace=12 v:shapes="_x0000_s1048"><br clear=all><b><h1>AJAuction User's Manual</h1></b><o:p></o:p>
 
 </h1><p><o:p></o:p>
 <p>Program Version 6.2.1<o:p></o:p>
@@ -68,344 +68,344 @@
 <br >  <font size=4 face=arial><a href=#_Toc135813805 style='tab-stops:right dotted 431.5pt'> Error Subjects <o:p></o:p></a></font>
 <br >  <font size=4 face=arial><a href=#_Toc135813806 style='tab-stops:right dotted 431.5pt'> Help Subjects <o:p></o:p></a></font>
 <br >
-  <o:p></o:p></a></font></i></b>
-  </div>
-  <i style='mso-bidi-font-style:normal'><br clear=all style='page-break-before:always;
-mso-break-type:section-break'>
-  </i>
+<o:p></o:p></a></font></i></b>
+</div>
+<i style='mso-bidi-font-style:normal'><br clear=all style='page-break-before:always;
+                                          mso-break-type:section-break'>
+</i>
 <div class=Section2 style2>
-<h3><u><a name="_Toc135813757"> Introduction</a></u></h3>
-<p><o:p></o:p>If you want to start your own online auction site, then this software is for
-you. This manual deals with all administration functions. With well over 200
-user-friendly features and administrative features, AJAuction is a powerful
-PHP/MySQL powered domain name auction script. Built for speed, features include
-the ability to bulk load domain. In addition we have taken a fresh approach to
-creating a simple, easy to learn administration panel
-that will have you operating like a pro in less than 30 minutes. This section
-discusses the organization of the manual 
-<h3><u><a name="_Toc135813758"> Installation Introduction</a></u></h3>
-<p><o:p></o:p>Installation guide are available in the doc directory of the product’s compressed file. The
-following instruction manual can be found in the “install.txt” which can be
-found in the installation package.
-<p> Step 1: Make sure AJAuction files are uploaded in the correct path in the server.<br>
- 	Step 2: Set the permission to the include folder, images folder to 777 (read, write, execute) and storefronts<br>
-			folder permission for the scoping directory and include directory. <br>
-	Step 3: Create a new database for the script. <br>
-	Step 4: Create a new username and password for the script.<br>
-	Step 5: Make sure you grant all permissions in the database for the created user.<br>
-	Step 6: Please provide the following information correctly to install the script.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		i. Database Host name – usually local host for most of the system, else give the host name correctly.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		ii.Database Name – Please give the name of the database you have created for our
-			                                    script.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		iii. Database Username – Please give the username you have created for
-			                                    our script.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		iv. Database Password – Please give the password you have created
-			                                    for our script.<br>
-<h3><u><a name="_Toc135813759"> Creating Cpanel</a></u></h3>
-<p><o:p></o:p>
-<p>cpanel</span> address will be like this, <b><font color="#CC0000">http://www.yoursitename.com/cpanel</b></font> .Then you will be prompted for username and password, if the information is correct you will be taken to home page of the c panel. Creating Database, Database username and
-Password Click MySQL Databases link from the home of cpanel. You will be taken to a page where you could find the
-list of already existing database. Enter the Database Name there and press. Create MySQL database Button, a new database will be created in the database name you gave, prefixed by the cpanel username.
-<br><p><font color="red"> For example: If the cpanel is your username, then the database name will look like yourusername_auction. </font>
-<h3><u><a name="_Toc135813760"> Setting permission for Database</a></u></h3>
-<p><o:p></o:p>For granting permissions for the database, select the user you have created, select MySQL Database and select
-ALL in privileges then click Grant permissions button.
-<br><p><font color="red"> Note: If you use any other
-server control panel other than cpanel, please follow instruction given by your service provider for creating database.</font> 
-<h3><u><a name="_Toc135813761">To access Administration Panel </a></u></h3>
-<p><o:p></o:p>To access the administration control panel after the software is installed,
-browse the www.yoursite.com/admin page. The default admin login is
-admin/admin…..  is recommended to change the admin username and password under “change password”. 
-<h3><u><a name="_Toc135813762"> Administration Preferences</a></u></h3>
-<p><o:p></o:p>This section is dedicated to a detailed explanation of each preference in the admin panel. 
-<h3><u><a name="_Toc135813763"> General Settings</a></u></h3>
-<table border=" 1">
-<tr> 
- <th> Name </th>
-  <th> Function</th>
-</tr>
-<td>Site Name</td>
-<td>Type in your site
-  name which will show up in the page footers and E-mails. If you don’t have a
-  logo for the site this property will show in the text.</span></td>
-  </tr>
-<td>Site Motto</td>
-<td>This motto will display as part of the title of each web page and depending on the skin
-  selected also below the site name on the home page.</td>
-  </tr>
-<td> Current Logo </td>
-<td>This motto will display as part of the title of each web page and depending on the skin
-  selected also below the site name on the home page..</td>
-  </tr>
-<td>Admin Email</td>
-<td>Any contact links on the site will default to this administrator’s email. </td>
-  </tr>
-<td>Paypal Number</td>
-<td>Type the Paypal Account number </td>
-  </tr>
-<td>Launch Date</td>
-<td>Type in the launch date of your web site</td>
-</tr>
-    <td> Last Update </td>
-<td>Type the Update made to your web site</td>
-  </tr>
-<td>Record Limit per page</td>
-<td>The number of records to be displayed in each page.</td>
-  </tr>
-<td> Top Sellers Range  </td>
-<td>Displays list of users who have posted above the range
-  mentioned by admin.</td>
-  </tr>
-<td>No of repost allowed</td>
-<td>Displays the number of times the item will be listed 
-mentioned by admin.</td>
-  </tr>
-<td>Authorize.net</td>
-    <td>Type the authorize.net account number</td>
-</tr><td>Private Auction</td>
-    <td>Admin can set the option of allowing certain sellers to sell the item.</td>
-	</tr><td>Allow seller to specify bid Increment</td>
-	<td>Select yes or no option to allow the seller to indicate bid increment..</td>
-	</tr><td> E-gold number</td>
-<td>Type the E-gold account number</td>
-  </tr>
-<td>E-Gold pass phrase</td>
-<td>Type the E-gold pass phrase</td>
-  </tr>
-  <td>Int-Gold</td>
-    <td>Type the Int-Gold number </td>
-  </tr>
-  <td>Strom pay </td>
-    <td>Type the Strom pay number </td>
-</tr>
-      <td>E-bullion</td>
-<td>Type the E-bullion number </td>
-  </tr>
-  <td>Money Brookers </td>
-<td>Type the Money Brookers number </td>
-  </tr>
-</table>
-<h3><u><a name="_Toc135813766"> Categories </a></u></h3>
-<p><o:p></o:p>
-<p>This section allows adding, editing and deleting categories and sub-categories in auction. Click on any category
-link to edit its name, or delete it from the database. You can delete the
-sub-category after the deletion of the category and the items.To
-add a category or sub-category click the link Add Category or Sub-category at
-the bottom of the page.</p>
-<tr style='mso-yfti-irow:0'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
-  style='color:black'><o:p></o:p></span></b></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
+    <h3><u><a name="_Toc135813757"> Introduction</a></u></h3>
+    <p><o:p></o:p>If you want to start your own online auction site, then this software is for
+    you. This manual deals with all administration functions. With well over 200
+    user-friendly features and administrative features, AJAuction is a powerful
+    PHP/MySQL powered domain name auction script. Built for speed, features include
+    the ability to bulk load domain. In addition we have taken a fresh approach to
+    creating a simple, easy to learn administration panel
+    that will have you operating like a pro in less than 30 minutes. This section
+    discusses the organization of the manual 
+    <h3><u><a name="_Toc135813758"> Installation Introduction</a></u></h3>
+    <p><o:p></o:p>Installation guide are available in the doc directory of the productï¿½s compressed file. The
+    following instruction manual can be found in the ï¿½install.txtï¿½ which can be
+    found in the installation package.
+    <p> Step 1: Make sure AJAuction files are uploaded in the correct path in the server.<br>
+        Step 2: Set the permission to the include folder, images folder to 777 (read, write, execute) and storefronts<br>
+        folder permission for the scoping directory and include directory. <br>
+        Step 3: Create a new database for the script. <br>
+        Step 4: Create a new username and password for the script.<br>
+        Step 5: Make sure you grant all permissions in the database for the created user.<br>
+        Step 6: Please provide the following information correctly to install the script.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		i. Database Host name ï¿½ usually local host for most of the system, else give the host name correctly.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		ii.Database Name ï¿½ Please give the name of the database you have created for our
+        script.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		iii. Database Username ï¿½ Please give the username you have created for
+        our script.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		iv. Database Password ï¿½ Please give the password you have created
+        for our script.<br>
+    <h3><u><a name="_Toc135813759"> Creating Cpanel</a></u></h3>
+    <p><o:p></o:p>
+    <p>cpanel</span> address will be like this, <b><font color="#CC0000">http://www.yoursitename.com/cpanel</b></font> .Then you will be prompted for username and password, if the information is correct you will be taken to home page of the c panel. Creating Database, Database username and
+        Password Click MySQL Databases link from the home of cpanel. You will be taken to a page where you could find the
+        list of already existing database. Enter the Database Name there and press. Create MySQL database Button, a new database will be created in the database name you gave, prefixed by the cpanel username.
+    <br><p><font color="red"> For example: If the cpanel is your username, then the database name will look like yourusername_auction. </font>
+    <h3><u><a name="_Toc135813760"> Setting permission for Database</a></u></h3>
+    <p><o:p></o:p>For granting permissions for the database, select the user you have created, select MySQL Database and select
+    ALL in privileges then click Grant permissions button.
+    <br><p><font color="red"> Note: If you use any other
+        server control panel other than cpanel, please follow instruction given by your service provider for creating database.</font> 
+    <h3><u><a name="_Toc135813761">To access Administration Panel </a></u></h3>
+    <p><o:p></o:p>To access the administration control panel after the software is installed,
+    browse the www.yoursite.com/admin page. The default admin login is
+    admin/adminï¿½..  is recommended to change the admin username and password under ï¿½change passwordï¿½. 
+    <h3><u><a name="_Toc135813762"> Administration Preferences</a></u></h3>
+    <p><o:p></o:p>This section is dedicated to a detailed explanation of each preference in the admin panel. 
+    <h3><u><a name="_Toc135813763"> General Settings</a></u></h3>
+    <table border=" 1">
+        <tr> 
+            <th> Name </th>
+            <th> Function</th>
+        </tr>
+        <td>Site Name</td>
+        <td>Type in your site
+            name which will show up in the page footers and E-mails. If you donï¿½t have a
+            logo for the site this property will show in the text.</span></td>
+        </tr>
+        <td>Site Motto</td>
+        <td>This motto will display as part of the title of each web page and depending on the skin
+            selected also below the site name on the home page.</td>
+        </tr>
+        <td> Current Logo </td>
+        <td>This motto will display as part of the title of each web page and depending on the skin
+            selected also below the site name on the home page..</td>
+        </tr>
+        <td>Admin Email</td>
+        <td>Any contact links on the site will default to this administratorï¿½s email. </td>
+        </tr>
+        <td>Paypal Number</td>
+        <td>Type the Paypal Account number </td>
+        </tr>
+        <td>Launch Date</td>
+        <td>Type in the launch date of your web site</td>
+        </tr>
+        <td> Last Update </td>
+        <td>Type the Update made to your web site</td>
+        </tr>
+        <td>Record Limit per page</td>
+        <td>The number of records to be displayed in each page.</td>
+        </tr>
+        <td> Top Sellers Range  </td>
+        <td>Displays list of users who have posted above the range
+            mentioned by admin.</td>
+        </tr>
+        <td>No of repost allowed</td>
+        <td>Displays the number of times the item will be listed 
+            mentioned by admin.</td>
+        </tr>
+        <td>Authorize.net</td>
+        <td>Type the authorize.net account number</td>
+        </tr><td>Private Auction</td>
+        <td>Admin can set the option of allowing certain sellers to sell the item.</td>
+        </tr><td>Allow seller to specify bid Increment</td>
+        <td>Select yes or no option to allow the seller to indicate bid increment..</td>
+        </tr><td> E-gold number</td>
+        <td>Type the E-gold account number</td>
+        </tr>
+        <td>E-Gold pass phrase</td>
+        <td>Type the E-gold pass phrase</td>
+        </tr>
+        <td>Int-Gold</td>
+        <td>Type the Int-Gold number </td>
+        </tr>
+        <td>Strom pay </td>
+        <td>Type the Strom pay number </td>
+        </tr>
+        <td>E-bullion</td>
+        <td>Type the E-bullion number </td>
+        </tr>
+        <td>Money Brookers </td>
+        <td>Type the Money Brookers number </td>
+        </tr>
+    </table>
+    <h3><u><a name="_Toc135813766"> Categories </a></u></h3>
+    <p><o:p></o:p>
+    <p>This section allows adding, editing and deleting categories and sub-categories in auction. Click on any category
+        link to edit its name, or delete it from the database. You can delete the
+        sub-category after the deletion of the category and the items.To
+        add a category or sub-category click the link Add Category or Sub-category at
+        the bottom of the page.</p>
     <tr style='mso-yfti-irow:0'>
-      <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black' id="customid">Custom Field Category</span><span style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></span></p></td>
-      <span style='mso-bookmark:_Toc135813765'></span>
-      <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-          <p class=MsoNormal align=center style='text-align:center'><span
-  style='mso-bookmark:_Toc135813760'><b><o:p>&nbsp;</o:p></b></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+                        style='color:black'><o:p></o:p></span></b></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
+                <tr style='mso-yfti-irow:0'>
+                    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+                        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><b
+                                    style='mso-bidi-font-weight:normal'><span style='color:black' id="customid">Custom Field Category</span><span style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></span></p></td>
+                <span style='mso-bookmark:_Toc135813765'></span>
+                <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+                        style='mso-bookmark:_Toc135813760'></span>
+                    <p class=MsoNormal align=center style='text-align:center'><span
+                            style='mso-bookmark:_Toc135813760'><b><o:p>&nbsp;</o:p></b></span></p></td>
+                <span style='mso-bookmark:_Toc135813760'></span> </tr>
     <tr style='mso-yfti-irow:1'>
-      <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Custom field Management<o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span>
-      <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Custom field Management<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Here you can add, delete categories with related fields.<o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Here you can add, delete categories with related fields.<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+<tr style='mso-yfti-irow:2'>
+    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+           ext-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                    style='mso-bidi-font-weight:normal'><span style='color:black'id="#categoryid">Category<o:p></o:p></span></b></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span>
+<td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+        style='mso-bookmark:_Toc135813760'></span>
+    <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+       text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span> </tr>
+<tr style='mso-yfti-irow:3'>
+    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Add Category<o:p></o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span>
+<td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+       text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                style='color:black'>Enter the name of the categories you wish to create and click ï¿½<span class=SpellE>AddCategory</span>ï¿½. You can edit and delete existing categories.<o:p></o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span> </tr>
+<tr style='mso-yfti-irow:4'>
+    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                    style='mso-bidi-font-weight:normal'><span style='color:black'id="#Subcategoryid"> Sub-Category <o:p></o:p></span></b></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span>
+<td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+        style='mso-bookmark:_Toc135813760'></span>
+    <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+       text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span> </tr>
+<tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Add Sub-Category<o:p></o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span>
+<td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+       text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                style='color:black'>Enter the name of the sub-categories you wish to create and click ï¿½Add sub-categoryï¿½. You can edit and delete existing categories. <o:p></o:p></span></span></p></td>
+<span style='mso-bookmark:_Toc135813760'></span> </tr>
+</table>
+<p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+   text-autospace:none'><span style='color:black'><o:p></o:p></span></p>  </td>
+</tr>
+<h3><u><a name="_Toc135813770"> Items</a></u></h3>
+<p><span style='mso-bookmark:_Toc135813760'>You can add items in the admin panel as in the user side. </span></p>
+<table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Add Item<o:p></o:p></span></b></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+            style='mso-bookmark:_Toc135813760'></span>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'id="#_Toc135813771">Sell Format<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>You can choose the sell format from the options.<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
     <tr style='mso-yfti-irow:2'>
-      <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  ext-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'id="#categoryid">Category<o:p></o:p></span></b></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span>
-      <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-          <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Payment Settings<o:p></o:p></span></b></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+            style='mso-bookmark:_Toc135813760'></span>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Payment Method<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Here you can enable or disable the mode of payment. <o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+</table>
+<p>&nbsp;</p>
+<h3><u><a name="_Toc135813772"> Users</a></u></h3>
+<p><span style='mso-bookmark:_Toc135813760'>This utility allows users to send the promotional or informational email to targeted mailings/newsletters to users on your web site all at once. The list of users does not include restricted or opt-out users. </span></p>
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt'>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'id="#_Toc135813774">Mail Subjects<o:p></o:p></span></b></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+            style='mso-bookmark:_Toc135813760'></span>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Title<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><span style='mso-spacerun:yes'>&nbsp;</span>The field title is where you can input or edit.<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Send Mail<o:p></o:p></span></b></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+            style='mso-bookmark:_Toc135813760'></span>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
     <tr style='mso-yfti-irow:3'>
-      <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Add Category<o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span>
-      <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>From<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Enter the name of the categories you wish to create and click “<span class=SpellE>AddCategory</span>”. You can edit and delete existing categories.<o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Enter the email address of the user you want to send mail. <o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
     <tr style='mso-yfti-irow:4'>
-      <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'id="#Subcategoryid"> Sub-Category <o:p></o:p></span></b></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span>
-      <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-          <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
-    <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
-      <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-        <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Add Sub-Category<o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span>
-      <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Subject<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Enter the name of the sub-categories you wish to create and click “Add sub-category”. You can edit and delete existing categories. <o:p></o:p></span></span></p></td>
-      <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  </table>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'><o:p></o:p></span></p>  </td>
- </tr>
- <h3><u><a name="_Toc135813770"> Items</a></u></h3>
- <p><span style='mso-bookmark:_Toc135813760'>You can add items in the admin panel as in the user side. </span></p>
- <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
-   <tr style='mso-yfti-irow:0'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Add Item<o:p></o:p></span></b></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:1'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'id="#_Toc135813771">Sell Format<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>You can choose the sell format from the options.<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:2'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Payment Settings<o:p></o:p></span></b></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Payment Method<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Here you can enable or disable the mode of payment. <o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
- </table>
- <p>&nbsp;</p>
- <h3><u><a name="_Toc135813772"> Users</a></u></h3>
- <p><span style='mso-bookmark:_Toc135813760'>This utility allows users to send the promotional or informational email to targeted mailings/newsletters to users on your web site all at once. The list of users does not include restricted or opt-out users. </span></p>
- <table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt'>
-   <tr style='mso-yfti-irow:0'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'id="#_Toc135813774">Mail Subjects<o:p></o:p></span></b></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:1'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Title<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><span style='mso-spacerun:yes'>&nbsp;</span>The field title is where you can input or edit.<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:2'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Send Mail<o:p></o:p></span></b></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:3'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>From<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Enter the email address of the user you want to send mail. <o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:4'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Subject<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Enter the subject of the mail.<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:5'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Message<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Enter the message of the mail.<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-   <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
-     <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Send this mail to<o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span>
-     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-       <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>All <span class=GramE>user's</span> who have promotional email preference selected appear in the list. Select the user you wish to email. <o:p></o:p></span></span></p></td>
-     <span style='mso-bookmark:_Toc135813760'></span> </tr>
- </table>
- <h3><u><a name="_Toc135813775"> Settings</a></u></h3>
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Enter the subject of the mail.<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:5'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Message<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Enter the message of the mail.<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+    <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Send this mail to<o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>All <span class=GramE>user's</span> who have promotional email preference selected appear in the list. Select the user you wish to email. <o:p></o:p></span></span></p></td>
+    <span style='mso-bookmark:_Toc135813760'></span> </tr>
+</table>
+<h3><u><a name="_Toc135813775"> Settings</a></u></h3>
 <p><o:p></o:p>
 <h3><u><a name="_Toc135813776">Auction Settings</a></u></h3>
 <p><o:p></o:p>
@@ -423,309 +423,309 @@ the bottom of the page.</p>
 <h3><u><a name="_Toc135813780">Fee Settings</a></u></h3>
 <p><o:p></o:p>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
- <tr style='mso-yfti-irow:0'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
-  style='color:black'>Fee Settings<o:p></o:p></span></b></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Bold Listing<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>The item title will be
-  displayed bold.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Classified fee<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>This fee is charged when <span
-  class=GramE>an</span> classified ad is posted.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Gallery Listing<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Items will be featured in the
-  Gallery listing.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Highlight Listing <o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>The items will be highlighted,
-  which make the listing stand out. <o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:5'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Home page Featured<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>The items will be selected to
-  be displayed in the home page.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Insertion fee<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>A fee is charged for posting
-  any item other than classifieds postings.<o:p></o:p></span></p>
-  </td>
- </tr>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+                        style='color:black'>Fee Settings<o:p></o:p></span></b></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Bold Listing<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>The item title will be
+                    displayed bold.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Classified fee<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>This fee is charged when <span
+                        class=GramE>an</span> classified ad is posted.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:3'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Gallery Listing<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Items will be featured in the
+                    Gallery listing.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:4'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Highlight Listing <o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>The items will be highlighted,
+                    which make the listing stand out. <o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:5'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Home page Featured<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>The items will be selected to
+                    be displayed in the home page.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Insertion fee<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>A fee is charged for posting
+                    any item other than classifieds postings.<o:p></o:p></span></p>
+        </td>
+    </tr>
 </table>
 <h3><u><a name="_Toc135813782">Duration Settings</a></u></h3>
 <p><o:p></o:p>
 <p><span class="MsoNormal"><span style='color:black'>You can add, edit or delete the
-duration settings of the auction.<b style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></span></span></p>
+            duration settings of the auction.<b style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></span></span></p>
 <h3><u><a name="_Toc135813783">About Settings</a></u></h3>
 <p><o:p></o:p>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
-  <tr style='mso-yfti-irow:0'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal align=center style='text-align:center'><span
-  style='mso-bookmark:_Toc135813760'><b>Name <o:p></o:p></b></span></p></td>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal align=center style='text-align:center'><span
+                    style='mso-bookmark:_Toc135813760'><b>Name <o:p></o:p></b></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal align=center style='text-align:center'><span
-  style='mso-bookmark:_Toc135813760'><b>Functions<o:p></o:p></b></span></p></td>
+        <p class=MsoNormal align=center style='text-align:center'><span
+                style='mso-bookmark:_Toc135813760'><b>Functions<o:p></o:p></b></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:1'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Company Name</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Company Name</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Type your Company name.</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Type your Company name.</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:2'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>About Company</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>About Company</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>You can give a brief description about your company.</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>You can give a brief description about your company.</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:3'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Office Address</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:3'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Office Address</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Type your Office Address</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Type your Office Address</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:4'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Contact Number</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:4'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Contact Number</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Type your Company Contact Number</span>. <o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Type your Company Contact Number</span>. <o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:5'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Fax Number</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:5'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Fax Number</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Type the Company Fax Number</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Type the Company Fax Number</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:6'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Site Status</span></b><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:6'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Site Status</span></b><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
+            style='mso-bookmark:_Toc135813760'></span>
         <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><o:p>&nbsp;</o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:7'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Site Started</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:7'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Site Started</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Here you can enter the date the site was started.</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Here you can enter the date the site was started.</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
-    <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Last Update</span><o:p></o:p></span></p></td>
+    <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes'>
+        <td width=224 style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Last Update</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Here you can enter the last Update modified in the site.</span><o:p></o:p></span></p></td>
+        <p class=MsoNormal><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Here you can enter the last Update modified in the site.</span><o:p></o:p></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
 </table>
 <h3><u><a name="_Toc135813784">Search Criteria</a></u></h3>
 <p>For search criteria you can enter any one of the fields or all the fields.</p>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
- <tr style='mso-yfti-irow:0'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
-  style='color:black'>Search Criteria<o:p></o:p></span></b></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>User Name<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Type the user name for the
-  search criteria.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Member Email<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Type the member email for the
-  search criteria<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Date of Joining (After)<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the date to find the
-  user<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Date of Joining (Before)<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the date to find the
-  user<o:p></o:p></span></p>
-  </td>
- </tr>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+                        style='color:black'>Search Criteria<o:p></o:p></span></b></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>User Name<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Type the user name for the
+                    search criteria.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Member Email<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Type the member email for the
+                    search criteria<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:3'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Date of Joining (After)<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the date to find the
+                    user<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Date of Joining (Before)<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the date to find the
+                    user<o:p></o:p></span></p>
+        </td>
+    </tr>
 </table>
 <h3><u><a name="_Toc135813785">CMS</a></u></h3>
 <p>The Content Management System allows you to control content on your web site. You can update some
-informational pages from admin control panel.</p>
+    informational pages from admin control panel.</p>
 <h3><u><a name="_Toc135813786">Content</a></u></h3>
 <p>This page is dedicated to the
-content found in the<font color="#3333FF"></font><b> ‘Terms &amp; Conditions’</b> and <b>‘ About Us ‘</b> page.</p>
+    content found in the<font color="#3333FF"></font><b> ï¿½Terms &amp; Conditionsï¿½</b> and <b>ï¿½ About Us ï¿½</b> page.</p>
 <h3><u><a name="_Toc135813787"> Site Announcement</a></u></h3>
 <p>This page is dedicated to the
-content found in the News section of the index page.</p>
+    content found in the News section of the index page.</p>
 <h3><u><a name="_Toc135813788"> Banners </a></u></h3>
 <p>If you wish to allow banner
-advertisement on your site, click the <b>Addnew</b> button and upload the new banner.Currently banners are displayed at the bottom of the page. Click the Edit button to change the name and
-the URL’s; Click the delete button to remove the banner.</p>
+    advertisement on your site, click the <b>Addnew</b> button and upload the new banner.Currently banners are displayed at the bottom of the page. Click the Edit button to change the name and
+    the URLï¿½s; Click the delete button to remove the banner.</p>
 <h3><u><a name="_Toc135813789"> Statistics </a></u></h3>
 <p>This report offers several
-features for you to monitor the traffic on your web site.</p>
+    features for you to monitor the traffic on your web site.</p>
 <h3><u><a name="_Toc135813790"> Meta Tag </a></u></h3>
 <p>You can add your own meta tag for SEO.</p>
 <h3><u><a name="_Toc135813791"> Bid Increment </a></u></h3>
 <p>The bid increment settings can be enabled or disabled. There is option of editing
-or deleting the bid increment value.</p>
+    or deleting the bid increment value.</p>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
- <tr style='mso-yfti-irow:0'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
-  style='color:black'>Bid Increment Settings<o:p></o:p></span></b></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Allow sellers to specify bid
-  increment<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enable or Unable to allow the
-  sellers to specify bid increment.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>From<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the value to start the
-  bid increment.<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>To<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the value to end the bid
-  increment<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Increment<o:p></o:p></span></p>
-  </td>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the increment value<o:p></o:p></span></p>
-  </td>
- </tr>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+                        style='color:black'>Bid Increment Settings<o:p></o:p></span></b></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Allow sellers to specify bid
+                    increment<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enable or Unable to allow the
+                    sellers to specify bid increment.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>From<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the value to start the
+                    bid increment.<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:3'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>To<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the value to end the bid
+                    increment<o:p></o:p></span></p>
+        </td>
+    </tr>
+    <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Increment<o:p></o:p></span></p>
+        </td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the increment value<o:p></o:p></span></p>
+        </td>
+    </tr>
 </table>
 <h3><span style='mso-bookmark:_Toc135813792'><u><span style='font-size:13.0pt'id="#_Toc135813792"> Graphic Interface <o:p></o:p></span></u></span></h3>
 <p>You can apply your own style sheets for the website</p>
@@ -740,86 +740,86 @@ or deleting the bid increment value.</p>
 <h3><u><a name="_Toc135813797"> Old Item Clean Up</a></u></h3>
 
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
- <tr style='mso-yfti-irow:0'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Old Item Clean
-  Up<o:p></o:p></span></b></span></p>
-  </td>
-  <span style='mso-bookmark:_Toc135813760'></span>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p>
-  </td>
-  <span style='mso-bookmark:_Toc135813760'></span>
- </tr>
- <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
-  <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Old Item Clean Up<o:p></o:p></span></span></p>
-  </td>
-  <span style='mso-bookmark:_Toc135813760'></span>
-  <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Select the items you want to delete and click delete button.
-  These items will list no longer appear in any lists and will not be available
-  to view or <span class=SpellE>relist</span>. This depends on the number of
-  days mentioned in the general settings.<o:p></o:p></span></span></p>
-  </td>
-  <span style='mso-bookmark:_Toc135813760'></span>
- </tr>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Old Item Clean
+                            Up<o:p></o:p></span></b></span></p>
+        </td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
+            style='mso-bookmark:_Toc135813760'></span>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p>
+    </td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    </tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Old Item Clean Up<o:p></o:p></span></span></p>
+        </td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Select the items you want to delete and click delete button.
+                    These items will list no longer appear in any lists and will not be available
+                    to view or <span class=SpellE>relist</span>. This depends on the number of
+                    days mentioned in the general settings.<o:p></o:p></span></span></p>
+    </td>
+    <span style='mso-bookmark:_Toc135813760'></span>
+    </tr>
 </table>
 <h3><u><a name="_Toc135813798"> Reports</a></u></h3>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
-  <tr style='mso-yfti-irow:0'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Reports<o:p></o:p></span></b></span></p></td>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Reports<o:p></o:p></span></b></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
+            style='mso-bookmark:_Toc135813760'></span>
         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:1'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Revenue<o:p></o:p></span></span></p></td>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Revenue<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Displays the users who have paid. <o:p></o:p></span></span></p></td>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Displays the users who have paid. <o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:2'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Top Sellers<o:p></o:p></span></span></p></td>
+    <tr style='mso-yfti-irow:2'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Top Sellers<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Displays the users who have posted more items.<o:p></o:p></span></span></p></td>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Displays the users who have posted more items.<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>User's Online<o:p></o:p></span></span></p></td>
+    <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>User's Online<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Displays the users who have logged in at the moment.<o:p></o:p></span></span></p></td>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Displays the users who have logged in at the moment.<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
 </table>
 <p><o:p></o:p>
@@ -827,41 +827,41 @@ or deleting the bid increment value.</p>
 <p><span style='mso-bookmark:_Toc135813760'>You have the option of loading a demo data in the case of there is no datas. </span></p>
 <h3><u><a name="_Toc135813800"> Feed Back</a></u></h3>
 <p><span style='mso-bookmark:_Toc135813760'><span style='font-size:13.0pt;
-color:black'>You can manage the feedback, view thw feedback of the particular user.<o:p></o:p></span></span></p>
+                                                  color:black'>You can manage the feedback, view thw feedback of the particular user.<o:p></o:p></span></span></p>
 <table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt'>
-  <tr style='mso-yfti-irow:0'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
-  style='mso-bidi-font-weight:normal'><span style='color:black'>Feed back<o:p></o:p></span></b></span></p></td>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><b
+                        style='mso-bidi-font-weight:normal'><span style='color:black'>Feed back<o:p></o:p></span></b></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'><span
-  style='mso-bookmark:_Toc135813760'></span>
+            style='mso-bookmark:_Toc135813760'></span>
         <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'><o:p>&nbsp;</o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:1'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Search <o:p></o:p></span></span></p></td>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Search <o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>You can search the feedback report through username or item id.<o:p></o:p></span></span></p></td>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>You can search the feedback report through username or item id.<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
-  <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Positive/ Neutral/Negative/All <o:p></o:p></span></span></p></td>
+    <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                        style='color:black'>Positive/ Neutral/Negative/All <o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span>
     <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
-  style='color:black'>Displays the list of specified users under the related category.<o:p></o:p></span></span></p></td>
+        <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+           text-autospace:none'><span style='mso-bookmark:_Toc135813760'><span
+                    style='color:black'>Displays the list of specified users under the related category.<o:p></o:p></span></span></p></td>
     <span style='mso-bookmark:_Toc135813760'></span> </tr>
 </table>
 <h3><u><a name="_Toc135813807"> Transaction Details</a></u></h3>
@@ -870,39 +870,39 @@ color:black'>You can manage the feedback, view thw feedback of the particular us
 <p>Resetting will delete the entire current database. </p>
 <h3><u><a name="_Toc135813802"> Admin Earnings</a></u></h3>
 <table border=1 cellpadding=0 class=MsoNormalTable style='mso-cellspacing:1.5pt'>
-  <tr style='mso-yfti-irow:0'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
-  style='color:black'>Admin Earnings<o:p></o:p></span></b></p></td>
-    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p></td>
-  </tr>
-  <tr style='mso-yfti-irow:1'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>End Auction Early<o:p></o:p></span></p></td>
-    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Enter the date for the auction to end early.<o:p></o:p></span></p></td>
-  </tr>
-  <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
-    <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Featured Item<o:p></o:p></span></p></td>
-    <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
-      <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
-  text-autospace:none'><span style='color:black'>Displays the list of featured items<o:p></o:p></span></p></td>
-  </tr>
+    <tr style='mso-yfti-irow:0'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+                        style='color:black'>Admin Earnings<o:p></o:p></span></b></p></td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'><o:p>&nbsp;</o:p></span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:1'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>End Auction Early<o:p></o:p></span></p></td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Enter the date for the auction to end early.<o:p></o:p></span></p></td>
+    </tr>
+    <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+        <td width=224 valign=top style='width:168.3pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='line-height:150%;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Featured Item<o:p></o:p></span></p></td>
+        <td width=812 valign=top style='width:608.8pt;padding:.75pt .75pt .75pt .75pt'>
+            <p class=MsoNormal style='text-align:justify;mso-layout-grid-align:none;
+               text-autospace:none'><span style='color:black'>Displays the list of featured items<o:p></o:p></span></p></td>
+    </tr>
 </table>
 <p>&nbsp;</p>
 <h3><u><a name="_Toc135813803"> User Home page</a></u></h3>
 <p><span class="MsoNormal"><span style='color:black'>This option is used to open the index page in the website</span><span style='font-size:13.0pt;line-height:150%;
-color:black'>.</span></span></p>
+                                                                                                                           color:black'>.</span></span></p>
 <h3><u><a name="_Toc135813804"> Bulk Loader</a></u></h3>
 <p><span class="MsoNormal"><span style='color:black'>You can upload bulk data. There will be an error in the case of there is a mismatch in the tables and database. </span><span
-style='font-size:13.0pt;line-height:150%;color:black'>..</span></span></p>
+            style='font-size:13.0pt;line-height:150%;color:black'>..</span></span></p>
 <h3><u><a name="_Toc135813805"> Error Subjects</a></u></h3>
 <p><span class="MsoNormal"><span style='color:black'>You can edit or add the message when an error occurs during the process.</span></span></p>
 <h3><u><a name="#_Toc135813806"> Help Subjects</a></u></h3>

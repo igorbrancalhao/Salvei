@@ -36,17 +36,18 @@
                             <table cellpadding="5" cellspacing="0" width=100% border="0" onmouseout="hide()">
                                 <tr><td width="53%"  valign="top">
                                         <table><tr><td valign="top">
-                                                    <?php    while($rec=mysql_fetch_array($res))
+                                                    <?php    
+                                                    while($rec=mysql_fetch_array($res))
                                                     { 
                                                     $count=$count+1;
-                                                    $ssid=$rec[category_id];
-                                                    $_SESSION[catt]=" ";
+                                                    $ssid=$rec["category_id"];
+                                                    $_SESSION["catt"]=" ";
                                                     if($ssid)
                                                     {
-                                                    $cat="category_id=$ssid or category_id= ";
-                                                    $_SESSION[catt]=$cat;
+                                                    $cat="category_id=$ssid or category_id=";
+                                                    $_SESSION["catt"]=$cat;
                                                     cat_display($ssid,$cat);
-                                                    $cat=$_SESSION[catt];
+                                                    $cat=$_SESSION["catt"];
                                                     }
                                                     $cat=rtrim($cat," or category_id=");
 
@@ -57,7 +58,7 @@
 
                                                     ?>
 
-                                            <tr><td class="detail9txt"><a href="subcat.php?cate_id=<?php echo$rec[category_id]; ?>&view=list" class="detail7txt"><font size=2 face="Arial"><b><?php echo $rec[category_name]; ?></b></font></a>&nbsp; ( <?php echo $count_item_total ?> ) </td></tr>
+                                            <tr><td class="detail9txt"><a href="subcat.php?cate_id=<?php echo $rec['category_id']; ?>&view=list" class="detail7txt"><font size=2 face="Arial"><b><?php echo $rec['category_name']; ?></b></font></a>&nbsp; ( <?php echo $count_item_total ?> ) </td></tr>
 
                                             <?php  if($count == $first_part )
                                             {

@@ -9,62 +9,62 @@ table { font-size:inherit; font:x-small; } html>body { font:83%/122% arial,helve
 /* Begin standard font section */
 /* Page Title */
 strong {
-  color: #175878;
+    color: #175878;
 }
 
 /* Ad Title */
 em {
-  color: #175878;
-  font-style: normal;
-  font-weight: bold;
+    color: #175878;
+    font-style: normal;
+    font-weight: bold;
 }
 em.yperBaseConfirm {
-  color: #9b446d;
+    color: #9b446d;
 }
 em.yperBaseErrMsg {
-  color: #a73735;
+    color: #a73735;
 }
 
 /* Body Text */
 /* Body Text Link */
 a {
-  color: #0b8aaa;
+    color: #0b8aaa;
 }
 
 /* For Promo and Registration Pages */
 h1 {
-  font-size:167%;
+    font-size:167%;
 }
 h2 {
-  font-size:144%;
+    font-size:144%;
 }
 h3 {
-  font-size:122%;
+    font-size:122%;
 }
 
 /* Form Text */
 input {
-  font-family: verdana;
-  font-size: 10px;
-  padding: 0;
+    font-family: verdana;
+    font-size: 10px;
+    padding: 0;
 }
 button {
-  font-family: verdana;
-  font-size: 10px;
-  padding: 0;
+    font-family: verdana;
+    font-size: 10px;
+    padding: 0;
 }
 input.yperFontActionButton {
-  font-weight: bold;
-  cursor: hand;
-  color: #fff;
-  background: #a73735;
-  padding: 0;
+    font-weight: bold;
+    cursor: hand;
+    color: #fff;
+    background: #a73735;
+    padding: 0;
 }
 input.yperFontButton {
-  font-weight: bold;
-  cursor: hand;
-  color: #4f4f4f;
-  background: #ddd;
-  padding: 0;
+    font-weight: bold;
+    cursor: hand;
+    color: #4f4f4f;
+    background: #ddd;
+    padding: 0;
 }
 
